@@ -77,12 +77,14 @@ class RegisterController extends Controller
         $u = User::create([
             'name' => $request->input('name'),
             'email'     => $request->input('email'),
+            'phone'     => $request->input('phone'),
+            'type'      => 1,
             'password'     => Hash::make($request->input('password'))
         ]);
         
         $request->session()->flash('success', 'You have successfully created an account.');
         
-        return redirect('admin');
+        return redirect('/login');
         
     }
 }
