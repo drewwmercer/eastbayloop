@@ -41,4 +41,10 @@ return [
         'redirect' => env ( 'FB_REDIRECT' ) 
     ],
 
+    
+    'google' => [
+        'client_id' => env ( 'GOOGLE_REDIRECT' ),
+        'client_secret' => env ( 'GOOGLE_REDIRECT' ),
+        'redirect' => env ( 'GOOGLE_REDIRECT' )
+    ],
 ];

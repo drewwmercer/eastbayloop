@@ -106,8 +106,8 @@
                         <a href="{{ url('/redirect/facebook') }}" class="btn btn-primary btn-fb">Login with Facebook</a>
                     </div>
                     <div class="btn-group btn-group-two">
-                        <a href="#" class="btn btn-info btn-tw"><i class="fa fa-google-plus"></i></a>
-                        <a href="#" class="btn btn-info btn-tw">Login with Google+</a>
+                        <a href="{{ url('/redirect/google') }}" class="btn btn-info btn-tw"><i class="fa fa-google-plus"></i></a>
+                        <a href="{{ url('/redirect/google') }}" class="btn btn-info btn-tw">Login with Google+</a>
                     </div>
                 </div>
             </div>
