@@ -1,5 +1,41 @@
 @extends('layouts.app')
 
+@section('css')
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<style>
+      .social-login .btn-group{
+        margin: 1em 1;
+      }
+      .social-login .btn-fb{
+        background: #3B5998;
+      }
+      .social-login .btn-fb:hover{
+        border-color: #2E6DA4;
+      }
+      .social-login .btn-tw {
+        background:#de3116;
+        color: white;
+      }
+      .social-login .btn-tw:hover{
+        border-color: #46B8DA;
+      }
+      .social-login .btn-fb,
+      .social-login .btn-tw{
+        font-size: 16px;
+      }
+      .social-login i{
+        padding: 0.2em;
+      }
+      .social-login{
+        text-align: center;
+        padding:2em 0;
+      }
+      .social-login .btn-group{
+        margin:1em;
+      }
+</style>
+@endsection
+
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
@@ -63,6 +99,16 @@
                             </div>
                         </div>
                     </form>
+                </div>
+                <div class="social-login col-sm-12">
+                    <div class="btn-group btn-group-one">
+                        <a href="{{ url('/redirect/facebook') }}" class="btn btn-primary btn-fb"><i class="fa fa-facebook-f"></i></a>
+                        <a href="{{ url('/redirect/facebook') }}" class="btn btn-primary btn-fb">Login with Facebook</a>
+                    </div>
+                    <div class="btn-group btn-group-two">
+                        <a href="#" class="btn btn-info btn-tw"><i class="fa fa-google-plus"></i></a>
+                        <a href="#" class="btn btn-info btn-tw">Login with Google+</a>
+                    </div>
                 </div>
             </div>
         </div>

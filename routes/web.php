@@ -26,4 +26,6 @@ Route::post('/register', ['uses' => 'Auth\RegisterController@create']);
 
 Auth::routes();
 
+Route::get ( '/redirect/{service}', 'SocialAuthController@redirect' );
+
 //Route::get('/home', 'HomeController@index')->name('home');
