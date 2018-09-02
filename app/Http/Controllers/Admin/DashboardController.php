@@ -15,11 +15,11 @@ class DashboardController extends Controller
     public function __construct()
     {
         $this->middleware('auth', ['except' => ['']]);
-
     }
     
-    public function index()
+    public function index(Request $request)
     {
+        $request->user()->authorizeRoles(['admin']);
         $data = array();
         return view('admin.dashboard')->with($data);
     }

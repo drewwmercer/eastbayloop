@@ -3,11 +3,14 @@
 namespace App\Http\Controllers\Auth;
 
 use App\User;
+use App\Role;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Auth\Events\Registered;
 
 class RegisterController extends Controller
 {
@@ -53,7 +56,7 @@ class RegisterController extends Controller
             'name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users',
             'password' => 'required|string|min:6|confirmed',
-            'repeat_password' => 'required|same:password',
+            'password_confirmation' => 'required|same:password',
         ]);
     }
 
@@ -63,28 +66,29 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \App\User
      */
-    protected function create(Request $request)
+    protected function create(array $data)
     {
-        
-        $this->validate($request, [
-            'name' => 'required|string|max:255',
-            'email' => 'required|string|email|max:255|unique:users',
-            'password' => 'required|string|min:6',
-            'repeat_password' => 'required|same:password',
-        ]);
          
-         
-        $u = User::create([
-            'name' => $request->input('name'),
-            'email'     => $request->input('email'),
-            'phone'     => $request->input('phone'),
-            'type'      => 1,
-            'password'     => Hash::make($request->input('password'))
+        $admin = User::create([
+            'name' => $data['name'],
+            'email'     => $data['email'],
+        //    'phone'     => $request->input('phone'),
+            'password'     => Hash::make($data['password'])
         ]);
         
-        $request->session()->flash('success', 'You have successfully created an account.');
+        $role_admin = Role::where('name', 'admin')->first();
+        $admin->roles()->attach($role_admin);
+        Auth::login($admin);
         
-        return redirect('/login');
-        
+    }
+    
+    public function register(Request $request)
+    {
+        $this->validator($request->all())->validate();
+
+        event(new Registered($user = $this->create($request->all())));
+
+        return $this->registered($request, $user)
+                        ?: redirect($this->redirectPath());
     }
 }

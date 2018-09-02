@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class EditUsersTable extends Migration
+class CreateRoleUserTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,10 @@ class EditUsersTable extends Migration
      */
     public function up()
     {
-        Schema::table('users', function($table)
-        {
-            $table->string('phone')->nullable();
+        Schema::create('role_user', function (Blueprint $table) {
+            $table->increments('id');
+            $table->integer('role_id')->unsigned();
+            $table->integer('user_id')->unsigned();
         });
     }
 
@@ -26,6 +27,6 @@ class EditUsersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('role_user');
     }
 }

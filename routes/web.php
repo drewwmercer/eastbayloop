@@ -23,3 +23,7 @@ Route::post('/login', ['uses' => 'Auth\LoginController@login']);
 Route::get('/logout', ['uses' => 'Auth\LoginController@logout']);
 Route::get('/register', ['uses' => 'HomeController@register']);
 Route::post('/register', ['uses' => 'Auth\RegisterController@create']);
+
+Auth::routes();
+
+//Route::get('/home', 'HomeController@index')->name('home');
