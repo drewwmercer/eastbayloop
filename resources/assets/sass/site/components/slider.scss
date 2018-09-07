@@ -38,6 +38,12 @@
                 padding: 15px 0px;
                 text-transform: uppercase;
                 line-height: 20px;
+
+                &:hover {
+                    border: 1px solid #000000;
+                    background: #e4ff15;
+                    color: #000000;
+                }
             }
         }
     }

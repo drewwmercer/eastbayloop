@@ -1,0 +1,20 @@
+.read-more-btn {
+    width: 130px;
+    display: inline-block;
+    float: left;
+    text-align: center;
+    background: #000000;
+    border: 1px solid #000000;
+    color: #e4ff15;
+    font-size: 20px;
+    font-family: 'DINCond-Medium';
+    padding: 10px 0px;
+    text-transform: uppercase;
+    line-height: 20px;
+
+    &:hover {
+        border: 1px solid #000000;
+        background: #e4ff15;
+        color: #000000;
+    }
+}

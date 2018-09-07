@@ -2,8 +2,6 @@
     @include('layouts.partials.header')
 @show
 
-
-
 <div id="app">
     @section('navbar')
         @include('layouts.partials.navbar')

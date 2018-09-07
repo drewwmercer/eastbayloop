@@ -85,6 +85,37 @@ a:hover {
     text-decoration: none;    
 }
 
-body{
+body {
 	font-family: 'OpenSans';
+}
+
+footer {
+    width: 100%;
+    float: left;
+    background: #131316;
+    text-align: center;
+
+    .wrapper {
+        max-width: 1200px;
+        width: 90%; 
+        margin: 0 auto;
+
+        span {
+            width: 100%;
+            display: inline-block;
+            color: #ffffff;
+            font-size: 16px;
+            padding: 20px 0px;
+        }
+
+        .socials {
+            padding-bottom: 20px;
+            color: white;
+
+            i {
+                margin-right: 5px;
+                cursor: pointer;
+            }
+        }
+    }
 }
