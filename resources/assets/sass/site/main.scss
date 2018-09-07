@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('/fonts/vendor/opensans/opensans.woff') format('woff'), url('/fonts/vendor/opensans/opensans.ttf')  format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans-Extrabold';
+    src:url('/fonts/vendor/opensans/opensansextrabold.woff') format('woff'), url('/fonts/vendor/opensans/opensansextrabold.ttf')  format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans-Light';
+    src: url('/fonts/vendor/opensans/opensanslight.woff') format('woff'), url('/fonts/vendor/opensans/opensanslight.ttf')  format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DINCond-Bold';
+    src: url('/fonts/vendor/ddin/DINCond-Bold.otf')  format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Barlow;
+    src: url("/fonts/vendor/barlow/Barlow-Regular.ttf.otf") format("opentype"), url('/fonts/vendor/barlow/Barlow-Regular.ttf.woff') format('woff');
+}
+
+@font-face {
+    font-family: BarlowSemiCondensed;
+    font-style: normal;
+	font-weight: bold;
+    font-weight: 900;
+    src: url('/fonts/vendor/barlow/barlow-semi-condensed-v1-latin-ext-900.eot'); /* IE9 Compat Modes */
+    src: local('Barlow Semi Condensed Black'), local('BarlowSemiCondensed-Black'),
+         url('/fonts/vendor/barlow/barlow-semi-condensed-v1-latin-ext-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('/fonts/vendor/barlow/barlow-semi-condensed-v1-latin-ext-900.woff2') format('woff2'), /* Super Modern Browsers */
+         url('/fonts/vendor/barlow/barlow-semi-condensed-v1-latin-ext-900.woff') format('woff'), /* Modern Browsers */
+         url('/fonts/vendor/barlow/barlow-semi-condensed-v1-latin-ext-900.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('/fonts/vendor/barlow/barlow-semi-condensed-v1-latin-ext-900.svg#BarlowSemiCondensed') format('svg'); /* Legacy iOS */
+}
+
+/*
+@font-face {
+    font-family: BarlowSemiCondensed;
+    src: url("fonts/BarlowSemiCondensed-SemiBold.otf") format("opentype");
+}
+*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    transition: all ease-in-out .5s;
+    -moz-transition: all ease-in-out .5s;
+    -ms-transition: all ease-in-out .5s;
+    -o-transition: all ease-in-out .5s;
+    -webkit-transition: all ease-in-out .5s;
+}
+
+a:hover {
+    text-decoration: none;    
+}
+

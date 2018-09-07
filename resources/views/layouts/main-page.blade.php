@@ -2,11 +2,13 @@
     @include('layouts.partials.header')
 @show
 
-@section('navbar')
-    @include('layouts.partials.navbar')
-@show
+
 
 <div id="app">
+    @section('navbar')
+        @include('layouts.partials.navbar')
+    @show
+    
     @yield('content')
 </div>
 

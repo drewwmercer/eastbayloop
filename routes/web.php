@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', 'IndexController@index');
+Route::get('/', 'IndexController@index')->name('main-page');
 
 Route::get('/admin', 'Admin\DashboardController@index');
 Route::get('/home', 'Admin\DashboardController@index');

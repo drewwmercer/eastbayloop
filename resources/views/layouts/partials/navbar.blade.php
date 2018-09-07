@@ -1,14 +1,30 @@
-<navbar inlite-template :data="">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card card-default">
-                    <div class="card-header">Navbar</div>
-
-                    <div class="card-body">
-                        I'm an example component.
+<navbar inline-template>
+    <div class="custom-navbar">
+        <div class="navbar-wrapper">
+            <a class="logo" href="{{ route('main-page') }}">
+                <img alt="logo" src="{{ asset('assets/img/logo.png') }}">
+            </a>
+            <div class="navbar-content">
+                <div class="auth-btn">
+                    <i class="fa fa-user" aria-hidden="true" id="dropdownAuthMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                    <div class="dropdown-menu" aria-labelledby="dropdownAuthMenu">
+                        <a class="dropdown-item" href="{{ route('login') }}">Login</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Sign up</a>
                     </div>
                 </div>
+
+                <ul class="navigation">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="explore.html">EXPLORE</a></li>
+                    <li><a href="fashion.html">FASHION</a></li>
+                    <li><a href="taste.html">TASTE</a></li>
+                    <li><a href="market-place.html">LOCAL MARKETPLACE</a></li>
+                    <li><a href="music.html">MUSIC</a></li>
+                    <li><a href="stay-page.html">STAY</a></li>
+                    <li><a href="venue_event.html">EVENTS</a></li>
+                    <li><a href="are-you-in-loop-step-1.html">ADVERISE WITH US!</a></li>
+                </ul>
             </div>
         </div>
     </div>

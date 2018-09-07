@@ -4,7 +4,6 @@
 @endsection
 
 @section('content')
-    <navbar></navbar>
     <home-page inline-template>
         <div>
             Test info
