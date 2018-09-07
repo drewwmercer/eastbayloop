@@ -11,7 +11,6 @@
         <title>{{ config('app.name') }}</title>
 
         <link href="{{ asset('css/site.css') }}" rel="stylesheet">
-        <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
         <link href="{{ asset('css/flexslider.css') }}" rel="stylesheet">
         
         @yield('css')

@@ -11,6 +11,12 @@
         .logo {
             float: left;
             margin: 5px 0px 10px 0px;
+
+            img {
+                max-width: 100%;
+                overflow: hidden;
+                height: auto;
+            }
         }
 
         .navbar-content {
@@ -18,6 +24,10 @@
             float: right;
             display: inline-block;
             padding-top: 38px;
+                   
+            .menu {
+                display: none;
+            }
 
             .auth-btn {
                 display: inline-block;
@@ -146,6 +156,99 @@
 
                 & li:nth-child(9) a:after {
                     content: '' !important;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 961px) and (max-width: 1200px){
+    .custom-navbar {
+        .navbar-wrapper {
+            .logo {
+                width:100px;
+            }
+
+            .navbar-content {
+                width:85%;
+                padding-top: 27px;            
+            }
+
+            .navbar-content {
+                .navigation {
+                    li {
+                        a {
+                            font-size:14px;
+
+                            &:after {
+                                top: -1px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 100px) and (max-width: 960px) {
+    .custom-navbar {
+        position:relative;
+
+        .navbar-wrapper {
+            .logo {
+                margin: 5px 0px 5px 0px;
+                width: 115px;
+            }
+
+            .navbar-content {
+                width:110px;
+                padding-top: 30px;
+
+                .menu {
+                    display:block;
+                    float:right;
+                    color:#fff;
+                    font-size:18px;
+                    cursor:pointer;
+                    font-weight:bold;
+                }
+
+                .auth-btn {
+                    padding-top: 4px;
+                    float:left;
+                }
+                .navigation {
+                    width:100%;
+                    position:absolute;
+                    top:100%;
+                    left:0;
+                    z-index:9;
+                    display:none;
+
+                    li, li:nth-child(1), li:nth-child(3), li:nth-child(4),
+                    li:nth-child(5), li:nth-child(6), li:nth-child(7),
+                    li:nth-child(8), li:nth-child(9) {
+                        width:100%;
+                    }
+
+                    li {
+                        a {
+                            background:#ecff2f;
+                            padding:10px 0px;
+                            color:#1b1b1c;
+                            border-bottom:1px solid #1b1b1c;
+
+                            &:hover {
+                                background:#1b1b1c;
+                                color:#ecff2f;
+                            }
+
+                            &:after {
+                                display:none;
+                            }
+                        }
+                    }
                 }
             }
         }

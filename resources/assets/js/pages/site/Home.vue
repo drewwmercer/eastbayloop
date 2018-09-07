@@ -1,7 +1,10 @@
 <script>
     export default {
         mounted() {
-            console.log('Home page mounted.')
+            $('.flexslider').flexslider({
+                    animation: "slide",
+                    directionNav:false,
+            })
         }
     }
 </script>

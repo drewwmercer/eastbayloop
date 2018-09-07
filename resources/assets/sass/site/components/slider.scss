@@ -1,0 +1,66 @@
+.main-slider {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+
+    .index-banner {
+        width: 100%;
+        display: inline-block;
+        padding: 225px 0px 310px 0px;
+        background-size:cover !important;
+
+        .wrapper {
+            max-width: 1200px;
+            width: 90%;
+            margin: 0 auto;
+
+            .banner-text {
+                width: 100%;
+                display: inline-block;
+                color: #000000;
+                font-size: 50px;
+                text-align: center;
+                line-height: 55px;
+                padding: 0px 240px;
+                margin-bottom: 15px;
+            }
+
+            .banner-btn {
+                width: 200px;
+                display: block;
+                margin: 0 auto;
+                text-align: center;
+                background: #000000;
+                border: 1px solid #000000;
+                color: #e4ff15;
+                font-size: 20px;
+                font-family: 'DINCond-Medium';
+                padding: 15px 0px;
+                text-transform: uppercase;
+                line-height: 20px;
+            }
+        }
+    }
+
+    .flex-control-nav {
+        margin-top: 0px;
+        position: absolute;
+        bottom: 80px;
+        left: 0px;
+    }
+
+    .flex-control-paging li a {
+        background: #fff;
+        border: none;
+        box-shadow: none;
+        display: inline-block;
+        vertical-align: middle;
+        
+        &.flex-active {
+            background: #fff;            
+            width: 15px;
+            height: 15px;
+            border: none;
+        }
+    }
+}

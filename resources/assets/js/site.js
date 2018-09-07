@@ -6,6 +6,7 @@
  */
 
 require('./bootstrap');
+require('flexslider');
 
 window.Vue = require('vue');
 

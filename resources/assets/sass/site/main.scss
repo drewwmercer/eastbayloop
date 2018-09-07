@@ -29,6 +29,13 @@
 }
 
 @font-face {
+    font-family: 'DINCond-Medium';
+    src: url('/fonts/vendor/ddin/DINCondMedium.otf')  format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: Barlow;
     src: url("/fonts/vendor/barlow/Barlow-Regular.ttf.otf") format("opentype"), url('/fonts/vendor/barlow/Barlow-Regular.ttf.woff') format('woff');
 }
@@ -78,3 +85,6 @@ a:hover {
     text-decoration: none;    
 }
 
+body{
+	font-family: 'OpenSans';
+}

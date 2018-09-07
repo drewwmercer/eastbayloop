@@ -7,13 +7,22 @@
             <div class="navbar-content">
                 <div class="auth-btn">
                     <i class="fa fa-user" aria-hidden="true" id="dropdownAuthMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
-                    <div class="dropdown-menu" aria-labelledby="dropdownAuthMenu">
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownAuthMenu">
                         <a class="dropdown-item" href="{{ route('login') }}">Login</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Sign up</a>
                     </div>
                 </div>
-
+                <span class="menu" @click="toogleMenu">
+                    <template v-if="isToogleNavbar">
+                        <i class="fa fa-close" aria-hidden="true"></i>
+                        Close
+                    </template>
+                    <template v-else>
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                        Menu
+                    </template>
+                </span>
                 <ul class="navigation">
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="explore.html">EXPLORE</a></li>
