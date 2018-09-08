@@ -6,8 +6,8 @@
                     <li v-for="(slide, key) in data" :key="key">
                         <div class="index-banner" :style="'background:url(' + slide.img +') no-repeat center;'">
                             <div class="wrapper">
-                                <span class="banner-text">{{ slide.text }}</span>
-                                <a class="banner-btn" :href="slide.link">{{ slide.btnText || 'READ MORE'}}</a>
+                                <span :class="'banner-text ' + slide.class || ''">{{ slide.text }}</span>
+                                <a class="banner-btn" v-if="slide.link" :href="slide.link">{{ slide.btnText || 'READ MORE'}}</a>
                             </div>
                         </div>
                     </li>
@@ -21,7 +21,11 @@
         props: ['data'],
         
         mounted() {
-            console.log(this.data);
+            
+            $('.flexslider').flexslider({
+                    animation: "slide",
+                    directionNav:false,
+            })
         },
         
         methods: {

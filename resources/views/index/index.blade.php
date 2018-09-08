@@ -1,8 +1,5 @@
 @extends('layouts.main-page')
 
-@section('css')
-@endsection
-
 @section('content')
     <home-page inline-template>
         <main>
@@ -386,7 +383,7 @@
                 </div>
             </section>
 
-            <!-- MUSIC -->
+            <!-- STAY -->
             <section class="custom-section with-divider">
                 <div class="section-header">
                     <p class="title text-uppercase text-center">STAY</p>
@@ -449,7 +446,7 @@
                 </div>
             </section>
 
-            <!-- MUSIC -->
+            <!-- EVENTS -->
             <section class="custom-section">
                 <div class="section-header">
                     <p class="title text-uppercase text-center">EVENTS</p>
@@ -568,7 +565,3 @@
         </main>
     </home-page>
 @endsection
-
-@section('scripts')
-@endsection
-
