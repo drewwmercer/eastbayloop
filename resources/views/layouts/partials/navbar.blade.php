@@ -31,7 +31,7 @@
                     <li><a href="market-place.html">LOCAL MARKETPLACE</a></li>
                     <li><a href="music.html">MUSIC</a></li>
                     <li><a href="stay-page.html">STAY</a></li>
-                    <li><a href="venue_event.html">EVENTS</a></li>
+                    <li><a href="{{ route('events-page') }}">EVENTS</a></li>
                     <li><a href="are-you-in-loop-step-1.html">ADVERISE WITH US!</a></li>
                 </ul>
             </div>

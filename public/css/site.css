@@ -14430,6 +14430,127 @@ img {
   }
 }
 
+.events-cards {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.events-cards .events-header {
+  display: inline-block;
+  width: 100%;
+}
+
+.events-cards .events-header .filter-btn {
+  width: 20%;
+  display: inline-block;
+  float: left;
+}
+
+.events-cards .events-header a {
+  font-size: 16px;
+  display: inline-block;
+  float: left;
+  background: #000000;
+  color: #e3fd1a;
+  text-align: center;
+  padding: 6.5px 0;
+  border-radius: 3px;
+}
+
+.events-cards .events-header a:hover {
+  color: #ffffff;
+}
+
+.events-cards .events-header .filter-btns {
+  width: 32%;
+  display: inline-block;
+  float: right;
+}
+
+.events-cards .events-header .filter-btns a {
+  width: 48%;
+}
+
+.events-cards .events-card .events-wrapper {
+  -webkit-box-shadow: 2px 0px 10px rgba(1, 1, 1, 0.1);
+          box-shadow: 2px 0px 10px rgba(1, 1, 1, 0.1);
+  padding: 8px;
+  position: relative;
+}
+
+.events-cards .events-card .events-wrapper .content {
+  left: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.events-cards .events-card .events-wrapper .content h2 {
+  color: #ffffff;
+  font-family: BarlowLight;
+  text-align: center;
+  width: 80%;
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 961px) {
+  .events-cards .events-header .filter-btns {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 960px) and (min-width: 768px) {
+  .events-cards .events-header .filter-btn {
+    width: 30%;
+  }
+
+  .events-cards .events-header .filter-btns {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 100px) {
+  .events-cards .events-header .filter-btn {
+    width: 38%;
+    font-size: 16px;
+  }
+
+  .events-cards .events-header .filter-btns {
+    width: 61%;
+  }
+}
+
+@media only screen and (max-width: 600px) and (min-width: 100px) {
+  .events-cards .events-header .filter-btn {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .events-cards .events-header .filter-btns {
+    width: 100%;
+  }
+
+  .events-cards .events-header .filter-btns a {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}
+
 .custom-navbar {
   width: 100%;
   float: left;
