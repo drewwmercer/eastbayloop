@@ -25,7 +25,7 @@ class ExploreController extends Controller
     public function show(string $category)
     {
         if (View::exists(self::PAGES_FOLDER . $category)) {
-            return view(self::PAGES_FOLDER . $category);
+            return view(self::PAGES_FOLDER . $category, ['category' => ucfirst($category)]);
         }
 
         return view(self::DEFAULT_VIEW, ['category' => ucfirst($category)]);        
