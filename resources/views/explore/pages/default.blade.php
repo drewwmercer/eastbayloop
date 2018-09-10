@@ -9,6 +9,19 @@
             </slider>
 
             <section class="explore-cards">
+                <div class="col-md-12 explore-header mb-3">
+                    <h2 class="display-inline">{{ $category }}</h2>
+                    <div class="filter-bar">
+                        <span>
+                            <select>
+                                <option value="Select">Location Filter</option>
+                                <option value="bar1">Bar 1</option>
+                                <option value="bar2">Bar 2</option>
+                            </select>
+                        </span>
+                        <a class="filter-btn ml-3" href="#">Find Filter</a>
+                    </div>
+                </div>
                 <div class="row">
                     <div class="default-card col-md-4 mb-4">
                         <div class="default-wrapper">

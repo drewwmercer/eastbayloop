@@ -9,9 +9,14 @@
 .sell-btn {
     padding: 10px 30px;
     background: #e3fc1a;
-    border-radius: 3px;
+    border-radius: 2px;
     color: #000000;
     font-family: BarlowBold;
+
+    &:hover {
+        background: #acbe1a;
+        color: #000000;
+    }
 }
 
 .explore-cards {
@@ -19,6 +24,72 @@
     width: 90%;
     margin: 0 auto;
     margin-top: 30px;
+
+    .explore-header {
+        h2 {
+            display: inline;
+            font-family: 'OpenSans-Extrabold';
+            font-size: 33px;
+            color: #333333;
+        }
+
+        .filter-bar {
+            display: inline-flex;
+            float: right;
+
+            .filter-btn {
+                font-size: 16px;
+                display: inline-block;
+                float: right;
+                background: #000000;
+                color: #e3fd1a;
+                text-align: center;
+                padding: 5.5px 22px;
+                border-radius: 3px;
+
+                &:hover {
+                    color: #ffffff;
+                }
+            }
+
+            span {
+                position: relative;
+                min-width: 200px;
+                
+                select {
+                    outline: none;
+                    width: 100%;
+                    display: inline-block;
+                    float: left;
+                    font-size: 14px;
+                    border: 1px solid #aaaaaa;
+                    border-radius: 3px;
+                    appearance: none;
+                    -moz-appearance: none;
+                    -ms-appearance: none;
+                    -webkit-appearance: none;
+                    margin: 0;
+                    padding: 5px;
+                    height: 35px;
+                    color: rgba(0,0,0,.8);
+                    position: relative;
+                    z-index: 1;
+                    background: none;
+                    cursor: pointer;
+                }
+
+                &:after {
+                    position: absolute;
+                    right: 14px;
+                    content: "\f0d7";
+                    font-family: 'FontAwesome';
+                    display: inline-block;
+                    font-size: 26px;
+                    color: #aaaaaa;
+                }
+            }            
+        }
+    }
 
     .default-card {
         .default-wrapper {

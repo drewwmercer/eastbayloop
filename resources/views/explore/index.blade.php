@@ -37,7 +37,7 @@
                             </div>
                             <div class="content">
                                 <h2>PET CLUB</h2>
-                                <a class="read-more-btn mb-3 float-none" href="#">READ MORE</a>
+                                <a class="read-more-btn mb-3 float-none" href="{{ route('explore-subpage', ['category' => 'PET CLUB']) }}">READ MORE</a>
                             </div>
                         </div>
                     </div>
