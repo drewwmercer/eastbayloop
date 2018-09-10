@@ -30,5 +30,6 @@ Route::get('/redirect/{service}', 'SocialAuthController@redirect');
 Route::get('/explore', 'ExploreController@index')->name('explore-page');
 Route::get('/explore/{category}', 'ExploreController@show')->name('explore-subpage');
 Route::get('/events', 'EventsController@index')->name('events-page');
+Route::get('/fashion', 'FashionController@index')->name('fashion-page');
 
 //Route::get('/home', 'HomeController@index')->name('home');

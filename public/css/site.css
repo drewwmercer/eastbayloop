@@ -14551,6 +14551,101 @@ img {
   }
 }
 
+.fashion-cards {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.fashion-cards .fashion-header {
+  margin-bottom: 2rem;
+}
+
+.fashion-cards .fashion-header h2 {
+  font-family: 'OpenSans-Extrabold';
+  font-size: 33px;
+  color: #333333;
+}
+
+.fashion-cards .default-card .default-wrapper {
+  -webkit-box-shadow: 0px 0px 10px rgba(1, 1, 1, 0.5);
+          box-shadow: 0px 0px 10px rgba(1, 1, 1, 0.5);
+  padding: 8px;
+  position: relative;
+  cursor: pointer;
+}
+
+.fashion-cards .default-card .default-wrapper .content {
+  left: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fashion-cards .default-card .default-wrapper .content h2 {
+  color: #ffffff;
+  text-align: center;
+  font-size: 25px;
+  width: 80%;
+}
+
+.fashion-tabs {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.fashion-tabs .nav .nav-link {
+  width: 180px;
+  text-align: center;
+  background: #fff;
+  color: #000000;
+  font-size: 25px;
+  padding: 10px 0px;
+  border: 1px solid #000000;
+  font-weight: bold;
+}
+
+.fashion-tabs .nav .nav-link.active {
+  color: #e4ff15;
+  background: #191919;
+}
+
+.fashion-tabs .fashion-tab-card {
+  padding: 30px;
+}
+
+.fashion-tabs .fashion-tab-card .fashion-tab-wrapper {
+  padding: 8px;
+  -webkit-box-shadow: 0px 0px 10px rgba(1, 1, 1, 0.5);
+          box-shadow: 0px 0px 10px rgba(1, 1, 1, 0.5);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+  .fashion-cards .default-card .default-wrapper .content h2 {
+    text-overflow: ellipsis;
+    max-height: 70%;
+    font-size: 18px;
+  }
+}
+
 .custom-navbar {
   width: 100%;
   float: left;

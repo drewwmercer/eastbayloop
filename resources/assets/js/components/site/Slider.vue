@@ -21,7 +21,6 @@
         props: ['data'],
         
         mounted() {
-            
             $('.flexslider').flexslider({
                     animation: "slide",
                     directionNav:false,

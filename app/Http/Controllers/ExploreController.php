@@ -30,6 +30,6 @@ class ExploreController extends Controller
             return view(self::PAGES_FOLDER . $view, ['category' => ucfirst($category)]);
         }
 
-        return view(self::DEFAULT_VIEW, ['category' => ucfirst($category)]);        
+        return view(self::DEFAULT_VIEW, ['category' => ucfirst($category)]);
     }
 }
