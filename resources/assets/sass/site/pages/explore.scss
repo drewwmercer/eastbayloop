@@ -6,11 +6,44 @@
     text-transform: uppercase !important;
 }
 
+.sell-btn {
+    padding: 10px 30px;
+    background: #e3fc1a;
+    border-radius: 3px;
+    color: #000000;
+    font-family: BarlowBold;
+}
+
 .explore-cards {
     max-width: 1200px;
     width: 90%;
     margin: 0 auto;
     margin-top: 30px;
+
+    .default-card {
+        .default-wrapper {
+            box-shadow: 2px 0px 10px rgba(1,1,1,.1);
+            padding: 8px;
+            position: relative;
+
+            .content {
+                left: 0;
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                h2 {
+                    color: #ffffff;
+                    font-family: BarlowLight;
+                }
+            }
+        }
+    }
 
     .explore-card {
         padding: 0px 45px;

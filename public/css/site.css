@@ -13571,6 +13571,16 @@ a.text-dark:focus {
 }
 
 @font-face {
+  font-family: BarlowLight;
+  src: url("/fonts/vendor/barlow/Barlow-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: BarlowBold;
+  src: url("/fonts/vendor/barlow/Barlow-Bold.otf") format("opentype");
+}
+
+@font-face {
   font-family: BarlowSemiCondensed;
   font-style: normal;
   font-weight: bold;
@@ -14236,11 +14246,52 @@ img {
   text-transform: uppercase !important;
 }
 
+.sell-btn {
+  padding: 10px 30px;
+  background: #e3fc1a;
+  border-radius: 3px;
+  color: #000000;
+  font-family: BarlowBold;
+}
+
 .explore-cards {
   max-width: 1200px;
   width: 90%;
   margin: 0 auto;
   margin-top: 30px;
+}
+
+.explore-cards .default-card .default-wrapper {
+  -webkit-box-shadow: 2px 0px 10px rgba(1, 1, 1, 0.1);
+          box-shadow: 2px 0px 10px rgba(1, 1, 1, 0.1);
+  padding: 8px;
+  position: relative;
+}
+
+.explore-cards .default-card .default-wrapper .content {
+  left: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.explore-cards .default-card .default-wrapper .content h2 {
+  color: #ffffff;
+  font-family: BarlowLight;
 }
 
 .explore-cards .explore-card {

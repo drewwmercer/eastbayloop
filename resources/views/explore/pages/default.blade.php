@@ -3,116 +3,102 @@
 @section('content')
     <explore-page inline-template>
         <main>
-            <slider :data="[{img: 'http://testsite.eastbayloop.com/images/banner4.jpeg', text: 'EXPLORE', class: 'explore-slider'}]">
+            <slider :data="[{img: 'http://testsite.eastbayloop.com/images/banner7.jpeg', text: '{{ $category }}', class: 'explore-slider'},
+                            {img: 'http://testsite.eastbayloop.com/images/banner7.jpeg', text: '{{ $category }}', class: 'explore-slider'},
+                            {img: 'http://testsite.eastbayloop.com/images/banner7.jpeg', text: '{{ $category }}', class: 'explore-slider'}]">
             </slider>
 
             <section class="explore-cards">
                 <div class="row">
-                    <div class="explore-card mb-4 col-md-4">
-                        <div class="explore-wrapper">
-                            <div class="image-header">
-                                <img src="http://testsite.eastbayloop.com/images/explore-img1.png"/>
-                            </div>
+                    <div class="default-card col-md-4 mb-4">
+                        <div class="default-wrapper">
+                            <img src="http://testsite.eastbayloop.com/images/adventure1.png" />
                             <div class="content">
-                                <h2>ADVENTURE</h2>
-                                <a class="read-more-btn mb-3 float-none" href="{{ route('explore-subpage', ['category' => 'adventure']) }}">READ MORE</a>
+                                <h2 class="mb-3">{{ $category }} 1</h2>
+                                <a class="sell-btn" href="#">(Sell Tickets)</a>
                             </div>
                         </div>
                     </div>
-                    <div class="explore-card mb-4 col-md-4">
-                        <div class="explore-wrapper">
-                            <div class="image-header">
-                                <img src="http://testsite.eastbayloop.com/images/explore-img2.png"/>
-                            </div>
+                    <div class="default-card col-md-4 mb-4">
+                        <div class="default-wrapper">
+                            <img src="http://testsite.eastbayloop.com/images/adventure2.png" />
                             <div class="content">
-                                <h2>NIGHTLIFE/DAYCLUB</h2>
-                                <a class="read-more-btn mb-3 float-none" href="#">READ MORE</a>
+                                <h2 class="mb-3">{{ $category }} 2</h2>
+                                <a class="sell-btn" href="#">(Sell Tickets)</a>
                             </div>
                         </div>
                     </div>
-                    <div class="explore-card mb-4 col-md-4">
-                        <div class="explore-wrapper">
-                            <div class="image-header">
-                                <img src="http://testsite.eastbayloop.com/images/explore-img3.png"/>
-                            </div>
+                    <div class="default-card col-md-4 mb-4">
+                        <div class="default-wrapper">
+                            <img src="http://testsite.eastbayloop.com/images/adventure3.png" />
                             <div class="content">
-                                <h2>PET CLUB</h2>
-                                <a class="read-more-btn mb-3 float-none" href="#">READ MORE</a>
+                                <h2 class="mb-3">{{ $category }} 3</h2>
+                                <a class="sell-btn" href="#">(Sell Tickets)</a>
                             </div>
                         </div>
                     </div>
-                    <div class="explore-card mb-4 col-md-4">
-                        <div class="explore-wrapper">
-                            <div class="image-header">
-                                <img src="http://testsite.eastbayloop.com/images/explore-img4.png"/>
-                            </div>
+                    <div class="default-card col-md-4 mb-4">
+                        <div class="default-wrapper">
+                            <img src="http://testsite.eastbayloop.com/images/adventure4.png" />
                             <div class="content">
-                                <h2>PAMPER</h2>
-                                <a class="read-more-btn mb-3 float-none" href="#">READ MORE</a>
+                                <h2 class="mb-3">{{ $category }} 4</h2>
+                                <a class="sell-btn" href="#">(Sell Tickets)</a>
                             </div>
                         </div>
                     </div>
-                    <div class="explore-card mb-4 col-md-4">
-                        <div class="explore-wrapper">
-                            <div class="image-header">
-                                <img src="http://testsite.eastbayloop.com/images/explore-img5.png"/>
-                            </div>
+                    <div class="default-card col-md-4 mb-4">
+                        <div class="default-wrapper">
+                            <img src="http://testsite.eastbayloop.com/images/adventure5.png" />
                             <div class="content">
-                                <h2>GOLF/ RECREATION</h2>
-                                <a class="read-more-btn mb-3 float-none" href="#">READ MORE</a>
+                                <h2 class="mb-3">{{ $category }} 5</h2>
+                                <a class="sell-btn" href="#">(Sell Tickets)</a>
                             </div>
                         </div>
                     </div>
-                    <div class="explore-card mb-4 col-md-4">
-                        <div class="explore-wrapper">
-                            <div class="image-header">
-                                <img src="http://testsite.eastbayloop.com/images/explore-img6.png"/>
-                            </div>
+                    <div class="default-card col-md-4 mb-4">
+                        <div class="default-wrapper">
+                            <img src="http://testsite.eastbayloop.com/images/adventure6.png" />
                             <div class="content">
-                                <h2>KIDS LOOP</h2>
-                                <a class="read-more-btn mb-3 float-none" href="#">READ MORE</a>
+                                <h2 class="mb-3">{{ $category }} 6</h2>
+                                <a class="sell-btn" href="#">(Sell Tickets)</a>
                             </div>
                         </div>
                     </div>
-                    <div class="explore-card mb-4 col-md-4">
-                        <div class="explore-wrapper">
-                            <div class="image-header">
-                                <img src="http://testsite.eastbayloop.com/images/explore-img7.png"/>
-                            </div>
+                    <div class="default-card col-md-4 mb-4">
+                        <div class="default-wrapper">
+                            <img src="http://testsite.eastbayloop.com/images/adventure7.png" />
                             <div class="content">
-                                <h2>LOCAL SHOPS AND SHOPPING</h2>
-                                <a class="read-more-btn mb-3 float-none" href="#">READ MORE</a>
+                                <h2 class="mb-3">{{ $category }} 7</h2>
+                                <a class="sell-btn" href="#">(Sell Tickets)</a>
                             </div>
                         </div>
                     </div>
-                    <div class="explore-card mb-4 col-md-4">
-                        <div class="explore-wrapper">
-                            <div class="image-header">
-                                <img src="http://testsite.eastbayloop.com/images/explore-img8.png"/>
-                            </div>
+                    <div class="default-card col-md-4 mb-4">
+                        <div class="default-wrapper">
+                            <img src="http://testsite.eastbayloop.com/images/adventure8.png" />
                             <div class="content">
-                                <h2>FITNESS</h2>
-                                <a class="read-more-btn mb-3 float-none" href="#">READ MORE</a>
+                                <h2 class="mb-3">{{ $category }} 8</h2>
+                                <a class="sell-btn" href="#">(Sell Tickets)</a>
                             </div>
                         </div>
                     </div>
-                    <div class="explore-card mb-4 col-md-4">
-                        <div class="explore-wrapper">
-                            <div class="image-header">
-                                <img src="http://testsite.eastbayloop.com/images/explore-img9.png"/>
-                            </div>
+                    <div class="default-card col-md-4 mb-4">
+                        <div class="default-wrapper">
+                            <img src="http://testsite.eastbayloop.com/images/adventure9.png" />
                             <div class="content">
-                                <h2>ART</h2>
-                                <a class="read-more-btn mb-3 float-none" href="#">READ MORE</a>
+                                <h2 class="mb-3">{{ $category }} 9</h2>
+                                <a class="sell-btn" href="#">(Sell Tickets)</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
+            <!-- EVENTS -->
             <section class="custom-section">
                 <div class="section-header">
                     <p class="title text-uppercase text-center">EVENTS</p>
+                    <p class="content text-center">Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vivamus suscipit tortor eget felis porttitor volutpat.</p>
                 </div>
                 <div class="section-content">
                     <div class="row">

@@ -41,6 +41,16 @@
 }
 
 @font-face {
+    font-family: BarlowLight;
+    src: url("/fonts/vendor/barlow/Barlow-Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: BarlowBold;
+    src: url("/fonts/vendor/barlow/Barlow-Bold.otf") format("opentype");
+}
+
+@font-face {
     font-family: BarlowSemiCondensed;
     font-style: normal;
 	font-weight: bold;
