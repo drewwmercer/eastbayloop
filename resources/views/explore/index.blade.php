@@ -26,7 +26,7 @@
                             </div>
                             <div class="content">
                                 <h2>NIGHTLIFE/DAYCLUB</h2>
-                                <a class="read-more-btn mb-3 float-none" href="#">READ MORE</a>
+                                <a class="read-more-btn mb-3 float-none" href="{{ route('explore-subpage', ['category' => 'nightlife']) }}">READ MORE</a>
                             </div>
                         </div>
                     </div>
@@ -37,7 +37,7 @@
                             </div>
                             <div class="content">
                                 <h2>PET CLUB</h2>
-                                <a class="read-more-btn mb-3 float-none" href="{{ route('explore-subpage', ['category' => 'PET CLUB']) }}">READ MORE</a>
+                                <a class="read-more-btn mb-3 float-none" href="{{ route('explore-subpage', ['category' => 'pet Club']) }}">READ MORE</a>
                             </div>
                         </div>
                     </div>
@@ -48,7 +48,7 @@
                             </div>
                             <div class="content">
                                 <h2>PAMPER</h2>
-                                <a class="read-more-btn mb-3 float-none" href="#">READ MORE</a>
+                                <a class="read-more-btn mb-3 float-none" href="{{ route('explore-subpage', ['category' => 'pamper']) }}">READ MORE</a>
                             </div>
                         </div>
                     </div>
@@ -59,7 +59,7 @@
                             </div>
                             <div class="content">
                                 <h2>GOLF/ RECREATION</h2>
-                                <a class="read-more-btn mb-3 float-none" href="#">READ MORE</a>
+                                <a class="read-more-btn mb-3 float-none" href="{{ route('explore-subpage', ['category' => 'golf & Recreation']) }}">READ MORE</a>
                             </div>
                         </div>
                     </div>
@@ -69,8 +69,8 @@
                                 <img src="http://testsite.eastbayloop.com/images/explore-img6.png"/>
                             </div>
                             <div class="content">
-                                <h2>KIDS LOOP</h2>
-                                <a class="read-more-btn mb-3 float-none" href="#">READ MORE</a>
+                                <h2>LOOP KIDS</h2>
+                                <a class="read-more-btn mb-3 float-none" href="{{ route('explore-subpage', ['category' => 'loop Kids']) }}">READ MORE</a>
                             </div>
                         </div>
                     </div>
@@ -81,7 +81,7 @@
                             </div>
                             <div class="content">
                                 <h2>LOCAL SHOPS AND SHOPPING</h2>
-                                <a class="read-more-btn mb-3 float-none" href="#">READ MORE</a>
+                                <a class="read-more-btn mb-3 float-none" href="{{ route('explore-subpage', ['category' => 'local Shops and Shopping']) }}">READ MORE</a>
                             </div>
                         </div>
                     </div>
@@ -92,7 +92,7 @@
                             </div>
                             <div class="content">
                                 <h2>FITNESS</h2>
-                                <a class="read-more-btn mb-3 float-none" href="#">READ MORE</a>
+                                <a class="read-more-btn mb-3 float-none" href="{{ route('explore-subpage', ['category' => 'fitness']) }}">READ MORE</a>
                             </div>
                         </div>
                     </div>
@@ -103,7 +103,7 @@
                             </div>
                             <div class="content">
                                 <h2>ART</h2>
-                                <a class="read-more-btn mb-3 float-none" href="#">READ MORE</a>
+                                <a class="read-more-btn mb-3 float-none" href="{{ route('explore-subpage', ['category' => 'art']) }}">READ MORE</a>
                             </div>
                         </div>
                     </div>

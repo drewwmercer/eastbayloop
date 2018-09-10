@@ -9,9 +9,9 @@
             </slider>
 
             <section class="explore-cards">
-                <div class="col-md-12 explore-header mb-3">
-                    <h2 class="display-inline">{{ $category }}</h2>
-                    <div class="filter-bar">
+                <div class="row explore-header mb-3">
+                    <h2 class="display-inline col-md-8">{{ $category }}</h2>
+                    <div class="filter-bar col-md-4">
                         <span>
                             <select>
                                 <option value="Select">Location Filter</option>
@@ -23,87 +23,17 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="default-card col-md-4 mb-4">
-                        <div class="default-wrapper">
-                            <img src="http://testsite.eastbayloop.com/images/adventure1.png" />
-                            <div class="content">
-                                <h2 class="mb-3">{{ $category }} 1</h2>
-                                <a class="sell-btn" href="#">(Sell Tickets)</a>
+                    @for($i = 1; $i < 10; $i++)
+                        <div class="default-card col-md-4 mb-4">
+                            <div class="default-wrapper">
+                                <img src="http://testsite.eastbayloop.com/images/adventure{{ $i }}.png" />
+                                <div class="content">
+                                    <h2 class="mb-3">{{ $category }} {{ $i }}</h2>
+                                    <a class="sell-btn" href="#">(Sell Tickets)</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="default-card col-md-4 mb-4">
-                        <div class="default-wrapper">
-                            <img src="http://testsite.eastbayloop.com/images/adventure2.png" />
-                            <div class="content">
-                                <h2 class="mb-3">{{ $category }} 2</h2>
-                                <a class="sell-btn" href="#">(Sell Tickets)</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="default-card col-md-4 mb-4">
-                        <div class="default-wrapper">
-                            <img src="http://testsite.eastbayloop.com/images/adventure3.png" />
-                            <div class="content">
-                                <h2 class="mb-3">{{ $category }} 3</h2>
-                                <a class="sell-btn" href="#">(Sell Tickets)</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="default-card col-md-4 mb-4">
-                        <div class="default-wrapper">
-                            <img src="http://testsite.eastbayloop.com/images/adventure4.png" />
-                            <div class="content">
-                                <h2 class="mb-3">{{ $category }} 4</h2>
-                                <a class="sell-btn" href="#">(Sell Tickets)</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="default-card col-md-4 mb-4">
-                        <div class="default-wrapper">
-                            <img src="http://testsite.eastbayloop.com/images/adventure5.png" />
-                            <div class="content">
-                                <h2 class="mb-3">{{ $category }} 5</h2>
-                                <a class="sell-btn" href="#">(Sell Tickets)</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="default-card col-md-4 mb-4">
-                        <div class="default-wrapper">
-                            <img src="http://testsite.eastbayloop.com/images/adventure6.png" />
-                            <div class="content">
-                                <h2 class="mb-3">{{ $category }} 6</h2>
-                                <a class="sell-btn" href="#">(Sell Tickets)</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="default-card col-md-4 mb-4">
-                        <div class="default-wrapper">
-                            <img src="http://testsite.eastbayloop.com/images/adventure7.png" />
-                            <div class="content">
-                                <h2 class="mb-3">{{ $category }} 7</h2>
-                                <a class="sell-btn" href="#">(Sell Tickets)</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="default-card col-md-4 mb-4">
-                        <div class="default-wrapper">
-                            <img src="http://testsite.eastbayloop.com/images/adventure8.png" />
-                            <div class="content">
-                                <h2 class="mb-3">{{ $category }} 8</h2>
-                                <a class="sell-btn" href="#">(Sell Tickets)</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="default-card col-md-4 mb-4">
-                        <div class="default-wrapper">
-                            <img src="http://testsite.eastbayloop.com/images/adventure9.png" />
-                            <div class="content">
-                                <h2 class="mb-3">{{ $category }} 9</h2>
-                                <a class="sell-btn" href="#">(Sell Tickets)</a>
-                            </div>
-                        </div>
-                    </div>
+                    @endfor
                 </div>
             </section>
 

@@ -14241,7 +14241,7 @@ img {
 .explore-slider {
   text-align: center;
   color: #ffffff !important;
-  font-size: 50px !important;
+  font-size: 50px;
   font-family: 'OpenSans-Extrabold' !important;
   text-transform: uppercase !important;
 }
@@ -14277,7 +14277,10 @@ img {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  float: right;
+  text-align: right;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .explore-cards .explore-header .filter-bar .filter-btn {
@@ -14289,6 +14292,9 @@ img {
   text-align: center;
   padding: 5.5px 22px;
   border-radius: 3px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .explore-cards .explore-header .filter-bar .filter-btn:hover {
@@ -14297,7 +14303,7 @@ img {
 
 .explore-cards .explore-header .filter-bar span {
   position: relative;
-  min-width: 200px;
+  max-width: 200px;
 }
 
 .explore-cards .explore-header .filter-bar span select {
@@ -14320,6 +14326,7 @@ img {
   z-index: 1;
   background: none;
   cursor: pointer;
+  padding-right: 35px;
 }
 
 .explore-cards .explore-header .filter-bar span:after {
@@ -14363,6 +14370,8 @@ img {
 .explore-cards .default-card .default-wrapper .content h2 {
   color: #ffffff;
   font-family: BarlowLight;
+  text-align: center;
+  width: 80%;
 }
 
 .explore-cards .explore-card {
@@ -14401,6 +14410,17 @@ img {
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 768px) {
+  .sell-btn {
+    padding: 5px 15px;
+    font-size: 13px;
+  }
+
+  .explore-cards .default-card .default-wrapper .content h2 {
+    text-overflow: ellipsis;
+    max-height: 70%;
+    font-size: 18px;
+  }
+
   .explore-cards .explore-card {
     padding: 0px 15px;
   }

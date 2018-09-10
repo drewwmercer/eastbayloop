@@ -1,7 +1,7 @@
 .explore-slider {
     text-align: center;
     color: #ffffff !important;
-    font-size: 50px !important;
+    font-size: 50px;
     font-family: 'OpenSans-Extrabold' !important;
     text-transform: uppercase !important;
 }
@@ -35,7 +35,8 @@
 
         .filter-bar {
             display: inline-flex;
-            float: right;
+            text-align: right;
+            justify-content: flex-end;
 
             .filter-btn {
                 font-size: 16px;
@@ -46,6 +47,7 @@
                 text-align: center;
                 padding: 5.5px 22px;
                 border-radius: 3px;
+                height: fit-content;
 
                 &:hover {
                     color: #ffffff;
@@ -54,7 +56,7 @@
 
             span {
                 position: relative;
-                min-width: 200px;
+                max-width: 200px;
                 
                 select {
                     outline: none;
@@ -76,6 +78,7 @@
                     z-index: 1;
                     background: none;
                     cursor: pointer;
+                    padding-right: 35px;
                 }
 
                 &:after {
@@ -111,6 +114,8 @@
                 h2 {
                     color: #ffffff;
                     font-family: BarlowLight;
+                    text-align: center;
+                    width: 80%;
                 }
             }
         }
@@ -154,7 +159,28 @@
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 768px) { 
+    .sell-btn {
+        padding: 5px 15px;
+        font-size: 13px;
+    }
+    
     .explore-cards {
+        .explore-header {
+            .filter-bar {
+            }
+        }
+        .default-card {
+            .default-wrapper {
+                .content {
+                    h2 {
+                        text-overflow: ellipsis;
+                        max-height: 70%;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+
         .explore-card {
             padding: 0px 15px; 
 
