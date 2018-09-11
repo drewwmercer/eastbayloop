@@ -31,5 +31,7 @@ Route::get('/explore', 'ExploreController@index')->name('explore-page');
 Route::get('/explore/{category}', 'ExploreController@show')->name('explore-subpage');
 Route::get('/events', 'EventsController@index')->name('events-page');
 Route::get('/fashion', 'FashionController@index')->name('fashion-page');
+Route::get('/fashion/product', 'FashionController@showProduct')->name('fashion-product-page');
+
 
 //Route::get('/home', 'HomeController@index')->name('home');

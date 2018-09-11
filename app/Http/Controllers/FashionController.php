@@ -10,4 +10,9 @@ class FashionController extends Controller
     {
         return view('fashion.index');
     }
+
+    public function showProduct()
+    {
+        return view('fashion.product-page');
+    }
 }

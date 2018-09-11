@@ -1,7 +1,7 @@
 @extends('layouts.main-page')
 
 @section('content')
-    <events-page inline-template>
+    <fashion-page inline-template>
         <main>
             <slider :data="[{img: 'http://testsite.eastbayloop.com/images/fashion-banner.jpeg', text: 'FASHION', class: 'explore-slider'},
                             {img: 'http://testsite.eastbayloop.com/images/fashion-banner.jpeg', text: 'FASHION', class: 'explore-slider'},
@@ -15,50 +15,62 @@
                 <div class="row">
                     <div class="default-card col-md-4 mb-4">
                         <div class="default-wrapper">
-                            <img src="http://testsite.eastbayloop.com/images/f1.jpeg" />
-                            <div class="content">
-                                <h2 class="mb-3">Local Designers/Fashion Houses</h2>
-                            </div>
+                            <a href="{{ route('fashion-product-page') }}">
+                                <img src="http://testsite.eastbayloop.com/images/f1.jpeg" />
+                                <div class="content">
+                                    <h2 class="mb-3">Local Designers/Fashion Houses</h2>
+                                </div>
+                            </a>
                         </div>
                     </div>
                     <div class="default-card col-md-4 mb-4">
                         <div class="default-wrapper">
-                            <img src="http://testsite.eastbayloop.com/images/f2.jpeg" />
-                            <div class="content">
-                                <h2 class="mb-3">Spotlight On</h2>
-                            </div>
+                            <a href="{{ route('fashion-product-page') }}">
+                                <img src="http://testsite.eastbayloop.com/images/f2.jpeg" />
+                                <div class="content">
+                                    <h2 class="mb-3">Spotlight On</h2>
+                                </div>
+                            </a>
                         </div>
                     </div>
                     <div class="default-card col-md-4 mb-4">
                         <div class="default-wrapper">
-                            <img src="http://testsite.eastbayloop.com/images/f3.jpeg" />
-                            <div class="content">
-                                <h2 class="mb-3">Haute Couture</h2>
-                            </div>
+                            <a href="{{ route('fashion-product-page') }}">
+                                <img src="http://testsite.eastbayloop.com/images/f3.jpeg" />
+                                <div class="content">
+                                    <h2 class="mb-3">Haute Couture</h2>
+                                </div>
+                            </a>
                         </div>
                     </div>
                     <div class="default-card col-md-4 mb-4">
                         <div class="default-wrapper">
-                            <img src="http://testsite.eastbayloop.com/images/f4.jpeg" />
-                            <div class="content">
-                                <h2 class="mb-3">New Arrivals</h2>
-                            </div>
+                            <a href="{{ route('fashion-product-page') }}">
+                                <img src="http://testsite.eastbayloop.com/images/f4.jpeg" />
+                                <div class="content">
+                                    <h2 class="mb-3">New Arrivals</h2>
+                                </div>
+                            </a>
                         </div>
                     </div>
                     <div class="default-card col-md-4 mb-4">
                         <div class="default-wrapper">
-                            <img src="http://testsite.eastbayloop.com/images/f5.jpeg" />
-                            <div class="content">
-                                <h2 class="mb-3">Exclusively The Loops</h2>
-                            </div>
+                            <a href="{{ route('fashion-product-page') }}">
+                                <img src="http://testsite.eastbayloop.com/images/f5.jpeg" />
+                                <div class="content">
+                                    <h2 class="mb-3">Exclusively The Loops</h2>
+                                </div>
+                            </a>
                         </div>
                     </div>
                     <div class="default-card col-md-4 mb-4">
                         <div class="default-wrapper">
-                            <img src="http://testsite.eastbayloop.com/images/f6.jpeg" />
-                            <div class="content">
-                                <h2 class="mb-3">Shop Now!</h2>
-                            </div>
+                            <a href="{{ route('fashion-product-page') }}">
+                                <img src="http://testsite.eastbayloop.com/images/f6.jpeg" />
+                                <div class="content">
+                                    <h2 class="mb-3">Shop Now!</h2>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -249,5 +261,5 @@
                 </div>
             </section>
         </main>
-    </events-page>
+    </fashion-page>
 @endsection

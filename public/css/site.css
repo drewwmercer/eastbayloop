@@ -14243,7 +14243,6 @@ img {
   color: #ffffff !important;
   font-size: 50px;
   font-family: 'OpenSans-Extrabold' !important;
-  text-transform: uppercase !important;
 }
 
 .sell-btn {
@@ -14604,6 +14603,126 @@ img {
   width: 80%;
 }
 
+.product-cards {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.product-cards .product-header h2 {
+  display: inline-block;
+  color: #000000;
+  font-size: 16px;
+  margin-top: 11px;
+  text-transform: uppercase;
+}
+
+.product-cards .product-header span {
+  position: relative;
+  display: inline-block;
+}
+
+.product-cards .product-header span select {
+  border: none;
+  text-transform: uppercase;
+  outline: none;
+  width: 100%;
+  display: inline-block;
+  font-size: 16px;
+  appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -webkit-appearance: none;
+  margin: 0;
+  padding: 5px;
+  height: 35px;
+  color: black;
+  position: relative;
+  z-index: 1;
+  background: none;
+  cursor: pointer;
+  padding-right: 35px;
+}
+
+.product-cards .product-header span:after {
+  position: absolute;
+  right: 14px;
+  content: "\F0D7";
+  font-family: 'FontAwesome';
+  display: inline-block;
+  font-size: 22px;
+  color: #545454;
+  top: 2px;
+}
+
+.product-cards .product-card {
+  padding: 35px;
+}
+
+.product-cards .product-card .image-header {
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #cccccc;
+}
+
+.product-cards .product-card .image-header img {
+  width: auto;
+  height: auto;
+}
+
+.product-cards .product-card .product-content {
+  padding-top: 10px;
+  color: #000000;
+}
+
+.product-cards .product-card .product-content .title {
+  font-size: 18px;
+  font-family: 'OpenSans-Light';
+}
+
+.product-cards .product-card .product-content .description {
+  font-family: 'OpenSans-Light';
+  font-size: 10px;
+  padding-bottom: 10px;
+}
+
+.product-cards .product-card .product-footer .price {
+  color: #000000;
+  font-family: 'OpenSans-Light';
+  font-size: 18px;
+}
+
+.product-cards .product-card .product-footer .read-more-link {
+  display: inline-block;
+  float: right;
+  color: #000000;
+  font-size: 15px;
+  font-family: 'OpenSans-Light';
+}
+
+.load-more {
+  margin-bottom: 30px;
+}
+
+.load-more a {
+  width: 170px;
+  display: inline-block;
+  text-align: center;
+  background: #191919;
+  border: 1px solid #191919;
+  color: #e4ff15;
+  font-size: 17px;
+  padding: 10px 0px;
+  text-transform: uppercase;
+}
+
+.load-more a:hover {
+  border: 1px solid #191919;
+  color: #191919;
+  background: #e4ff15;
+}
+
 .fashion-tabs {
   max-width: 1200px;
   width: 90%;
@@ -14643,6 +14762,16 @@ img {
     text-overflow: ellipsis;
     max-height: 70%;
     font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 960px) and (min-width: 768px) {
+  .product-cards .product-card .product-content .title {
+    font-size: 14px;
+  }
+
+  .product-cards .product-card .product-footer .price {
+    font-size: 14px;
   }
 }
 
