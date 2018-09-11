@@ -8,9 +8,9 @@
                 <div class="auth-btn">
                     <i class="fa fa-user" aria-hidden="true" id="dropdownAuthMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownAuthMenu">
-                        <a class="dropdown-item" href="{{ route('login') }}">Login</a>
+                        <a class="dropdown-item" href="{{ route('profile-page') }}">Login</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Sign up</a>
+                        <a class="dropdown-item" href="{{ route('profile-page') }}">Sign up</a>
                     </div>
                 </div>
                 <span class="menu" @click="toogleMenu">

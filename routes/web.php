@@ -33,6 +33,6 @@ Route::get('/events', 'EventsController@index')->name('events-page');
 Route::get('/fashion', 'FashionController@index')->name('fashion-page');
 Route::get('/fashion/products', 'FashionController@showProducts')->name('fashion-product-page');
 Route::get('/fashion/product', 'FashionController@showProduct')->name('fashion-per-product-page');
-
+Route::get('/profile', 'ProfileController@index')->name('profile-page');
 
 //Route::get('/home', 'HomeController@index')->name('home');
