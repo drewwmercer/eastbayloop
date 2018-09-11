@@ -104,9 +104,11 @@
                             @for($i = 1; $i < 4; $i++)
                                 <div class="fashion-tab-card col-md-4">
                                     <div class="fashion-tab-wrapper">
-                                        <div class="image-header">
-                                            <img src="http://testsite.eastbayloop.com/images/woman{{ $i }}.jpeg"/>
-                                        </div>
+                                        <a href="{{ route('fashion-per-product-page') }}">                                        
+                                            <div class="image-header">
+                                                <img src="http://testsite.eastbayloop.com/images/woman{{ $i }}.jpeg"/>
+                                            </div>
+                                        </a>
                                     </div>
                                 </div>
                             @endfor
@@ -117,9 +119,11 @@
                             @for($i = 1; $i < 4; $i++)
                                 <div class="fashion-tab-card col-md-4">
                                     <div class="fashion-tab-wrapper">
-                                        <div class="image-header">
-                                            <img src="http://testsite.eastbayloop.com/images/f{{ $i }}.jpeg"/>
-                                        </div>
+                                        <a href="{{ route('fashion-per-product-page') }}">
+                                            <div class="image-header">
+                                                <img src="http://testsite.eastbayloop.com/images/f{{ $i }}.jpeg"/>
+                                            </div>
+                                        </a>
                                     </div>
                                 </div>
                             @endfor
@@ -130,9 +134,11 @@
                             @for($i = 1; $i < 4; $i++)
                                 <div class="fashion-tab-card col-md-4">
                                     <div class="fashion-tab-wrapper">
-                                        <div class="image-header">
-                                            <img src="http://testsite.eastbayloop.com/images/pamper{{ $i }}.png"/>
-                                        </div>
+                                        <a href="{{ route('fashion-per-product-page') }}">                                        
+                                            <div class="image-header">
+                                                <img src="http://testsite.eastbayloop.com/images/pamper{{ $i }}.png"/>
+                                            </div>
+                                        </a>
                                     </div>
                                 </div>
                             @endfor
@@ -143,9 +149,11 @@
                             @for($i = 1; $i < 4; $i++)
                                 <div class="fashion-tab-card col-md-4">
                                     <div class="fashion-tab-wrapper">
-                                        <div class="image-header">
-                                            <img src="http://testsite.eastbayloop.com/images/events-img{{ $i }}.jpeg"/>
-                                        </div>
+                                        <a href="{{ route('fashion-per-product-page') }}">
+                                            <div class="image-header">
+                                                <img src="http://testsite.eastbayloop.com/images/events-img{{ $i }}.jpeg"/>
+                                            </div>
+                                        </a>
                                     </div>
                                 </div>
                             @endfor
@@ -156,9 +164,11 @@
                             @for($i = 1; $i < 4; $i++)
                                 <div class="fashion-tab-card col-md-4">
                                     <div class="fashion-tab-wrapper">
-                                        <div class="image-header">
-                                            <img src="http://testsite.eastbayloop.com/images/adventure{{ $i }}.png"/>
-                                        </div>
+                                        <a href="{{ route('fashion-per-product-page') }}">
+                                            <div class="image-header">
+                                                <img src="http://testsite.eastbayloop.com/images/adventure{{ $i }}.png"/>
+                                            </div>
+                                        </a>
                                     </div>
                                 </div>
                             @endfor
@@ -169,9 +179,11 @@
                             @for($i = 1; $i < 4; $i++)
                                 <div class="fashion-tab-card col-md-4">
                                     <div class="fashion-tab-wrapper">
-                                        <div class="image-header">
-                                            <img src="http://testsite.eastbayloop.com/images/nightlife{{ $i }}.png"/>
-                                        </div>
+                                        <a href="{{ route('fashion-per-product-page') }}">
+                                            <div class="image-header">
+                                                <img src="http://testsite.eastbayloop.com/images/nightlife{{ $i }}.png"/>
+                                            </div>
+                                        </a>
                                     </div>
                                 </div>
                             @endfor
