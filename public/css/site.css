@@ -13581,6 +13581,11 @@ a.text-dark:focus {
 }
 
 @font-face {
+  font-family: BarlowBlack;
+  src: url("/fonts/vendor/barlow/Barlow-Black.otf") format("opentype");
+}
+
+@font-face {
   font-family: BarlowSemiCondensed;
   font-style: normal;
   font-weight: bold;
@@ -14674,6 +14679,7 @@ img {
 .product-cards .product-card .product-content {
   padding-top: 10px;
   color: #000000;
+  position: relative;
 }
 
 .product-cards .product-card .product-content .title {
@@ -14699,6 +14705,38 @@ img {
   color: #000000;
   font-size: 15px;
   font-family: 'OpenSans-Light';
+}
+
+.star-ratings-css {
+  unicode-bidi: bidi-override;
+  color: #c5c5c5;
+  font-size: 15px;
+  height: 25px;
+  width: 79px;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0;
+  text-shadow: 0px 1px 0 #a2a2a2;
+}
+
+.star-ratings-css-top {
+  color: #e7711b;
+  padding: 0;
+  height: inherit;
+  position: absolute;
+  z-index: 1;
+  display: block;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.star-ratings-css-bottom {
+  padding: 0;
+  display: block;
+  z-index: 0;
 }
 
 .load-more {
@@ -14757,11 +14795,193 @@ img {
   cursor: pointer;
 }
 
+.product-details {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 30px;
+  color: #4b3e3e;
+}
+
+.product-details .header {
+  padding-bottom: 30px;
+}
+
+.product-details .header .left-text {
+  font-family: BarlowLight;
+  font-size: 21px;
+}
+
+.product-details .header .image {
+  text-align: center;
+}
+
+.product-details .header .image img {
+  width: auto;
+  height: auto;
+}
+
+.product-details .header .price-content {
+  font-family: BarlowLight;
+}
+
+.product-details .header .price-content .rating .star-ratings-css {
+  width: auto;
+  position: relative;
+  display: inline-block;
+}
+
+.product-details .header .price-content .rating .number {
+  padding-left: 15px;
+  padding-right: 15px;
+  word-spacing: 10px;
+}
+
+.product-details .header .price-content .rating a {
+  color: inherit;
+}
+
+.product-details .header .price-content .rating a:hover {
+  color: #000000;
+}
+
+.product-details .header .price-content p.description {
+  font-family: BarlowLight;
+  font-size: 20px;
+}
+
+.product-details .header .price-content p.description.b {
+  font-family: BarlowSemiCondensed;
+}
+
+.product-details .header .price-content .selects span {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.product-details .header .price-content .selects span select {
+  border: 1px solid #aaaaaa;
+  text-transform: uppercase;
+  outline: none;
+  width: 100%;
+  display: inline-block;
+  font-size: 16px;
+  appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -webkit-appearance: none;
+  margin: 0;
+  padding: 8px;
+  color: rgba(0, 0, 0, 0.8);
+  position: relative;
+  z-index: 1;
+  background: none;
+  cursor: pointer;
+  padding-right: 35px;
+  padding-left: 19px;
+}
+
+.product-details .header .price-content .selects span:after {
+  position: absolute;
+  right: 14px;
+  content: "\F0D7";
+  font-family: 'FontAwesome';
+  display: inline-block;
+  font-size: 22px;
+  color: #545454;
+  top: 2px;
+}
+
+.product-details .header .price-content .price-details {
+  font-size: 20px;
+}
+
+.product-details .header .price-content .price-details .price {
+  font-family: BarlowSemiCondensed;
+  float: right;
+}
+
+.product-details .header .price-content .buttons-section a {
+  width: 170px;
+  display: inline-block;
+  text-align: center;
+  background: #191919;
+  border: 1px solid #191919;
+  color: #e4ff15;
+  font-size: 17px;
+  padding: 10px 0px;
+  text-transform: uppercase;
+}
+
+.product-details .header .price-content .buttons-section a:hover {
+  border: 1px solid #191919;
+  color: #191919;
+  background: #e4ff15;
+}
+
+.product-details .header .price-content .buttons-section i {
+  font-size: 23px;
+  cursor: pointer;
+  color: #808080;
+}
+
+.product-details .description {
+  padding-bottom: 50px;
+}
+
+.product-details .description .tabs {
+  padding-right: unset;
+}
+
+.product-details .description .tabs .nav {
+  border: 1px solid #858585;
+  border-right: unset;
+  border-bottom: unset;
+  overflow: hidden;
+}
+
+.product-details .description .tabs .nav a {
+  font-family: BarlowBlack;
+  color: #858585;
+  font-size: 20px;
+  border-bottom: 1px solid #858585;
+  padding: .6rem 1.5rem;
+}
+
+.product-details .description .tabs .nav a.active {
+  border-left: 10px solid #e4ff14;
+  color: #e4ff14;
+  background: #000000;
+}
+
+.product-details .description .content {
+  font-family: BarlowLight;
+  border: 1px solid #858585;
+  padding-left: unset;
+}
+
+.product-details .description .content .tab-pane {
+  padding: 10px 20px;
+}
+
+.barlow-light {
+  font-family: BarlowLight;
+}
+
+.font-size-30 {
+  font-size: 30px !important;
+}
+
 @media only screen and (max-width: 1024px) and (min-width: 768px) {
   .fashion-cards .default-card .default-wrapper .content h2 {
     text-overflow: ellipsis;
     max-height: 70%;
     font-size: 18px;
+  }
+
+  .product-details .header .price-content .buttons-section a {
+    width: 115px;
   }
 }
 

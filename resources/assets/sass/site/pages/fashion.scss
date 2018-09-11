@@ -114,6 +114,7 @@
         .product-content {
             padding-top: 10px;
             color: #000000;
+            position: relative;
 
             .title {
                 font-size: 18px;
@@ -124,7 +125,7 @@
                 font-family: 'OpenSans-Light';
                 font-size: 10px;
                 padding-bottom: 10px;
-            }
+            }            
         }
 
         .product-footer {
@@ -142,6 +143,38 @@
                 font-family: 'OpenSans-Light';
             }
         }
+    }
+}
+
+.star-ratings-css {
+    unicode-bidi: bidi-override;
+    color: #c5c5c5;
+    font-size: 15px;
+    height: 25px;
+    width: 79px;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0;
+    text-shadow: 0px 1px 0 #a2a2a2;
+    
+    &-top {
+      color: #e7711b;
+      padding: 0;
+      height: inherit;
+      position: absolute;
+      z-index: 1;
+      display: block;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+    }
+
+    &-bottom {
+        padding: 0;
+        display: block;
+        z-index: 0;
     }
 }
 
@@ -202,6 +235,193 @@
     }
 }
 
+.product-details {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 30px;
+    color: #4b3e3e;
+
+    .header {
+        padding-bottom: 30px;
+
+        .left-text {
+            font-family: BarlowLight;
+            font-size: 21px;
+        }
+
+        .image {
+            text-align: center;
+
+            img {
+                width: auto;
+                height: auto;
+            }
+        }
+
+        .price-content {
+            font-family: BarlowLight;
+            
+            .rating {
+                .star-ratings-css {
+                    width: auto;
+                    position: relative;
+                    display: inline-block;
+                }
+
+                .number {
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    word-spacing: 10px;
+                }
+
+                a {
+                    color: inherit;
+
+                    &:hover {
+                        color: #000000;
+                    }
+                }
+            }
+
+            p {
+                &.description {
+                    font-family: BarlowLight;
+                    font-size: 20px;
+
+                    &.b {
+                        font-family: BarlowSemiCondensed;
+                    }
+                }
+            }
+
+            .selects {
+                span {
+                    position: relative;
+                    display: inline-block;
+                    width: 100%;
+                    
+                    select {
+                        border: 1px solid #aaaaaa;
+                        text-transform: uppercase;
+                        outline: none;
+                        width: 100%;
+                        display: inline-block;
+                        font-size: 16px;
+                        appearance: none;
+                        -moz-appearance: none;
+                        -ms-appearance: none;
+                        -webkit-appearance: none;
+                        margin: 0;
+                        padding: 8px;
+                        color: rgba(0, 0, 0, 0.8);
+                        position: relative;
+                        z-index: 1;
+                        background: none;
+                        cursor: pointer;
+                        padding-right: 35px;
+                        padding-left: 19px;
+                    }
+        
+                    &:after {
+                        position: absolute;
+                        right: 14px;
+                        content: "\F0D7";
+                        font-family: 'FontAwesome';
+                        display: inline-block;
+                        font-size: 22px;
+                        color: #545454;
+                        top: 2px;
+                    }
+                }     
+            }
+
+            .price-details {
+                font-size: 20px;
+
+                .price {
+                    font-family: BarlowSemiCondensed;
+                    float: right;
+                }
+            }
+
+            .buttons-section {
+                a {
+                    width: 170px;
+                    display: inline-block;
+                    text-align: center;
+                    background: #191919;
+                    border: 1px solid #191919;
+                    color: #e4ff15;
+                    font-size: 17px;
+                    padding: 10px 0px;
+                    text-transform: uppercase;
+            
+                    &:hover {
+                        border: 1px solid #191919;
+                        color: #191919;
+                        background: #e4ff15;
+                    }
+                }
+
+                i {
+                    font-size: 23px;
+                    cursor: pointer;
+                    color: #808080;
+                }
+            }
+        }
+    }
+
+    .description {
+        padding-bottom: 50px;
+
+        .tabs {
+            padding-right: unset;
+            
+            .nav {
+                border: 1px solid #858585;
+                border-right: unset;
+                border-bottom: unset;
+                overflow: hidden;
+
+                a {
+                    font-family: BarlowBlack;
+                    color: #858585;
+                    font-size: 20px;
+                    border-bottom: 1px solid #858585;
+                    padding: .6rem 1.5rem;         
+                    
+                    &.active {
+                        border-left: 10px solid #e4ff14;
+                        color: #e4ff14;
+                        background: #000000;
+                    }
+                }
+            }
+        }
+        
+
+        .content {
+            font-family: BarlowLight;
+            border: 1px solid #858585;
+            padding-left: unset;
+            
+            .tab-pane {
+                padding: 10px 20px;
+            }
+        }
+    }
+}
+
+.barlow-light {
+    font-family: BarlowLight;
+}
+
+.font-size-30 {
+    font-size: 30px !important;
+}
+
 @media only screen and (max-width: 1024px) and (min-width: 768px) { 
     .fashion-cards {
         .default-card {
@@ -211,6 +431,18 @@
                         text-overflow: ellipsis;
                         max-height: 70%;
                         font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+
+    .product-details {
+        .header {
+            .price-content {
+                .buttons-section {
+                    a {
+                        width: 115px;
                     }
                 }
             }

@@ -20,24 +20,41 @@
                     @for($i = 1; $i < 10; $i++)
                         <div class="product-card col-md-4 mb-4">
                             <div class="product-wrapper">
-                                <div class="image-header">
-                                    <img src="http://testsite.eastbayloop.com/images/product1.png" />
-                                </div>
-                                <div class="product-content">
-                                    <h2 class="title">Product title_0{{ $i }}</h2>
-                                    <h3 class="description">Bras & panties</h3>
-                                </div>
-                                <div class="product-footer">
-                                    <span class="price">$ 19.00</span>
-                                    <a class="read-more-link" href="#">Read More</a>
-                                </div>
+                                <a href="{{ route('fashion-per-product-page') }}">
+                                    <div class="image-header">
+                                        <img src="http://testsite.eastbayloop.com/images/product1.png" />
+                                    </div>
+                                    <div class="product-content">
+                                        <h2 class="title">Product title_0{{ $i }}</h2>
+                                        <h3 class="description">Bras & panties</h3>
+                                        <div class="star-ratings-css">
+                                            <div class="star-ratings-css-top" style="width: 61%">
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                            </div>
+                                            <div class="star-ratings-css-bottom">
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-footer">
+                                        <span class="price">$ 19.00</span>
+                                        <a class="read-more-link" href="#">Read More</a>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     @endfor
                 </div>
-
                 <div class="load-more col-md-12 text-center">
-                    <a class="" href="#">LOAD MORE</a>  
+                    <a href="{{ route('fashion-per-product-page') }}">LOAD MORE</a>  
                 </div>
             </section>
         </main>

@@ -11,8 +11,13 @@ class FashionController extends Controller
         return view('fashion.index');
     }
 
-    public function showProduct()
+    public function showProducts()
     {
         return view('fashion.product-page');
+    }
+
+    public function showProduct()
+    {
+        return view('fashion.per-product');
     }
 }
