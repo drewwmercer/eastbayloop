@@ -47,5 +47,6 @@ Route::get('/music/dj', 'MusicController@show')->name('music-dj-page');
 Route::get('/music/loop-entertainment', 'MusicController@showLoopEntertainment')->name('music-loop-entertainment-page');
 Route::get('/music/venues', 'MusicController@showVenues')->name('music-venues-page');
 Route::get('/taste', 'TasteController@index')->name('taste-page');
+Route::get('/taste/bar', 'TasteController@showBar')->name('taste-bar-page');
 
 //Route::get('/home', 'HomeController@index')->name('home');

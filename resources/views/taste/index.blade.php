@@ -127,7 +127,7 @@
                 </div>
                 <div class="col-md-12 banner-card p-0">
                     <img src="{{ asset('assets/img/taste/2.png') }}" />
-                    <a href="#">
+                    <a href="{{ route('taste-bar-page') }}">
                         <div class="mask">
                             <h2>Bars/Breweries/Distilleries</h2>
                         </div>

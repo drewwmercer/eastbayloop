@@ -10,4 +10,9 @@ class TasteController extends Controller
     {
         return view('taste.index');
     }
+
+    public function showBar()
+    {
+        return view('taste.bar');
+    }
 }
