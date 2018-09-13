@@ -20,4 +20,9 @@ class FashionController extends Controller
     {
         return view('fashion.per-product');
     }
+
+    public function designerHouseShow()
+    {
+        return view('fashion.designer-house');
+    }
 }

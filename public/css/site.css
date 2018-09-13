@@ -14248,6 +14248,7 @@ img {
   color: #ffffff !important;
   font-size: 50px;
   font-family: 'OpenSans-Extrabold' !important;
+  padding: 0px 200px !important;
 }
 
 .sell-btn {
@@ -14606,6 +14607,67 @@ img {
   text-align: center;
   font-size: 25px;
   width: 80%;
+}
+
+.designer-product {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.designer-product .designer-card .designer-wrapper {
+  -webkit-box-shadow: 0px 0px 10px rgba(1, 1, 1, 0.3);
+          box-shadow: 0px 0px 10px rgba(1, 1, 1, 0.3);
+}
+
+.designer-product .designer-card .designer-wrapper .image-header img {
+  width: 100%;
+}
+
+.designer-product .designer-card .designer-wrapper .content {
+  position: relative;
+  padding: 15px;
+}
+
+.designer-product .designer-card .designer-wrapper .content h2 {
+  font-family: BarlowLight;
+  margin-bottom: 0;
+  font-size: 23px;
+}
+
+.designer-product .designer-card .designer-wrapper .content .category {
+  font-family: BarlowLight;
+  width: 100%;
+  color: #a8a9a8;
+  font-size: 16px;
+}
+
+.designer-product .designer-card .designer-wrapper .content .star-ratings-css {
+  position: relative;
+  left: 0;
+  right: unset;
+  margin: 0 0;
+  display: inline-block;
+}
+
+.designer-product .designer-card .designer-wrapper .content .price {
+  font-family: BarlowMedium;
+  float: right;
+  color: #6a6b6a;
+  font-size: 24px;
+}
+
+.designer-product .designer-card .designer-wrapper .content .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .product-cards {
@@ -15020,6 +15082,99 @@ img {
   padding-bottom: 30px;
 }
 
+.profile-page .title .black-btn {
+  font-family: Barlow;
+  font-size: 25px;
+  padding: 10px 20px;
+  background: black;
+  color: #ecff2d;
+}
+
+.profile-page .title .black-btn:hover {
+  color: #abb820;
+}
+
+.profile-page .info .info-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0px 0px 10px rgba(1, 1, 1, 0.3);
+          box-shadow: 0px 0px 10px rgba(1, 1, 1, 0.3);
+}
+
+.profile-page .info .info-block .info-title {
+  font-family: BarlowBold;
+  padding: 6px 0px;
+  background: black;
+  color: white;
+  text-align: center;
+  font-size: 21px;
+  position: relative;
+}
+
+.profile-page .info .info-block .info-title:before {
+  content: "";
+  position: absolute;
+  border: 10px solid black;
+  right: -10px;
+  bottom: 0px;
+  z-index: 100;
+  overflow: hidden;
+  top: 0px;
+}
+
+.profile-page .info .info-block .info-title:after {
+  content: "";
+  border: 10px solid black;
+  position: absolute;
+  right: -15px;
+  bottom: -9px;
+  border-top: 44px solid;
+  top: 0;
+  border-bottom: 6px solid;
+  border-right: 5px solid;
+}
+
+.profile-page .info .info-block .info-details div {
+  padding: 10px;
+  font-family: Barlow;
+  font-size: 17px;
+  position: relative;
+}
+
+.profile-page .info .info-block .info-details div i {
+  font-size: 17px;
+}
+
+.profile-page .info .info-block .info-details div span {
+  color: #929292;
+}
+
+.profile-page .info .info-block .info-social div {
+  padding: 5px 0px;
+  color: white;
+  font-size: 22px;
+}
+
+.profile-page .info .info-block .info-social .facebook {
+  background: #8093bb;
+}
+
+.profile-page .info .info-block .info-social .twitter {
+  background: #34bdf1;
+}
+
+.profile-page .info .info-block .info-social .youtube {
+  background: #fd4426;
+}
+
 .upcoming-event-card {
   max-height: 115px;
 }
@@ -15283,6 +15438,10 @@ img {
 
   .upcoming-event-card .event-wrapper .content .footer .description .text {
     font-size: 11px;
+  }
+
+  .profile-page .info .title a {
+    font-size: 16px;
   }
 }
 

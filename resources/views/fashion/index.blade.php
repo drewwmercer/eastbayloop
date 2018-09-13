@@ -15,7 +15,7 @@
                 <div class="row">
                     <div class="default-card col-md-4 mb-4">
                         <div class="default-wrapper">
-                            <a href="{{ route('fashion-product-page') }}">
+                            <a href="{{ route('fashion-designer-page') }}">
                                 <img src="http://testsite.eastbayloop.com/images/f1.jpeg" />
                                 <div class="content">
                                     <h2 class="mb-3">Local Designers/Fashion Houses</h2>

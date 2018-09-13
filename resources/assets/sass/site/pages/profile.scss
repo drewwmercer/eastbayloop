@@ -21,6 +21,97 @@
         font-family: BarlowBold;
         color: #4b3e3e;
         padding-bottom: 30px;
+
+        .black-btn {
+            font-family: Barlow;
+            font-size: 25px;
+            padding: 10px 20px;
+            background: black;
+            color: #ecff2d;
+
+            &:hover {
+                color: #abb820;
+            }
+        }
+    }
+
+    .info {
+        .info-block {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            box-shadow: 0px 0px 10px rgba(1, 1, 1, 0.3);
+
+            .info-title {
+                font-family: BarlowBold;
+                padding: 6px 0px;
+                background: black;
+                color: white;
+                text-align: center;
+                font-size: 21px;
+                position: relative;
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    border: 10px solid black;
+                    right: -10px;
+                    bottom: 0px;
+                    z-index: 100;
+                    overflow: hidden;
+                    top: 0px;
+                }
+
+                &:after {
+                    content: "";
+                    border: 10px solid black;
+                    position: absolute;
+                    right: -15px;
+                    bottom: -9px;
+                    border-top: 44px solid;
+                    top: 0;
+                    border-bottom: 6px solid;
+                    border-right: 5px solid;
+                }
+            }
+
+            .info-details {
+                div {
+                    padding: 10px;
+                    font-family: Barlow;
+                    font-size: 17px;
+                    position: relative;           
+                    
+                    i {
+                        font-size: 17px;
+                    }
+
+                    span {
+                        color: #929292;
+                    }
+                }
+            }
+
+            .info-social {
+                div {
+                    padding: 5px 0px;
+                    color: white;
+                    font-size: 22px;
+                }
+
+                .facebook {
+                    background: #8093bb;
+                }
+
+                .twitter {
+                    background: #34bdf1;
+                }
+
+                .youtube {
+                    background: #fd4426;
+                }
+            }
+        }
     }
 }
 
@@ -263,6 +354,16 @@
                             font-size: 11px;
                         }
                     }
+                }
+            }
+        }
+    }
+
+    .profile-page {
+        .info {
+            .title {
+                a {
+                    font-size: 16px;
                 }
             }
         }
