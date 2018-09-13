@@ -28,7 +28,7 @@
                     <li><a href="{{ route('explore-page') }}">EXPLORE</a></li>
                     <li><a href="{{ route('fashion-page') }}">FASHION</a></li>
                     <li><a href="taste.html">TASTE</a></li>
-                    <li><a href="market-place.html">LOCAL MARKETPLACE</a></li>
+                    <li><a href="{{ route('market-place-page') }}">LOCAL MARKETPLACE</a></li>
                     <li><a href="music.html">MUSIC</a></li>
                     <li><a href="stay-page.html">STAY</a></li>
                     <li><a href="{{ route('events-page') }}">EVENTS</a></li>
