@@ -13662,6 +13662,10 @@ footer .wrapper .socials i {
   cursor: pointer;
 }
 
+.font-barlow-bold {
+  font-family: BarlowBold;
+}
+
 .read-more-btn {
   width: 130px;
   display: inline-block;
@@ -15655,6 +15659,312 @@ img {
   color: #8f8f8f;
 }
 
+.music-venues .events-cards .events-header .filter-btns {
+  width: 40%;
+}
+
+.music-venues .m-upcoming-event-card .m-upcoming-event-wrapper .content .header {
+  padding: 6px 15px;
+}
+
+.music-venues .m-upcoming-event-card .m-upcoming-event-wrapper .content .header h2 {
+  font-size: 18px;
+}
+
+.music-venues .m-upcoming-event-card .m-upcoming-event-wrapper .content .header h3 {
+  font-size: 13px;
+}
+
+.music-venues .m-upcoming-event-card .m-upcoming-event-wrapper .content .footer .date .text span {
+  bottom: -19px;
+  padding-top: 15px;
+  right: -11px;
+}
+
+.profile-page.music-show-page .medium-title {
+  text-align: center;
+  font-size: 35px;
+  font-family: 'DINCond-Medium';
+}
+
+.profile-page.music-show-page .right-side .image-play .mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 100;
+  background: #00000012;
+}
+
+.profile-page.music-show-page .right-side .image-play .mask .radio-play {
+  width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #e3ff14;
+  height: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  padding-left: 5px;
+  font-size: 24px;
+  -webkit-transition: all ease-in-out .5s;
+  transition: all ease-in-out .5s;
+  color: #636363;
+  cursor: pointer;
+  -webkit-box-shadow: -1px 0px 12px rgba(255, 255, 255, 0.4);
+          box-shadow: -1px 0px 12px rgba(255, 255, 255, 0.4);
+}
+
+.profile-page.music-show-page .right-side .image-play .mask .radio-play:hover {
+  background: #a2b60b;
+}
+
+.profile-page.music-show-page .right-side .image-play .mask .radio-play:hover i {
+  color: #414141;
+}
+
+.profile-page.music-show-page .right-side .main-col {
+  -webkit-box-shadow: 0px 0px 10px rgba(1, 1, 1, 0.5);
+          box-shadow: 0px 0px 10px rgba(1, 1, 1, 0.5);
+}
+
+.profile-page.music-show-page .right-side .main-col .info-social div {
+  padding: 5px 0px;
+  color: white;
+  font-size: 22px;
+}
+
+.profile-page.music-show-page .right-side .main-col .info-social .facebook {
+  background: #8093bb;
+}
+
+.profile-page.music-show-page .right-side .main-col .info-social .twitter {
+  background: #34bdf1;
+}
+
+.profile-page.music-show-page .right-side .main-col .info-social .youtube {
+  background: #fd4426;
+}
+
+.profile-page.music-show-page .right-side .advertise img {
+  height: 100%;
+  width: auto;
+}
+
+.profile-page.music-show-page .right-side .info-title {
+  font-family: BarlowBold;
+  padding: 6px 0px;
+  background: black;
+  color: white;
+  text-align: center;
+  font-size: 21px;
+  position: relative;
+}
+
+.profile-page.music-show-page .right-side .info-title:before {
+  content: "";
+  position: absolute;
+  border: 10px solid black;
+  right: -10px;
+  bottom: 0px;
+  z-index: 100;
+  overflow: hidden;
+  top: 0px;
+}
+
+.profile-page.music-show-page .right-side .info-title:after {
+  content: "";
+  border: 10px solid black;
+  position: absolute;
+  right: -15px;
+  bottom: -9px;
+  border-top: 44px solid;
+  top: 0;
+  border-bottom: 6px solid;
+  border-right: 5px solid;
+}
+
+.profile-page.music-show-page .right-side h2 {
+  padding: 15px 10px;
+  font-family: Barlow;
+  color: #8f8f8f;
+  font-size: 18px;
+}
+
+.m-upcoming-event-card .m-upcoming-event-wrapper {
+  -webkit-box-shadow: 0px 0px 10px rgba(1, 1, 1, 0.5);
+          box-shadow: 0px 0px 10px rgba(1, 1, 1, 0.5);
+  border-radius: 6px;
+}
+
+.m-upcoming-event-card .m-upcoming-event-wrapper .image-header img {
+  width: 100%;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.m-upcoming-event-card .m-upcoming-event-wrapper .content .header {
+  border-bottom: 1px solid #b9b9b9;
+  padding: 6px;
+}
+
+.m-upcoming-event-card .m-upcoming-event-wrapper .content .header h2 {
+  font-size: 16px;
+}
+
+.m-upcoming-event-card .m-upcoming-event-wrapper .content .header h2 .time {
+  font-size: 14px;
+  color: grey;
+  margin-left: 3%;
+}
+
+.m-upcoming-event-card .m-upcoming-event-wrapper .content .header h3 {
+  font-size: 13px;
+}
+
+.m-upcoming-event-card .m-upcoming-event-wrapper .content .header h3 time {
+  font-size: 12px;
+  color: grey;
+  margin-left: 3%;
+}
+
+.m-upcoming-event-card .m-upcoming-event-wrapper .content .footer {
+  position: relative;
+}
+
+.m-upcoming-event-card .m-upcoming-event-wrapper .content .footer .date {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border-right: 1px solid #dddcd7;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 35%;
+  height: 75px;
+  padding-bottom: 6%;
+  padding-right: 2%;
+}
+
+.m-upcoming-event-card .m-upcoming-event-wrapper .content .footer .date .text {
+  color: #000000;
+  font-size: 21px;
+  font-family: 'DINCond-Medium';
+  position: relative;
+  width: 40px;
+}
+
+.m-upcoming-event-card .m-upcoming-event-wrapper .content .footer .date .text span {
+  display: inline-block;
+  font-size: 32px;
+  color: #c1060f;
+  font-family: 'DINCond-Bold';
+  position: absolute;
+  bottom: -29px;
+  padding-top: 6px;
+  right: -11px;
+}
+
+.m-upcoming-event-card .m-upcoming-event-wrapper .content .footer .date .text span:before {
+  width: 1px;
+  height: 30px;
+  background: #c1060f;
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 0px;
+  -webkit-transform: rotate(50deg);
+          transform: rotate(50deg);
+}
+
+.m-upcoming-event-card .m-upcoming-event-wrapper .content .footer .description {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 60%;
+  padding-right: 6%;
+  padding-left: 6%;
+  position: absolute;
+  /* align-items: center; */
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* margin-top: 6%; */
+  /* display: flex; */
+  height: 100%;
+}
+
+.m-upcoming-event-card .m-upcoming-event-wrapper .content .footer .description .text {
+  margin-bottom: 0;
+  color: #989898;
+  font-size: 14px;
+  font-family: 'DINCond-Medium';
+  padding-bottom: 0px;
+}
+
+.m-upcoming-event-card .m-upcoming-event-wrapper .content .footer .description a {
+  color: #2c82d3;
+  font-size: 13px;
+  font-family: 'DINCond-Medium';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.m-upcoming-event-card .m-upcoming-event-wrapper .content .footer .description a div {
+  width: 15px;
+  height: 15px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #0283ff;
+  color: white;
+  border-radius: 50%;
+  font-size: 25px;
+  padding-bottom: 2px;
+  padding-left: 1.5px;
+  font-family: BarlowLight;
+  margin-right: 3px;
+}
+
+@media only screen and (max-width: 1301px) and (min-width: 768px) {
+  .m-upcoming-event-card .m-upcoming-event-wrapper .content .header h2 {
+    text-align: center;
+  }
+
+  .m-upcoming-event-card .m-upcoming-event-wrapper .content .header h3 {
+    text-align: center;
+  }
+}
+
 @media only screen and (max-width: 1100px) and (min-width: 768px) {
   .music-news .m-news-card .m-news-wrapper .content .news-title {
     font-size: 8px;
@@ -15666,6 +15976,25 @@ img {
 
   .music-news .m-news-card .m-news-wrapper .content .footer .date {
     font-size: 9px;
+  }
+
+  .m-upcoming-event-card .m-upcoming-event-wrapper .content .footer .date .text {
+    margin-left: 3px;
+    font-size: 17px;
+  }
+
+  .m-upcoming-event-card .m-upcoming-event-wrapper .content .footer .date .text span {
+    font-size: 25px;
+    bottom: -21px;
+    padding-top: 6px;
+    right: -2px;
+  }
+
+  .music-venues .m-upcoming-event-card .m-upcoming-event-wrapper .content .footer .date .text span {
+    font-size: 25px;
+    bottom: -17px;
+    padding-top: 15px;
+    right: -1px;
   }
 }
 

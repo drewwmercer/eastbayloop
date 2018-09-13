@@ -11,6 +11,21 @@ class MusicController extends Controller
         return view('music.index');
     }
 
+    public function show()
+    {
+        return view('music.show');
+    }
+
+    public function showVenues()
+    {
+        return view('music.venues');        
+    }
+
+    public function showLoopEntertainment()
+    {
+        return view('music.loop-entertainment');
+    }
+
     public function showProducts()
     {
         return view('music.product-page');

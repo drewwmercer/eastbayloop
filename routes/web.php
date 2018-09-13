@@ -39,5 +39,12 @@ Route::get('/market-place', 'MarketPlaceController@index')->name('market-place-p
 Route::get('/market-place/products', 'MarketPlaceController@showProducts')->name('market-place-product-page');
 Route::get('/market-place/product', 'MarketPlaceController@showProduct')->name('market-place-per-product-page');
 Route::get('/music', 'MusicController@index')->name('music-page');
+Route::get('/music/products', 'MusicController@showProducts')->name('music-product-page');
+Route::get('/music/product', 'MusicController@showProduct')->name('music-per-product-page');
+Route::get('/music/artist', 'MusicController@show')->name('music-artist-page');
+Route::get('/music/band', 'MusicController@show')->name('music-band-page');
+Route::get('/music/dj', 'MusicController@show')->name('music-dj-page');
+Route::get('/music/loop-entertainment', 'MusicController@showLoopEntertainment')->name('music-loop-entertainment-page');
+Route::get('/music/venues', 'MusicController@showVenues')->name('music-venues-page');
 
 //Route::get('/home', 'HomeController@index')->name('home');
