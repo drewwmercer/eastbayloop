@@ -20,4 +20,9 @@ class TasteController extends Controller
     {
         return view('taste.chefs-corner');
     }
+
+    public function showChefsCornerProfile()
+    {
+        return view('taste.chefs-corner-profile');        
+    }
 }
