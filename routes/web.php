@@ -38,5 +38,6 @@ Route::get('/fashion/product', 'FashionController@showProduct')->name('fashion-p
 Route::get('/market-place', 'MarketPlaceController@index')->name('market-place-page');
 Route::get('/market-place/products', 'MarketPlaceController@showProducts')->name('market-place-product-page');
 Route::get('/market-place/product', 'MarketPlaceController@showProduct')->name('market-place-per-product-page');
+Route::get('/music', 'MusicController@index')->name('music-page');
 
 //Route::get('/home', 'HomeController@index')->name('home');

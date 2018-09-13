@@ -5,6 +5,7 @@ Vue.component('events-page', require('../pages/site/Events.vue'));
 Vue.component('fashion-page', require('../pages/site/Fashion.vue'));
 Vue.component('profile-page', require('../pages/site/Profile.vue'));
 Vue.component('market-place-page', require('../pages/site/MarketPlace.vue'));
+Vue.component('music-page', require('../pages/site/MarketPlace.vue'));
 
 /* Components */
 Vue.component('navbar', require('../components/site/Navbar.vue'));

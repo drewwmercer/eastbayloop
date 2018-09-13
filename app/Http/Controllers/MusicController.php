@@ -4,20 +4,20 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class MarketPlaceController extends Controller
+class MusicController extends Controller
 {
     public function index()
     {
-        return view('market-place.index');
+        return view('music.index');
     }
 
     public function showProducts()
     {
-        return view('market-place.product-page');
+        return view('music.product-page');
     }
 
     public function showProduct()
     {
-        return view('market-place.per-product');
+        return view('music.per-product');
     }
 }

@@ -29,7 +29,7 @@
                     <li><a href="{{ route('fashion-page') }}">FASHION</a></li>
                     <li><a href="taste.html">TASTE</a></li>
                     <li><a href="{{ route('market-place-page') }}">LOCAL MARKETPLACE</a></li>
-                    <li><a href="music.html">MUSIC</a></li>
+                    <li><a href="{{ route('music-page') }}">MUSIC</a></li>
                     <li><a href="stay-page.html">STAY</a></li>
                     <li><a href="{{ route('events-page') }}">EVENTS</a></li>
                     <li><a href="are-you-in-loop-step-1.html">ADVERISE WITH US!</a></li>

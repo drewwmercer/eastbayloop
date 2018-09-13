@@ -15510,6 +15510,165 @@ img {
   font-weight: bolder;
 }
 
+.music-featured,
+.music-news {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 35px;
+}
+
+.music-featured .title,
+.music-news .title {
+  text-align: center;
+  font-size: 35px;
+  font-family: 'DINCond-Medium';
+}
+
+.music-featured .sub-title,
+.music-news .sub-title {
+  font-size: 20px;
+  font-family: 'DINCond-Medium';
+  text-align: center;
+}
+
+.music-featured .m-featured-card .m-featured-wrapper .image-header .mask,
+.music-news .m-featured-card .m-featured-wrapper .image-header .mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 100;
+  background: #00000012;
+}
+
+.music-featured .m-featured-card .m-featured-wrapper .image-header .mask .radio-play,
+.music-news .m-featured-card .m-featured-wrapper .image-header .mask .radio-play {
+  width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #e3ff14;
+  height: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  padding-left: 5px;
+  font-size: 24px;
+  -webkit-transition: all ease-in-out .5s;
+  transition: all ease-in-out .5s;
+  color: #636363;
+  cursor: pointer;
+  -webkit-box-shadow: -1px 0px 12px rgba(255, 255, 255, 0.4);
+          box-shadow: -1px 0px 12px rgba(255, 255, 255, 0.4);
+}
+
+.music-featured .m-featured-card .m-featured-wrapper .image-header .mask .radio-play:hover,
+.music-news .m-featured-card .m-featured-wrapper .image-header .mask .radio-play:hover {
+  background: #a2b60b;
+}
+
+.music-featured .m-featured-card .m-featured-wrapper .image-header .mask .radio-play:hover i,
+.music-news .m-featured-card .m-featured-wrapper .image-header .mask .radio-play:hover i {
+  color: #414141;
+}
+
+.music-featured .m-news-card .m-news-wrapper,
+.music-news .m-news-card .m-news-wrapper {
+  border: 1px solid #bbbbbb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.music-featured .m-news-card .m-news-wrapper .image-header img,
+.music-news .m-news-card .m-news-wrapper .image-header img {
+  width: 100%;
+  height: 100%;
+}
+
+.music-featured .m-news-card .m-news-wrapper .content,
+.music-news .m-news-card .m-news-wrapper .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: BarlowLight;
+  overflow: hidden;
+}
+
+.music-featured .m-news-card .m-news-wrapper .content .news-title,
+.music-news .m-news-card .m-news-wrapper .content .news-title {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.music-featured .m-news-card .m-news-wrapper .content .footer,
+.music-news .m-news-card .m-news-wrapper .content .footer {
+  position: relative;
+  bottom: 0;
+}
+
+.music-featured .m-news-card .m-news-wrapper .content .footer .m-btn,
+.music-news .m-news-card .m-news-wrapper .content .footer .m-btn {
+  color: white;
+  background: black;
+  padding: 3px 10px;
+}
+
+.music-featured .m-news-card .m-news-wrapper .content .footer .m-btn:hover,
+.music-news .m-news-card .m-news-wrapper .content .footer .m-btn:hover {
+  color: #e3ff14;
+}
+
+.music-featured .m-news-card .m-news-wrapper .content .footer .date,
+.music-news .m-news-card .m-news-wrapper .content .footer .date {
+  color: #8f8f8f;
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 768px) {
+  .music-news .m-news-card .m-news-wrapper .content .news-title {
+    font-size: 8px;
+  }
+
+  .music-news .m-news-card .m-news-wrapper .content .footer .m-btn {
+    font-size: 11px;
+  }
+
+  .music-news .m-news-card .m-news-wrapper .content .footer .date {
+    font-size: 9px;
+  }
+}
+
 .custom-navbar {
   width: 100%;
   float: left;

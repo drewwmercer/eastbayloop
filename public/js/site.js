@@ -48539,6 +48539,7 @@ Vue.component('events-page', __webpack_require__(46));
 Vue.component('fashion-page', __webpack_require__(48));
 Vue.component('profile-page', __webpack_require__(50));
 Vue.component('market-place-page', __webpack_require__(72));
+Vue.component('music-page', __webpack_require__(72));
 
 /* Components */
 Vue.component('navbar', __webpack_require__(52));
