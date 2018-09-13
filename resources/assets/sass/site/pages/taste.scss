@@ -1,0 +1,71 @@
+.taste-read-more {
+
+    &:hover {
+        border-color: #e4ff15;
+        background: #ffffff;
+        color: #000000;
+    }
+}
+
+
+.taste-page {
+    .custom-section {
+        .section-content {
+            .taste-card {
+                .taste-wrapper {
+                    .image-header {
+                        .text {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .banner-section {
+        max-width: 1200px;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 30px;
+
+        .banner-card {
+            position: relative;
+            max-height: 300px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .mask {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: #00000048;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                color: white;
+
+                h2 {
+                    font-family: BarlowBold;
+                    font-size: 50px;
+                    word-break: break-all;
+                }
+
+                span {
+                    font-family: Barlow;
+                    font-size: 30px;
+                    word-break: break-all;
+                }
+            }
+        }
+    }
+    
+    .m-upcoming-event-card .m-upcoming-event-wrapper .content .footer .date .text span:before {
+        top: -10px;
+    }
+}

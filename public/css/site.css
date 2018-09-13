@@ -13666,6 +13666,10 @@ footer .wrapper .socials i {
   font-family: BarlowBold;
 }
 
+.font-barlow-regular {
+  font-family: Barlow;
+}
+
 .read-more-btn {
   width: 130px;
   display: inline-block;
@@ -15907,12 +15911,9 @@ img {
   padding-right: 6%;
   padding-left: 6%;
   position: absolute;
-  /* align-items: center; */
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  /* margin-top: 6%; */
-  /* display: flex; */
   height: 100%;
 }
 
@@ -15996,6 +15997,78 @@ img {
     padding-top: 15px;
     right: -1px;
   }
+}
+
+.taste-read-more:hover {
+  border-color: #e4ff15;
+  background: #ffffff;
+  color: #000000;
+}
+
+.taste-page .custom-section .section-content .taste-card .taste-wrapper .image-header .text {
+  font-size: 18px;
+}
+
+.taste-page .banner-section {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.taste-page .banner-section .banner-card {
+  position: relative;
+  max-height: 300px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.taste-page .banner-section .banner-card .mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #00000048;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+}
+
+.taste-page .banner-section .banner-card .mask h2 {
+  font-family: BarlowBold;
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.taste-page .banner-section .banner-card .mask span {
+  font-family: Barlow;
+  font-size: 30px;
+  word-break: break-all;
+}
+
+.taste-page .m-upcoming-event-card .m-upcoming-event-wrapper .content .footer .date .text span:before {
+  top: -10px;
 }
 
 .custom-navbar {
