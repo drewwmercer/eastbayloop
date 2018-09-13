@@ -15,4 +15,9 @@ class TasteController extends Controller
     {
         return view('taste.bar');
     }
+
+    public function showChefsCorner()
+    {
+        return view('taste.chefs-corner');
+    }
 }

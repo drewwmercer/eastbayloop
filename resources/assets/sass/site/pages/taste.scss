@@ -69,3 +69,30 @@
         top: -10px;
     }
 }
+
+.chefs-h2 {
+    font-size: 17px;
+    font-family: BarlowL;
+}
+
+.chefs-span {
+    color: #8e8e8e;
+}
+
+.chefs-search {
+    padding: 3px 10px;
+    font-family: Barlow;
+    color: black;
+    width: 100%;
+}
+
+.chefs-search-icon {
+    position: absolute;
+    top: 0;
+    right: 6%;
+    left: 0;
+    bottom: 3px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}

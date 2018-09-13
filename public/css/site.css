@@ -16071,6 +16071,39 @@ img {
   top: -10px;
 }
 
+.chefs-h2 {
+  font-size: 17px;
+  font-family: BarlowL;
+}
+
+.chefs-span {
+  color: #8e8e8e;
+}
+
+.chefs-search {
+  padding: 3px 10px;
+  font-family: Barlow;
+  color: black;
+  width: 100%;
+}
+
+.chefs-search-icon {
+  position: absolute;
+  top: 0;
+  right: 6%;
+  left: 0;
+  bottom: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .custom-navbar {
   width: 100%;
   float: left;

@@ -1,7 +1,7 @@
 @extends('layouts.main-page')
 
 @section('content')
-    <explore-page inline-template>
+    <taste-page inline-template>
         <main>
             <slider :data="[{img: 'http://testsite.eastbayloop.com/images/client-banner.jpeg', text: 'Bars', class: 'explore-slider'},
                             {img: 'http://testsite.eastbayloop.com/images/client-banner.jpeg', text: 'Bars', class: 'explore-slider'},
@@ -119,5 +119,5 @@
                 </div>
             </section>
         </main>
-    </explore-page>
+    </taste-page>
 @endsection
