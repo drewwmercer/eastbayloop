@@ -50,5 +50,6 @@ Route::get('/taste', 'TasteController@index')->name('taste-page');
 Route::get('/taste/bar', 'TasteController@showBar')->name('taste-bar-page');
 Route::get('/taste/chefs-corner', 'TasteController@showChefsCorner')->name('taste-chefs-corner-page');
 Route::get('/taste/chefs-corner-profile', 'TasteController@showChefsCornerProfile')->name('taste-chefs-corner-profile-page');
+Route::get('/taste/mixology', 'TasteController@showMixology')->name('taste-mixology-page');
 
 //Route::get('/home', 'HomeController@index')->name('home');

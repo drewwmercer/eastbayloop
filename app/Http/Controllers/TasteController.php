@@ -25,4 +25,9 @@ class TasteController extends Controller
     {
         return view('taste.chefs-corner-profile');        
     }
+
+    public function showMixology()
+    {
+        return view('taste.mixology');
+    }
 }

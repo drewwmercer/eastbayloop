@@ -16104,6 +16104,113 @@ img {
           align-items: center;
 }
 
+.mixology-page {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.mixology-page .left-side .mixology-card {
+  padding: 10px 10px;
+}
+
+.mixology-page .left-side .mixology-card .mixology-wrapper {
+  -webkit-box-shadow: 0px 0px 10px rgba(1, 1, 1, 0.5);
+          box-shadow: 0px 0px 10px rgba(1, 1, 1, 0.5);
+  background: #f5f5f5;
+}
+
+.mixology-page .left-side .mixology-card .mixology-wrapper .content {
+  font-family: Barlow;
+  padding: 10px 20px;
+}
+
+.mixology-page .left-side .mixology-card .mixology-wrapper .content .pre-desc {
+  font-size: 18px;
+}
+
+.mixology-page .left-side .mixology-card .mixology-wrapper .content .mixology-title {
+  color: #c3060d;
+  font-size: 24px;
+}
+
+.mixology-page .left-side .mixology-card .mixology-wrapper .content .text {
+  font-size: 15px;
+}
+
+.mixology-page .left-side .mixology-card .mixology-wrapper .date {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0px 20px;
+}
+
+.mixology-page .left-side .mixology-card .mixology-wrapper .date .text {
+  color: #000000;
+  font-size: 19px;
+  font-family: 'DINCond-Medium';
+  position: relative;
+  width: 40px;
+  padding-top: 0%;
+}
+
+.mixology-page .left-side .mixology-card .mixology-wrapper .date .text span {
+  display: inline-block;
+  font-size: 27px;
+  color: #c1060f;
+  font-family: 'DINCond-Bold';
+  position: absolute;
+  bottom: -26px;
+  padding-top: 6px;
+  right: -5px;
+}
+
+.mixology-page .left-side .mixology-card .mixology-wrapper .date .text span:before {
+  width: 1px;
+  height: 26px;
+  background: #c1060f;
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 0px;
+  -webkit-transform: rotate(50deg);
+          transform: rotate(50deg);
+}
+
+.mixology-page .right-side .desc .desc-title {
+  font-family: BarlowBold;
+}
+
+.mixology-page .right-side .desc .desc-text {
+  font-family: Barlow;
+}
+
+.mixology-page .right-side .popular-posts .popular-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mixology-page .right-side .popular-posts .popular-content .popular-title {
+  font-family: BarlowBold;
+  font-size: 17px;
+}
+
+.mixology-page .right-side .popular-posts .popular-content .popular-text {
+  font-size: 15px;
+}
+
 .custom-navbar {
   width: 100%;
   float: left;

@@ -50,7 +50,7 @@
                         <div class="taste-card text-center col-md-4 mt-3">
                             <div class="taste-wrapper">
                                 <div class="image-header">
-                                    <a href="#">
+                                    <a href="{{ route('taste-mixology-page') }}">
                                         <img src="http://testsite.eastbayloop.com/images/taste-img3.jpeg" />
                                         <span class="text text-uppercase">Mixology</span>
                                     </a>
@@ -59,7 +59,7 @@
                                     <p class="text">
                                         Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vivamus suscipit tortor eget felis porttitor volutpat.
                                     </p>
-                                    <a class="read-more-btn float-none taste-read-more" href="#">READ MORE</a>                            
+                                    <a class="read-more-btn float-none taste-read-more" href="{{ route('taste-mixology-page') }}">READ MORE</a>                            
                                 </div>
                             </div>
                         </div>
