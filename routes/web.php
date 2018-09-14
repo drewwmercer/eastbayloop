@@ -52,5 +52,6 @@ Route::get('/taste/chefs-corner', 'TasteController@showChefsCorner')->name('tast
 Route::get('/taste/chefs-corner-profile', 'TasteController@showChefsCornerProfile')->name('taste-chefs-corner-profile-page');
 Route::get('/taste/mixology', 'TasteController@showMixology')->name('taste-mixology-page');
 Route::get('/taste/gallery', 'TasteController@showGallery')->name('taste-gallery-page');
+Route::get('/taste/wine-loop', 'TasteController@showWineLoop')->name('taste-wine-loop-page');
 
 //Route::get('/home', 'HomeController@index')->name('home');

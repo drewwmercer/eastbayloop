@@ -35,4 +35,9 @@ class TasteController extends Controller
     {
         return view('taste.gallery');
     }
+
+    public function showWineLoop()
+    {
+        return view('taste.wine-loop');
+    }
 }

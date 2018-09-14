@@ -118,7 +118,7 @@
             <section class="banner-section">
                 <div class="col-md-12 banner-card p-0">
                     <img src="{{ asset('assets/img/taste/1.png') }}" />
-                    <a href="#">
+                    <a href="{{ route('taste-wine-loop-page') }}">
                         <div class="mask">
                             <h2>Wine Loop!</h2>
                             <span>Your Exclusive Winery Experience</span>
