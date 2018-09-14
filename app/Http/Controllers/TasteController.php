@@ -30,4 +30,9 @@ class TasteController extends Controller
     {
         return view('taste.mixology');
     }
+
+    public function showGallery()
+    {
+        return view('taste.gallery');
+    }
 }

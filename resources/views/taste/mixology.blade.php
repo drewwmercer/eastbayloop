@@ -3,9 +3,9 @@
 @section('content')
     <taste-page inline-template>
         <main>
-            <slider :data="[{img: 'http://testsite.eastbayloop.com/images/client-banner.jpeg', text: 'Chef`s Corner Profile', class: 'explore-slider'},
-                            {img: 'http://testsite.eastbayloop.com/images/client-banner.jpeg', text: 'Chef`s Corner Profile', class: 'explore-slider'},
-                            {img: 'http://testsite.eastbayloop.com/images/client-banner.jpeg', text: 'Chef`s Corner Profile', class: 'explore-slider'}]">
+            <slider :data="[{img: 'http://testsite.eastbayloop.com/images/client-banner.jpeg', text: 'Mixology', class: 'explore-slider'},
+                            {img: 'http://testsite.eastbayloop.com/images/client-banner.jpeg', text: 'Mixology', class: 'explore-slider'},
+                            {img: 'http://testsite.eastbayloop.com/images/client-banner.jpeg', text: 'Mixology', class: 'explore-slider'}]">
             </slider>
 
             <section class="mixology-page mb-4">
