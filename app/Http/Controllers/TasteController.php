@@ -40,4 +40,9 @@ class TasteController extends Controller
     {
         return view('taste.wine-loop');
     }
+
+    public function showWineLoopContact()
+    {
+        return view('taste.wine-loop-contact');
+    }
 }
