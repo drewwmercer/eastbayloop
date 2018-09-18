@@ -54,5 +54,6 @@ Route::get('/taste/mixology', 'TasteController@showMixology')->name('taste-mixol
 Route::get('/taste/gallery', 'TasteController@showGallery')->name('taste-gallery-page');
 Route::get('/taste/wine-loop', 'TasteController@showWineLoop')->name('taste-wine-loop-page');
 Route::get('/taste/wine-loop-contact', 'TasteController@showWineLoopContact')->name('taste-wine-loop-contact-page');
+Route::get('/stay', 'StayController@index')->name('stay-page');
 
 //Route::get('/home', 'HomeController@index')->name('home');

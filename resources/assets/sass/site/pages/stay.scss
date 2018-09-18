@@ -1,0 +1,13 @@
+.stay-map {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 30px;
+    box-shadow: 0px 0px 10px rgba(1, 1, 1, 0.2);
+
+    iframe {
+        border: none;
+        width: 100%;
+        min-height: 350px;
+    }
+}

@@ -7,6 +7,7 @@ Vue.component('profile-page', require('../pages/site/Profile.vue'));
 Vue.component('market-place-page', require('../pages/site/MarketPlace.vue'));
 Vue.component('music-page', require('../pages/site/MarketPlace.vue'));
 Vue.component('taste-page', require('../pages/site/Taste.vue'));
+Vue.component('stay-page', require('../pages/site/Stay.vue'));
 
 /* Components */
 Vue.component('navbar', require('../components/site/Navbar.vue'));

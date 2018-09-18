@@ -30,9 +30,9 @@
                     <li><a href="{{ route('taste-page') }}">TASTE</a></li>
                     <li><a href="{{ route('market-place-page') }}">LOCAL MARKETPLACE</a></li>
                     <li><a href="{{ route('music-page') }}">MUSIC</a></li>
-                    <li><a href="stay-page.html">STAY</a></li>
+                    <li><a href="{{ route('stay-page') }}">STAY</a></li>
                     <li><a href="{{ route('events-page') }}">EVENTS</a></li>
-                    <li><a href="are-you-in-loop-step-1.html">ADVERISE WITH US!</a></li>
+                    <li><a href="#">ADVERISE WITH US!</a></li>
                 </ul>
             </div>
         </div>

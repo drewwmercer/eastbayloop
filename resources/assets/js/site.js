@@ -16,6 +16,16 @@ window.Vue = require('vue');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
+import Vue from 'vue'
+import * as VueGoogleMaps from 'vue2-google-maps'
+ 
+Vue.use(VueGoogleMaps, {
+  load: {
+    key: 'YOUR_API_TOKEN',
+    libraries: 'places',
+  },
+})
+
 require('./helpers/siteComponentsLoader');
 
 const app = new Vue({
