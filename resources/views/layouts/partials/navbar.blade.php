@@ -32,7 +32,7 @@
                     <li><a href="{{ route('music-page') }}">MUSIC</a></li>
                     <li><a href="{{ route('stay-page') }}">STAY</a></li>
                     <li><a href="{{ route('events-page') }}">EVENTS</a></li>
-                    <li><a href="#">ADVERISE WITH US!</a></li>
+                    <li><a href="#">ADVERTISE WITH US!</a></li>
                 </ul>
             </div>
         </div>
