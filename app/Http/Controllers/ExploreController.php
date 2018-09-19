@@ -32,4 +32,9 @@ class ExploreController extends Controller
 
         return view(self::DEFAULT_VIEW, ['category' => ucfirst($category)]);
     }
+
+    public function showAdventureProfile()
+    {
+        return view('explore.pages.adventure-profile');
+    }
 }
