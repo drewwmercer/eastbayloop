@@ -29,6 +29,7 @@ Route::get('/redirect/{service}', 'SocialAuthController@redirect');
 /* Pages */
 Route::get('/profile', 'ProfileController@index')->name('profile-page');
 Route::get('/explore', 'ExploreController@index')->name('explore-page');
+Route::get('/explore/nightlife', 'ExploreController@showNightLife')->name('explore-nightlife-page');
 Route::get('/explore/{category}', 'ExploreController@show')->name('explore-subpage');
 Route::get('/explore/adventure/profile', 'ExploreController@showAdventureProfile')->name('explore-adventure-profile-page');
 Route::get('/events', 'EventsController@index')->name('events-page');

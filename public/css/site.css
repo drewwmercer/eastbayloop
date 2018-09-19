@@ -13670,6 +13670,10 @@ footer .wrapper .socials i {
   font-family: Barlow;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .read-more-btn {
   width: 130px;
   display: inline-block;

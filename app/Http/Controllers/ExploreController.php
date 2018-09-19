@@ -37,4 +37,9 @@ class ExploreController extends Controller
     {
         return view('explore.pages.adventure-profile');
     }
+
+    public function showNightLife()
+    {
+        return view('explore.pages.clubs');
+    }
 }
