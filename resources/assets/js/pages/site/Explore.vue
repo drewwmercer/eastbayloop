@@ -27,7 +27,8 @@
                 this.sliders = [
                     {img: 'http://testsite.eastbayloop.com/images/client-banner.jpeg', text: this.pageName, class: 'explore-slider'},
                     {img: 'http://testsite.eastbayloop.com/images/client-banner.jpeg', text: this.pageName, class: 'explore-slider'},
-                    {img: 'http://testsite.eastbayloop.com/images/client-banner.jpeg', text: this.pageName, class: 'explore-slider'}];
+                    {img: 'http://testsite.eastbayloop.com/images/client-banner.jpeg', text: this.pageName, class: 'explore-slider'}
+                ];
             }
         }
     }

@@ -100,6 +100,21 @@
             padding: 8px;
             position: relative;
 
+            .image-wrapper {
+                z-index: 1;
+                position: relative;
+
+                .mask {
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    top: 0;
+                    z-index: 2;
+                    background: #0000000d;
+                }
+            }
+
             .content {
                 left: 0;
                 position: absolute;
@@ -110,6 +125,7 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                z-index: 2;
 
                 h2 {
                     color: #ffffff;

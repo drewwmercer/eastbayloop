@@ -14363,6 +14363,21 @@ img {
   position: relative;
 }
 
+.explore-cards .default-card .default-wrapper .image-wrapper {
+  z-index: 1;
+  position: relative;
+}
+
+.explore-cards .default-card .default-wrapper .image-wrapper .mask {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 2;
+  background: #0000000d;
+}
+
 .explore-cards .default-card .default-wrapper .content {
   left: 0;
   position: absolute;
@@ -14382,6 +14397,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 2;
 }
 
 .explore-cards .default-card .default-wrapper .content h2 {
