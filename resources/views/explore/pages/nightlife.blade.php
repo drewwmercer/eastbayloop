@@ -26,7 +26,6 @@
                                 <img :src="'http://testsite.eastbayloop.com/images/nightlife' + card.id + '.png'" />
                                 <div class="content">
                                     <h2 class="mb-3">@{{ card.name }}</h2>
-                                    <h2 v-if="nonProduct">(non-product)</h2>
                                 </div>
                             </a>
                         </div>

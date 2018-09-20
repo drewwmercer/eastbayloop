@@ -51755,7 +51755,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                     this.cards.push({
                         id: i,
                         name: 'Venue ' + i,
-                        link: '#'
+                        link: '/explore/profile'
                     });
                 }
                 this.nonProduct = true;

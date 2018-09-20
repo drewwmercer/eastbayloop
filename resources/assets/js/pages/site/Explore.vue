@@ -118,7 +118,7 @@
                         this.cards.push({
                             id: i,
                             name: 'Venue ' + i,
-                            link: '#'
+                            link: '/explore/profile'
                         });
                     }
                     this.nonProduct = true;

@@ -26,14 +26,15 @@
                     @for($i = 1; $i < 10; $i++)
                         <div class="default-card col-md-4 mb-4">
                             <div class="default-wrapper">
-                                <div class="image-wrapper">
-                                    <div class="mask"></div>
-                                    <img src='{{ asset("assets/img/pets/pet$i.png") }}' />
-                                </div>
-                                <div class="content">
-                                    <h2 class="mb-3">Pet Club {{ $i }}</h2>
-                                    <a class="sell-btn" href="#">(Sell Tickets)</a>
-                                </div>
+                                <a href="{{ route('explore-profile-page') }}">
+                                    <div class="image-wrapper">
+                                        <div class="mask"></div>
+                                        <img src='{{ asset("assets/img/pets/pet$i.png") }}' />
+                                    </div>
+                                    <div class="content">
+                                        <h2 class="mb-3">Pet Club {{ $i }}</h2>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     @endfor
