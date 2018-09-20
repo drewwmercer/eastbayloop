@@ -15560,7 +15560,25 @@ img {
 .our-services h2 {
   font-family: BarlowBold;
   color: #4b3e3e;
-  padding-bottom: 30px;
+  padding-bottom: 15px;
+}
+
+.our-events {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 30px;
+  color: #4b3e3e;
+}
+
+.our-events > h2 {
+  font-family: BarlowBold;
+  color: #4b3e3e;
+  padding-bottom: 15px;
+}
+
+.adventure-profile-page .m-upcoming-event-card .m-upcoming-event-wrapper .content .header h2 {
+  font-size: 14px;
 }
 
 .service-card .service-wrapper {
@@ -15639,6 +15657,14 @@ img {
 }
 
 @media only screen and (max-width: 767px) {
+  .adventure-service-card {
+    width: 100% !important;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+  }
+
   .upcoming-event-card .event-wrapper {
     position: relative;
   }
@@ -16010,6 +16036,7 @@ img {
 .m-upcoming-event-card .m-upcoming-event-wrapper .content .header {
   border-bottom: 1px solid #b9b9b9;
   padding: 6px;
+  font-family: Barlow;
 }
 
 .m-upcoming-event-card .m-upcoming-event-wrapper .content .header h2 {

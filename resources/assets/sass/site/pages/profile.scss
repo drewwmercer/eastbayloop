@@ -280,7 +280,27 @@
     h2 {
         font-family: BarlowBold;
         color: #4b3e3e;
-        padding-bottom: 30px;
+        padding-bottom: 15px;
+    }
+}
+
+.our-events {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 30px;
+    color: #4b3e3e;
+
+    &>h2 {
+        font-family: BarlowBold;
+        color: #4b3e3e;
+        padding-bottom: 15px;
+    }
+}
+
+.adventure-profile-page {
+    .m-upcoming-event-card .m-upcoming-event-wrapper .content .header h2 {
+        font-size: 14px;
     }
 }
 
@@ -309,6 +329,7 @@
         }
     }
 }
+
 
 @media only screen and (max-width: 1082px) and (min-width: 768px) {
     .upcoming-event-card {
@@ -371,6 +392,12 @@
 }
 
 @media only screen and (max-width: 767px) {
+    .adventure-service-card {
+        width: 100% !important; 
+        flex: 0 0 100%;
+        max-width: 100%;    
+    }
+
     .upcoming-event-card {
         .event-wrapper {
             position: relative;

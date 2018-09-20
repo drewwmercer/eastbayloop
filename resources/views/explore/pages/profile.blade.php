@@ -2,7 +2,7 @@
 
 @section('content')
     <profile-page inline-template>
-        <main>
+        <main class="adventure-profile-page">
             <slider :data="[{img: '{{ asset('assets/img/sliders/adventure-profile.png') }}', text: 'Client Profile - Adventure', class: 'explore-slider'},
                             {img: '{{ asset('assets/img/sliders/adventure-profile.png') }}', text: 'Client Profile - Adventure', class: 'explore-slider'},
                             {img: '{{ asset('assets/img/sliders/adventure-profile.png') }}', text: 'Client Profile - Adventure', class: 'explore-slider'}]">
@@ -86,20 +86,20 @@
             </section>
             <section class="our-services">
                 <h2>Our Services</h2>
-                <div class="row">
-                    <div class="service-card col-md-4 col-sm-12 mb-4">
+                <div class="row m-0">
+                    <div class="service-card col-md-4 col-sm-12 mb-4 pr-1 pl-1">
                         <div class="service-wrapper">
                             <img src="http://testsite.eastbayloop.com/images/adventure1.png" />
                             <span class="text">Service 1</span>
                         </div>
                     </div>
-                    <div class="service-card col-md-4 col-sm-12 mb-4">
+                    <div class="service-card col-md-4 col-sm-12 mb-4 pl-1 pr-1">
                         <div class="service-wrapper">
                             <img src="http://testsite.eastbayloop.com/images/adventure2.png" />
                             <span class="text">Service 2</span>
                         </div>
                     </div>
-                    <div class="service-card col-md-4 col-sm-12 mb-4">
+                    <div class="service-card col-md-4 col-sm-12 mb-4 pl-1 pr-1">
                         <div class="service-wrapper">
                             <img src="http://testsite.eastbayloop.com/images/adventure3.png" />
                             <span class="text">Service 3</span>
@@ -109,11 +109,47 @@
             </section>
             <section class="our-services mb-4">
                 <h2>Image Gallery</h2>
-                <div class="row">
-                    @for($i = 1; $i < 7; $i++)
-                        <div class="service-card col-md-4 col-sm-12 mb-2 pr-2 pl-2">
+                <div class="row m-0">
+                    @for($i = 1; $i < 6; $i++)
+                        <div class="service-card adventure-service-card col mb-2 pl-1 pr-1">
                             <div class="service-wrapper">
                                 <img src="http://testsite.eastbayloop.com/images/adventure{{ $i }}.png" />
+                            </div>
+                        </div>
+                    @endfor
+                </div>
+            </section>
+            <section class="our-events mb-4">
+                <h2>Events</h2>
+                <div class="row p-0 m-0">
+                    @for($i = 1, $j = 2; $i < 6; $i++, $j++)
+                        @php
+                            $j = $j > 4 ? $j - 3 : $j;
+                        @endphp
+                        <div class="col m-upcoming-event-card mb-4 pl-1 pr-1">
+                            <div class="m-upcoming-event-wrapper">
+                                <div class="image-header">
+                                    <img src="{{ asset('assets/img/events/event' . $j . '.png') }}" />
+                                </div>
+                            
+                                <div class="content">
+                                    <div class="header">
+                                        <h2>Florence + the machine <span class="time">8PM</span></h2>
+                                        <h3>Cold War Kids <span class="time">7PM</span></h3>                                            
+                                    </div>
+                                    <div class="footer">
+                                        <div class="date">
+                                            <span class="text">
+                                                OCT 
+                                                <span>23</span>
+                                            </span>
+                                        </div>
+                                        <div class="description">
+                                            <p class="text">This event is 21 and over</p>
+                                            <a href="#"><div>+</div>More Info</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     @endfor
