@@ -13642,6 +13642,19 @@ footer .wrapper {
   max-width: 1200px;
   width: 90%;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 footer .wrapper span {
@@ -13659,6 +13672,25 @@ footer .wrapper .socials {
 
 footer .wrapper .socials i {
   margin-right: 5px;
+  cursor: pointer;
+}
+
+footer .wrapper .up-btn {
+  height: 60px;
+  width: 60px;
+  background: #e4fe16;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bolder;
+  font-size: 35px;
   cursor: pointer;
 }
 
@@ -13717,11 +13749,83 @@ img {
   line-height: 20px;
 }
 
+.custom-section .section-header .accurate-title {
+  margin-left: 2px;
+  font-size: 17px;
+}
+
 .custom-section .section-header .content {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 25px;
   color: #000000;
+}
+
+.custom-section .section-header .filter-bar {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  text-align: right;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.custom-section .section-header .filter-bar .filter-btn {
+  font-size: 16px;
+  display: inline-block;
+  float: right;
+  background: #000000;
+  color: #e3fd1a;
+  text-align: center;
+  padding: 5.5px 22px;
+  border-radius: 3px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.custom-section .section-header .filter-bar .filter-btn:hover {
+  color: #ffffff;
+}
+
+.custom-section .section-header .filter-bar span {
+  position: relative;
+  max-width: 200px;
+}
+
+.custom-section .section-header .filter-bar span select {
+  outline: none;
+  width: 100%;
+  display: inline-block;
+  float: left;
+  font-size: 16px;
+  border: 1px solid #aaaaaa;
+  border-radius: 3px;
+  appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -webkit-appearance: none;
+  margin: 0;
+  padding: 5px;
+  height: 35px;
+  color: rgba(0, 0, 0, 0.8);
+  position: relative;
+  z-index: 1;
+  background: none;
+  cursor: pointer;
+  font-family: Barlow;
+  padding-right: 30px;
+}
+
+.custom-section .section-header .filter-bar span:after {
+  position: absolute;
+  right: 7px;
+  content: "\F0D7";
+  font-family: 'FontAwesome';
+  display: inline-block;
+  font-size: 26px;
+  color: #aaaaaa;
 }
 
 .custom-section .section-content .custom-card {
@@ -14261,6 +14365,7 @@ img {
   font-size: 50px;
   font-family: 'OpenSans-Extrabold' !important;
   padding: 0px 200px !important;
+  text-shadow: 0px 2px 24px #969696;
 }
 
 .sell-btn {
@@ -14276,11 +14381,65 @@ img {
   color: #000000;
 }
 
+.explore-page .m-upcoming-event-card .m-upcoming-event-wrapper {
+  padding-bottom: 0 !important;
+}
+
+.explore-page .m-upcoming-event-card .m-upcoming-event-wrapper .image-header img {
+  border-top-left-radius: unset;
+  border-top-right-radius: unset;
+}
+
+.explore-page .m-upcoming-event-card .m-upcoming-event-wrapper .content .header h2 {
+  font-size: 22px;
+  font-family: Barlow;
+}
+
+.explore-page .m-upcoming-event-card .m-upcoming-event-wrapper .content .header h2 .time {
+  font-size: 16px;
+  color: #9d9d9d;
+}
+
+.explore-page .m-upcoming-event-card .m-upcoming-event-wrapper .content .header h3 {
+  font-size: 22px;
+  font-family: Barlow;
+}
+
+.explore-page .m-upcoming-event-card .m-upcoming-event-wrapper .content .header h3 .time {
+  font-size: 16px;
+  color: #9d9d9d;
+}
+
+.explore-page .m-upcoming-event-card .m-upcoming-event-wrapper .content .footer .date .text {
+  margin-left: -4px;
+  margin-top: -14px;
+}
+
+.explore-page .m-upcoming-event-card .m-upcoming-event-wrapper .content .footer .date .text span {
+  display: inline-block;
+  font-size: 43px;
+  color: #c1060f;
+  font-family: 'DINCond-Bold';
+  position: absolute;
+  bottom: -46px;
+  padding-top: 6px;
+  right: -21px;
+}
+
+.explore-page .m-upcoming-event-card .m-upcoming-event-wrapper .content .footer .description .text {
+  font-size: 18px;
+}
+
 .explore-cards {
   max-width: 1200px;
   width: 90%;
   margin: 0 auto;
   margin-top: 30px;
+}
+
+.explore-cards .explore-title {
+  font-family: Barlow;
+  font-size: 17px;
 }
 
 .explore-cards .explore-header h2 {
@@ -14408,7 +14567,7 @@ img {
 }
 
 .explore-cards .explore-card {
-  padding: 0px 45px;
+  padding: 0px 15px 10px 15px;
 }
 
 .explore-cards .explore-card .explore-wrapper {
@@ -14440,6 +14599,12 @@ img {
   width: 70%;
   text-align: center;
   margin-left: 15%;
+}
+
+.explore-cards .explore-card .explore-wrapper .content .text {
+  font-size: 17px;
+  color: #929191;
+  padding: 0px 8%;
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 768px) {

@@ -2,11 +2,12 @@
 
 @section('content')
     <explore-page inline-template>
-        <main>
-            <slider :data="[{img: 'http://testsite.eastbayloop.com/images/banner4.jpeg', text: 'EXPLORE', class: 'explore-slider'}]">
+        <main class="explore-page">
+            <slider :data="[{img: '{{ asset('assets/img/sliders/adventure-profile.png') }}', text: 'EXPLORE', class: 'explore-slider'}]">
             </slider>
 
             <section class="explore-cards">
+                <h2 class="explore-title text-center mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sapien enim, fringilla et consequat at, interdum eu augue. Pellentesque ligula urna, ultricies in bibendum eget, pharetra at nibh. </h2>
                 <div class="row">
                     <div class="explore-card mb-4 col-md-4">
                         <div class="explore-wrapper">
@@ -15,7 +16,10 @@
                             </div>
                             <div class="content">
                                 <h2>ADVENTURE</h2>
-                                <a class="read-more-btn mb-3 float-none" href="{{ route('explore-subpage', ['category' => 'adventure']) }}">READ MORE</a>
+                                <p class="text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit lorem.
+                                </p>
+                                <a class="read-more-btn mt-2 float-none" href="{{ route('explore-subpage', ['category' => 'adventure']) }}">READ MORE</a>
                             </div>
                         </div>
                     </div>
@@ -26,7 +30,10 @@
                             </div>
                             <div class="content">
                                 <h2>NIGHTLIFE/DAYCLUB</h2>
-                                <a class="read-more-btn mb-3 float-none" href="{{ route('explore-subpage', ['category' => 'nightlife']) }}">READ MORE</a>
+                                <p class="text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit lorem.
+                                </p>
+                                <a class="read-more-btn mt-2 float-none" href="{{ route('explore-subpage', ['category' => 'nightlife']) }}">READ MORE</a>
                             </div>
                         </div>
                     </div>
@@ -37,7 +44,10 @@
                             </div>
                             <div class="content">
                                 <h2>PET CLUB</h2>
-                                <a class="read-more-btn mb-3 float-none" href="{{ route('explore-subpage', ['category' => 'pet Club']) }}">READ MORE</a>
+                                <p class="text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit lorem.
+                                </p>
+                                <a class="read-more-btn mt-2 float-none" href="{{ route('explore-subpage', ['category' => 'pet Club']) }}">READ MORE</a>
                             </div>
                         </div>
                     </div>
@@ -48,7 +58,10 @@
                             </div>
                             <div class="content">
                                 <h2>PAMPER</h2>
-                                <a class="read-more-btn mb-3 float-none" href="{{ route('explore-subpage', ['category' => 'pamper']) }}">READ MORE</a>
+                                <p class="text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit lorem.
+                                </p>
+                                <a class="read-more-btn mt-2 float-none" href="{{ route('explore-subpage', ['category' => 'pamper']) }}">READ MORE</a>
                             </div>
                         </div>
                     </div>
@@ -59,7 +72,10 @@
                             </div>
                             <div class="content">
                                 <h2>GOLF/ RECREATION</h2>
-                                <a class="read-more-btn mb-3 float-none" href="{{ route('explore-subpage', ['category' => 'golf & Recreation']) }}">READ MORE</a>
+                                <p class="text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit lorem.
+                                </p>
+                                <a class="read-more-btn mt-2 float-none" href="{{ route('explore-subpage', ['category' => 'golf & Recreation']) }}">READ MORE</a>
                             </div>
                         </div>
                     </div>
@@ -70,7 +86,10 @@
                             </div>
                             <div class="content">
                                 <h2>LOOP KIDS</h2>
-                                <a class="read-more-btn mb-3 float-none" href="{{ route('explore-subpage', ['category' => 'loop Kids']) }}">READ MORE</a>
+                                <p class="text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit lorem.
+                                </p>
+                                <a class="read-more-btn mt-2 float-none" href="{{ route('explore-subpage', ['category' => 'loop Kids']) }}">READ MORE</a>
                             </div>
                         </div>
                     </div>
@@ -81,7 +100,10 @@
                             </div>
                             <div class="content">
                                 <h2>LOCAL SHOPS AND SHOPPING</h2>
-                                <a class="read-more-btn mb-3 float-none" href="{{ route('explore-subpage', ['category' => 'local Shops and Shopping']) }}">READ MORE</a>
+                                <p class="text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit lorem.
+                                </p>
+                                <a class="read-more-btn mt-2 float-none" href="{{ route('explore-subpage', ['category' => 'local Shops and Shopping']) }}">READ MORE</a>
                             </div>
                         </div>
                     </div>
@@ -92,7 +114,10 @@
                             </div>
                             <div class="content">
                                 <h2>FITNESS</h2>
-                                <a class="read-more-btn mb-3 float-none" href="{{ route('explore-subpage', ['category' => 'fitness']) }}">READ MORE</a>
+                                <p class="text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit lorem.
+                                </p>
+                                <a class="read-more-btn mt-2 float-none" href="{{ route('explore-subpage', ['category' => 'fitness']) }}">READ MORE</a>
                             </div>
                         </div>
                     </div>
@@ -103,7 +128,10 @@
                             </div>
                             <div class="content">
                                 <h2>ART</h2>
-                                <a class="read-more-btn mb-3 float-none" href="{{ route('explore-subpage', ['category' => 'art']) }}">READ MORE</a>
+                                <p class="text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit lorem.
+                                </p>
+                                <a class="read-more-btn mt-2 float-none" href="{{ route('explore-subpage', ['category' => 'art']) }}">READ MORE</a>
                             </div>
                         </div>
                     </div>
@@ -112,80 +140,48 @@
 
             <section class="custom-section">
                 <div class="section-header">
-                    <p class="title text-uppercase text-center">EVENTS</p>
+                    <p class="title text-uppercase p-0">EVENTS</p>
+                    <p class="accurate-title font-barlow-regular">Events under that Category will be in CUBE shapes as above but below Header Events.</p>                    
+                    <div class="filter-bar">
+                        <span>
+                            <select >
+                                <option value="Select">Filter events by interest</option>
+                                <option value="bar1">Bar 1</option>
+                                <option value="bar2">Bar 2</option>
+                            </select>
+                        </span>
+                    </div>
                 </div>
-                <div class="section-content">
-                    <div class="row">
-                        <div class="event-card col-md-12 mb-4">
-                            <div class="event-wrapper row">
-                                <div class="image-header col-md-3">
-                                    <a href="#">
-                                        <img src="http://testsite.eastbayloop.com/images/events-img1.jpeg" />
-                                    </a>
-                                </div>
-                                <div class="content col-md-6">
-                                    <div class="header">
-                                        <span class="title">
-                                            FLORENCE + THE MACHINE 
-                                            <span class="time">8pm</span>
-                                        </span>
-                                        <span class="additional-title">
-                                            Cold War Kids
-                                            <span class="time">7pm</span>                                        
-                                        </span>
+                <div class="section-content mt-4">
+                    <div class="row p-0 m-0">
+                        @for($i = 1; $i < 4; $i++)
+                            <div class="col-md-4 m-upcoming-event-card mb-4 pl-1 pr-1">
+                                <div class="m-upcoming-event-wrapper p-3 pb-0">
+                                    <div class="image-header">
+                                        <img src="{{ asset('assets/img/events/event1.png') }}" />
                                     </div>
-                                    <div class="footer">
-                                        <div class="date">
-                                            <span class="text">
-                                                OCT <span>23</span>
-                                            </span>
+                                
+                                    <div class="content">
+                                        <div class="header">
+                                            <h2>Florence + the machine <span class="time">8PM</span></h2>
+                                            <h3>Cold War Kids <span class="time">7PM</span></h3>                                            
                                         </div>
-                                        <div class="description">
-                                            <p class="text">This event is 21 and over</p>
-                                            <a href="#">More Info</a>
+                                        <div class="footer">
+                                            <div class="date">
+                                                <span class="text">
+                                                    OCT 
+                                                    <span>23</span>
+                                                </span>
+                                            </div>
+                                            <div class="description">
+                                                <p class="text">This event is 21 and over</p>
+                                                <a href="#"><div>+</div>More Info</a>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="read-more col-md-3">
-                                    <a class="read-more-btn float-none" href="#">READ MORE</a>                                                                
                                 </div>
                             </div>
-                        </div>
-                        <div class="event-card col-md-12 mb-4">
-                            <div class="event-wrapper row">
-                                <div class="image-header col-md-3">
-                                    <a href="#">
-                                        <img src="http://testsite.eastbayloop.com/images/events-img2.jpeg" />
-                                    </a>
-                                </div>
-                                <div class="content col-md-6">
-                                    <div class="header">
-                                        <span class="title">
-                                            FLORENCE + THE MACHINE 
-                                            <span class="time">8pm</span>
-                                        </span>
-                                        <span class="additional-title">
-                                            Cold War Kids
-                                            <span class="time">7pm</span>                                        
-                                        </span>
-                                    </div>
-                                    <div class="footer">
-                                        <div class="date">
-                                            <span class="text">
-                                                OCT <span>23</span>
-                                            </span>
-                                        </div>
-                                        <div class="description">
-                                            <p class="text">This event is 21 and over</p>
-                                            <a href="#">More Info</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="read-more col-md-3">
-                                    <a class="read-more-btn float-none" href="#">READ MORE</a>                                                                
-                                </div>
-                            </div>
-                        </div>
+                        @endfor
                     </div>
                 </div>
             </section>

@@ -7,6 +7,10 @@
                     <i class="fa fa-twitter"></i>
                     <i class="fa fa-google-plus"></i>
                 </div>
+
+                <div class="up-btn">
+                    <i class="fa fa-angle-double-up" aria-hidden="true"></i>
+                </div>
             </div>
         </footer>
        <!-- Scripts -->

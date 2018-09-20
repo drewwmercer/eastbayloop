@@ -19,6 +19,11 @@ img {
             color: #000000;
             line-height: 20px;
         }
+
+        .accurate-title {
+            margin-left: 2px;
+            font-size: 17px;
+        }
         
         .content {
             font-family: Arial, Helvetica, sans-serif;
@@ -26,6 +31,69 @@ img {
             line-height: 25px;
             color: #000000;
         }
+
+        .filter-bar {
+            display: inline-flex;
+            text-align: right;
+            justify-content: flex-end;
+
+            .filter-btn {
+                font-size: 16px;
+                display: inline-block;
+                float: right;
+                background: #000000;
+                color: #e3fd1a;
+                text-align: center;
+                padding: 5.5px 22px;
+                border-radius: 3px;
+                height: fit-content;
+
+                &:hover {
+                    color: #ffffff;
+                }
+            }
+
+            span {
+                position: relative;
+                max-width: 200px;
+                
+                select {
+                    outline: none;
+                    width: 100%;
+                    display: inline-block;
+                    float: left;
+                    font-size: 16px;
+                    border: 1px solid #aaaaaa;
+                    border-radius: 3px;
+                    appearance: none;
+                    -moz-appearance: none;
+                    -ms-appearance: none;
+                    -webkit-appearance: none;
+                    margin: 0;
+                    padding: 5px;
+                    height: 35px;
+                    color: rgba(0,0,0,.8);
+                    position: relative;
+                    z-index: 1;
+                    background: none;
+                    cursor: pointer;
+                    font-family: Barlow;
+                    padding-right: 30px;
+                }
+
+                &:after {
+                    position: absolute;
+                    right: 7px;
+                    content: "\f0d7";
+                    font-family: 'FontAwesome';
+                    display: inline-block;
+                    font-size: 26px;
+                    color: #aaaaaa;
+                }
+            }            
+        }
+
+        
     }
 
     .section-content {

@@ -4,6 +4,7 @@
     font-size: 50px;
     font-family: 'OpenSans-Extrabold' !important;
     padding: 0px 200px !important;
+    text-shadow: 0px 2px 24px rgba(150, 150, 150, 1);
 }
 
 .sell-btn {
@@ -19,11 +20,81 @@
     }
 }
 
+.explore-page {
+    .m-upcoming-event-card {
+        .m-upcoming-event-wrapper {
+            padding-bottom: 0 !important;
+
+            .image-header {
+                img {
+                    border-top-left-radius: unset;
+                    border-top-right-radius: unset;
+                }
+            }
+
+            .content {
+                .header {
+                    h2 {
+                        font-size: 22px;
+                        font-family: Barlow;
+    
+                        .time {
+                            font-size: 16px;
+                            color: #9d9d9d;                            
+                        }
+                    }
+
+                    h3 {
+                        font-size: 22px;
+                        font-family: Barlow;
+
+                        .time {
+                            font-size: 16px;
+                            color: #9d9d9d;
+                        }
+                    }
+                }
+
+                .footer {
+                    .date {
+                        .text {
+                            margin-left: -4px;
+                            margin-top: -14px;
+
+                            span {
+                                display: inline-block;
+                                font-size: 43px;
+                                color: #c1060f;
+                                font-family: 'DINCond-Bold';
+                                position: absolute;
+                                bottom: -46px;
+                                padding-top: 6px;
+                                right: -21px; 
+                            }
+                        }
+                    }
+
+                    .description {
+                        .text {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 .explore-cards {
     max-width: 1200px;
     width: 90%;
     margin: 0 auto;
     margin-top: 30px;
+
+    .explore-title {
+        font-family: Barlow;
+        font-size: 17px;
+    }
 
     .explore-header {
         h2 {
@@ -138,7 +209,7 @@
     }
 
     .explore-card {
-        padding: 0px 45px;
+        padding: 0px 15px 10px 15px;
 
         .explore-wrapper {
             box-shadow: 0px 0px 15px rgba(0,0,0,.15);
@@ -168,6 +239,12 @@
                     width: 70%;
                     text-align: center;
                     margin-left: 15%;
+                }
+
+                .text {
+                    font-size: 17px;
+                    color: #929191;
+                    padding: 0px 8%;
                 }
             }
         }

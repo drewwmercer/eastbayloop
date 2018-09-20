@@ -114,6 +114,10 @@ footer {
         max-width: 1200px;
         width: 90%; 
         margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
         span {
             width: 100%;
@@ -132,6 +136,19 @@ footer {
                 cursor: pointer;
             }
         }
+
+        .up-btn {
+            height: 60px;
+            width: 60px;
+            background: #e4fe16;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bolder;
+            font-size: 35px;
+            cursor: pointer;
+        }
     }
 }
 
@@ -142,6 +159,7 @@ footer {
 .font-barlow-regular {
     font-family: Barlow;
 }
+
 
 .cursor-pointer {
     cursor: pointer;
