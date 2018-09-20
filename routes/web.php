@@ -29,9 +29,11 @@ Route::get('/redirect/{service}', 'SocialAuthController@redirect');
 /* Pages */
 Route::get('/profile', 'ProfileController@index')->name('profile-page');
 Route::get('/explore', 'ExploreController@index')->name('explore-page');
-Route::get('/explore/nightlife', 'ExploreController@showNightLife')->name('explore-nightlife-page');
 Route::get('/explore/{category}', 'ExploreController@show')->name('explore-subpage');
 Route::get('/explore/profile', 'ExploreController@showProfile')->name('explore-profile-page');
+Route::get('/explore/nightlife/profile', 'ExploreController@showNightLifeProfile')->name('explore-nightlife-profile-page');
+Route::get('/explore/dayclubs/profile', 'ExploreController@showDayClubsProfile')->name('explore-nightlife-profile-page');
+Route::get('/explore/nightlife/{category}', 'ExploreController@showNightlifeCategory')->name('explore-nightlfie-subpage');
 Route::get('/explore/store', 'ExploreController@showStore')->name('explore-store-page');
 Route::get('/explore/store/products', 'ExploreController@showStoreProducts')->name('explore-store-products-page');
 Route::get('/explore/store/product', 'ExploreController@showStoreProduct')->name('explore-store-product-page');

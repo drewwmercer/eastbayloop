@@ -38,11 +38,6 @@ class ExploreController extends Controller
         return view('explore.pages.profile');
     }
 
-    public function showNightLife()
-    {
-        return view('explore.pages.clubs');
-    }
-
     public function showStore()
     {
         return view('explore.pages.store');
@@ -56,5 +51,20 @@ class ExploreController extends Controller
     public function showStoreProduct()
     {
         return view('explore.pages.product');
+    }
+
+    public function showNightLifeProfile()
+    {
+        return view('explore.pages.nightlife-profile');
+    }
+
+    public function showDayClubsProfile()
+    {
+        return view('explore.pages.dayclubs-profile');        
+    }
+
+    public function showNightlifeCategory($category)
+    {
+        return view('explore.pages.nightlife-subpage', ['category' => ucfirst($category)]);
     }
 }

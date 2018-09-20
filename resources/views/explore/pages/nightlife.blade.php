@@ -3,36 +3,34 @@
 @section('content')
     <explore-page inline-template>
         <main>
-            <slider :data="[{img: 'http://testsite.eastbayloop.com/images/client-banner.jpeg', text: '{{ $category }}', class: 'explore-slider'},
-                            {img: 'http://testsite.eastbayloop.com/images/client-banner.jpeg', text: '{{ $category }}', class: 'explore-slider'},
-                            {img: 'http://testsite.eastbayloop.com/images/client-banner.jpeg', text: '{{ $category }}', class: 'explore-slider'}]">
+            <slider :data="sliders">
             </slider>
 
             <section class="explore-cards">
                 <div class="row explore-header mb-3">
-                    <h2 class="display-inline col-md-8">{{ $category }}</h2>
+                    <h2 class="display-inline col-md-8">@{{ pageName }}</h2>
                     <div class="filter-bar col-md-4">
                         <span>
-                            <select>
-                                <option value="Select">Location Filter</option>
-                                <option value="bar1">Bar 1</option>
-                                <option value="bar2">Bar 2</option>
-                            </select>
+                        <select class="pl-3 pr-5" v-model="pageSelector">
+                            <option value="Nightlife" selected>Nightlife</option>
+                            <option value="DAYCLUBS/PARTIES">DAYCLUBS/PARTIES</option>
+                        </select>
                         </span>
-                        <a class="filter-btn ml-3" href="#">Find Filter</a>
+                        <a class="filter-btn ml-3 cursor-pointer" @click="changePage" >Find Filter</a>
                     </div>
                 </div>
                 <div class="row">
-                    @for($i = 1; $i < 10; $i++)
-                        <div class="default-card col-md-4 mb-4">
-                            <div class="default-wrapper">
-                                <img src="http://testsite.eastbayloop.com/images/nightlife{{ $i }}.png" />
+                    <div class="default-card col-md-4 mb-4" v-for="(card, key) in cards" :key="key">
+                        <div class="default-wrapper">
+                            <a :href="card.link">
+                                <img :src="'http://testsite.eastbayloop.com/images/nightlife' + card.id + '.png'" />
                                 <div class="content">
-                                    <h2 class="mb-3">{{ $category . ' ' . $i }}</h2>
+                                    <h2 class="mb-3">@{{ card.name }}</h2>
+                                    <h2 v-if="nonProduct">(non-product)</h2>
                                 </div>
-                            </div>
+                            </a>
                         </div>
-                    @endfor
+                    </div>
                 </div>
             </section>
 
