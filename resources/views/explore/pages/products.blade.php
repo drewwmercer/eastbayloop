@@ -20,7 +20,7 @@
                     @for($i = 1; $i < 10; $i++)
                         <div class="product-card col-md-4 mb-4">
                             <div class="product-wrapper">
-                                <a href="{{ route('fashion-per-product-page') }}">
+                                <a href="{{ route('explore-store-product-page') }}">
                                     <div class="image-header">
                                         <img src="http://testsite.eastbayloop.com/images/product1.png" />
                                     </div>

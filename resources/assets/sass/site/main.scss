@@ -157,9 +157,12 @@ footer {
 }
 
 .font-barlow-regular {
-    font-family: Barlow;
+    font-family: Barlow !important;
 }
 
+.font-20px {
+    font-size: 20px !important;
+}
 
 .cursor-pointer {
     cursor: pointer;

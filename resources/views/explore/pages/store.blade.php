@@ -3,9 +3,7 @@
 @section('content')
     <profile-page inline-template>
         <main>
-            <slider :data="[{img: '{{ asset('assets/img/sliders/adventure-profile.png') }}', text: 'Visit our online Store', class: 'explore-slider'},
-                            {img: '{{ asset('assets/img/sliders/adventure-profile.png') }}', text: 'Visit our online Store', class: 'explore-slider'},
-                            {img: '{{ asset('assets/img/sliders/adventure-profile.png') }}', text: 'Visit our online Store', class: 'explore-slider'}]">
+            <slider :data="[{img: '{{ asset('assets/img/sliders/designer.png') }}', text: '', class: 'explore-slider'}]">
             </slider>
 
             <section class="profile-page">
@@ -34,7 +32,7 @@
                     </div>
                     <div class="info col-md-4 col-sm-12">
                         <h2 class="title text-right">
-                            <a class="" href="#"> </a>                        
+                            <a class="black-btn font-20px" href="{{ route('explore-store-products-page') }}">Visit My Online Store!</a>                        
                         </h2>
 
                         <div class="info-block">
