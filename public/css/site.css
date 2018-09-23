@@ -13566,7 +13566,17 @@ a.text-dark:focus {
 }
 
 @font-face {
+  font-family: MyriadProRegular;
+  src: url("/fonts/vendor/myriad/MyriadPro-Regular.otf") format("opentype"), url("/fonts/vendor/myriad/MyriadPro-Regular.woff") format("woff"), url("/fonts/vendor/myriad/MyriadPro-Regular.ttf") format("truetype");
+}
+
+@font-face {
   font-family: Barlow;
+  src: url("/fonts/vendor/barlow/Barlow-Regular.ttf.otf") format("opentype"), url("/fonts/vendor/barlow/Barlow-Regular.ttf.woff") format("woff");
+}
+
+@font-face {
+  font-family: BarlowRegular;
   src: url("/fonts/vendor/barlow/Barlow-Regular.ttf.otf") format("opentype"), url("/fonts/vendor/barlow/Barlow-Regular.ttf.woff") format("woff");
 }
 
@@ -13578,6 +13588,11 @@ a.text-dark:focus {
 @font-face {
   font-family: BarlowBold;
   src: url("/fonts/vendor/barlow/Barlow-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: BarlowSemiBold;
+  src: url("/fonts/vendor/barlow/Barlow-SemiBold.otf") format("opentype");
 }
 
 @font-face {
@@ -13639,7 +13654,7 @@ footer {
 }
 
 footer .wrapper {
-  max-width: 1200px;
+  max-width: 1165px;
   width: 90%;
   margin: 0 auto;
   display: -webkit-box;
@@ -13702,6 +13717,10 @@ footer .wrapper .up-btn {
   font-family: Barlow !important;
 }
 
+.font-myriad-regular {
+  font-family: MyriadProRegular !important;
+}
+
 .font-20px {
   font-size: 20px !important;
 }
@@ -13736,7 +13755,7 @@ img {
 }
 
 .custom-section {
-  max-width: 1200px;
+  max-width: 1165px;
   width: 90%;
   margin: 0 auto;
   padding-bottom: 35px;
@@ -14369,7 +14388,7 @@ img {
   font-size: 50px;
   font-family: 'OpenSans-Extrabold' !important;
   padding: 0px 200px !important;
-  text-shadow: 0px 2px 24px #969696;
+  text-shadow: 0px 2px 10px #969696;
 }
 
 .sell-btn {
@@ -14435,7 +14454,7 @@ img {
 }
 
 .explore-cards {
-  max-width: 1200px;
+  max-width: 1165px;
   width: 90%;
   margin: 0 auto;
   margin-top: 30px;
@@ -14633,7 +14652,7 @@ img {
 }
 
 .events-cards {
-  max-width: 1200px;
+  max-width: 1165px;
   width: 90%;
   margin: 0 auto;
   margin-top: 30px;
@@ -14754,7 +14773,7 @@ img {
 }
 
 .fashion-cards {
-  max-width: 1200px;
+  max-width: 1165px;
   width: 90%;
   margin: 0 auto;
   margin-top: 30px;
@@ -14765,9 +14784,9 @@ img {
 }
 
 .fashion-cards .fashion-header h2 {
-  font-family: 'OpenSans-Extrabold';
-  font-size: 33px;
-  color: #333333;
+  font-family: BarlowBold;
+  font-size: 40px;
+  color: #000000;
 }
 
 .fashion-cards .default-card .default-wrapper {
@@ -14807,7 +14826,7 @@ img {
 }
 
 .designer-product {
-  max-width: 1200px;
+  max-width: 1165px;
   width: 90%;
   margin: 0 auto;
   margin-top: 30px;
@@ -14868,7 +14887,7 @@ img {
 }
 
 .product-cards {
-  max-width: 1200px;
+  max-width: 1165px;
   width: 90%;
   margin: 0 auto;
   margin-top: 30px;
@@ -14920,19 +14939,16 @@ img {
   top: 2px;
 }
 
-.product-cards .product-card {
-  padding: 35px;
-}
-
 .product-cards .product-card .image-header {
   text-align: center;
-  padding-bottom: 10px;
+  padding-bottom: 3px;
   border-bottom: 1px solid #cccccc;
+  overflow: hidden;
 }
 
 .product-cards .product-card .image-header img {
   width: auto;
-  height: auto;
+  height: 312px;
 }
 
 .product-cards .product-card .product-content {
@@ -14942,20 +14958,25 @@ img {
 }
 
 .product-cards .product-card .product-content .title {
-  font-size: 18px;
-  font-family: 'OpenSans-Light';
+  font-size: 21px;
+  font-family: BarlowLight;
+  color: #787878;
 }
 
 .product-cards .product-card .product-content .description {
-  font-family: 'OpenSans-Light';
-  font-size: 10px;
-  padding-bottom: 10px;
+  font-family: BarlowLight;
+  font-size: 11px;
+  color: #787878;
+}
+
+.product-cards .product-card .product-footer {
+  font-family: BarlowLight;
 }
 
 .product-cards .product-card .product-footer .price {
-  color: #000000;
-  font-family: 'OpenSans-Light';
-  font-size: 18px;
+  color: #787878;
+  font-family: BarlowLight;
+  font-size: 21px;
 }
 
 .product-cards .product-card .product-footer .read-more-link {
@@ -15021,10 +15042,16 @@ img {
 }
 
 .fashion-tabs {
-  max-width: 1200px;
+  max-width: 1165px;
   width: 90%;
   margin: 0 auto;
   margin-top: 30px;
+}
+
+.fashion-tabs .fashion-tab-title {
+  font-family: BarlowBold;
+  font-size: 40px;
+  color: #000000;
 }
 
 .fashion-tabs .nav .nav-link {
@@ -15032,7 +15059,7 @@ img {
   text-align: center;
   background: #fff;
   color: #000000;
-  font-size: 25px;
+  font-size: 21px;
   padding: 10px 0px;
   border: 1px solid #000000;
   font-weight: bold;
@@ -15043,19 +15070,19 @@ img {
   background: #191919;
 }
 
-.fashion-tabs .fashion-tab-card {
-  padding: 30px;
-}
-
-.fashion-tabs .fashion-tab-card .fashion-tab-wrapper {
-  padding: 8px;
+.fashion-tabs .cards-row {
   -webkit-box-shadow: 0px 0px 10px rgba(1, 1, 1, 0.5);
           box-shadow: 0px 0px 10px rgba(1, 1, 1, 0.5);
+  padding: 7px 0px 7px 7px;
+}
+
+.fashion-tabs .cards-row .fashion-tab-card .fashion-tab-wrapper {
+  padding-right: 7px;
   cursor: pointer;
 }
 
 .product-details {
-  max-width: 1200px;
+  max-width: 1165px;
   width: 90%;
   margin: 0 auto;
   margin-top: 30px;
@@ -15232,6 +15259,263 @@ img {
   font-size: 30px !important;
 }
 
+.haute-main {
+  max-width: 1165px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.haute-main .h2-title {
+  font-family: MyriadProRegular;
+  font-size: 31px;
+}
+
+.haute-main .houte-cards .houte-card .houte-wrapper {
+  background: #f5f5f5;
+  -webkit-box-shadow: 0px 0px 10px rgba(1, 1, 1, 0.1);
+          box-shadow: 0px 0px 10px rgba(1, 1, 1, 0.1);
+}
+
+.haute-main .houte-cards .houte-card .houte-wrapper .image-header img {
+  width: 100%;
+}
+
+.haute-main .houte-cards .houte-card .houte-wrapper .content {
+  padding: 18px;
+}
+
+.haute-main .houte-cards .houte-card .houte-wrapper .content .breadcreambs {
+  font-family: BarlowRegular;
+  font-size: 15px;
+  color: #666666;
+}
+
+.haute-main .houte-cards .houte-card .houte-wrapper .content .houte-title {
+  font-family: BarlowSemiBold;
+  font-size: 27px;
+  color: #c3060d;
+}
+
+.haute-main .houte-cards .houte-card .houte-wrapper .content .houte-text {
+  font-family: BarlowRegular;
+  font-size: 18px;
+  color: #4d4c4c;
+}
+
+.haute-main .houte-cards .houte-card .houte-wrapper .content .houte-rm {
+  font-family: BarlowRegular;
+  font-size: 17px;
+  color: #000000;
+  cursor: pointer;
+}
+
+.haute-main .houte-cards .houte-card .houte-wrapper .content .houte-rm:hover {
+  color: #4d4c4c;
+}
+
+.scoop-cards .scoop-card .scoop-wrapper {
+  padding: 13px;
+  -webkit-box-shadow: 0px 0px 10px rgba(1, 1, 1, 0.1);
+          box-shadow: 0px 0px 10px rgba(1, 1, 1, 0.1);
+  background: #fefefe;
+}
+
+.scoop-cards .scoop-card .scoop-wrapper .image-header img {
+  width: 100%;
+}
+
+.scoop-cards .scoop-card .scoop-wrapper .content .scoop-title {
+  font-family: BarlowRegular;
+  font-size: 19px;
+  color: #000000;
+}
+
+.scoop-cards .scoop-card .scoop-wrapper .content .scoop-text {
+  font-family: BarlowRegular;
+  font-size: 17px;
+  color: #929191;
+}
+
+.scoop-cards .scoop-card .scoop-wrapper .content .scoop-rm {
+  font-family: BarlowRegular;
+  font-size: 17px;
+  color: #000000;
+  cursor: pointer;
+}
+
+.scoop-cards .scoop-card .scoop-wrapper .content .scoop-rm:hover {
+  color: #929191;
+}
+
+.houte-talent-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 1165px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.houte-talent-cards .talent-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.houte-talent-cards .talent-header .h2-title {
+  font-family: MyriadProRegular;
+  font-size: 31px;
+}
+
+.houte-talent-cards .talent-header .black-btn {
+  font-family: MyriadProRegular;
+  color: #ecff2d;
+  background: #000000;
+  font-size: 20px;
+  padding: 10px 25px;
+  border-radius: 4px;
+}
+
+.houte-talent-cards .talent-header .black-btn:hover {
+  color: #ffffff;
+}
+
+.houte-talent-cards .houte-talent-card {
+  padding-right: 14px;
+}
+
+.houte-talent-cards .houte-talent-card .houte-talent-wrapper {
+  -webkit-box-shadow: 0px 0px 10px rgba(1, 1, 1, 0.1);
+          box-shadow: 0px 0px 10px rgba(1, 1, 1, 0.1);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.houte-talent-cards .houte-talent-card .houte-talent-wrapper .content {
+  padding: 11px;
+}
+
+.houte-talent-cards .houte-talent-card .houte-talent-wrapper .content .houte-talent-title {
+  font-family: BarlowLight;
+  font-size: 21px;
+  color: #000000;
+}
+
+.must-haves-description {
+  max-width: 1165px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.must-haves-description .must-title {
+  font-family: MyriadProRegular;
+  font-size: 40px;
+  text-align: center;
+  color: #000000;
+}
+
+.must-haves-description .must-text {
+  font-family: BarlowRegular;
+  font-size: 18px;
+  color: #000000;
+}
+
+.must-haves-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.must-haves-header .haves-title {
+  font-family: MyriadProRegular;
+  font-size: 25px;
+  color: #000000;
+}
+
+.spotlight-page {
+  max-width: 1165px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.spotlight-page .blog-title {
+  font-family: MyriadProRegular;
+  font-size: 31px;
+  color: #000000;
+}
+
+.spotlight-page .blog .blog-card {
+  max-height: 375px;
+  overflow: hidden;
+}
+
+.spotlight-page .blog .blog-card .blog-wrapper {
+  -webkit-box-shadow: 0px 0px 10px rgba(1, 1, 1, 0.1);
+          box-shadow: 0px 0px 10px rgba(1, 1, 1, 0.1);
+  background: #f5f5f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.spotlight-page .blog .blog-card .blog-wrapper .image-header {
+  overflow: hidden;
+}
+
+.spotlight-page .blog .blog-card .blog-wrapper .image-header img {
+  height: 100%;
+  width: auto;
+}
+
+.spotlight-page .blog .blog-card .blog-wrapper .content .blog-title {
+  font-family: BarlowSemiBold;
+  font-size: 27px;
+  color: #c3060d;
+}
+
+.spotlight-page .blog .blog-card .blog-wrapper .content .blog-text {
+  font-family: BarlowRegular;
+  font-size: 18px;
+  color: #4d4c4c;
+}
+
+.spotlight-page .blog .blog-card .blog-wrapper .content .blog-rm {
+  font-family: BarlowRegular;
+  font-size: 17px;
+  color: #000000;
+}
+
+.spotlight-page .blog .blog-card .blog-wrapper .content .blog-rm:hover {
+  color: #4d4c4c;
+}
+
+.spotlight-page .blog .blog-card .blog-wrapper .content .blog-breadcreambs {
+  font-family: BarlowRegular;
+  font-size: 15px;
+  color: #666666;
+}
+
+.text-black {
+  color: #000000;
+}
+
 @media only screen and (max-width: 1024px) and (min-width: 768px) {
   .fashion-cards .default-card .default-wrapper .content h2 {
     text-overflow: ellipsis;
@@ -15254,12 +15538,28 @@ img {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .houte-talent-cards .talent-header .black-btn {
+    font-size: 15px;
+    text-align: center;
+  }
+}
+
 .profile-page {
-  max-width: 1200px;
+  max-width: 1165px;
   width: 90%;
   margin: 0 auto;
   margin-top: 30px;
   color: #4b3e3e;
+}
+
+.profile-page .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .profile-page .description .main-text {
@@ -15279,15 +15579,15 @@ img {
   padding-bottom: 30px;
 }
 
-.profile-page .title .black-btn {
+.profile-page .black-btn {
   font-family: Barlow;
-  font-size: 25px;
-  padding: 10px 20px;
+  font-size: 21px;
+  padding: 10px 27px;
   background: black;
   color: #ecff2d;
 }
 
-.profile-page .title .black-btn:hover {
+.profile-page .black-btn:hover {
   color: #abb820;
 }
 
@@ -15556,7 +15856,7 @@ img {
 }
 
 .our-services {
-  max-width: 1200px;
+  max-width: 1165px;
   width: 90%;
   margin: 0 auto;
   margin-top: 30px;
@@ -15570,7 +15870,7 @@ img {
 }
 
 .our-events {
-  max-width: 1200px;
+  max-width: 1165px;
   width: 90%;
   margin: 0 auto;
   margin-top: 30px;
@@ -15737,7 +16037,7 @@ img {
 
 .music-featured,
 .music-news {
-  max-width: 1200px;
+  max-width: 1165px;
   width: 90%;
   margin: 0 auto;
   padding-bottom: 35px;
@@ -16228,7 +16528,7 @@ img {
 }
 
 .taste-page .banner-section {
-  max-width: 1200px;
+  max-width: 1165px;
   width: 90%;
   margin: 0 auto;
   margin-top: 30px;
@@ -16323,7 +16623,7 @@ img {
 }
 
 .mixology-page {
-  max-width: 1200px;
+  max-width: 1165px;
   width: 90%;
   margin: 0 auto;
   margin-top: 30px;
@@ -16444,7 +16744,7 @@ img {
 }
 
 .taste-contact-page {
-  max-width: 1200px;
+  max-width: 1165px;
   width: 90%;
   margin: 0 auto;
   margin-top: 30px;
@@ -16468,7 +16768,7 @@ img {
 }
 
 .stay-map {
-  max-width: 1200px;
+  max-width: 1165px;
   width: 90%;
   margin: 0 auto;
   margin-top: 30px;
@@ -16489,7 +16789,7 @@ img {
 }
 
 .custom-navbar .navbar-wrapper {
-  max-width: 1200px;
+  max-width: 1165px;
   width: 90%;
   margin: 0 auto;
 }
@@ -16746,7 +17046,7 @@ img {
 }
 
 .main-slider .index-banner .wrapper {
-  max-width: 1200px;
+  max-width: 1165px;
   width: 90%;
   margin: 0 auto;
 }

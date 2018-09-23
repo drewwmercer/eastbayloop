@@ -10,7 +10,7 @@
 
             <section class="fashion-cards mb-2">
                 <div class="fashion-header">
-                    <h2>Fashion</h2>
+                    <h2>FASHION</h2>
                 </div>
                 <div class="row">
                     <div class="default-card col-md-4 mb-4">
@@ -25,30 +25,10 @@
                     </div>
                     <div class="default-card col-md-4 mb-4">
                         <div class="default-wrapper">
-                            <a href="{{ route('fashion-product-page') }}">
+                            <a href="{{ route('fashion-spotlight-on-page') }}">
                                 <img src="http://testsite.eastbayloop.com/images/f2.jpeg" />
                                 <div class="content">
                                     <h2 class="mb-3">Spotlight On</h2>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="default-card col-md-4 mb-4">
-                        <div class="default-wrapper">
-                            <a href="{{ route('fashion-product-page') }}">
-                                <img src="http://testsite.eastbayloop.com/images/f3.jpeg" />
-                                <div class="content">
-                                    <h2 class="mb-3">Haute Couture</h2>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="default-card col-md-4 mb-4">
-                        <div class="default-wrapper">
-                            <a href="{{ route('fashion-product-page') }}">
-                                <img src="http://testsite.eastbayloop.com/images/f4.jpeg" />
-                                <div class="content">
-                                    <h2 class="mb-3">New Arrivals</h2>
                                 </div>
                             </a>
                         </div>
@@ -66,9 +46,29 @@
                     <div class="default-card col-md-4 mb-4">
                         <div class="default-wrapper">
                             <a href="{{ route('fashion-product-page') }}">
+                                <img src="http://testsite.eastbayloop.com/images/f4.jpeg" />
+                                <div class="content">
+                                    <h2 class="mb-3">New Arrivals</h2>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="default-card col-md-4 mb-4">
+                        <div class="default-wrapper">
+                            <a href="{{ route('fashion-must-haves-page') }}">
                                 <img src="http://testsite.eastbayloop.com/images/f6.jpeg" />
                                 <div class="content">
-                                    <h2 class="mb-3">Shop Now!</h2>
+                                    <h2 class="mb-3">Must Haves</h2>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="default-card col-md-4 mb-4">
+                        <div class="default-wrapper">
+                            <a href="{{ route('fashion-hautre-coutre-page') }}">
+                                <img src="http://testsite.eastbayloop.com/images/f3.jpeg" />
+                                <div class="content">
+                                    <h2 class="mb-3">Haute Couture</h2>
                                 </div>
                             </a>
                         </div>
@@ -79,30 +79,27 @@
             <section class="fashion-tabs">
                 <ul class="nav" id="pills-tab" role="tablist">
                     <li class="nav-item mr-2 mt-2">
-                        <a class="nav-link active" id="pills-women-tab" data-toggle="pill" href="#pills-women" role="tab" aria-controls="pills-women" aria-selected="true">Women's</a>
+                        <a class="nav-link active" id="pills-women-tab" data-toggle="pill" href="#pills-women" role="tab" aria-controls="pills-women" aria-selected="true">Women</a>
                     </li>
                     <li class="nav-item mr-2 mt-2">
-                        <a class="nav-link" id="pills-men-tab" data-toggle="pill" href="#pills-men" role="tab" aria-controls="pills-men" aria-selected="false">Men's</a>
+                        <a class="nav-link" id="pills-men-tab" data-toggle="pill" href="#pills-men" role="tab" aria-controls="pills-men" aria-selected="false">Men</a>
                     </li>
                     <li class="nav-item mr-2 mt-2">
-                        <a class="nav-link" id="pills-accessories-tab" data-toggle="pill" href="#pills-accessories" role="tab" aria-controls="pills-accessories" aria-selected="false">Accessories</a>
+                        <a class="nav-link" id="pills-accessories-tab" data-toggle="pill" href="#pills-accessories" role="tab" aria-controls="pills-accessories" aria-selected="false">Teen</a>
                     </li>
                     <li class="nav-item mr-2 mt-2">
-                        <a class="nav-link" id="pills-handbags-tab" data-toggle="pill" href="#pills-handbags" role="tab" aria-controls="pills-handbags" aria-selected="false">Handbags</a>
+                        <a class="nav-link" id="pills-handbags-tab" data-toggle="pill" href="#pills-handbags" role="tab" aria-controls="pills-handbags" aria-selected="false">Kids</a>
                     </li>
                     <li class="nav-item mr-2 mt-2">
-                        <a class="nav-link" id="pills-shoes-tab" data-toggle="pill" href="#pills-shoes" role="tab" aria-controls="pills-shoes" aria-selected="false">Shoes</a>
+                        <a class="nav-link" id="pills-shoes-tab" data-toggle="pill" href="#pills-shoes" role="tab" aria-controls="pills-shoes" aria-selected="false">Pets</a>
                     </li>
-                    <li class="nav-item mt-2">
-                        <a class="nav-link" id="pills-sales-tab" data-toggle="pill" href="#pills-sales" role="tab" aria-controls="pills-sales" aria-selected="false">Sales</a>
-                    </li>
-                    
                 </ul>
+                <h2 class="fashion-tab-title mt-5 mb-4">CUSTOMER FAVOURITES</h2>
                 <div class="tab-content mt-3" id="pills-tabContent">
                     <div class="tab-pane fade show active" id="pills-women" role="tabpanel" aria-labelledby="pills-women-tab">
-                        <div class="row">
+                        <div class="row cards-row m-0">
                             @for($i = 1; $i < 4; $i++)
-                                <div class="fashion-tab-card col-md-4">
+                                <div class="fashion-tab-card col-md-4 p-0">
                                     <div class="fashion-tab-wrapper">
                                         <a href="{{ route('fashion-per-product-page') }}">                                        
                                             <div class="image-header">
@@ -114,10 +111,10 @@
                             @endfor
                         </div>
                     </div>
-                    <div class="tab-pane fade row" id="pills-men" role="tabpanel" aria-labelledby="pills-men-tab">
-                        <div class="row">
+                    <div class="tab-pane fade" id="pills-men" role="tabpanel" aria-labelledby="pills-men-tab">
+                        <div class="row  cards-row m-0">
                             @for($i = 1; $i < 4; $i++)
-                                <div class="fashion-tab-card col-md-4">
+                                <div class="fashion-tab-card col-md-4 p-0">
                                     <div class="fashion-tab-wrapper">
                                         <a href="{{ route('fashion-per-product-page') }}">
                                             <div class="image-header">
@@ -129,10 +126,10 @@
                             @endfor
                         </div>
                     </div>
-                    <div class="tab-pane fade row" id="pills-accessories" role="tabpanel" aria-labelledby="pills-accessories-tab">
-                        <div class="row">
+                    <div class="tab-pane fade" id="pills-accessories" role="tabpanel" aria-labelledby="pills-accessories-tab">
+                        <div class="row cards-row m-0">
                             @for($i = 1; $i < 4; $i++)
-                                <div class="fashion-tab-card col-md-4">
+                                <div class="fashion-tab-card col-md-4 p-0">
                                     <div class="fashion-tab-wrapper">
                                         <a href="{{ route('fashion-per-product-page') }}">                                        
                                             <div class="image-header">
@@ -144,10 +141,10 @@
                             @endfor
                         </div>
                     </div>
-                    <div class="tab-pane fade row" id="pills-handbags" role="tabpanel" aria-labelledby="pills-handbags-tab">
-                        <div class="row">
+                    <div class="tab-pane fade" id="pills-handbags" role="tabpanel" aria-labelledby="pills-handbags-tab">
+                        <div class="row cards-row m-0">
                             @for($i = 1; $i < 4; $i++)
-                                <div class="fashion-tab-card col-md-4">
+                                <div class="fashion-tab-card col-md-4 p-0">
                                     <div class="fashion-tab-wrapper">
                                         <a href="{{ route('fashion-per-product-page') }}">
                                             <div class="image-header">
@@ -159,29 +156,14 @@
                             @endfor
                         </div>
                     </div>
-                    <div class="tab-pane fade row" id="pills-shoes" role="tabpanel" aria-labelledby="pills-shoes-tab">
-                        <div class="row">
+                    <div class="tab-pane fade" id="pills-shoes" role="tabpanel" aria-labelledby="pills-shoes-tab">
+                        <div class="row cards-row m-0">
                             @for($i = 1; $i < 4; $i++)
-                                <div class="fashion-tab-card col-md-4">
+                                <div class="fashion-tab-card col-md-4 p-0">
                                     <div class="fashion-tab-wrapper">
                                         <a href="{{ route('fashion-per-product-page') }}">
                                             <div class="image-header">
                                                 <img src="http://testsite.eastbayloop.com/images/adventure{{ $i }}.png"/>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            @endfor
-                        </div>
-                    </div>
-                    <div class="tab-pane fade row" id="pills-sales" role="tabpanel" aria-labelledby="pills-sales-tab">
-                        <div class="row">
-                            @for($i = 1; $i < 4; $i++)
-                                <div class="fashion-tab-card col-md-4">
-                                    <div class="fashion-tab-wrapper">
-                                        <a href="{{ route('fashion-per-product-page') }}">
-                                            <div class="image-header">
-                                                <img src="http://testsite.eastbayloop.com/images/nightlife{{ $i }}.png"/>
                                             </div>
                                         </a>
                                     </div>
@@ -195,7 +177,9 @@
              <!-- EVENTS -->
              <section class="custom-section">
                 <div class="section-header">
-                    <p class="title text-uppercase text-center">FASHION EVENTS</p>
+                    <p class="title text-uppercase text-center font-barlow-regular">UPCOMING FASHION EVENTS</p>
+                    <p class="accurate-title font-barlow-regular text-center"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consequat, mi a blandit sollicitudin,
+                                eros neque sodales felis.</p>
                 </div>
                 <div class="section-content">
                     <div class="row">

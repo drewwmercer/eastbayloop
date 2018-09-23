@@ -36,7 +36,19 @@
 }
 
 @font-face {
+    font-family: MyriadProRegular;
+    src: url("/fonts/vendor/myriad/MyriadPro-Regular.otf") format("opentype"),
+         url('/fonts/vendor/myriad/MyriadPro-Regular.woff') format('woff'),
+         url('/fonts/vendor/myriad/MyriadPro-Regular.ttf')  format('truetype');
+}
+
+@font-face {
     font-family: Barlow;
+    src: url("/fonts/vendor/barlow/Barlow-Regular.ttf.otf") format("opentype"), url('/fonts/vendor/barlow/Barlow-Regular.ttf.woff') format('woff');
+}
+
+@font-face {
+    font-family: BarlowRegular;
     src: url("/fonts/vendor/barlow/Barlow-Regular.ttf.otf") format("opentype"), url('/fonts/vendor/barlow/Barlow-Regular.ttf.woff') format('woff');
 }
 
@@ -48,6 +60,11 @@
 @font-face {
     font-family: BarlowBold;
     src: url("/fonts/vendor/barlow/Barlow-Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: BarlowSemiBold;
+    src: url("/fonts/vendor/barlow/Barlow-SemiBold.otf") format("opentype");
 }
 
 @font-face {
@@ -111,7 +128,7 @@ footer {
     text-align: center;
 
     .wrapper {
-        max-width: 1200px;
+        max-width: 1165px;
         width: 90%; 
         margin: 0 auto;
         display: flex;
@@ -158,6 +175,10 @@ footer {
 
 .font-barlow-regular {
     font-family: Barlow !important;
+}
+
+.font-myriad-regular {
+    font-family: MyriadProRegular !important;
 }
 
 .font-20px {

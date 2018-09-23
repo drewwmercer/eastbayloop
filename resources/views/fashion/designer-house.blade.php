@@ -10,8 +10,16 @@
 
             <section class="profile-page">
                 <div class="row">
-                    <div class="description col-md-8 col-sm-12 mb-4">
-                        <h2 class="title">Designer and Fashion House Name</h2>
+                    <div class="header w-100">
+                        <div>
+                            <h2 class="title">Store Name</h2>
+                        </div>
+                        <div>
+                            <a class="black-btn mr-2" href="{{ route('fashion-product-page') }}">Visit My Online Store!</a>
+                            <a class="black-btn" href="#">Book an Appointment!</a>
+                        </div>
+                    </div>
+                    <div class="description col-md-8 col-sm-12 mb-4 m-0 p-0">
                         <div class="main-text">
                             <h2>Business Description</h2>
                             <p>
@@ -33,38 +41,48 @@
                         </div>
                     </div>
                     <div class="info col-md-4 col-sm-12">
-                        <h2 class="title text-right">
-                            <a class="black-btn" href="#">Book Me For Your Event</a>
-                        </h2>
-
                         <div class="info-block">
                             <div class="info-title">Contact Details</div>
                             <div class="col-md-12 col-sm-12 info-details">
-                                <div>
-                                    <i class="fa fa-map-marker"></i>
-                                    <span class="ml-2">
+                                <div class="row pt-0 pb-0">
+                                    <div class="col-md-1">
+                                        <i class="fa fa-map-marker"></i>
+                                    </div>
+                                    <div class="col-md-11">
                                         445 Mount Eden Road, Mount Eden Auckland
-                                    </span>
-                                        
+                                    </div>     
                                 </div>
-                                <div>
-                                    <i class="fa fa-phone"></i> 
-                                    <span class="ml-2">
+                                <div class="row pt-0 pb-0">
+                                    <div class="col-md-1">
+                                        <i class="fa fa-clock-o"></i>
+                                    </div>
+                                    <div class="col-md-11">
+                                        Monday - Friday   8AM - 9PM </br>
+                                        Saturday - Sunday  1PM - 10PM
+                                    </div>     
+                                </div>
+                                <div class="row pt-0 pb-0">
+                                    <div class="col-md-1">
+                                        <i class="fa fa-phone"></i> 
+                                    </div>
+                                    <div class="col-md-11">
                                         123 4567 8901 / 123 4567 8901
-                                    </span>
+                                    </div> 
                                 </div>  
-                                <div>
-                                    <i class="fa fa-dribbble"></i>
-                                    <span class="ml-2">
+                                <div class="row pt-0 pb-0">
+                                    <div class="col-md-1">
+                                        <i class="fa fa-dribbble"></i>
+                                    </div>
+                                    <div class="col-md-11">
                                          www.website.com
-                                        </span>
-                                    </div>                                                                                              
+                                    </div> 
+                                </div>                                                                                              
                             </div>
                             <div class="info-title mt-2">Social Media</div> 
                             <div class="col-md-12 col-sm-12 info-social mb-0 p-0">
-                                <div class="w-100 mt-2 facebook text-center "><i class="fa fa-facebook"></i></div>
+                                <div class="w-100 mt-3 facebook text-center "><i class="fa fa-facebook"></i></div>
                                 <div class="w-100 mt-2 twitter text-center"><i class="fa fa-twitter"></i></div>
-                                <div class="w-100 mt-2 youtube text-center"><i class="fa fa-youtube"></i></div>                                
+                                <div class="w-100 mt-2 mb-3 youtube text-center"><i class="fa fa-youtube"></i></div>                                
                             </div>                          
                         </div>
                     </div>
@@ -76,32 +94,34 @@
                     @for($i = 1; $i < 5; $i++)
                         <div class="col-md-3 designer-card mb-4">
                             <div class="designer-wrapper">
-                                <div class="image-header">
-                                    <img src="http://testsite.eastbayloop.com/images/woman{{ $i == 4 ? 1 : $i}}.jpeg" />
-                                </div>
-                                <div class="content">
-                                    <h2>Product title_0{{ $i }}</h2>
-                                    <div class="category">CATEGORY</div>
-                                    <div class="footer">
-                                        <div class="star-ratings-css mb-2">
-                                            <div class="star-ratings-css-top" style="width: 61%">
-                                                <span>★</span>
-                                                <span>★</span>
-                                                <span>★</span>
-                                                <span>★</span>
-                                                <span>★</span>
+                                <a href="{{ route('fashion-per-product-page') }}">
+                                    <div class="image-header">
+                                        <img src="http://testsite.eastbayloop.com/images/woman{{ $i == 4 ? 1 : $i}}.jpeg" />
+                                    </div>
+                                    <div class="content">
+                                        <h2 class="text-black">Product title_0{{ $i }}</h2>
+                                        <div class="category">CATEGORY</div>
+                                        <div class="footer">
+                                            <div class="star-ratings-css mb-2">
+                                                <div class="star-ratings-css-top" style="width: 61%">
+                                                    <span>★</span>
+                                                    <span>★</span>
+                                                    <span>★</span>
+                                                    <span>★</span>
+                                                    <span>★</span>
+                                                </div>
+                                                <div class="star-ratings-css-bottom">
+                                                    <span>★</span>
+                                                    <span>★</span>
+                                                    <span>★</span>
+                                                    <span>★</span>
+                                                    <span>★</span>
+                                                </div>
                                             </div>
-                                            <div class="star-ratings-css-bottom">
-                                                <span>★</span>
-                                                <span>★</span>
-                                                <span>★</span>
-                                                <span>★</span>
-                                                <span>★</span>
-                                            </div>
-                                        </div>
-                                        <span class="price">$19.00</span>    
-                                    </div>                                                                    
-                                </div>
+                                            <span class="price">$19.00</span>    
+                                        </div>                                                                    
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     @endfor

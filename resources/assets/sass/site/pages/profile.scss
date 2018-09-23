@@ -1,9 +1,14 @@
 .profile-page {
-    max-width: 1200px;
+    max-width: 1165px;
     width: 90%;
     margin: 0 auto;
     margin-top: 30px;
     color: #4b3e3e;
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+    }
 
     .description {
         .main-text {
@@ -22,16 +27,18 @@
         color: #4b3e3e;
         padding-bottom: 30px;
 
-        .black-btn {
-            font-family: Barlow;
-            font-size: 25px;
-            padding: 10px 20px;
-            background: black;
-            color: #ecff2d;
+        
+    }
 
-            &:hover {
-                color: #abb820;
-            }
+    .black-btn {
+        font-family: Barlow;
+        font-size: 21px;
+        padding: 10px 27px;
+        background: black;
+        color: #ecff2d;
+
+        &:hover {
+            color: #abb820;
         }
     }
 
@@ -273,7 +280,7 @@
 }
 
 .our-services {
-    max-width: 1200px;
+    max-width: 1165px;
     width: 90%;
     margin: 0 auto;
     margin-top: 30px;
@@ -287,7 +294,7 @@
 }
 
 .our-events {
-    max-width: 1200px;
+    max-width: 1165px;
     width: 90%;
     margin: 0 auto;
     margin-top: 30px;

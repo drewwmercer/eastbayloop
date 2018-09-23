@@ -40,6 +40,9 @@ Route::get('/explore/store/product', 'ExploreController@showStoreProduct')->name
 Route::get('/events', 'EventsController@index')->name('events-page');
 Route::get('/fashion', 'FashionController@index')->name('fashion-page');
 Route::get('/fashion/designer-house', 'FashionController@designerHouseShow')->name('fashion-designer-page');
+Route::get('/fashion/haute-coutre', 'FashionController@showHautreCoutre')->name('fashion-hautre-coutre-page');
+Route::get('/fashion/must-haves', 'FashionController@showMustHaves')->name('fashion-must-haves-page');
+Route::get('/fashion/spotlight-on', 'FashionController@showSpotlightOn')->name('fashion-spotlight-on-page');
 Route::get('/fashion/products', 'FashionController@showProducts')->name('fashion-product-page');
 Route::get('/fashion/product', 'FashionController@showProduct')->name('fashion-per-product-page');
 Route::get('/market-place', 'MarketPlaceController@index')->name('market-place-page');
