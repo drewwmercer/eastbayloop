@@ -92,7 +92,7 @@
                                     <p class="text">
                                         Catherine felt trapped She had a key staff member request a raise that was not earned That same staff member decided she could ....
                                     </p>
-                                    <a href="#" class="radio-plus-btn">+</a>
+                                    <a href="{{ route('music-radio-page') }}" class="radio-plus-btn">+</a>
                                 </div>
                             </div>
                         </div>

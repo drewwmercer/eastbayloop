@@ -12,13 +12,39 @@
                         </div>
                     </li>
                 </ul>
+                <template v-if="radio">
+                    <div class="slider-menu">
+                        <div class="list-menu">
+                            <div class="item-menu yellow">
+                                <a href="#">Listen Live!</a>
+                            </div>
+                            <div class="separator-menu"></div>
+                            <div class="item-menu">
+                                <a href="#">Schedule</a>
+                            </div>
+                            <div class="separator-menu"></div>
+                            <div class="item-menu">
+                                <a href="#">Advertise with us!</a>
+                            </div>
+                            <div class="separator-menu"></div>
+                            <div class="item-menu">
+                                <a href="#">Featured EVENTS</a>
+                            </div>
+                            <div class="separator-menu"></div>
+                            <div class="item-menu">
+                                <a href="#">COMMUNITY SUPPORTERS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <radio></radio>
+                </template>
             </div>
         </section>
     </div>
 </template>
 <script>
     export default {
-        props: ['data'],
+        props: ['data', 'radio'],
         
         mounted() {
             $('.flexslider').flexslider({

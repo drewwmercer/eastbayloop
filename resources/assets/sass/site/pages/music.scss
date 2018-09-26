@@ -406,6 +406,85 @@
     }
 }
 
+.radio-page {
+    max-width: 1165px;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 35px;
+    margin-top: 5rem;
+
+    .main-radio {
+        display: flex;
+
+        .radio-program {
+            .program-title {
+                text-transform: uppercase;
+                font-family: BarlowSemiCondensedRegular;
+                font-size: 31px;
+            }
+
+            .radio-card {
+                .radio-wrapper {
+                    background: #f5f5f5;
+                    box-shadow: 0px 0px 10px rgba(1, 1, 1, .2);
+
+                    .content {
+                        padding: 3px 13px 15px 13px;
+
+                        .radio-text {
+                            font-family: BarlowRegular;
+                            font-size: 18px;
+                            color: #4d4c4c;
+                        }
+
+                        .radio-rm {
+                            font-family: BarlowRegular;
+                            font-size: 19px;
+                            color: #000000;
+
+                            &:hover {
+                                color: #4d4c4c;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .radio-schedule {
+            
+            .schedule-wrapper {
+                box-shadow: 0px 0px 10px rgba(1, 1, 1, .2);
+                padding: 18px;
+
+                .schedule-title {
+                    font-family: BarlowRegular;
+                    font-size: 19px;
+                    color: #000000;
+                }
+
+                .schedule-entity {
+                    background: #f5f5f5;
+                    padding: 15px 11px;
+                    margin-bottom: 0.487rem !important;
+
+                    .schedule-time {
+                        font-family: BarlowRegular;
+                        font-size: 16px;
+                        color: #747474;
+                    }
+    
+                    .schedule-text {
+                        font-family: BarlowRegular;
+                        font-size: 18px;
+                        color: #333333;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 1301px) and (min-width: 768px) {
     .m-upcoming-event-card {
         .m-upcoming-event-wrapper {

@@ -10,7 +10,8 @@
 
             <section class="profile-page music-show-page">
                 <h2 class="title text-center">
-                    <a class="black-btn" href="#">Book Me For Your Event</a>
+                    <a class="black-btn mr-3" href="#">Book Me For Your Event</a>
+                    <a class="black-btn" href="{{ route('music-product-page') }}">Full Music Collection</a>
                 </h2>
                 <h2 class="title">Artist/Band/DJ Name</h2>
                 
@@ -38,7 +39,7 @@
                         <h2 class="medium-title mt-4 mb-4">PAST EVENTS</h2>
                         <div class="row p-0 m-0">
                             @for($i = 1; $i < 4; $i++)
-                                <div class="col-md-4 past-event-card mb-4">
+                                <div class="col-md-4 past-event-card mb-4 p-0 pr-2">
                                     <div class="past-event-wrapper">
                                         <img src="{{ asset('assets/img/music/' . $i . '.png') }}" />
                                     </div>
@@ -48,7 +49,7 @@
                         <h2 class="medium-title mt-4 mb-4">UPCOMING EVENTS FOR THE ARTIST/BAND/DJ</h2>
                         <div class="row p-0 m-0">
                             @for($i = 1; $i < 4; $i++)
-                                <div class="col-md-4 m-upcoming-event-card mb-4">
+                                <div class="col-md-4 m-upcoming-event-card mb-4 p-0 pr-3">
                                     <div class="m-upcoming-event-wrapper">
                                         <div class="image-header">
                                             <img src="{{ asset('assets/img/music/' . $i . '.png') }}" />

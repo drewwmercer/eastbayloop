@@ -26,6 +26,11 @@ class FashionController extends Controller
         return view('fashion.designer-house');
     }
 
+    public function designerLocalHouseShow()
+    {
+        return view('fashion.local-designer-house');
+    }
+
     public function showHautreCoutre()
     {
         return view('fashion.hautre-coutre');

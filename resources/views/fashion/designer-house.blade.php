@@ -3,9 +3,7 @@
 @section('content')
     <fashion-page inline-template>
         <main>
-            <slider :data="[{img: '{{ asset('assets/img/sliders/designer.png') }}', text: 'Designer and Fashion House', class: 'explore-slider'},
-                            {img: '{{ asset('assets/img/sliders/designer.png') }}', text: 'Designer and Fashion House', class: 'explore-slider'},
-                            {img: '{{ asset('assets/img/sliders/designer.png') }}', text: 'Designer and Fashion House', class: 'explore-slider'}]">
+            <slider :data="[{img: '{{ asset('assets/img/sliders/designer.png') }}', text: 'Designer and Fashion House', class: 'explore-slider'}]">
             </slider>
 
             <section class="profile-page">
@@ -15,11 +13,10 @@
                             <h2 class="title">Store Name</h2>
                         </div>
                         <div>
-                            <a class="black-btn mr-2" href="{{ route('fashion-product-page') }}">Visit My Online Store!</a>
-                            <a class="black-btn" href="#">Book an Appointment!</a>
+                        <a href="{{ route('fashion-product-page') }}" class="black-btn font-20px">Visit My Online Store!</a>
                         </div>
                     </div>
-                    <div class="description col-md-8 col-sm-12 mb-4 m-0 p-0">
+                    <div class="description col-md-8 col-sm-12 mb-4">
                         <div class="main-text">
                             <h2>Business Description</h2>
                             <p>
@@ -131,7 +128,7 @@
              <!-- EVENTS -->
              <section class="custom-section">
                 <div class="section-header">
-                    <p class="title text-uppercase text-center">UPCOMING FASHION EVENTS</p>
+                    <p class="title text-uppercase text-center">EVENTS</p>
                     <p class="content text-center">Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vivamus suscipit tortor eget felis porttitor volutpat.</p>
                 </div>
                 <div class="section-content">

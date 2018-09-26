@@ -35,4 +35,14 @@ class MusicController extends Controller
     {
         return view('music.per-product');
     }
+
+    public function showVenuesProfile()
+    {
+        return view('music.venues-profile');
+    }
+
+    public function showRadio()
+    {
+        return view('music.radio');
+    }
 }

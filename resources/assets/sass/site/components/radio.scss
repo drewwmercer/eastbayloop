@@ -1,0 +1,107 @@
+.radio {
+    position: absolute;
+    width: 100%;
+    bottom: -5px;
+    z-index: 101;
+
+    .radio-wrapper {
+        max-width: 1165px;
+        margin: 0 auto;
+        position: relative;
+
+        .radio-btn {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background: #11c0d5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #ffffff;
+            font-size: 37px;
+            position: absolute;
+            top: -40px;
+            cursor: pointer;
+            transition: all .7s ease;
+
+            &:hover {
+                background: #0f93a1;
+            }
+        }
+    }
+
+    .radio-progress {
+        background: #11c0d5;
+        height: 5px;
+        bottom: -5px;
+    }
+
+    .radio-info {
+        position: absolute;
+        width: 100%;
+
+        .info-wrapper {
+            max-width: 1165px;
+            margin: 0 auto;
+            position: relative;
+
+            .info-text {
+                margin-left: 80px;
+                margin-top: 5px;
+
+                .song-title {
+                    font-family: BarlowMedium;
+                    font-size: 25px;
+                    color: #000000;
+                }
+        
+                .song-author {
+                    font-family: BarlowSemiBold;
+                    font-size: 18px;
+                    color: #999999;
+                }
+                
+                .song-time {
+                    font-family: BarlowSemiBold;
+                    font-size: 16px;
+                    color: #6f6f6f;
+        
+                    .song-left {
+                        color: #11c0d5;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 768px) {
+    .radio .radio-wrapper .radio-btn {
+        left: 40px;
+    }
+
+    .radio .radio-info .info-wrapper .info-text {
+        margin-left: 115px;
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 768px) { 
+    .radio .radio-wrapper .radio-btn {
+        left: 8px;
+    }
+
+    .radio .radio-info .info-wrapper .info-text {
+        .song-title {
+            font-size: 20px;
+        }
+
+        .song-author {
+            font-size: 15px;
+        }
+
+        .song-time {
+            font-size: 13px;
+        }
+    }
+}

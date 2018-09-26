@@ -44,12 +44,12 @@
 
 @font-face {
     font-family: Barlow;
-    src: url("/fonts/vendor/barlow/Barlow-Regular.ttf.otf") format("opentype"), url('/fonts/vendor/barlow/Barlow-Regular.ttf.woff') format('woff');
+    src: url("/fonts/vendor/barlow/Barlow-Regular.otf") format("opentype");
 }
 
 @font-face {
     font-family: BarlowRegular;
-    src: url("/fonts/vendor/barlow/Barlow-Regular.ttf.otf") format("opentype"), url('/fonts/vendor/barlow/Barlow-Regular.ttf.woff') format('woff');
+    src: url("/fonts/vendor/barlow/Barlow-Regular.otf") format("opentype");
 }
 
 @font-face {
@@ -63,8 +63,18 @@
 }
 
 @font-face {
+    font-family: BarlowMedium;
+    src: url("/fonts/vendor/barlow/Barlow-Medium.otf") format("opentype");
+}
+
+@font-face {
     font-family: BarlowSemiBold;
     src: url("/fonts/vendor/barlow/Barlow-SemiBold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: BarlowSemiCondensedRegular;
+    src: url("/fonts/vendor/barlow/BarlowSemiCondensed-Regular.otf") format("opentype");
 }
 
 @font-face {
@@ -181,8 +191,28 @@ footer {
     font-family: MyriadProRegular !important;
 }
 
+.font-barlow-semi {
+    font-family: BarlowSemiCondensed !important;
+}
+
+.font-barlow-semi-regular {
+    font-family: BarlowSemiCondensedRegular !important;
+}
+
+.font-19px {
+    font-size: 19px !important;
+}
+
 .font-20px {
     font-size: 20px !important;
+}
+
+.font-48px {
+    font-size: 48px;
+}
+
+.text-black {
+    color: #000000 !important;
 }
 
 .cursor-pointer {

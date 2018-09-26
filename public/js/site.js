@@ -51546,6 +51546,7 @@ Vue.component('stay-page', __webpack_require__(98));
 /* Components */
 Vue.component('navbar', __webpack_require__(100));
 Vue.component('slider', __webpack_require__(102));
+Vue.component('radio', __webpack_require__(119));
 
 /***/ }),
 /* 85 */
@@ -52224,9 +52225,35 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    props: ['data'],
+    props: ['data', 'radio'],
 
     mounted: function mounted() {
         $('.flexslider').flexslider({
@@ -52249,45 +52276,91 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "main-slider" }, [
     _c("section", { staticClass: "slider" }, [
-      _c("div", { staticClass: "flexslider w-100" }, [
-        _c(
-          "ul",
-          { staticClass: "slides" },
-          _vm._l(_vm.data, function(slide, key) {
-            return _c("li", { key: key }, [
-              _c(
-                "div",
-                {
-                  staticClass: "index-banner",
-                  style: "background:url(" + slide.img + ") no-repeat center;"
-                },
-                [
-                  _c("div", { staticClass: "wrapper" }, [
-                    _c("span", { class: "banner-text " + slide.class || "" }, [
-                      _vm._v(_vm._s(slide.text))
-                    ]),
-                    _vm._v(" "),
-                    slide.link
-                      ? _c(
-                          "a",
-                          {
-                            staticClass: "banner-btn",
-                            attrs: { href: slide.link }
-                          },
-                          [_vm._v(_vm._s(slide.btnText || "READ MORE"))]
-                        )
-                      : _vm._e()
-                  ])
-                ]
-              )
-            ])
-          })
-        )
-      ])
+      _c(
+        "div",
+        { staticClass: "flexslider w-100" },
+        [
+          _c(
+            "ul",
+            { staticClass: "slides" },
+            _vm._l(_vm.data, function(slide, key) {
+              return _c("li", { key: key }, [
+                _c(
+                  "div",
+                  {
+                    staticClass: "index-banner",
+                    style: "background:url(" + slide.img + ") no-repeat center;"
+                  },
+                  [
+                    _c("div", { staticClass: "wrapper" }, [
+                      _c(
+                        "span",
+                        { class: "banner-text " + slide.class || "" },
+                        [_vm._v(_vm._s(slide.text))]
+                      ),
+                      _vm._v(" "),
+                      slide.link
+                        ? _c(
+                            "a",
+                            {
+                              staticClass: "banner-btn",
+                              attrs: { href: slide.link }
+                            },
+                            [_vm._v(_vm._s(slide.btnText || "READ MORE"))]
+                          )
+                        : _vm._e()
+                    ])
+                  ]
+                )
+              ])
+            })
+          ),
+          _vm._v(" "),
+          _vm.radio ? [_vm._m(0), _vm._v(" "), _c("radio")] : _vm._e()
+        ],
+        2
+      )
     ])
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "slider-menu" }, [
+      _c("div", { staticClass: "list-menu" }, [
+        _c("div", { staticClass: "item-menu yellow" }, [
+          _c("a", { attrs: { href: "#" } }, [_vm._v("Listen Live!")])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "separator-menu" }),
+        _vm._v(" "),
+        _c("div", { staticClass: "item-menu" }, [
+          _c("a", { attrs: { href: "#" } }, [_vm._v("Schedule")])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "separator-menu" }),
+        _vm._v(" "),
+        _c("div", { staticClass: "item-menu" }, [
+          _c("a", { attrs: { href: "#" } }, [_vm._v("Advertise with us!")])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "separator-menu" }),
+        _vm._v(" "),
+        _c("div", { staticClass: "item-menu" }, [
+          _c("a", { attrs: { href: "#" } }, [_vm._v("Featured EVENTS")])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "separator-menu" }),
+        _vm._v(" "),
+        _c("div", { staticClass: "item-menu" }, [
+          _c("a", { attrs: { href: "#" } }, [_vm._v("COMMUNITY SUPPORTERS")])
+        ])
+      ])
+    ])
+  }
+]
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
@@ -52308,6 +52381,163 @@ if (false) {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 107 */,
+/* 108 */,
+/* 109 */,
+/* 110 */,
+/* 111 */,
+/* 112 */,
+/* 113 */,
+/* 114 */,
+/* 115 */,
+/* 116 */,
+/* 117 */,
+/* 118 */,
+/* 119 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(1)
+/* script */
+var __vue_script__ = __webpack_require__(120)
+/* template */
+var __vue_template__ = __webpack_require__(121)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/site/Radio.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-99ce922c", Component.options)
+  } else {
+    hotAPI.reload("data-v-99ce922c", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 120 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    props: ['data'],
+
+    mounted: function mounted() {},
+
+
+    methods: {}
+});
+
+/***/ }),
+/* 121 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "radio" }, [
+      _c("div", { staticClass: "radio-wrapper" }, [
+        _c("div", { staticClass: "radio-btn" }, [
+          _c("i", {
+            staticClass: "fa fa-play ml-2",
+            attrs: { "aria-hidden": "true" }
+          })
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", {
+        staticClass: "radio-progress",
+        staticStyle: { width: "40%" }
+      }),
+      _vm._v(" "),
+      _c("div", { staticClass: "radio-info" }, [
+        _c("div", { staticClass: "info-wrapper" }, [
+          _c("div", { staticClass: "info-text" }, [
+            _c("span", { staticClass: "song-title mr-1" }, [
+              _vm._v("Somewhere in the Middle ")
+            ]),
+            _vm._v(" "),
+            _c("span", { staticClass: "song-author mr-1" }, [
+              _vm._v("by Dishwalla ")
+            ]),
+            _vm._v(" "),
+            _c("span", { staticClass: "song-time" }, [
+              _c("span", { staticClass: "song-left" }, [_vm._v("1:09 ")]),
+              _vm._v("\n                    / 3:42\n                ")
+            ])
+          ])
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-99ce922c", module.exports)
+  }
+}
 
 /***/ })
 /******/ ]);

@@ -12,3 +12,4 @@ Vue.component('stay-page', require('../pages/site/Stay.vue'));
 /* Components */
 Vue.component('navbar', require('../components/site/Navbar.vue'));
 Vue.component('slider', require('../components/site/Slider.vue'));
+Vue.component('radio', require('../components/site/Radio.vue'));

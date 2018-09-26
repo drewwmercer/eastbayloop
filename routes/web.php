@@ -39,6 +39,7 @@ Route::get('/explore/store/products', 'ExploreController@showStoreProducts')->na
 Route::get('/explore/store/product', 'ExploreController@showStoreProduct')->name('explore-store-product-page');
 Route::get('/events', 'EventsController@index')->name('events-page');
 Route::get('/fashion', 'FashionController@index')->name('fashion-page');
+Route::get('/fashion/local-designer-houses', 'FashionController@designerLocalHouseShow')->name('fashion-local-designer-page');
 Route::get('/fashion/designer-house', 'FashionController@designerHouseShow')->name('fashion-designer-page');
 Route::get('/fashion/haute-coutre', 'FashionController@showHautreCoutre')->name('fashion-hautre-coutre-page');
 Route::get('/fashion/must-haves', 'FashionController@showMustHaves')->name('fashion-must-haves-page');
@@ -49,6 +50,7 @@ Route::get('/market-place', 'MarketPlaceController@index')->name('market-place-p
 Route::get('/market-place/products', 'MarketPlaceController@showProducts')->name('market-place-product-page');
 Route::get('/market-place/product', 'MarketPlaceController@showProduct')->name('market-place-per-product-page');
 Route::get('/music', 'MusicController@index')->name('music-page');
+Route::get('/music/radio', 'MusicController@showRadio')->name('music-radio-page');
 Route::get('/music/products', 'MusicController@showProducts')->name('music-product-page');
 Route::get('/music/product', 'MusicController@showProduct')->name('music-per-product-page');
 Route::get('/music/artist', 'MusicController@show')->name('music-artist-page');
@@ -56,6 +58,7 @@ Route::get('/music/band', 'MusicController@show')->name('music-band-page');
 Route::get('/music/dj', 'MusicController@show')->name('music-dj-page');
 Route::get('/music/loop-entertainment', 'MusicController@showLoopEntertainment')->name('music-loop-entertainment-page');
 Route::get('/music/venues', 'MusicController@showVenues')->name('music-venues-page');
+Route::get('/music/venues/profile', 'MusicController@showVenuesProfile')->name('music-venues-profile-page');
 Route::get('/taste', 'TasteController@index')->name('taste-page');
 Route::get('/taste/bar', 'TasteController@showBar')->name('taste-bar-page');
 Route::get('/taste/chefs-corner', 'TasteController@showChefsCorner')->name('taste-chefs-corner-page');
