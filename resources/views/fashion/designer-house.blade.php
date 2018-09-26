@@ -7,7 +7,7 @@
             </slider>
 
             <section class="profile-page">
-                <div class="row">
+                <div class="row m-0">
                     <div class="header w-100">
                         <div>
                             <h2 class="title">Store Name</h2>
@@ -16,7 +16,7 @@
                         <a href="{{ route('fashion-product-page') }}" class="black-btn font-20px">Visit My Online Store!</a>
                         </div>
                     </div>
-                    <div class="description col-md-8 col-sm-12 mb-4">
+                    <div class="description col-md-8 col-sm-12 mb-4 p-0">
                         <div class="main-text">
                             <h2>Business Description</h2>
                             <p>
@@ -86,10 +86,10 @@
                 </div>
             </section>
             
-            <section class="designer-product mt-4 ">
-                <div class="row">
+            <section class="designer-product mt-4 w-100">
+                <div class="row m-0">
                     @for($i = 1; $i < 5; $i++)
-                        <div class="col-md-3 designer-card mb-4">
+                        <div class="col-md-3 designer-card mb-4 p-0 pr-3">
                             <div class="designer-wrapper">
                                 <a href="{{ route('fashion-per-product-page') }}">
                                     <div class="image-header">

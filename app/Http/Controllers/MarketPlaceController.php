@@ -11,6 +11,11 @@ class MarketPlaceController extends Controller
         return view('market-place.index');
     }
 
+    public function showRetails()
+    {
+        return view('market-place.retails-business');
+    }
+
     public function showProducts()
     {
         return view('market-place.product-page');
