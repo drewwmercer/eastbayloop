@@ -9,7 +9,7 @@
             </slider>
             <section class="custom-section">
                 <div class="section-header">
-                    <p class="content text-center mt-4">Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vivamus suscipit tortor eget felis porttitor volutpat.</p>
+                    <p class="content text-center mt-4 font-barlow-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius nulla ac ipsum pharetra, sodales euismod est rhoncus. Praesent nibh odio, rutrum quis tincidunt at, porta at magna.</p>
                 </div>
                 <div class="section-content">
                     <div class="row">
@@ -21,7 +21,7 @@
                                     </a>
                                 </div>
                                 <div class="content">
-                                    <h2>HOSTELS</h2>
+                                    <h2 class="font-barlow-regular">Hotels / Resorts</h2>
                                     <p class="text text-grey">
                                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
                                     </p>
@@ -38,7 +38,7 @@
                                     </a>
                                 </div>
                                 <div class="content">
-                                    <h2>B&B/HOSTELS</h2>
+                                    <h2 class="font-barlow-regular">B&B/HOSTELS</h2>
                                     <p class="text text-grey">
                                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
                                     </p>
@@ -55,7 +55,7 @@
                                     </a>
                                 </div>
                                 <div class="content">
-                                    <h2>LOOP EXCLUSIVE VACATION PACKAGES</h2>
+                                    <h2 class="font-barlow-regular">LOOP EXCLUSIVE VACATION PACKAGES</h2>
                                     <p class="text text-grey">
                                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
                                     </p>
@@ -72,7 +72,7 @@
                                     </a>
                                 </div>
                                 <div class="content">
-                                    <h2>SHORT & LONG STAY RENTALS</h2>
+                                    <h2 class="font-barlow-regular">SHORT & LONG STAY RENTALS</h2>
                                     <p class="text text-grey">
                                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
                                     </p>
@@ -89,7 +89,7 @@
                                     </a>
                                 </div>
                                 <div class="content">
-                                    <h2>STAY FOR SELL</h2>
+                                    <h2 class="font-barlow-regular">STAY FOR SELL</h2>
                                     <p class="text text-grey">
                                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
                                     </p>
@@ -106,7 +106,7 @@
                                     </a>
                                 </div>
                                 <div class="content">
-                                    <h2>GROUP OFFERS & SPECIALS</h2>
+                                    <h2 class="font-barlow-regular">GROUP OFFERS & SPECIALS</h2>
                                     <p class="text text-grey">
                                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
                                     </p>
