@@ -48,7 +48,7 @@
             <section class="houte-talent-cards">
                 <div class="talent-header mb-3 w-100">
                     <h2 class="h2-title">TALENT & CASTING</h2>
-                    <a href="#" class='black-btn'>View all Talent & Casting</a>
+                    <a href="{{ route('music-artist-band-dj-page') }}" class='black-btn'>View all Talent & Casting</a>
                 </div>
                 <div class="row p-0 m-0">
                     @for($i = 1; $i < 5; $i++)

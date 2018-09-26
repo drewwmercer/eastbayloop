@@ -13759,6 +13759,11 @@ footer .wrapper .up-btn {
   cursor: pointer;
 }
 
+.wrapper {
+  max-width: 1165px;
+  margin: 0 auto;
+}
+
 .read-more-btn {
   width: 130px;
   display: inline-block;
@@ -15196,6 +15201,52 @@ img {
   color: #333333;
 }
 
+.product-selects h2 {
+  display: inline-block;
+  color: #000000;
+  font-size: 16px;
+  margin-top: 11px;
+  text-transform: uppercase;
+}
+
+.product-selects span {
+  position: relative;
+  display: inline-block;
+}
+
+.product-selects span select {
+  border: none;
+  text-transform: uppercase;
+  outline: none;
+  width: 100%;
+  display: inline-block;
+  font-size: 16px;
+  appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -webkit-appearance: none;
+  margin: 0;
+  padding: 5px;
+  height: 35px;
+  color: black;
+  position: relative;
+  z-index: 1;
+  background: none;
+  cursor: pointer;
+  padding-right: 35px;
+}
+
+.product-selects span:after {
+  position: absolute;
+  right: 14px;
+  content: "\F0D7";
+  font-family: 'FontAwesome';
+  display: inline-block;
+  font-size: 22px;
+  color: #545454;
+  top: 2px;
+}
+
 @media only screen and (max-width: 1301px) and (min-width: 768px) {
   .m-upcoming-event-card .m-upcoming-event-wrapper .content .header h2 {
     text-align: center;
@@ -15693,7 +15744,7 @@ img {
   font-weight: bold;
 }
 
-.fashion-tabs .nav .nav-link.active {
+.fashion-tabs .nav .nav-link:hover {
   color: #e4ff15;
   background: #191919;
 }

@@ -285,7 +285,7 @@
             border: 1px solid #000000;
             font-weight: bold;
 
-            &.active {
+            &:hover {
                 color: #e4ff15;
                 background: #191919;
             }

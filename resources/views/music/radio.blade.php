@@ -79,7 +79,7 @@
                                         <div class="content mt-3">
                                             <h2 class="scoop-title">Artist/Band/DJ name</h2>
                                             <p class="scoop-text">Catherine felt trapped She had a key staff request a raise that was not earned That samestaff member That samestaff member decided...</p>
-                                            <a class="scoop-rm" href="#">Read More...</a>
+                                            <a class="scoop-rm" href="{{ route('music-dj-page') }}">Read More...</a>
                                         </div>
                                     </div>
                                 </div>

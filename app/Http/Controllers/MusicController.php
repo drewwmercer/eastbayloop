@@ -45,4 +45,9 @@ class MusicController extends Controller
     {
         return view('music.radio');
     }
+
+    public function showArtistBandDjs()
+    {
+        return view('music.artist-dj');
+    }
 }

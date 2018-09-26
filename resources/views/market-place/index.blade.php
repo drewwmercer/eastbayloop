@@ -10,14 +10,14 @@
             <section class="custom-section with-divider">
                 <div class="section-header">
                     <div class="mt-4 marketplace-nav">
-                        <a class="active" href="#">MAP</a>
-                        <a href="#">MERCHANTS A TO Z </a>
-                        <a href="#">FARM TO TABLE </a>
-                        <a href="#">BEVERAGE </a>
-                        <a href="#">EVENTS </a>                     
-                        <a href="#">FOOD </a>                     
-                        <a href="#">GOODS</a>                     
-                        <a href="#">SWEETS</a>                     
+                        <a class="active" href="{{ route('market-place-product-page') }}">MAP</a>
+                        <a href="{{ route('market-place-product-page') }}">MERCHANTS A TO Z </a>
+                        <a href="{{ route('market-place-product-page') }}">FARM TO TABLE </a>
+                        <a href="{{ route('market-place-product-page') }}">BEVERAGE </a>
+                        <a href="{{ route('market-place-product-page') }}">EVENTS </a>                     
+                        <a href="{{ route('market-place-product-page') }}">FOOD </a>                     
+                        <a href="{{ route('market-place-product-page') }}">GOODS</a>                     
+                        <a href="{{ route('market-place-product-page') }}">SWEETS</a>                     
                     </div>
                 </div>
                 <div class="section-content ">
@@ -26,39 +26,39 @@
                             <div class="market-card text-left col-md-4 mt-3">
                                 <div class="market-wrapper p-0">
                                     <div class="image-header">
-                                        <a href="{{ route('market-place-per-product-page') }}">
+                                        <a href="{{ route('market-place-retails-page') }}">
                                             <img src="http://testsite.eastbayloop.com/images/place-img1.jpeg" />
                                             <span class="text text-uppercase">Acme Bread Company</span>
                                         </a>
                                     </div>
                                     <div class="content pt-4">
-                                        <a class="read-more-link" href="{{ route('market-place-per-product-page') }}">READ MORE</a>                            
+                                        <a class="read-more-link" href="{{ route('market-place-retails-page') }}">READ MORE</a>                            
                                     </div>
                                 </div>
                             </div>
                             <div class="market-card text-left col-md-4 mt-3">
                                 <div class="market-wrapper p-0">
                                     <div class="image-header">
-                                        <a href="{{ route('market-place-per-product-page') }}">
+                                        <a href="{{ route('market-place-retails-page') }}">
                                             <img src="http://testsite.eastbayloop.com/images/place-img2.jpeg" />
                                             <span class="text text-uppercase">American Eatery at Prather Ranch</span>
                                         </a>
                                     </div>
                                     <div class="content pt-4">
-                                        <a class="read-more-link" href="{{ route('market-place-per-product-page') }}">READ MORE</a>                            
+                                        <a class="read-more-link" href="{{ route('market-place-retails-page') }}">READ MORE</a>                            
                                     </div>
                                 </div>
                             </div>
                             <div class="market-card text-left col-md-4 mt-3">
                                 <div class="market-wrapper p-0">
                                     <div class="image-header">
-                                        <a href="{{ route('market-place-per-product-page') }}">
+                                        <a href="{{ route('market-place-retails-page') }}">
                                             <img src="http://testsite.eastbayloop.com/images/place-img3.jpeg" />
                                             <span class="text text-uppercase">Bay Crossings</span>
                                         </a>
                                     </div>
                                     <div class="content pt-4">
-                                        <a class="read-more-link " href="{{ route('market-place-per-product-page') }}">READ MORE</a>                            
+                                        <a class="read-more-link " href="{{ route('market-place-retails-page') }}">READ MORE</a>                            
                                     </div>
                                 </div>
                             </div>

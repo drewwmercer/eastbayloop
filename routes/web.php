@@ -57,6 +57,7 @@ Route::get('/music/product', 'MusicController@showProduct')->name('music-per-pro
 Route::get('/music/artist', 'MusicController@show')->name('music-artist-page');
 Route::get('/music/band', 'MusicController@show')->name('music-band-page');
 Route::get('/music/dj', 'MusicController@show')->name('music-dj-page');
+Route::get('/music/artists-bands-djs', 'MusicController@showArtistBandDjs')->name('music-artist-band-dj-page');
 Route::get('/music/loop-entertainment', 'MusicController@showLoopEntertainment')->name('music-loop-entertainment-page');
 Route::get('/music/venues', 'MusicController@showVenues')->name('music-venues-page');
 Route::get('/music/venues/profile', 'MusicController@showVenuesProfile')->name('music-venues-profile-page');

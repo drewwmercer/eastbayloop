@@ -17,7 +17,7 @@
                         <div class="music-card text-left col-md-4 mt-3 mb-4 pl-0">
                             <div class="music-wrapper">
                                 <div class="image-header">
-                                    <a href="{{ route('music-dj-page') }}">
+                                    <a href="{{ route('music-artist-band-dj-page') }}">
                                         <img src="http://testsite.eastbayloop.com/images/music-img1.jpeg" />
                                     </a>
                                 </div>
@@ -27,14 +27,14 @@
                                         Catherine felt trapped She had a key staff member request a raise that was not earned That same staff member decided she could ....
                                     </p>
 
-                                    <a href="{{ route('music-dj-page') }}" class="radio-plus-btn">+</a>
+                                    <a href="{{ route('music-artist-band-dj-page') }}" class="radio-plus-btn">+</a>
                                 </div>
                             </div>
                         </div>
                         <div class="music-card text-left col-md-4 mt-3 mb-4 pl-0">
                             <div class="music-wrapper">
                                 <div class="image-header">
-                                    <a href="{{ route('music-band-page') }}">
+                                    <a href="{{ route('music-artist-band-dj-page') }}">
                                         <img src="http://testsite.eastbayloop.com/images/music-img2.jpeg" />
                                     </a>
                                 </div>
@@ -44,14 +44,14 @@
                                         Catherine felt trapped She had a key staff member request a raise that was not earned That same staff member decided she could ....
                                     </p>
 
-                                    <a href="{{ route('music-band-page') }}" class="radio-plus-btn">+</a>
+                                    <a href="{{ route('music-artist-band-dj-page') }}" class="radio-plus-btn">+</a>
                                 </div>
                             </div>
                         </div>
                         <div class="music-card text-left col-md-4 mt-3 mb-4 pl-0">
                             <div class="music-wrapper">
                                 <div class="image-header">
-                                    <a href="{{ route('music-artist-page') }}">
+                                    <a href="{{ route('music-artist-band-dj-page') }}">
                                         <img src="http://testsite.eastbayloop.com/images/music-img3.jpeg" />
                                     </a>
                                 </div>
@@ -60,7 +60,7 @@
                                     <p class="text">
                                         Catherine felt trapped She had a key staff member request a raise that was not earned That same staff member decided she could ....
                                     </p>
-                                    <a href="{{ route('music-artist-page') }}" class="radio-plus-btn">+</a>
+                                    <a href="{{ route('music-artist-band-dj-page') }}" class="radio-plus-btn">+</a>
                                 </div>
                             </div>
                         </div>

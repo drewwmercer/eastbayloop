@@ -13,7 +13,8 @@
                             <h2 class="title">Store Name</h2>
                         </div>
                         <div>
-                        <a href="{{ route('fashion-product-page') }}" class="black-btn font-20px">Visit My Online Store!</a>
+                            <a href="{{ route('fashion-product-page') }}" class="black-btn font-20px mr-3">Visit My Online Store!</a>                            
+                            <a href="{{ route('fashion-product-page') }}" class="black-btn font-20px">Book an Appoinment!</a>
                         </div>
                     </div>
                     <div class="description col-md-8 col-sm-12 mb-4 p-0">
