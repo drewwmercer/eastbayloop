@@ -11,3 +11,12 @@
         min-height: 350px;
     }
 }
+
+.stay-events-date {
+    bottom: -22px !important;
+
+    &:before {
+        top: -8px !important;
+        left: 0px !important;
+    }
+}

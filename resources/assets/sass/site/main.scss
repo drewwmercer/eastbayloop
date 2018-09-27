@@ -78,6 +78,11 @@
 }
 
 @font-face {
+    font-family: BarlowSemiCondensedBold;
+    src: url("/fonts/vendor/barlow/BarlowSemiCondensed-Bold.otf") format("opentype");
+}
+
+@font-face {
     font-family: BarlowBlack;
     src: url("/fonts/vendor/barlow/Barlow-Black.otf") format("opentype");
 }
@@ -193,6 +198,10 @@ footer {
 
 .font-barlow-semi {
     font-family: BarlowSemiCondensed !important;
+}
+
+.font-barlow-semi-bold {
+    font-family: BarlowSemiCondensedBold !important;
 }
 
 .font-barlow-semi-regular {

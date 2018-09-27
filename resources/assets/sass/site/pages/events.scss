@@ -1,45 +1,48 @@
+.events-header {
+    display: inline-block;
+    width: 100%;
+
+    .filter-btn {
+        width: 20%;
+        display: inline-block;
+        float: left;
+    }
+
+    a {
+        font-size: 16px;
+        display: inline-block;
+        float: left;
+        background: #000000;
+        color: #e3fd1a;
+        text-align: center;
+        padding: 6.5px 0;
+        border-radius: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            color: #ffffff;
+        }
+    }
+
+    .filter-btns {
+        width: 38%;
+        display: inline-flex;
+        float: right;
+        justify-content: flex-end;
+        
+        a {
+            width: 48%;
+        }
+    }
+}
+
 .events-cards {
     max-width: 1165px;
     width: 90%;
     margin: 0 auto;
     margin-top: 30px;
-
-    .events-header {
-        display: inline-block;
-        width: 100%;
-
-        .filter-btn {
-            width: 20%;
-            display: inline-block;
-            float: left;
-        }
-
-        a {
-            font-size: 16px;
-            display: inline-block;
-            float: left;
-            background: #000000;
-            color: #e3fd1a;
-            text-align: center;
-            padding: 6.5px 0;
-            border-radius: 3px;
-
-            &:hover {
-                color: #ffffff;
-            }
-        }
-
-        .filter-btns {
-            width: 32%;
-            display: inline-flex;
-            float: right;
-            justify-content: flex-end;
-            
-            a {
-                width: 48%;
-            }
-        }
-    }
 
     .events-card {
         .events-wrapper {
@@ -70,11 +73,9 @@
 }
 
 @media only screen and (max-width: 1200px) and (min-width: 961px) {
-    .events-cards {
-        .events-header {
-            .filter-btns {
-                width: 40%;
-            }
+    .events-header {
+        .filter-btns {
+            width: 40%;
         }
     }
 
@@ -90,15 +91,13 @@
 }
 
 @media only screen and (max-width: 960px) and (min-width: 768px) {
-    .events-cards {
-        .events-header {
-            .filter-btn {
-                width: 30%;
-            }
+    .events-header {
+        .filter-btn {
+            width: 30%;
+        }
 
-            .filter-btns {
-                width: 50%;
-            }
+        .filter-btns {
+            width: 50%;
         }
     }
 
@@ -118,16 +117,14 @@
 }
 
 @media only screen and (max-width: 767px) and (min-width: 100px) {
-    .events-cards {
-        .events-header {
-            .filter-btn {
-                width: 38%;
-                font-size: 16px;
-            }
+    .events-header {
+        .filter-btn {
+            width: 38%;
+            font-size: 16px;
+        }
 
-            .filter-btns {
-                width: 61%;
-            }
+        .filter-btns {
+            width: 61%;
         }
     }
 
@@ -148,20 +145,18 @@
 }
 
 @media only screen and (max-width: 600px) and (min-width: 100px) {
-    .events-cards {
-        .events-header {
-            .filter-btn {
+    .events-header {
+        .filter-btn {
+            width: 100%;
+            margin-bottom: 5px;
+        }
+
+        .filter-btns {
+            a {
                 width: 100%;
                 margin-bottom: 5px;
             }
-
-            .filter-btns {
-                a {
-                    width: 100%;
-                    margin-bottom: 5px;
-                }
-                width: 100%;
-            }
+            width: 100%;
         }
     }
     

@@ -10,4 +10,19 @@ class StayController extends Controller
     {
         return view('stay.index');
     }
+
+    public function showSell()
+    {
+        return view('stay.stay-sell');
+    }
+
+    public function showVendor()
+    {
+        return view('stay.vendor-sell');
+    }
+
+    public function showProfile()
+    {
+        return view('stay.profile');
+    }
 }

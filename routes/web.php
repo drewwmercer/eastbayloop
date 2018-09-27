@@ -70,5 +70,8 @@ Route::get('/taste/gallery', 'TasteController@showGallery')->name('taste-gallery
 Route::get('/taste/wine-loop', 'TasteController@showWineLoop')->name('taste-wine-loop-page');
 Route::get('/taste/wine-loop-contact', 'TasteController@showWineLoopContact')->name('taste-wine-loop-contact-page');
 Route::get('/stay', 'StayController@index')->name('stay-page');
+Route::get('/stay/sell', 'StayController@showSell')->name('stay-sell-page');
+Route::get('/stay/sell/vendor', 'StayController@showVendor')->name('stay-sell-vendor-page');
+Route::get('/stay/sell/vendor/profile', 'StayController@showProfile')->name('stay-sell-vendor-profile-page');
 
 //Route::get('/home', 'HomeController@index')->name('home');
