@@ -84,5 +84,11 @@ Route::get('/stay', 'StayController@index')->name('stay-page');
 Route::get('/stay/sell', 'StayController@showSell')->name('stay-sell-page');
 Route::get('/stay/sell/vendor', 'StayController@showVendor')->name('stay-sell-vendor-page');
 Route::get('/stay/sell/vendor/profile', 'StayController@showProfile')->name('stay-sell-vendor-profile-page');
+Route::get('/advertise-with-us', 'AdvertiseController@index')->name('advertise-page');
+Route::get('/advertise-with-us/list', 'AdvertiseController@showList')->name('advertise-list-page');
+Route::get('/advertise-with-us/become-vip-user', 'AdvertiseController@showBecomeUser')->name('advertise-b-user-page');
+Route::get('/advertise-with-us/become-vip-business', 'AdvertiseController@showBecomeBusiness')->name('advertise-b-business-page');
+Route::get('/advertise-with-us/business-contact-details', 'AdvertiseController@showBusinessContact')->name('advertise-business-contact-d-page');
+Route::get('/advertise-with-us/business-contact-details/submit', 'AdvertiseController@showBusinessContactSubmit')->name('advertise-business-contact-d-s-page');
 
 //Route::get('/home', 'HomeController@index')->name('home');

@@ -1,0 +1,446 @@
+.advertise-cards {
+    max-width: 1165px;
+    margin: 0 auto;
+
+    .advertise-title {
+        font-family: BarlowBold;
+        font-size: 42px;
+    }
+
+    .become-btn {
+        font-family: BarlowSemiCondensedMedium;
+        font-size: 24px;
+        padding: 16px 46px;
+        background: #7d7e7d; 
+        background: linear-gradient(to bottom, #7d7e7d 0%,#0e0e0e 100%);
+        border: 3px solid #8c8c8c;
+        border-radius: 5px;
+        color: #fffc00 !important;
+        text-transform: uppercase;
+
+        &:hover {
+            background: linear-gradient(to bottom, #0e0e0e 0%,#7d7e7d 100%);
+        }
+    }
+
+    .advertise-card {
+        .advertise-wrapper {
+            .sub-img-card {
+                .sub-img-wrapper {
+                    .image-header {
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        background: #f7f7f7;
+                        padding: 38px 0px;
+                        height: 213px;
+                        position: relative;
+                        overflow: hidden;
+
+                        img {
+                            height: auto;
+                            width: auto;
+                        }
+
+                        .sub-img-title {
+                            font-family: BarlowCondensedSemiBold;
+                            font-size: 25px;
+                            color: #5c5c5c;
+                            text-transform: uppercase;
+                        }
+
+                        .sub-img-period {
+                            font-family: BarlowExtraLight;
+                            font-size: 23px;
+                            color: #5c5c5c;
+                            text-align: center;
+                        }
+
+                        .sub-img-recomend {
+                            position: absolute;
+                            transform: rotate(-40deg);
+                            left: -41px;
+                            top: 18px;
+                            font-family: BarlowLight;
+                            font-size: 16px;
+                            color: #e4ff13;
+                            text-align: center;
+                            background: #000000;
+                            padding: 12px 39px;
+                        }
+                    }
+
+                    .content {
+                        box-shadow: 0px 0px 10px rgba(1, 1, 1, .2); 
+                        height: 145px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                                               
+                        .sub-img-price {
+                            color: #bfd518;
+                            font-size: 45px;
+                            font-weight: bold;
+                            font-family: serif;
+                        }
+                        
+                        .sub-img-btn {
+                            font-family: BarlowRegular;
+                            font-size: 20px;
+                            color: #e4ff13;
+                            background: #000000;
+                            padding: 14px 56px;
+
+                            &:hover {
+                                color: #ffffff;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .sub-info-card {
+                .sub-info-wrapper {
+                    border-top: 1px solid #ededed;
+                    border-right: 1px solid #ededed;
+                    border-left: 1px solid #ededed;                    
+
+                    .info-box {
+                        font-family: BarlowLight;
+                        font-size: 15px;
+                        border-bottom: 1px solid #ededed;     
+                        padding: 1px 16px;
+                        min-height: 68px;
+                        color: #6e6e6e;
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.modal {
+    background: rgba(0, 0, 0, 0.85);
+    &.show {
+        .advertise-modal {
+            transform: translate(0, 25%);
+            margin: auto auto;
+            width: 1010px;
+            height: 514px;
+            max-width: 1010px;     
+
+            .modal-content {
+                width: 1010px;
+                height: 514px;
+                max-width: 1010px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                padding: 0px 30px;       
+
+                .close-btn {
+                    background: url('/assets/img/advertise/close.png');
+                    background-size: auto;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-color: white;
+                    width: 40px;
+                    position: absolute;
+                    height: 40px;
+                    right: -20px;
+                    top: -20px;
+                    border-radius: 50%;
+                    box-shadow: 0px 0px 10px rgba(1, 1, 1, .4);
+                    cursor: pointer;
+                    transition: all .5s;
+
+                    &:hover {
+                        box-shadow: inset 0px 0px 10px rgba(1, 1, 1, .4);
+                    }
+                }
+
+                .modal-card {
+                    border: 8px solid #bababa;
+                    padding: 0;
+
+                    a {
+                        width: 100%;
+                        height: 100%;
+
+                        .modal-text {
+                            position: absolute;
+                            font-family: BarlowSemiCondensedSemiBold;
+                            font-size: 42.16px;
+                            color: #fffc00;
+                            top: 0;
+                            right: 0;
+                            left: 0;
+                            bottom: 0;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+.advertise-slider {
+    font-family: BarlowBold !important;
+    font-size: 58px !important;
+    color: #fffc00 !important;
+    box-shadow: unset !important;
+}
+
+.become-user-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 33px 0px;
+    background: #edf0f7;
+    margin-top: -6px;
+
+    .join-btn {
+        padding: 14px 96px;
+        font-family: BarlowMedium;
+        font-size: 35px;
+        color: #ecff2d;
+        background: #000000;
+        border-radius: 5px;
+
+        &:hover {
+            color: #ffffff;
+        }
+    }
+}
+
+.become-user-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .b-title {
+        font-family: BarlowBold;
+        font-size: 23px;
+        color: #444444;
+    }
+
+    .b-list {
+        list-style: none;
+        li {
+            font-family: BarlowRegular;
+            font-size: 23px;
+            color: #444444;
+            margin-bottom: 6px;
+
+            .b-star {
+                display: inline-block;
+                background: url('/assets/img/advertise/star.png');
+                background-repeat: no-repeat;
+                background-size: auto;
+                background-position: center;
+                height: 16px;
+                width: 17px;
+                margin-right: 15px;
+            }
+        }
+    }
+}
+
+.business-form {
+    max-width: 1165px;
+    margin: 0 auto;
+
+    .form-title {
+        font-family: BarlowRegular;
+        font-size: 27px;
+        color: #000000;
+    }
+
+    .form-msg {
+        font-family: BarlowRegular;
+        font-size: 20px;
+        color: #6b6b6b;
+        text-align: center;
+        padding: 0px 200px;
+    }
+    
+    .help-msg {
+        font-family: BarlowItalic;
+        font-size: 14px;
+        width: 100%;
+        text-align: right;
+    }
+    
+    .form-field {
+        label {
+            font-family: BarlowRegular;
+            font-size: 17px;
+            color: #6b6b6b;
+            display: block;
+
+            &.check-label {
+                display: inline-block;
+            }
+        }
+        
+        .text-input {
+            font-family: BarlowRegular;            
+            height: 60px;
+            border: 1px solid #dbdbdb;
+            border-radius: 4px;
+            width: 100%;
+            padding: 0px 10px;
+        }
+
+        .date-input {
+            font-family: BarlowItalic;
+            background: url('/assets/img/advertise/calendar.png');
+            background-repeat: no-repeat;
+            background-position: right;
+            background-position-x: 94%;
+            cursor: pointer;
+        }
+    }
+
+    .form-submit {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+
+        .form-submit-btn {
+            font-family: BarlowRegular;
+            font-size: 18px;
+            color: #ecff2d;
+            background: #000000;
+            padding: 17px 40px;
+
+            &:hover {
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+.list-cards {
+    max-width: 1165px;
+    margin: 0 auto;
+
+    .list-card {
+        .list-wrapper {
+            background: #f0f0f0;
+            transition: all .5s;
+            cursor: default;
+            padding-bottom: 1px;
+
+            &:hover {
+                background: #000000;
+
+                .image-header {
+                    &:after {
+                        opacity: 1;
+                    }
+
+                    .default {
+                        display: none;
+                    }
+
+                    .hover {
+                        display: block;
+                    }
+
+                    .list-title {
+                        color: #d5e918;
+                    }
+                }
+
+                .content {
+                    background: #f0f0f0;
+
+                    .list-box {
+                        &.border-bt {
+                            border-bottom: 1px solid #ffffff;
+                        }
+                    }
+                }
+            }
+
+            .image-header {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                height: 180px;
+                position: relative;
+
+                &:after {
+                    content: "";
+                    width: 1px;
+                    height: 13px;
+                    position: absolute;
+                    background: black;
+                    bottom: -13px;
+                    border-right: 10px solid #f0f0f0;
+                    border-left: 10px solid #f0f0f0;
+                    border-top: 12px solid black;
+                    opacity: 0;
+                }
+
+                img {
+                    height: auto;
+                    width: auto;
+                }
+
+                .default {
+                    display: block;
+                }
+
+                .hover {
+                    display: none;
+                }
+
+                .list-title {
+                    font-family: BarlowRegular;
+                    font-size: 21px;
+                    color: #000000;
+                }
+            }
+
+            .content {
+                height: 805px;
+                background: #ffffff;
+                border-radius: 15px;
+                margin-left: 11px;
+                margin-right: 11px;
+                margin-bottom: 11px;
+
+                .list-box {
+                    font-family: BarlowLight;
+                    font-size: 15px;
+                    color: #666666;
+                    min-height: 53px;
+                    text-align: center;
+                    padding: 2px 18px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    &.border-bt {
+                        border-bottom: 1px solid #f0f0f0;
+                    }
+                }
+            }
+        }
+    }
+}

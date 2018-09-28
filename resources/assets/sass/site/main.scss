@@ -53,8 +53,18 @@
 }
 
 @font-face {
+    font-family: BarlowItalic;
+    src: url("/fonts/vendor/barlow/Barlow-Italic.otf") format("opentype");
+}
+
+@font-face {
     font-family: BarlowLight;
     src: url("/fonts/vendor/barlow/Barlow-Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: BarlowExtraLight;
+    src: url("/fonts/vendor/barlow/Barlow-ExtraLight.otf") format("opentype");
 }
 
 @font-face {
@@ -80,6 +90,21 @@
 @font-face {
     font-family: BarlowSemiCondensedBold;
     src: url("/fonts/vendor/barlow/BarlowSemiCondensed-Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: BarlowSemiCondensedSemiBold;
+    src: url("/fonts/vendor/barlow/BarlowSemiCondensed-SemiBold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: BarlowSemiCondensedMedium;
+    src: url("/fonts/vendor/barlow/BarlowSemiCondensed-Medium.otf") format("opentype");
+}
+
+@font-face {
+    font-family: BarlowCondensedSemiBold;
+    src: url("/fonts/vendor/barlow/BarlowCondensed-SemiBold.otf") format("opentype");
 }
 
 @font-face {
