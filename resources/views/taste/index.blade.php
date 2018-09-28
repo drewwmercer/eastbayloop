@@ -18,7 +18,7 @@
                         <div class="taste-card text-center col-md-4 mt-3">
                             <div class="taste-wrapper">
                                 <div class="image-header">
-                                    <a href="{{ route('taste-gallery-page') }}">
+                                    <a href="{{ route('taste-restaurants-page') }}">
                                         <img src="http://testsite.eastbayloop.com/images/taste-img1.jpeg" />
                                         <span class="text text-uppercase">Restaurants</span>
                                     </a>
@@ -27,7 +27,7 @@
                                     <p class="text">
                                         Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vivamus suscipit tortor eget felis porttitor volutpat.
                                     </p>
-                                    <a class="read-more-btn float-none taste-read-more" href="{{ route('taste-gallery-page') }}">READ MORE</a>                            
+                                    <a class="read-more-btn float-none taste-read-more" href="{{ route('taste-restaurants-page') }}">READ MORE</a>                            
                                 </div>
                             </div>
                         </div>
@@ -66,7 +66,7 @@
                         <div class="taste-card text-center col-md-4 mt-3">
                             <div class="taste-wrapper">
                                 <div class="image-header">
-                                    <a href="#">
+                                    <a href="{{ route('taste-coffee-shops-page') }}">
                                         <img src="http://testsite.eastbayloop.com/images/taste-img1.jpeg" />
                                         <span class="text text-uppercase">COFFEE SHOPS / BAKERIES</span>
                                     </a>
@@ -75,14 +75,14 @@
                                     <p class="text">
                                         Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vivamus suscipit tortor eget felis porttitor volutpat.
                                     </p>
-                                    <a class="read-more-btn float-none taste-read-more" href="#">READ MORE</a>                            
+                                    <a class="read-more-btn float-none taste-read-more" href="{{ route('taste-coffee-shops-page') }}">READ MORE</a>                            
                                 </div>
                             </div>
                         </div>
                         <div class="taste-card text-center col-md-4 mt-3">
                             <div class="taste-wrapper">
                                 <div class="image-header">
-                                    <a href="#">
+                                    <a href="{{ route('taste-private-event-book-page') }}">
                                         <img src="http://testsite.eastbayloop.com/images/taste-img2.jpeg" />
                                         <span class="text text-uppercase">PRIVATE EVENT BOOKINGS</span>
                                     </a>
@@ -91,14 +91,14 @@
                                     <p class="text">
                                         Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vivamus suscipit tortor eget felis porttitor volutpat.
                                     </p>
-                                    <a class="read-more-btn float-none taste-read-more" href="#">READ MORE</a>                            
+                                    <a class="read-more-btn float-none taste-read-more" href="{{ route('taste-private-event-book-page') }}">READ MORE</a>                            
                                 </div>
                             </div>
                         </div>
                         <div class="taste-card text-center col-md-4 mt-3">
                             <div class="taste-wrapper">
                                 <div class="image-header">
-                                    <a href="#">
+                                    <a href="{{ route('taste-food-truck-page') }}">
                                         <img src="http://testsite.eastbayloop.com/images/taste-img3.jpeg" />
                                         <span class="text text-uppercase">FOOD TRUCKS UNITE</span>
                                     </a>
@@ -107,7 +107,7 @@
                                     <p class="text">
                                         Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vivamus suscipit tortor eget felis porttitor volutpat.
                                     </p>
-                                    <a class="read-more-btn float-none taste-read-more" href="#">READ MORE</a>                            
+                                    <a class="read-more-btn float-none taste-read-more" href="{{ route('taste-food-truck-page') }}">READ MORE</a>                            
                                 </div>
                             </div>
                         </div>
@@ -127,7 +127,7 @@
                 </div>
                 <div class="col-md-12 banner-card p-0">
                     <img src="{{ asset('assets/img/taste/2.png') }}" />
-                    <a href="{{ route('taste-bar-page') }}">
+                    <a href="{{ route('taste-bars-page') }}">
                         <div class="mask">
                             <h2>Bars/Breweries/Distilleries</h2>
                         </div>
@@ -150,7 +150,7 @@
                             @php 
                                 $j = $j > 3 ? $j - 3 : $j; 
                             @endphp
-                            <div class="col-md-3 m-upcoming-event-card mb-4">
+                            <div class="col-md-3 m-upcoming-event-card mb-4 p-0 pr-3">
                                 <div class="m-upcoming-event-wrapper">
                                     <div class="image-header">
                                         <img src="{{ asset('assets/img/music/' . $j . '.png') }}" />

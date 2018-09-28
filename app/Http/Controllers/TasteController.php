@@ -16,6 +16,56 @@ class TasteController extends Controller
         return view('taste.bar');
     }
 
+    public function showBars()
+    {
+        return view('taste.bars-breweries-distilaries');
+    }
+
+    public function showBarWineLoopContact()
+    {
+        return view('taste.bars-wine-loop-contact');
+    }
+
+    public function showWinery()
+    {
+        return view('taste.wineries-visit');
+    }
+
+    public function showBuyWine()
+    {
+        return view('taste.buy-wine');
+    }
+
+    public function showPartner()
+    {
+        return view('taste.community-partners');
+    }
+
+    public function showWineryEvents()
+    {
+        return view('taste.event');
+    }
+
+    public function showCoffeeShops()
+    {
+        return view('taste.coffee-shops');
+    }
+
+    public function showFoodTruck()
+    {
+        return view('taste.food-truck');
+    }
+
+    public function showRestaurants()
+    {
+        return view('taste.restaurants');
+    }
+
+    public function showBookTasting()
+    {
+        return view('taste.book-your-tasting');
+    }
+
     public function showChefsCorner()
     {
         return view('taste.chefs-corner');

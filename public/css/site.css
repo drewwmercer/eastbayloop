@@ -13732,6 +13732,10 @@ footer .wrapper .up-btn {
   font-family: Barlow !important;
 }
 
+.font-barlow-medium {
+  font-family: BarlowMedium !important;
+}
+
 .font-myriad-regular {
   font-family: MyriadProRegular !important;
 }
@@ -16831,7 +16835,6 @@ img {
   position: absolute;
   top: 0;
   right: 6%;
-  left: 0;
   bottom: 3px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -16839,6 +16842,16 @@ img {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.chef-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -16987,6 +17000,168 @@ img {
   padding: 10px;
   margin-top: 10px;
   min-height: 150px;
+}
+
+.taste-bars-btns {
+  max-width: 1165px;
+  margin: 0 auto;
+}
+
+.taste-bars-btns .links {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.taste-bars-btns .links .taste-bars-a {
+  font-family: BarlowMedium;
+  font-size: 25px;
+  color: #333333;
+}
+
+.taste-bars-btns .links .taste-bars-a:hover {
+  color: #000000;
+}
+
+.taste-bars-map {
+  position: relative;
+}
+
+.taste-bars-map iframe {
+  border: unset;
+  width: 100%;
+  height: 335px;
+}
+
+.taste-bars-map .marker {
+  position: absolute;
+  z-index: 100;
+  height: auto;
+  width: auto;
+  top: 30%;
+  right: 41%;
+}
+
+.taste-bars-cards {
+  max-width: 1165px;
+  margin: 0 auto;
+}
+
+.taste-bars-cards .cards-header-text {
+  font-family: BarlowBold;
+  font-size: 28px;
+}
+
+.taste-bars-cards .taste-bars-card .bars-wrapper {
+  padding: 10px;
+  -webkit-box-shadow: 0px 0px 10px rgba(1, 1, 1, 0.2);
+          box-shadow: 0px 0px 10px rgba(1, 1, 1, 0.2);
+  height: 240px;
+  overflow: hidden;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.taste-bars-cards .taste-bars-card .bars-wrapper img {
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.taste-bars-cards .taste-bars-card .bars-wrapper a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.taste-bars-cards .taste-bars-card .bars-wrapper a .bars-btn {
+  font-family: BarlowRegular;
+  font-size: 20px;
+  color: #000000;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 17px 31px;
+  z-index: 2;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  cursor: pointer;
+}
+
+.taste-bars-cards .taste-bars-card .bars-wrapper a .bars-btn:hover {
+  background: white;
+}
+
+.taste-bars-cards .taste-bars-big-card .bars-wrapper {
+  -webkit-box-shadow: 0px 0px 10px rgba(1, 1, 1, 0.2);
+          box-shadow: 0px 0px 10px rgba(1, 1, 1, 0.2);
+  height: 165px;
+  overflow: hidden;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.taste-bars-cards .taste-bars-big-card .bars-wrapper img {
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.taste-bars-cards .taste-bars-big-card .bars-wrapper a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.taste-bars-cards .taste-bars-big-card .bars-wrapper a .bars-btn {
+  font-family: BarlowSemiBold;
+  font-size: 23px;
+  color: #000000;
+  background: white;
+  padding: 17px 31px;
+  z-index: 2;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  cursor: pointer;
+}
+
+.taste-bars-cards .taste-bars-big-card .bars-wrapper a .bars-btn:hover {
+  background: rgba(255, 255, 255, 0.8);
 }
 
 .stay-map {

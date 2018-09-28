@@ -3,9 +3,9 @@
 @section('content')
     <taste-page inline-template>
         <main>
-            <slider :data="[{img: 'http://testsite.eastbayloop.com/images/client-banner.jpeg', text: 'Wine Loop Contact', class: 'explore-slider'},
-                            {img: 'http://testsite.eastbayloop.com/images/client-banner.jpeg', text: 'Wine Loop Contact', class: 'explore-slider'},
-                            {img: 'http://testsite.eastbayloop.com/images/client-banner.jpeg', text: 'Wine Loop Contact', class: 'explore-slider'}]">
+            <slider :data="[{img: 'http://testsite.eastbayloop.com/images/client-banner.jpeg', text: 'Wine Loop Cont - For Groups, For Celebrations, For Corporate Links', class: 'explore-slider'},
+                            {img: 'http://testsite.eastbayloop.com/images/client-banner.jpeg', text: 'Wine Loop Cont - For Groups, For Celebrations, For Corporate Links', class: 'explore-slider'},
+                            {img: 'http://testsite.eastbayloop.com/images/client-banner.jpeg', text: 'Wine Loop Cont - For Groups, For Celebrations, For Corporate Links', class: 'explore-slider'}]">
             </slider>
 
             <section class="taste-contact-page">

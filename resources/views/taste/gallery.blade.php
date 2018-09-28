@@ -34,10 +34,10 @@
                                 consectetur adipiscing elit. 
                             </p>
                         </div>
-                        <h2 class="medium-title text-left font-barlow-bold mt-4 mb-4">Events for the Restaurant</h2>
+                        <h2 class="medium-title text-left font-barlow-bold mt-4 mb-4 text-black">Events for the Restaurant</h2>
                         <div class="row p-0 m-0">
                             @for($i = 1; $i < 4; $i++)
-                                <div class="col-md-4 m-upcoming-event-card mb-4">
+                                <div class="col-md-4 m-upcoming-event-card mb-4 p-0 pr-3">
                                     <div class="m-upcoming-event-wrapper">
                                         <div class="image-header">
                                             <img src="{{ asset('assets/img/music/' . $i . '.png') }}" />
@@ -84,8 +84,8 @@
                         </div>
                         <div class="col-md-12 p-0 m-0 main-col pb-2 mt-2">
                             <div class="info-title mt-2">Social Media Feed</div> 
-                            <div class="col-md-12 col-sm-12 info-social mb-0 p-0">
-                                <div class="w-100 mt-2 facebook text-center "><i class="fa fa-facebook"></i></div>
+                            <div class="col-md-12 col-sm-12 info-social mb-0 p-0 pt-3">
+                                <div class="w-100 mt-2 facebook text-center mt-4"><i class="fa fa-facebook"></i></div>
                                 <div class="w-100 mt-2 twitter text-center"><i class="fa fa-twitter"></i></div>
                                 <div class="w-100 mt-2 youtube text-center"><i class="fa fa-youtube"></i></div>                                
                             </div> 

@@ -3,9 +3,9 @@
 @section('content')
     <taste-page inline-template>
         <main>
-            <slider :data="[{img: '{{ asset('assets/img/sliders/taste.png') }}', text: 'Chef`s Corner Profile', class: 'explore-slider'},
-                            {img: '{{ asset('assets/img/sliders/taste.png') }}', text: 'Chef`s Corner Profile', class: 'explore-slider'},
-                            {img: '{{ asset('assets/img/sliders/taste.png') }}', text: 'Chef`s Corner Profile', class: 'explore-slider'}]">
+            <slider :data="[{img: '{{ asset('assets/img/sliders/taste.png') }}', text: 'Chef’s Corner Profile', class: 'explore-slider'},
+                            {img: '{{ asset('assets/img/sliders/taste.png') }}', text: 'Chef’s Corner Profile', class: 'explore-slider'},
+                            {img: '{{ asset('assets/img/sliders/taste.png') }}', text: 'Chef’s Corner Profile', class: 'explore-slider'}]">
             </slider>
 
             <section class="profile-page music-show-page">
@@ -33,10 +33,10 @@
                                 consectetur adipiscing elit. 
                             </p>
                         </div>
-                        <h2 class="medium-title mt-4 mb-4">Upcoming Events</h2>
+                        <h2 class="medium-title mt-4 mb-4 text-left font-barlow-bold text-black">Upcoming Events</h2>
                         <div class="row p-0 m-0">
                             @for($i = 1; $i < 4; $i++)
-                                <div class="col-md-4 m-upcoming-event-card mb-4">
+                                <div class="col-md-4 m-upcoming-event-card mb-4 p-0 pr-3">
                                     <div class="m-upcoming-event-wrapper">
                                         <div class="image-header">
                                             <img src="{{ asset('assets/img/music/' . $i . '.png') }}" />
