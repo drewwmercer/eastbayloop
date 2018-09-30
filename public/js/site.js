@@ -51757,7 +51757,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                     this.cards.push({
                         id: i,
                         name: 'Venue ' + i,
-                        link: '/explore/profile'
+                        link: '/explore/dayclubs/profile'
                     });
                 }
                 this.nonProduct = true;

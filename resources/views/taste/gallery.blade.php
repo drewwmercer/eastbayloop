@@ -33,6 +33,17 @@
                                 malesuada. Pellentesque mi odio, suscipit in orci in, tincidunt semper enim. Lorem ipsum dolor sit amet,
                                 consectetur adipiscing elit. 
                             </p>
+                            <div class="col-md-12 p-0 row m-0">
+                                <div class="reserve-card col-md-6">
+                                    <div class="reserve-wrapper">
+                                        <img src="{{ asset('assets/img/taste/reserve.png') }}" />
+                                    </div>
+                                </div>
+                                <div class="reserve-btns col-md-6 text-center align-items-center justify-content-center d-flex flex-column">
+                                    <a class="black-btn w-100 d-block" href="#">Meet the Chef</a>
+                                    <a class="black-btn w-100 mt-5 d-block" href="#">View Our Menu</a>
+                                </div>
+                            </div>
                         </div>
                         <h2 class="medium-title text-left font-barlow-bold mt-4 mb-4 text-black">Events for the Restaurant</h2>
                         <div class="row p-0 m-0">
@@ -69,17 +80,30 @@
                     <div class="right-side col-md-4 col-sm-12 p-0 m-0 pt-2 pl-4 mb-2">
                     <div class="col-md-12 p-0 m-0 main-col pb-2 mt-2 mb-4">
                             <div class="info-title mt-2">Make a Reservation Now</div> 
-                            <div class="col-md-12 col-sm-12 row info-cards m-0 mb-0 p-3 pt-4">
-                                @for($i = 1; $i < 4; $i++)
-                                    <div class="taste-gallery-card col-md-12 row mb-2">
-                                        <div class="taste-gallery-image col-md-4 pl-0">
-                                            <img src="http://testsite.eastbayloop.com/images/events-img{{ $i }}.jpeg" />
+                            <div class="col-md-12 col-sm-12 row info-cards justify-content-center align-items-center m-0 mb-0 p-2 pt-2 pb-4">
+                                <h2 class="reserv-title text-center mb-2ss">Reserve your dates now via:</h2>
+                                <div class="justify-content-center align-items-center m-0">
+                                    <div class="justify-content-center align-items-center cursor-pointer row m-0">
+                                        <div class="col-md-1 reserv-icon pr-3">
+                                            <i class="fa fa-dribbble"></i>
                                         </div>
-                                        <div class="taste-gallery-text col-md-8 pl-2">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                        </div>
+                                        <div class="col-md-10 reserv-text pl-3 text-center">
+                                            www.website.com
+                                        </div> 
                                     </div>
-                                @endfor
+                                    <div class="justify-content-center align-items-center cursor-pointer row m-0">
+                                        <div class="col-md-12 mt-3 reserv-text pl-3 text-center">
+                                            <img class="mr-3" src="{{ asset('assets/img/taste/yelp.png') }}" />
+                                            Yelp
+                                        </div> 
+                                    </div>
+                                    <div class="justify-content-center align-items-center cursor-pointer row m-0">
+                                        <div class="col-md-12 mt-3 reserv-text pl-3 text-center">
+                                            <img class="mr-3" src="{{ asset('assets/img/taste/open-table.png') }}" />
+                                            Open Table
+                                        </div> 
+                                    </div>
+                                </div>
                             </div>  
                         </div>
                         <div class="col-md-12 p-0 m-0 main-col pb-2 mt-2">

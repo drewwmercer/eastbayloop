@@ -7,8 +7,9 @@
             </slider>
 
             <section class="profile-page music-show-page">
-                <h2 class="title text-left">
-                    <a class="black-btn pl-5 pr-5" href="#">Contact Us</a>
+                <h2 class="title text-center">
+                    <a class="black-btn pl-5 pr-5 mr-5" href="#">Contact Us</a>
+                    <a class="black-btn pl-5 pr-5 ml-5" href="#">Book Our Services</a>                    
                 </h2>
                 
                 <div class="row">
@@ -64,7 +65,7 @@
                             @endfor
                         </div>
                     </div>
-                    <div class="right-side col-md-4 col-sm-12 p-0 m-0 pl-4">
+                    <div class="right-side col-md-4 col-sm-12 p-0 m-0 pl-4 mb-4">
                         <div class="col-md-12 p-0 m-0 ">
                             <img src="{{ asset('assets/img/music/1.png') }}" />
                             <div class="image-play position-relative mt-2">
@@ -77,10 +78,10 @@
                         </div>
                         <div class="col-md-12 p-0 m-0 main-col pb-2 mt-5">
                             <div class="info-title mt-2">Social Media</div> 
-                            <div class="col-md-12 col-sm-12 info-social mb-0 p-0">
-                                <div class="w-100 mt-2 facebook text-center "><i class="fa fa-facebook"></i></div>
-                                <div class="w-100 mt-2 twitter text-center"><i class="fa fa-twitter"></i></div>
-                                <div class="w-100 mt-2 youtube text-center"><i class="fa fa-youtube"></i></div>                                
+                            <div class="col-md-12 col-sm-12 info-social mb-5 p-0">
+                                <div class="w-100 mt-5 facebook text-center cursor-pointer"><i class="fa fa-facebook"></i></div>
+                                <div class="w-100 mt-2 twitter text-center cursor-pointer"><i class="fa fa-twitter"></i></div>
+                                <div class="w-100 mt-2 youtube text-center mb-5 cursor-pointer"><i class="fa fa-youtube"></i></div>                                
                             </div> 
                         </div>
                     </div>

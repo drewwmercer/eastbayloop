@@ -17189,6 +17189,36 @@ img {
   background: rgba(255, 255, 255, 0.8);
 }
 
+.reserv-title {
+  font-family: BarlowRegular;
+  font-size: 18px;
+  color: #747474;
+}
+
+.reserv-text {
+  font-family: MyriadProRegular;
+  font-size: 22px;
+  color: #000000;
+}
+
+.reserv-text img {
+  width: auto;
+}
+
+.reserv-icon i {
+  font-size: 30px;
+}
+
+.reserve-card {
+  width: 370px;
+}
+
+.reserve-card .reserve-wrapper {
+  -webkit-box-shadow: 0px 0px 10px rgba(1, 1, 1, 0.2);
+          box-shadow: 0px 0px 10px rgba(1, 1, 1, 0.2);
+  padding: 10px;
+}
+
 .stay-map {
   max-width: 1165px;
   width: 90%;

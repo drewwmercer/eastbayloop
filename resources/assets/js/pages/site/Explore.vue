@@ -118,7 +118,7 @@
                         this.cards.push({
                             id: i,
                             name: 'Venue ' + i,
-                            link: '/explore/profile'
+                            link: '/explore/dayclubs/profile'
                         });
                     }
                     this.nonProduct = true;

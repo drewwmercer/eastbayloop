@@ -32,7 +32,7 @@ Route::get('/explore', 'ExploreController@index')->name('explore-page');
 Route::get('/explore/{category}', 'ExploreController@show')->name('explore-subpage');
 Route::get('/explore/profile', 'ExploreController@showProfile')->name('explore-profile-page');
 Route::get('/explore/nightlife/profile', 'ExploreController@showNightLifeProfile')->name('explore-nightlife-profile-page');
-Route::get('/explore/dayclubs/profile', 'ExploreController@showDayClubsProfile')->name('explore-nightlife-profile-page');
+Route::get('/explore/dayclubs/profile', 'ExploreController@showDayClubsProfile')->name('explore-dayclubs-profile-page');
 Route::get('/explore/nightlife/{category}', 'ExploreController@showNightlifeCategory')->name('explore-nightlfie-subpage');
 Route::get('/explore/store', 'ExploreController@showStore')->name('explore-store-page');
 Route::get('/explore/store/products', 'ExploreController@showStoreProducts')->name('explore-store-products-page');

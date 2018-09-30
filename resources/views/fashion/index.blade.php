@@ -79,19 +79,19 @@
             <section class="fashion-tabs">
                 <ul class="nav" id="pills-tab">
                     <li class="nav-item mr-2 mt-2">
-                        <a class="nav-link active" id="pills-women-tab" data-toggle="pill" href="{{ route('fashion-product-page') }}" role="tab" aria-controls="pills-women" aria-selected="true">Women</a>
+                        <a class="nav-link active" id="pills-women-tab" href="{{ route('fashion-product-page') }}" role="tab" aria-controls="pills-women" aria-selected="true">Women</a>
                     </li>
                     <li class="nav-item mr-2 mt-2">
-                        <a class="nav-link" id="pills-men-tab" data-toggle="pill" href="{{ route('fashion-product-page') }}" role="tab" aria-controls="pills-men" aria-selected="false">Men</a>
+                        <a class="nav-link" id="pills-men-tab" href="{{ route('fashion-product-page') }}" role="tab" aria-controls="pills-men" aria-selected="false">Men</a>
                     </li>
                     <li class="nav-item mr-2 mt-2">
-                        <a class="nav-link" id="pills-accessories-tab" data-toggle="pill" href="{{ route('fashion-product-page') }}" role="tab" aria-controls="pills-accessories" aria-selected="false">Teen</a>
+                        <a class="nav-link" id="pills-accessories-tab" href="{{ route('fashion-product-page') }}" role="tab" aria-controls="pills-accessories" aria-selected="false">Teen</a>
                     </li>
                     <li class="nav-item mr-2 mt-2">
-                        <a class="nav-link" id="pills-handbags-tab" data-toggle="pill" href="{{ route('fashion-product-page') }}" role="tab" aria-controls="pills-handbags" aria-selected="false">Kids</a>
+                        <a class="nav-link" id="pills-handbags-tab" href="{{ route('fashion-product-page') }}" role="tab" aria-controls="pills-handbags" aria-selected="false">Kids</a>
                     </li>
                     <li class="nav-item mr-2 mt-2">
-                        <a class="nav-link" id="pills-shoes-tab" data-toggle="pill" href="{{ route('fashion-product-page') }}" role="tab" aria-controls="pills-shoes" aria-selected="false">Pets</a>
+                        <a class="nav-link" id="pills-shoes-tab" href="{{ route('fashion-product-page') }}" role="tab" aria-controls="pills-shoes" aria-selected="false">Pets</a>
                     </li>
                 </ul>
                 <h2 class="fashion-tab-title mt-5 mb-4">CUSTOMER FAVORITES</h2>

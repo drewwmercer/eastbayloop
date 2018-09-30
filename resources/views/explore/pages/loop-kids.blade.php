@@ -26,11 +26,13 @@
                     @for($i = 1; $i < 10; $i++)
                         <div class="default-card col-md-4 mb-4">
                             <div class="default-wrapper">
-                                <img src="http://testsite.eastbayloop.com/images/pamper{{ $i }}.png" />
-                                <div class="content">
-                                    <h2 class="mb-1">{{ $category }} {{ $i }}</h2>
-                                    <h2>(non-product)</h2>
-                                </div>
+                                <a href="{{ route('explore-profile-page') }}">
+                                    <img src="http://testsite.eastbayloop.com/images/pamper{{ $i }}.png" />
+                                    <div class="content">
+                                        <h2 class="mb-1">{{ $category }} {{ $i }}</h2>
+                                        <h2>(non-product)</h2>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     @endfor
