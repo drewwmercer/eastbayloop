@@ -3,301 +3,202 @@
 @section('content')
     <advertise-page inline-template>
         <main>
-            <section class="advertise-cards">
-                <div class="row m-0 mt-4 mb-4 align-items-center mr-3">
-                    <div class="col-md-6 p-0">
-                        <h2 class="advertise-title">Our Packages</h2>
+            <slider :data="[{img: '{{ asset('assets/img/sliders/business-contact.png') }}', text: 'Advertise with us', class: 'explore-slider font-barlow-bold'}]">
+            </slider>
+
+            <section class="list-cards mt-4 mb-4">
+                <h2 class="list-title text-center">Please select your service(s)</h2>
+                <h3 class="list-additional-title text-center">You may choose more than one.</h3>                
+                <div class="row m-0 mt-4 pt-2">
+                    <div class="list-card col-md-3 p-0 pr-3 mb-4">
+                        <a href="{{ route('advertise-list-page') }}">
+                            <div class="list-wrapper">
+                                <div class="image-header">
+                                    <img class="default" src="{{ asset('assets/img/advertise/list1.png') }}" />
+                                    <img class="hover" src="{{ asset('assets/img/advertise/list1h.png') }}" />              
+                                    <h2 class="list-title mt-4">List your Business</h2>         
+                                </div>
+                                <div class="content">
+                                    <div class="list-box border-bt">
+                                        Restaurant / Eatery / Food Truck
+                                    </div>
+                                    <div class="list-box border-bt">
+                                        Coffee Shops / Bakeries
+                                    </div>
+                                    <div class="list-box border-bt">
+                                        Wine Loop - Winery
+                                    </div>
+                                    <div class="list-box border-bt">
+                                        Bars / Breweries / Distilleries
+                                    </div>
+                                    <div class="list-box border-bt">
+                                        Pamper - Beauty / Spa / Tanning /
+                                        Nail / Salon
+                                    </div>
+                                    <div class="list-box border-bt">
+                                        Local Shops
+                                    </div>
+                                    <div class="list-box border-bt">
+                                        Designers / Fashion House
+                                    </div>
+                                    <div class="list-box border-bt">
+                                        Adventure
+                                    </div>
+                                    <div class="list-box border-bt">
+                                        Art
+                                    </div>
+                                    <div class="list-box border-bt">
+                                        Nightlife / Dayclub / Lounge
+                                    </div>
+                                    <div class="list-box border-bt">
+                                        Golf / Recreation
+                                    </div>
+                                    <div class="list-box border-bt">
+                                        Kids Loop
+                                    </div>
+                                    <div class="list-box border-bt">
+                                        Fitness
+                                    </div>
+                                    <div class="list-box border-bt">
+                                        Venues / Theaters / Museums
+                                    </div>
+                                    <div class="list-box">
+                                        Pet Club
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
                     </div>
-                    <div class="col-md-6 p-0 text-right">
-                        <a href="#" class="become-btn" data-toggle="modal" data-target="#VipModal">Become a VIP!</a>
+                    <div class="list-card col-md-3 p-0 pr-3 mb-4">
+                        <a href="{{ route('advertise-list-page') }}">
+                            <div class="list-wrapper">
+                                <div class="image-header">
+                                    <img class="default" src="{{ asset('assets/img/advertise/list2.png') }}" />
+                                    <img class="hover" src="{{ asset('assets/img/advertise/list2h.png') }}" />              
+                                    <h2 class="list-title mt-4">List your Event</h2>         
+                                </div>
+                                <div class="content">
+                                    <div class="list-box border-bt">
+                                        Culinary / Taste / Food / Mixology
+                                    </div>
+                                    <div class="list-box border-bt">
+                                        Sports / Concert / Theater / 
+                                        Museum Ticket
+                                    </div>
+                                    <div class="list-box border-bt">
+                                        Community Festivals
+                                    </div>
+                                    <div class="list-box border-bt">
+                                        Gallery / Museum Exhibits
+                                    </div>
+                                    <div class="list-box border-bt">
+                                        Music Event - DJ / Artist / Band
+                                    </div>
+                                    <div class="list-box border-bt">
+                                        NightClub Events
+                                    </div>
+                                    <div class="list-box border-bt">
+                                        Family Friendly Events
+                                    </div>
+                                    <div class="list-box border-bt">
+                                        Kid Events
+                                    </div>
+                                    <div class="list-box border-bt">
+                                        Day Events
+                                    </div>
+                                    <div class="list-box border-bt">
+                                        Conferences / Business Networking
+                                    </div>
+                                    <div class="list-box">
+                                        The Loop Exclusive Exprerience
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
                     </div>
-                </div>
-                <div class="row m-0 mt-4 mb-4">
-                    <div class="advertise-card col-md-3 p-0 pr-3 mb-4">
-                        <div class="advertise-wrapper">
-                            <div class="sub-img-card w-100">
-                                <div class="sub-img-wrapper">
-                                    <div class="image-header">
-                                        <img class="ml-3" src="{{ asset('assets/img/advertise/card1.png') }}" />
-                                        <h2 class="sub-img-title mt-2">Ninja</h2>
-                                        <h3 class="sub-img-period">Month to Month</h3>
+                    <div class="list-card col-md-3 p-0 pr-3 mb-4">
+                        <a href="{{ route('advertise-sell-products-page') }}">
+                            <div class="list-wrapper">
+                                <div class="image-header">
+                                    <img class="default" src="{{ asset('assets/img/advertise/list3.png') }}" />
+                                    <img class="hover" src="{{ asset('assets/img/advertise/list3h.png') }}" />              
+                                    <h2 class="list-title mt-4">Sell Products</h2>         
+                                </div>
+                                <div class="content">
+                                    <div class="list-box border-bt">
+                                        Fashion / Local Store / Designer
                                     </div>
-                                    <div class="content">
-                                        <h2 class="sub-img-price">$39</h2>
-                                        <a href="{{ route('advertise-business-contact-d-page') }}" class="sub-img-btn ">Signup</a>
+                                    <div class="list-box border-bt">
+                                        Marketplace / Food / 
+                                        Local Goods & Condiments
+                                    </div>
+                                    <div class="list-box border-bt">
+                                        Digital Music!
+                                    </div>
+                                    <div class="list-box border-bt">
+                                        Nightlife/Dayparty - Bottle Service / 
+                                        Table / Daybed / Cabana Reservations
+                                    </div>
+                                    <div class="list-box border-bt">
+                                        Stay - Hotel / Resort
+                                    </div>
+                                    <div class="list-box border-bt">
+                                        Stay - B&B / Hostels
+                                    </div>
+                                    <div class="list-box border-bt">
+                                        Stay - Loop Exclusive 
+                                        Vacation Packages
+                                    </div>
+                                    <div class="list-box border-bt">
+                                        Stay - Short and Long Stay Rentals
+                                    </div>
+                                    <div class="list-box">
+                                        Stay - Stay for Sell
                                     </div>
                                 </div>
                             </div>
-                            <div class="sub-info-card w-100 mt-3">
-                                <div class="sub-info-wrapper">
-                                    <div class="info-box">
-                                        Business Contact Details
-                                    </div>
-                                    <div class="info-box">
-                                        Placement in Business Directory Listing
-                                    </div>
-                                    <div class="info-box">
-                                        Max of 2 marketing/promotional
-                                        photos for marketing
-                                    </div>
-                                    <div class="info-box">
-                                        Business Listing on website under type 
-                                        and location as an Exclusive business 
-                                        partner.
-                                    </div>
-                                    <div class="info-box">
-                                        Monthly Analysis report on activity.
-                                    </div>
-                                    <div class="info-box justify-content-center">
-                                        - - - - - - - - -
-                                    </div>
-                                    <div class="info-box justify-content-center">
-                                        - - - - - - - - -
-                                    </div>
-                                    <div class="info-box justify-content-center">
-                                        - - - - - - - - -
-                                    </div>
-                                    <div class="info-box justify-content-center">
-                                        - - - - - - - - -
-                                    </div>
-                                    <div class="info-box justify-content-center">
-                                        - - - - - - - - -
-                                    </div>
-                                    <div class="info-box justify-content-center">
-                                        - - - - - - - - -
-                                    </div>
-                                    <div class="info-box justify-content-center">
-                                        - - - - - - - - -
-                                    </div>
-                                    <div class="info-box justify-content-center">
-                                        - - - - - - - - -
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        </a>
                     </div>
-                    <div class="advertise-card col-md-3 p-0 pr-3 mb-4">
-                        <div class="advertise-wrapper">
-                            <div class="sub-img-card w-100">
-                                <div class="sub-img-wrapper">
-                                    <div class="image-header">
-                                        <img class="ml-3" src="{{ asset('assets/img/advertise/card2.png') }}" />
-                                        <h2 class="sub-img-title mt-2">ROCKSTAR</h2>
-                                        <h3 class="sub-img-period">3 months for</h3>
-                                        <div class="sub-img-recomend">Recommended</div>
+                    <div class="list-card col-md-3 p-0 pr-3 mb-4">
+                        <a href="#">
+                            <div class="list-wrapper">
+                                <div class="image-header">
+                                    <img class="default" src="{{ asset('assets/img/advertise/list4.png') }}" />
+                                    <img class="hover" src="{{ asset('assets/img/advertise/list4h.png') }}" />              
+                                    <h2 class="list-title mt-4">Feature your Talent</h2>         
+                                </div>
+                                <div class="content">
+                                    <div class="list-box border-bt">
+                                        I’m a Chef
                                     </div>
-                                    <div class="content">
-                                        <h2 class="sub-img-price">$99</h2>
-                                        <a href="{{ route('advertise-business-contact-d-page') }}" class="sub-img-btn ">Signup</a>
+                                    <div class="list-box border-bt">
+                                        I’m a DJ, Artist, Band
+                                    </div>
+                                    <div class="list-box border-bt">
+                                        I’m a Real Estate Agent / Broker
+                                    </div>
+                                    <div class="list-box border-bt">
+                                        I’m a Designer / Model / Actress
+                                    </div>
+                                    <div class="list-box border-bt">
+                                        I’m a Photographer/ Make-up Artist
+                                    </div>
+                                    <div class="list-box border-bt">
+                                        I’m a Bartender
+                                    </div>
+                                    <div class="list-box border-bt">
+                                        I’m a Community Partner
+                                    </div>
+                                    <div class="list-box">
+                                        I’m a Business Owner Looking to
+                                        Network - The Loop Foundation
                                     </div>
                                 </div>
                             </div>
-                            <div class="sub-info-card w-100 mt-3">
-                                <div class="sub-info-wrapper">
-                                    <div class="info-box">
-                                        One-week subpage slider premier.
-                                    </div>
-                                    <div class="info-box">
-                                        Busines Contact Details
-                                    </div>
-                                    <div class="info-box">
-                                        450 business description.
-                                    </div>
-                                    <div class="info-box">
-                                        1X Social Media Blasts on Social Media.(FB, Twiter, LinkedIn) per month.
-                                    </div>
-                                    <div class="info-box">
-                                        Placement in Business Directory Listing.
-                                    </div>
-                                    <div class="info-box">
-                                        Max of 4 marketing / promotional photos for marketing
-                                    </div>
-                                    <div class="info-box">
-                                        Social media business stream Facebook, Twiter, and LinkedIn.
-                                    </div>
-                                    <div class="info-box">
-                                        Monthly Analysis report on activity.
-                                    </div>
-                                    <div class="info-box">
-                                        Business Listing on website under type
-                                        and location as an Exclusive business 
-                                        partner.
-                                    </div>
-                                    <div class="info-box">
-                                        Ongoing promotion and management by
-                                        our team on all your Marketing needs with
-                                        the community.
-                                    </div>
-                                    <div class="info-box justify-content-center">
-                                        - - - - - - - - -
-                                    </div>
-                                    <div class="info-box justify-content-center">
-                                        - - - - - - - - -
-                                    </div>
-                                    <div class="info-box justify-content-center">
-                                        - - - - - - - - -
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="advertise-card col-md-3 p-0 pr-3 mb-4">
-                        <div class="advertise-wrapper">
-                            <div class="sub-img-card w-100">
-                                <div class="sub-img-wrapper">
-                                    <div class="image-header">
-                                        <img class="ml-3" src="{{ asset('assets/img/advertise/card3.png') }}" />
-                                        <h2 class="sub-img-title mt-2">GURU</h2>
-                                        <h3 class="sub-img-period">6 Months for</h3>
-                                    </div>
-                                    <div class="content">
-                                        <h2 class="sub-img-price">$199</h2>
-                                        <a href="{{ route('advertise-business-contact-d-page') }}" class="sub-img-btn ">Signup</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="sub-info-card w-100 mt-3">
-                                <div class="sub-info-wrapper">
-                                    <div class="info-box">
-                                        Business Contact Details
-                                    </div>
-                                    <div class="info-box">
-                                        One-week homepage slider premier
-                                    </div>
-                                    <div class="info-box">
-                                        One-week subpage slider premier.
-                                    </div>
-                                    <div class="info-box">
-                                        2X Social Media Blasts on Social Media.(FB, Twiter, LinkedIn) per month.
-                                    </div>
-                                    <div class="info-box">
-                                        600 word business description.
-                                    </div>
-                                    <div class="info-box">
-                                        Social media business streamFacebok, Twitter, and LinkedIn.
-                                    </div>
-                                    <div class="info-box">
-                                        Add 2 Event per month for your business
-                                        to be shown on events and your page.
-                                    </div>
-                                    <div class="info-box">
-                                        Placement in Busines Directory Listing
-                                        under type and location as an Exclusive
-                                        business partner.
-                                    </div>
-                                    <div class="info-box">
-                                        One Promotional Video Embedded inIndividual business listing.
-                                    </div>
-                                    <div class="info-box">
-                                        Two Business Write up by our Editor and Chief!
-                                    </div>
-                                    <div class="info-box">
-                                        Unlimited marketing/promotional photos for marketing
-                                    </div>
-                                    <div class="info-box">
-                                        Monthly Analysis report on activity.
-                                    </div>
-                                    <div class="info-box justify-content-center">
-                                        - - - - - - - - -
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="advertise-card col-md-3 p-0 pr-3 mb-4">
-                        <div class="advertise-wrapper">
-                            <div class="sub-img-card w-100">
-                                <div class="sub-img-wrapper">
-                                    <div class="image-header">
-                                        <img class="ml-3" src="{{ asset('assets/img/advertise/card4.png') }}" />
-                                        <h2 class="sub-img-title mt-2">MASTER</h2>
-                                        <h3 class="sub-img-period">12 Months for Annually</h3>
-                                    </div>
-                                    <div class="content">
-                                        <h2 class="sub-img-price">$450</h2>
-                                        <a href="{{ route('advertise-business-contact-d-page') }}" class="sub-img-btn ">Signup</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="sub-info-card w-100 mt-3">
-                                <div class="sub-info-wrapper">
-                                    <div class="info-box">
-                                        Business Contact Details
-                                    </div>
-                                    <div class="info-box">
-                                        Two-week homepage slider premier
-                                    </div>
-                                    <div class="info-box">
-                                        Two-week subpage slider premier.
-                                    </div>
-                                    <div class="info-box">
-                                        2X Social Media Blasts on Social Media.(FB, Twiter, LinkedIn) per month.
-                                    </div>
-                                    <div class="info-box">
-                                        UNLIMITED word business description.
-                                    </div>
-                                    <div class="info-box">
-                                        Social media business stream Facebok, 
-                                        Twitter, and LinkedIn.
-                                    </div>
-                                    <div class="info-box">
-                                        Add Reservation System and Menu to 
-                                        your business profile.
-                                    </div>
-                                    <div class="info-box">
-                                        UNLIMITED EVENT ADS per month for
-                                        your business to be shown on events
-                                        and your page.
-                                    </div>
-                                    <div class="info-box">
-                                        Placement in Business Directory Listing 
-                                        under type and location as an Exclusive 
-                                        business partner.
-                                    </div>
-                                    <div class="info-box">
-                                        One per month Promotional Video
-                                        Embedded in Individual business listing.
-                                    </div>
-                                    <div class="info-box">
-                                        Four Business Write up by our Editor
-                                        and Chief!
-                                    </div>
-                                    <div class="info-box">
-                                        UNLIMITED marketing/promotional photos
-                                        for marketing
-                                    </div>
-                                    <div class="info-box">
-                                        On Demand - Tableau Systems Analysis
-                                        dashboard and reporting access on activity.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </section>
-            <div class="modal fade" id="VipModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog advertise-modal" role="document">
-                    <div class="modal-content">
-                        <div class="close-btn" data-dismiss="modal"></div>
-
-                        <div class="row">
-                            <div class="col-md-12 modal-card">
-                                <a href="{{ route('advertise-b-user-page') }}">
-                                    <img src="{{ asset('assets/img/advertise/modal1.png') }}" />
-                                    <h2 class="modal-text">Become a VIP User!</h2>
-                                </a>
-                            </div>
-                            <div class="col-md-12 modal-card mt-4">
-                                <a href="{{ route('advertise-b-business-page') }}"> 
-                                    <img src="{{ asset('assets/img/advertise/modal2.png') }}" />
-                                    <h2 class="modal-text">Become a VIP Business!</h2>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </main>
     </advertise-page>
 @endsection

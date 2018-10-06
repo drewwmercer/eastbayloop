@@ -30,9 +30,19 @@ class AdvertiseController extends Controller
     {
         return view('advertise.business-contact-submit');
     }
+
+    public function showBusinessEventsContact()
+    {
+        return view('advertise.business-events-contact');
+    }
     
     public function showList()
     {
         return view('advertise.list');
+    }
+
+    public function showSellProducts()
+    {
+        return view('advertise.sell-products');
     }
 }

@@ -1,3 +1,19 @@
+.become-btn {
+    font-family: BarlowSemiCondensedMedium;
+    font-size: 24px;
+    padding: 16px 46px;
+    background: #7d7e7d; 
+    background: linear-gradient(to bottom, #7d7e7d 0%,#0e0e0e 100%);
+    border: 3px solid #8c8c8c;
+    border-radius: 5px;
+    color: #fffc00 !important;
+    text-transform: uppercase;
+
+    &:hover {
+        background: linear-gradient(to bottom, #0e0e0e 0%,#7d7e7d 100%);
+    }
+}
+
 .advertise-cards {
     max-width: 1165px;
     margin: 0 auto;
@@ -5,22 +21,6 @@
     .advertise-title {
         font-family: BarlowBold;
         font-size: 42px;
-    }
-
-    .become-btn {
-        font-family: BarlowSemiCondensedMedium;
-        font-size: 24px;
-        padding: 16px 46px;
-        background: #7d7e7d; 
-        background: linear-gradient(to bottom, #7d7e7d 0%,#0e0e0e 100%);
-        border: 3px solid #8c8c8c;
-        border-radius: 5px;
-        color: #fffc00 !important;
-        text-transform: uppercase;
-
-        &:hover {
-            background: linear-gradient(to bottom, #0e0e0e 0%,#7d7e7d 100%);
-        }
     }
 
     .advertise-card {
@@ -258,8 +258,17 @@
     }
 }
 
-.business-form {
+.form-msg {
     max-width: 1165px;
+    font-family: BarlowRegular;
+    font-size: 20px;
+    color: #6b6b6b;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.business-form {
+    max-width: 1000px;
     margin: 0 auto;
 
     .form-title {
@@ -268,14 +277,6 @@
         color: #000000;
     }
 
-    .form-msg {
-        font-family: BarlowRegular;
-        font-size: 20px;
-        color: #6b6b6b;
-        text-align: center;
-        padding: 0px 200px;
-    }
-    
     .help-msg {
         font-family: BarlowItalic;
         font-size: 14px;
@@ -292,6 +293,7 @@
 
             &.check-label {
                 display: inline-block;
+                margin-left: 7px;
             }
         }
         
@@ -337,11 +339,23 @@
     max-width: 1165px;
     margin: 0 auto;
 
+    .list-title {
+        font-family: BarlowSemiBold;
+        color: #6b6b6b;
+        font-size: 25px;
+    }
+
+    .list-additional-title {
+        font-family: BarlowRegular;
+        color: #6b6b6b;
+        font-size: 18px;
+    }
+
     .list-card {
         .list-wrapper {
             background: #f0f0f0;
             transition: all .5s;
-            cursor: default;
+            cursor: pointer;
             padding-bottom: 1px;
 
             &:hover {
@@ -443,4 +457,309 @@
             }
         }
     }
+}
+
+.adv-sell-btn {
+    font-family: BarlowMedium;
+    font-size: 35px;
+    color: #ecff2d;
+    padding: 15px 62px;
+    width: 40%;
+    background: #000000;
+    border-radius: 4px;
+
+    &:hover {
+        color: #ffffff;
+    }
+}
+
+.sell-header {
+    max-width: 1165px;
+    margin: 0 auto;
+
+    .sell-title {
+        font-family: BarlowRegular;
+        font-size: 20px;
+        color: #5c5c5c;
+        text-align: center;
+    }
+
+    .sell-desc {
+        .desc-title {
+            font-family: BarlowSemiBold;
+            font-size: 35px;
+            color: #262626;
+            text-align: center;
+        }
+
+        .sell-card {
+            .sell-wrapper {
+                .sell-image {
+                    img {
+                        width: auto;
+                    }
+                }
+
+                .content {
+                    .card-title {
+                        font-family: BarlowSemiBold;
+                        font-size: 26px;
+                        color: #444444;
+                    }
+
+                    .card-text {
+                        font-family: BarlowRegular;
+                        font-size: 17px;
+                        color: #5c5c5c;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sell-listing-s {
+    background: #edf0f7;
+    width: 100%;
+    padding: 45px 0px;
+
+    .listing-content {
+        max-width: 1125px;
+        margin: 0 auto;
+
+        .listing-header {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            .listing-fee {
+                width: 300px;
+
+                .listing-fee-text {
+                    background: #f7f7f7;
+                    font-family: BarlowCondensedSemiBold;
+                    font-size: 35px;
+                    color: #5c5c5c;
+                    width: 100%;
+                    margin: 0;
+                    height: 95px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .listing-fee-price {
+                    box-shadow: 0px 4px 5px rgba(1, 1, 1, .2);
+                    background: #ffffff;
+                    font-weight: bold;
+                    font-family: serif;
+                    font-size: 45px;
+                    color: #bfd518;
+                    width: 100%;
+                    margin: 0;
+                    height: 72px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+
+            .listing-text {
+                font-family: BarlowRegular;
+                font-size: 20px;
+                color: #5c5c5c;
+                width: 530px;
+                padding: 0px 42px;
+            }
+
+            .listing-boxes {
+                width: 298px;
+
+                .listing-box {
+                    font-family: BarlowCondensedSemiBold;
+                    color: #5c5c5c;
+                    background: #f7f7f7;
+                    width: 100%;
+                    text-align: center;
+                    padding: 14px 0px;
+                    text-transform: uppercase;
+
+                    h2 {
+                        margin-bottom: 4px;
+                    }
+
+                    .percent {
+                        font-size: 28px;
+                    }
+
+                    .box-text {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+
+        .listing-additional {
+            font-family: BarlowRegular;
+            font-size: 16px;
+            color: #5c5c5c;
+            text-align: center;
+        }
+    }
+}
+
+.sell-main-content {
+    max-width: 1165px;
+    margin: 0 auto;
+
+    .main-btns-block {
+        display: flex;
+        justify-content: center;
+
+        .become-block {
+            width: 305px;        
+            height: 95px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f7f7f7;
+
+            .become-btn {
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center
+            }
+        }
+
+        .data-block {
+            width: 305px;        
+            height: 95px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background: #ffffff;
+            box-shadow: 2px 0px 5px rgba(1, 1, 1, .2);
+            padding: 12px;
+
+            .data-title {
+                font-family: BarlowCondensedSemiBold;
+                text-transform: uppercase;
+                font-size: 35px;
+                color: #5c5c5c;
+                margin-bottom: 0;
+
+                .price {
+                    font-weight: bold;
+                    font-family: serif;
+                    font-size: 40px;
+                    color: #bfd518;
+                }
+            }
+
+            .data-text {
+                font-family: BarlowRegular;
+                font-size: 16px;
+                color: #5c5c5c;
+            }
+        }
+    }
+
+    .featured-block {
+        .featured-title {
+            font-family: BarlowSemiBold;
+            font-size: 35px;
+            color: #262626;
+        }
+
+        .featured-cards {
+            .featured-card {
+                .featured-wrapper {
+                    .image-header {
+                        box-shadow: 0px 0px 10px rgba(1, 1, 1, .2);
+                    }
+
+                    .content {
+                        text-align: center;
+
+                        .card-title {
+                            font-family: BarlowRegular;
+                            font-size: 18px;
+                            color: #000000;
+                            margin-bottom: 4px;
+                        }
+
+                        .card-text {
+                            font-family: BarlowRegular;
+                            font-size: 18px;
+                            color: #969696;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .what-sell-block {
+        .what-sell-title {
+            font-family: BarlowSemiBold;
+            font-size: 35px;
+            color: #262626;
+        }
+
+        .what-sell-cards {
+            .what-sell-card {
+                .what-sell-wrapper {
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .image-header {
+                        width: 100%;
+                        border-radius: 50%;
+                        overflow: hidden;
+                        box-shadow: 0px 0px 10px rgba(1, 1, 1, .2);
+                        height: 155px;
+                        width: 155px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+
+                    .content {
+                        text-align: center;
+                        margin-top: 7px;
+
+                        .card-title {
+                            font-family: BarlowRegular;
+                            font-size: 20px;
+                            color: #000000;
+                        }
+                    }
+                }
+            }
+            
+            .many-more {
+                font-family: BarlowRegular;
+                font-size: 25px;
+                text-align: center;
+                color: #5c5c5c;
+            }
+        }
+    }
+}
+
+.mb-10 {
+    margin-bottom: 100px;
+}
+
+.mt-75 {
+    margin-top: 75px;
 }

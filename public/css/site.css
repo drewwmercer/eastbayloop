@@ -17243,17 +17243,7 @@ img {
   left: 0px !important;
 }
 
-.advertise-cards {
-  max-width: 1165px;
-  margin: 0 auto;
-}
-
-.advertise-cards .advertise-title {
-  font-family: BarlowBold;
-  font-size: 42px;
-}
-
-.advertise-cards .become-btn {
+.become-btn {
   font-family: BarlowSemiCondensedMedium;
   font-size: 24px;
   padding: 16px 46px;
@@ -17266,9 +17256,19 @@ img {
   text-transform: uppercase;
 }
 
-.advertise-cards .become-btn:hover {
+.become-btn:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(#0e0e0e), to(#7d7e7d));
   background: linear-gradient(to bottom, #0e0e0e 0%, #7d7e7d 100%);
+}
+
+.advertise-cards {
+  max-width: 1165px;
+  margin: 0 auto;
+}
+
+.advertise-cards .advertise-title {
+  font-family: BarlowBold;
+  font-size: 42px;
 }
 
 .advertise-cards .advertise-card .advertise-wrapper .sub-img-card .sub-img-wrapper .image-header {
@@ -17553,8 +17553,17 @@ img {
   margin-right: 15px;
 }
 
-.business-form {
+.form-msg {
   max-width: 1165px;
+  font-family: BarlowRegular;
+  font-size: 20px;
+  color: #6b6b6b;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.business-form {
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -17562,14 +17571,6 @@ img {
   font-family: BarlowRegular;
   font-size: 27px;
   color: #000000;
-}
-
-.business-form .form-msg {
-  font-family: BarlowRegular;
-  font-size: 20px;
-  color: #6b6b6b;
-  text-align: center;
-  padding: 0px 200px;
 }
 
 .business-form .help-msg {
@@ -17588,6 +17589,7 @@ img {
 
 .business-form .form-field label.check-label {
   display: inline-block;
+  margin-left: 7px;
 }
 
 .business-form .form-field .text-input {
@@ -17637,11 +17639,23 @@ img {
   margin: 0 auto;
 }
 
+.list-cards .list-title {
+  font-family: BarlowSemiBold;
+  color: #6b6b6b;
+  font-size: 25px;
+}
+
+.list-cards .list-additional-title {
+  font-family: BarlowRegular;
+  color: #6b6b6b;
+  font-size: 18px;
+}
+
 .list-cards .list-card .list-wrapper {
   background: #f0f0f0;
   -webkit-transition: all .5s;
   transition: all .5s;
-  cursor: default;
+  cursor: pointer;
   padding-bottom: 1px;
 }
 
@@ -17752,6 +17766,350 @@ img {
 
 .list-cards .list-card .list-wrapper .content .list-box.border-bt {
   border-bottom: 1px solid #f0f0f0;
+}
+
+.adv-sell-btn {
+  font-family: BarlowMedium;
+  font-size: 35px;
+  color: #ecff2d;
+  padding: 15px 62px;
+  width: 40%;
+  background: #000000;
+  border-radius: 4px;
+}
+
+.adv-sell-btn:hover {
+  color: #ffffff;
+}
+
+.sell-header {
+  max-width: 1165px;
+  margin: 0 auto;
+}
+
+.sell-header .sell-title {
+  font-family: BarlowRegular;
+  font-size: 20px;
+  color: #5c5c5c;
+  text-align: center;
+}
+
+.sell-header .sell-desc .desc-title {
+  font-family: BarlowSemiBold;
+  font-size: 35px;
+  color: #262626;
+  text-align: center;
+}
+
+.sell-header .sell-desc .sell-card .sell-wrapper .sell-image img {
+  width: auto;
+}
+
+.sell-header .sell-desc .sell-card .sell-wrapper .content .card-title {
+  font-family: BarlowSemiBold;
+  font-size: 26px;
+  color: #444444;
+}
+
+.sell-header .sell-desc .sell-card .sell-wrapper .content .card-text {
+  font-family: BarlowRegular;
+  font-size: 17px;
+  color: #5c5c5c;
+}
+
+.sell-listing-s {
+  background: #edf0f7;
+  width: 100%;
+  padding: 45px 0px;
+}
+
+.sell-listing-s .listing-content {
+  max-width: 1125px;
+  margin: 0 auto;
+}
+
+.sell-listing-s .listing-content .listing-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sell-listing-s .listing-content .listing-header .listing-fee {
+  width: 300px;
+}
+
+.sell-listing-s .listing-content .listing-header .listing-fee .listing-fee-text {
+  background: #f7f7f7;
+  font-family: BarlowCondensedSemiBold;
+  font-size: 35px;
+  color: #5c5c5c;
+  width: 100%;
+  margin: 0;
+  height: 95px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sell-listing-s .listing-content .listing-header .listing-fee .listing-fee-price {
+  -webkit-box-shadow: 0px 4px 5px rgba(1, 1, 1, 0.2);
+          box-shadow: 0px 4px 5px rgba(1, 1, 1, 0.2);
+  background: #ffffff;
+  font-weight: bold;
+  font-family: serif;
+  font-size: 45px;
+  color: #bfd518;
+  width: 100%;
+  margin: 0;
+  height: 72px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sell-listing-s .listing-content .listing-header .listing-text {
+  font-family: BarlowRegular;
+  font-size: 20px;
+  color: #5c5c5c;
+  width: 530px;
+  padding: 0px 42px;
+}
+
+.sell-listing-s .listing-content .listing-header .listing-boxes {
+  width: 298px;
+}
+
+.sell-listing-s .listing-content .listing-header .listing-boxes .listing-box {
+  font-family: BarlowCondensedSemiBold;
+  color: #5c5c5c;
+  background: #f7f7f7;
+  width: 100%;
+  text-align: center;
+  padding: 14px 0px;
+  text-transform: uppercase;
+}
+
+.sell-listing-s .listing-content .listing-header .listing-boxes .listing-box h2 {
+  margin-bottom: 4px;
+}
+
+.sell-listing-s .listing-content .listing-header .listing-boxes .listing-box .percent {
+  font-size: 28px;
+}
+
+.sell-listing-s .listing-content .listing-header .listing-boxes .listing-box .box-text {
+  font-size: 20px;
+}
+
+.sell-listing-s .listing-content .listing-additional {
+  font-family: BarlowRegular;
+  font-size: 16px;
+  color: #5c5c5c;
+  text-align: center;
+}
+
+.sell-main-content {
+  max-width: 1165px;
+  margin: 0 auto;
+}
+
+.sell-main-content .main-btns-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sell-main-content .main-btns-block .become-block {
+  width: 305px;
+  height: 95px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #f7f7f7;
+}
+
+.sell-main-content .main-btns-block .become-block .become-btn {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sell-main-content .main-btns-block .data-block {
+  width: 305px;
+  height: 95px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #ffffff;
+  -webkit-box-shadow: 2px 0px 5px rgba(1, 1, 1, 0.2);
+          box-shadow: 2px 0px 5px rgba(1, 1, 1, 0.2);
+  padding: 12px;
+}
+
+.sell-main-content .main-btns-block .data-block .data-title {
+  font-family: BarlowCondensedSemiBold;
+  text-transform: uppercase;
+  font-size: 35px;
+  color: #5c5c5c;
+  margin-bottom: 0;
+}
+
+.sell-main-content .main-btns-block .data-block .data-title .price {
+  font-weight: bold;
+  font-family: serif;
+  font-size: 40px;
+  color: #bfd518;
+}
+
+.sell-main-content .main-btns-block .data-block .data-text {
+  font-family: BarlowRegular;
+  font-size: 16px;
+  color: #5c5c5c;
+}
+
+.sell-main-content .featured-block .featured-title {
+  font-family: BarlowSemiBold;
+  font-size: 35px;
+  color: #262626;
+}
+
+.sell-main-content .featured-block .featured-cards .featured-card .featured-wrapper .image-header {
+  -webkit-box-shadow: 0px 0px 10px rgba(1, 1, 1, 0.2);
+          box-shadow: 0px 0px 10px rgba(1, 1, 1, 0.2);
+}
+
+.sell-main-content .featured-block .featured-cards .featured-card .featured-wrapper .content {
+  text-align: center;
+}
+
+.sell-main-content .featured-block .featured-cards .featured-card .featured-wrapper .content .card-title {
+  font-family: BarlowRegular;
+  font-size: 18px;
+  color: #000000;
+  margin-bottom: 4px;
+}
+
+.sell-main-content .featured-block .featured-cards .featured-card .featured-wrapper .content .card-text {
+  font-family: BarlowRegular;
+  font-size: 18px;
+  color: #969696;
+}
+
+.sell-main-content .what-sell-block .what-sell-title {
+  font-family: BarlowSemiBold;
+  font-size: 35px;
+  color: #262626;
+}
+
+.sell-main-content .what-sell-block .what-sell-cards .what-sell-card .what-sell-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sell-main-content .what-sell-block .what-sell-cards .what-sell-card .what-sell-wrapper .image-header {
+  width: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 0px 10px rgba(1, 1, 1, 0.2);
+          box-shadow: 0px 0px 10px rgba(1, 1, 1, 0.2);
+  height: 155px;
+  width: 155px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sell-main-content .what-sell-block .what-sell-cards .what-sell-card .what-sell-wrapper .image-header img {
+  width: 100%;
+  height: 100%;
+}
+
+.sell-main-content .what-sell-block .what-sell-cards .what-sell-card .what-sell-wrapper .content {
+  text-align: center;
+  margin-top: 7px;
+}
+
+.sell-main-content .what-sell-block .what-sell-cards .what-sell-card .what-sell-wrapper .content .card-title {
+  font-family: BarlowRegular;
+  font-size: 20px;
+  color: #000000;
+}
+
+.sell-main-content .what-sell-block .what-sell-cards .many-more {
+  font-family: BarlowRegular;
+  font-size: 25px;
+  text-align: center;
+  color: #5c5c5c;
+}
+
+.mb-10 {
+  margin-bottom: 100px;
+}
+
+.mt-75 {
+  margin-top: 75px;
 }
 
 .custom-navbar {
