@@ -8,8 +8,12 @@
     @show
     
     @yield('content')
-</div>
 
-@section('footer')
-    @include('layouts.partials.footer')
-@show
+
+    @section('footer')
+        @include('layouts.partials.footer')
+    @show
+</div>
+<!-- Scripts -->
+<script src="{{ asset('js/site.js') }}"></script>
+@yield('scripts')
