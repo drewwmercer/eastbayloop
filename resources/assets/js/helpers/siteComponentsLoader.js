@@ -14,3 +14,4 @@ Vue.component('advertise-page', require('../pages/site/Advertise.vue'));
 Vue.component('navbar', require('../components/site/Navbar.vue'));
 Vue.component('slider', require('../components/site/Slider.vue'));
 Vue.component('radio', require('../components/site/Radio.vue'));
+Vue.component('events-widget', require('../components/site/Events.vue'));

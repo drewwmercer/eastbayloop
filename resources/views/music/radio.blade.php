@@ -8,7 +8,7 @@
                             {img: '{{ asset('assets/img/sliders/radio.png') }}', text: 'RADIO', class: 'explore-slider'}]">
             </slider>
 
-            <section class="radio-page">
+            <section class="radio-page mb-0 pb-0">
                 <section class="main-radio row m-0">
                     <div class="col-md-8 radio-program">
                         <h2 class="program-title">current radio program / SHOW title</h2>
@@ -87,7 +87,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="music-news mb-4 w-100">
+                <section class="music-news w-100">
                     <h2 class="title mb-4 font-barlow-semi-regular">MUSIC NEWS</h2>
 
                     <div class="row m-0">
@@ -110,91 +110,11 @@
                         @endfor
                     </div>
                 </section>
-                <section class="custom-section w-100">
-                <div class="section-header">
-                    <p class="title text-uppercase text-center font-barlow-semi-regular">FEATURED EVENTS</p>
-                    <p class="accurate-title font-barlow-regular text-center"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consequat, mi a blandit sollicitudin,
-                                eros neque sodales felis.</p>
-                </div>
-                <div class="section-content">
-                    <div class="row">
-                        <div class="event-card col-md-12 mb-4">
-                            <div class="event-wrapper row">
-                                <div class="image-header col-md-3">
-                                    <a href="#">
-                                        <img src="http://testsite.eastbayloop.com/images/events-img1.jpeg" />
-                                    </a>
-                                </div>
-                                <div class="content col-md-6">
-                                    <div class="header">
-                                        <span class="title">
-                                            FLORENCE + THE MACHINE 
-                                            <span class="time">8pm</span>
-                                        </span>
-                                        <span class="additional-title">
-                                            Cold War Kids
-                                            <span class="time">7pm</span>                                        
-                                        </span>
-                                    </div>
-                                    <div class="footer">
-                                        <div class="date">
-                                            <span class="text">
-                                                OCT <span>23</span>
-                                            </span>
-                                        </div>
-                                        <div class="description">
-                                            <p class="text">This event is 21 and over</p>
-                                            <a href="#">More Info</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="read-more col-md-3">
-                                    <a class="read-more-btn float-none" href="#">READ MORE</a>                                                                
-                                </div>
-                            </div>
-                        </div>
-                        <div class="event-card col-md-12 mb-4">
-                            <div class="event-wrapper row">
-                                <div class="image-header col-md-3">
-                                    <a href="#">
-                                        <img src="http://testsite.eastbayloop.com/images/events-img2.jpeg" />
-                                    </a>
-                                </div>
-                                <div class="content col-md-6">
-                                    <div class="header">
-                                        <span class="title">
-                                            FLORENCE + THE MACHINE 
-                                            <span class="time">8pm</span>
-                                        </span>
-                                        <span class="additional-title">
-                                            Cold War Kids
-                                            <span class="time">7pm</span>                                        
-                                        </span>
-                                    </div>
-                                    <div class="footer">
-                                        <div class="date">
-                                            <span class="text">
-                                                OCT <span>23</span>
-                                            </span>
-                                        </div>
-                                        <div class="description">
-                                            <p class="text">This event is 21 and over</p>
-                                            <a href="#">More Info</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="read-more col-md-3">
-                                    <a class="read-more-btn float-none" href="#">READ MORE</a>                                                                
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center w-100">
-                    <a href="#" class="font-barlow-regular text-black font-19px">More featured events...</a>
-                </div>
             </section>
-            </section>
+            <events-widget></events-widget>
+            <div class="text-center w-100 mb-4">
+                <a href="#" class="font-barlow-regular text-black font-19px">More featured events...</a>
+            </div>
         </main>
     </music-page>
 @endsection

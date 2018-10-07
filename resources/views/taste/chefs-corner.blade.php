@@ -34,42 +34,7 @@
             </section>
 
             <!-- EVENTS -->
-            <section class="custom-section">
-                <div class="section-header">
-                    <p class="title text-uppercase text-center font-barlow-medium" >EVENTS</p>
-                    <p class="content text-center font-barlow-regular mb-4">Events under that Category will be in CUBE shapes as above but below Header Events.</p>
-                    <div class="row p-0 m-0">
-                        @for($i = 2; $i < 10; $i++)
-                            <div class="col-md-3 m-upcoming-event-card mb-4">
-                                <div class="m-upcoming-event-wrapper">
-                                    <div class="image-header">
-                                        <img src="{{ asset('assets/img/events/event' . ($i > 4 ? ($i > 7 ? $i - 5 : $i - 3) : $i) . '.png') }}" />
-                                    </div>
-                                
-                                    <div class="content">
-                                        <div class="header">
-                                            <h2>Florence + the machine <span class="time">8PM</span></h2>
-                                            <h3>Cold War Kids <span class="time">7PM</span></h3>                                            
-                                        </div>
-                                        <div class="footer">
-                                            <div class="date ">
-                                                <span class="text">
-                                                    OCT 
-                                                    <span class="stay-events-date">23</span>
-                                                </span>
-                                            </div>
-                                            <div class="description">
-                                                <p class="text">This event is 21 and over</p>
-                                                <a href="#"><div>+</div>More Info</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        @endfor
-                    </div>
-                </div>
-            </section>
+            <events-widget></events-widget>
         </main>
     </taste-page>
 @endsection

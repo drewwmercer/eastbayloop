@@ -42,7 +42,7 @@
                         @endfor
                     </div>
                     <div class="load-more col-md-12 text-center mb-4">
-                        <a href="{{ route('music-per-product-page') }}">LOAD MORE</a>  
+                        <a href="{{ route('music-product-page') }}">LOAD MORE</a>  
                     </div>
                 </div>
             </section>

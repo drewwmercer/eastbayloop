@@ -7,7 +7,7 @@
                             {img: 'http://testsite.eastbayloop.com/images/banner5.jpeg', text: 'MARKETPLACE', class: 'explore-slider'},
                             {img: 'http://testsite.eastbayloop.com/images/banner5.jpeg', text: 'MARKETPLACE', class: 'explore-slider'}]">
             </slider>
-            <section class="custom-section with-divider">
+            <section class="custom-section mb-0 pb-0">
                 <div class="section-header">
                     <div class="mt-4 marketplace-nav">
                         <a class="active" href="{{ route('market-place-product-page') }}">MAP</a>
@@ -69,6 +69,7 @@
                     <a href="{{ route('market-place-product-page') }}">LOAD MORE</a>  
                 </div>
             </section>
+            <events-widget></events-widget>
         </main>
     </market-place-page>
 @endsection

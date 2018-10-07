@@ -14477,54 +14477,70 @@ img {
   color: #000000;
 }
 
-.explore-page .m-upcoming-event-card .m-upcoming-event-wrapper {
-  padding-bottom: 0 !important;
-}
+/*.explore-page { 
+     .m-upcoming-event-card {
+        .m-upcoming-event-wrapper {
+            padding-bottom: 0 !important;
 
-.explore-page .m-upcoming-event-card .m-upcoming-event-wrapper .image-header img {
-  border-top-left-radius: unset;
-  border-top-right-radius: unset;
-}
+            .image-header {
+                img {
+                    border-top-left-radius: unset;
+                    border-top-right-radius: unset;
+                }
+            }
 
-.explore-page .m-upcoming-event-card .m-upcoming-event-wrapper .content .header h2 {
-  font-size: 22px;
-  font-family: Barlow;
-}
+            .content {
+                .header {
+                    h2 {
+                        font-size: 22px;
+                        font-family: Barlow;
+    
+                        .time {
+                            font-size: 16px;
+                            color: #9d9d9d;                            
+                        }
+                    }
 
-.explore-page .m-upcoming-event-card .m-upcoming-event-wrapper .content .header h2 .time {
-  font-size: 16px;
-  color: #9d9d9d;
-}
+                    h3 {
+                        font-size: 22px;
+                        font-family: Barlow;
 
-.explore-page .m-upcoming-event-card .m-upcoming-event-wrapper .content .header h3 {
-  font-size: 22px;
-  font-family: Barlow;
-}
+                        .time {
+                            font-size: 16px;
+                            color: #9d9d9d;
+                        }
+                    }
+                }
 
-.explore-page .m-upcoming-event-card .m-upcoming-event-wrapper .content .header h3 .time {
-  font-size: 16px;
-  color: #9d9d9d;
-}
+                .footer {
+                    .date {
+                        .text {
+                            margin-left: -4px;
+                            margin-top: -14px;
 
-.explore-page .m-upcoming-event-card .m-upcoming-event-wrapper .content .footer .date .text {
-  margin-left: -4px;
-  margin-top: -14px;
-}
+                            span {
+                                display: inline-block;
+                                font-size: 43px;
+                                color: #c1060f;
+                                font-family: 'DINCond-Bold';
+                                position: absolute;
+                                bottom: -46px;
+                                padding-top: 6px;
+                                right: -21px; 
+                            }
+                        }
+                    }
 
-.explore-page .m-upcoming-event-card .m-upcoming-event-wrapper .content .footer .date .text span {
-  display: inline-block;
-  font-size: 43px;
-  color: #c1060f;
-  font-family: 'DINCond-Bold';
-  position: absolute;
-  bottom: -46px;
-  padding-top: 6px;
-  right: -21px;
-}
-
-.explore-page .m-upcoming-event-card .m-upcoming-event-wrapper .content .footer .description .text {
-  font-size: 18px;
-}
+                    .description {
+                        .text {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}*/
 
 .explore-cards {
   max-width: 1165px;
@@ -14876,26 +14892,40 @@ img {
   color: #8f8f8f;
 }
 
+.music-venues {
+  /*.m-upcoming-event-card {
+        .m-upcoming-event-wrapper {
+            .content {
+                .header {
+                    padding: 6px 15px;
+
+                    h2 {
+                        font-size: 18px;
+                    }
+
+                    h3 {
+                        font-size: 13px;
+                    }
+                }
+
+                .footer {
+                    .date {
+                        .text { 
+                            span {
+                                bottom: -19px;
+                                padding-top: 15px;
+                                right: -11px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }*/
+}
+
 .music-venues .events-cards .events-header .filter-btns {
   width: 40%;
-}
-
-.music-venues .m-upcoming-event-card .m-upcoming-event-wrapper .content .header {
-  padding: 6px 15px;
-}
-
-.music-venues .m-upcoming-event-card .m-upcoming-event-wrapper .content .header h2 {
-  font-size: 18px;
-}
-
-.music-venues .m-upcoming-event-card .m-upcoming-event-wrapper .content .header h3 {
-  font-size: 13px;
-}
-
-.music-venues .m-upcoming-event-card .m-upcoming-event-wrapper .content .footer .date .text span {
-  bottom: -19px;
-  padding-top: 15px;
-  right: -11px;
 }
 
 .profile-page.music-show-page .medium-title {
@@ -15107,7 +15137,7 @@ img {
   background: #c1060f;
   content: '';
   position: absolute;
-  top: 3px;
+  top: -10px;
   left: 0px;
   -webkit-transform: rotate(50deg);
           transform: rotate(50deg);
@@ -15327,12 +15357,26 @@ img {
     right: -2px;
   }
 
-  .music-venues .m-upcoming-event-card .m-upcoming-event-wrapper .content .footer .date .text span {
-    font-size: 25px;
-    bottom: -17px;
-    padding-top: 15px;
-    right: -1px;
-  }
+  /*.music-venues {
+        .m-upcoming-event-card {
+            .m-upcoming-event-wrapper {
+                .content {
+                    .footer {
+                        .date {
+                            .text { 
+                                span {
+                                    font-size: 25px;
+                                    bottom: -17px;
+                                    padding-top: 15px;
+                                    right: -1px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }*/
 }
 
 .events-header {
@@ -16616,9 +16660,11 @@ img {
   padding-bottom: 15px;
 }
 
-.adventure-profile-page .m-upcoming-event-card .m-upcoming-event-wrapper .content .header h2 {
-  font-size: 14px;
-}
+/*.adventure-profile-page {
+    .m-upcoming-event-card .m-upcoming-event-wrapper .content .header h2 {
+        font-size: 14px;
+    }
+}*/
 
 .service-card .service-wrapper {
   position: relative;
@@ -16774,6 +16820,12 @@ img {
   color: #000000;
 }
 
+.taste-page {
+  /*.m-upcoming-event-card .m-upcoming-event-wrapper .content .footer .date .text span:before {
+        top: -10px;
+    }*/
+}
+
 .taste-page .custom-section .section-content .taste-card .taste-wrapper .image-header .text {
   font-size: 18px;
 }
@@ -16834,10 +16886,6 @@ img {
   font-family: Barlow;
   font-size: 30px;
   word-break: break-all;
-}
-
-.taste-page .m-upcoming-event-card .m-upcoming-event-wrapper .content .footer .date .text span:before {
-  top: -10px;
 }
 
 .chefs-h2 {

@@ -158,6 +158,7 @@
                     @endfor
                 </div>
             </section>
+            <events-widget></events-widget>
         </main>
     </music-page>
 @endsection

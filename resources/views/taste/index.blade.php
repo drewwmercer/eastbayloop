@@ -141,45 +141,7 @@
             </section>
 
             <!-- EVENTS -->
-            <section class="custom-section">
-                <div class="section-header">
-                    <p class="title text-uppercase text-left font-barlow-bold">EVENTS</p>
-                    <p class="content text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius nulla ac ipsum pharetra, sodales euismod est rhoncus. Praesent nibh odio, rutrum quis tincidunt at, porta at magna.</p>
-                    <div class="row p-0 m-0">
-                        @for($i = 1, $j = 1; $i < 5; $i++, $j++)
-                            @php 
-                                $j = $j > 3 ? $j - 3 : $j; 
-                            @endphp
-                            <div class="col-md-3 m-upcoming-event-card mb-4 p-0 pr-3">
-                                <div class="m-upcoming-event-wrapper">
-                                    <div class="image-header">
-                                        <img src="{{ asset('assets/img/music/' . $j . '.png') }}" />
-                                    </div>
-                                
-                                    <div class="content">
-                                        <div class="header">
-                                            <h2>Florence + the machine <span class="time">8PM</span></h2>
-                                            <h3>Cold War Kids <span class="time">7PM</span></h3>                                            
-                                        </div>
-                                        <div class="footer">
-                                            <div class="date">
-                                                <span class="text">
-                                                    OCT 
-                                                    <span>23</span>
-                                                </span>
-                                            </div>
-                                            <div class="description">
-                                                <p class="text">This event is 21 and over</p>
-                                                <a href="#"><div>+</div>More Info</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        @endfor
-                    </div>
-                </div>
-            </section>
+            <events-widget></events-widget>
         </main>
     </taste-page>
 @endsection

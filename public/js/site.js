@@ -48215,8 +48215,8 @@ module.exports = Component.exports
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(50);
-__webpack_require__(110);
-module.exports = __webpack_require__(111);
+__webpack_require__(113);
+module.exports = __webpack_require__(114);
 
 
 /***/ }),
@@ -51548,6 +51548,7 @@ Vue.component('advertise-page', __webpack_require__(100));
 Vue.component('navbar', __webpack_require__(102));
 Vue.component('slider', __webpack_require__(104));
 Vue.component('radio', __webpack_require__(107));
+Vue.component('events-widget', __webpack_require__(110));
 
 /***/ }),
 /* 85 */
@@ -52576,12 +52577,221 @@ if (false) {
 
 /***/ }),
 /* 110 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(1)
+/* script */
+var __vue_script__ = __webpack_require__(111)
+/* template */
+var __vue_template__ = __webpack_require__(112)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/site/Events.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-2316978c", Component.options)
+  } else {
+    hotAPI.reload("data-v-2316978c", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 111 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    props: ['data'],
+
+    data: function data() {
+        return {
+            titleClass: ''
+        };
+    },
+    mounted: function mounted() {
+        if (this.data !== undefined) {
+            this.titleClass = this.data.titleClass || '';
+        }
+    },
+
+
+    methods: {}
+});
+
+/***/ }),
+/* 112 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("section", { staticClass: "custom-section" }, [
+    _c("div", { staticClass: "section-header" }, [
+      _c(
+        "p",
+        {
+          class: "title text-uppercase font-barlow-bold " + _vm.titleClass || ""
+        },
+        [_vm._v("EVENTS")]
+      ),
+      _vm._v(" "),
+      _c("p", { staticClass: "content text-left" }, [
+        _vm._v(
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius nulla ac ipsum pharetra, sodales euismod est rhoncus. Praesent nibh odio, rutrum quis tincidunt at, porta at magna."
+        )
+      ]),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "row p-0 m-0" },
+        _vm._l(4, function(n, key) {
+          return _c(
+            "div",
+            {
+              key: key,
+              staticClass: "col-md-3 m-upcoming-event-card mb-4 p-0 pr-3"
+            },
+            [
+              _c("div", { staticClass: "m-upcoming-event-wrapper" }, [
+                _c("div", { staticClass: "image-header" }, [
+                  _c("img", {
+                    attrs: { src: "/assets/img/music/" + n + ".png" }
+                  })
+                ]),
+                _vm._v(" "),
+                _vm._m(0, true)
+              ])
+            ]
+          )
+        })
+      )
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "content" }, [
+      _c("div", { staticClass: "header" }, [
+        _c("h2", [
+          _vm._v("Florence + the machine "),
+          _c("span", { staticClass: "time" }, [_vm._v("8PM")])
+        ]),
+        _vm._v(" "),
+        _c("h3", [
+          _vm._v("Cold War Kids "),
+          _c("span", { staticClass: "time" }, [_vm._v("7PM")])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "footer" }, [
+        _c("div", { staticClass: "date" }, [
+          _c("span", { staticClass: "text" }, [
+            _vm._v(
+              "\n                                    OCT \n                                    "
+            ),
+            _c("span", [_vm._v("23")])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "description" }, [
+          _c("p", { staticClass: "text" }, [
+            _vm._v("This event is 21 and over")
+          ]),
+          _vm._v(" "),
+          _c("a", { attrs: { href: "#" } }, [
+            _c("div", [_vm._v("+")]),
+            _vm._v("More Info")
+          ])
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-2316978c", module.exports)
+  }
+}
+
+/***/ }),
+/* 113 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 111 */
+/* 114 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
