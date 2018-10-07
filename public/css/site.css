@@ -13725,6 +13725,14 @@ footer .wrapper .socials {
   color: white;
 }
 
+footer .wrapper .socials a {
+  color: white;
+}
+
+footer .wrapper .socials a:hover {
+  color: #e4fe16;
+}
+
 footer .wrapper .socials i {
   margin-right: 5px;
   cursor: pointer;
