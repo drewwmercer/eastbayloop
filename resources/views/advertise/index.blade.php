@@ -160,7 +160,7 @@
                         </a>
                     </div>
                     <div class="list-card col-md-3 p-0 pr-3 mb-4">
-                        <a href="#">
+                        <a href="{{ route('advertise-feature-talent-page') }}">
                             <div class="list-wrapper">
                                 <div class="image-header">
                                     <img class="default" src="{{ asset('assets/img/advertise/list4.png') }}" />

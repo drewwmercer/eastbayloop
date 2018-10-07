@@ -45,4 +45,19 @@ class AdvertiseController extends Controller
     {
         return view('advertise.sell-products');
     }
+
+    public function showSellProductsContact()
+    {
+        return view('advertise.sell-products-contact');
+    }
+
+    public function showFeatureTalent() 
+    {
+        return view('advertise.feature-talent');
+    }
+
+    public function showFeatureTalentContact()
+    {
+        return view('advertise.feature-talent-contact');
+    }
 }

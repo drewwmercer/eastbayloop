@@ -88,6 +88,9 @@ Route::get('/advertise-with-us', 'AdvertiseController@index')->name('advertise-p
 Route::get('/advertise-with-us/list', 'AdvertiseController@showList')->name('advertise-list-page');
 Route::get('/advertise-with-us/become-vip-user', 'AdvertiseController@showBecomeUser')->name('advertise-b-user-page');
 Route::get('/advertise-with-us/sell-products', 'AdvertiseController@showSellProducts')->name('advertise-sell-products-page');
+Route::get('/advertise-with-us/sell-products/contact', 'AdvertiseController@showSellProductsContact')->name('advertise-sell-products-contact-page');
+Route::get('/advertise-with-us/feature-talent', 'AdvertiseController@showFeatureTalent')->name('advertise-feature-talent-page');
+Route::get('/advertise-with-us/feature-talent/contact', 'AdvertiseController@showFeatureTalentContact')->name('advertise-feature-talent-contact-page');
 Route::get('/advertise-with-us/become-vip-business', 'AdvertiseController@showBecomeBusiness')->name('advertise-b-business-page');
 Route::get('/advertise-with-us/business-contact-details', 'AdvertiseController@showBusinessContact')->name('advertise-business-contact-d-page');
 Route::get('/advertise-with-us/business-events-contact', 'AdvertiseController@showBusinessEventsContact')->name('advertise-business-events-contact-page');

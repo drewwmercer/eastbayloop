@@ -12,10 +12,10 @@
                     <h2 class="desc-title col-md-12 p-0 mb-4 pb-3">Simple, transparent, secure</h2>
                     <div class="col-md-6 sell-card mb-3">
                         <div class="sell-wrapper row m-0">
-                            <div class="sell-image col-md-1 ">
+                            <div class="sell-image col-md-1 p-0 col-sm-1">
                                 <img src="{{ asset('assets/img/advertise/ok.png') }}" />
                             </div>
-                            <div class="content col-md-11 pl-4">
+                            <div class="content col-md-11 pl-4 col-sm-11">
                                 <h2 class="card-title">No additional monthly fees</h2>
                                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae malesuada leo. Aliquam risus lacus, rhoncus et sem et, pharetra facilisis mauris. </p>
                             </div>
@@ -23,10 +23,10 @@
                     </div>
                     <div class="col-md-6 sell-card mb-3">
                         <div class="sell-wrapper row m-0">
-                            <div class="sell-image col-md-1 ">
+                            <div class="sell-image col-md-1 p-0 col-sm-1">
                                 <img src="{{ asset('assets/img/advertise/ok.png') }}" />
                             </div>
-                            <div class="content col-md-11 pl-4">
+                            <div class="content col-md-11 pl-4 col-sm-11">
                                 <h2 class="card-title">Automatic Deposits</h2>
                                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae malesuada leo. Aliquam risus lacus, rhoncus et sem et, pharetra facilisis mauris. </p>
                             </div>
@@ -34,10 +34,10 @@
                     </div>
                     <div class="col-md-6 sell-card mb-3">
                         <div class="sell-wrapper row m-0">
-                            <div class="sell-image col-md-1 ">
+                            <div class="sell-image col-md-1 p-0 col-sm-1">
                                 <img src="{{ asset('assets/img/advertise/ok.png') }}" />
                             </div>
-                            <div class="content col-md-11 pl-4">
+                            <div class="content col-md-11 pl-4 col-sm-11">
                                 <h2 class="card-title">Secure Transactions</h2>
                                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae malesuada leo. Aliquam risus lacus, rhoncus et sem et, pharetra facilisis mauris. </p>
                             </div>
@@ -45,17 +45,17 @@
                     </div>
                     <div class="col-md-6 sell-card mb-3">
                         <div class="sell-wrapper row m-0">
-                            <div class="sell-image col-md-1 ">
+                            <div class="sell-image col-md-1 p-0 col-sm-1">
                                 <img src="{{ asset('assets/img/advertise/ok.png') }}" />
                             </div>
-                            <div class="content col-md-11 pl-4">
+                            <div class="content col-md-11 pl-4 col-sm-11">
                                 <h2 class="card-title">Seller Protection</h2>
                                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae malesuada leo. Aliquam risus lacus, rhoncus et sem et, pharetra facilisis mauris. </p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-12 text-center mt-4 mb-4 pb-3 pt-3">
-                        <a href="#" class="adv-sell-btn">Start Selling Today!</a>
+                        <a href="{{ route('advertise-sell-products-contact-page') }}" class="adv-sell-btn">Start Selling Today!</a>
                     </div>
                 </div>
             </section>
@@ -146,7 +146,7 @@
                 </div>
                 <div class="what-sell-block mt-4 pt-3">
                     <h2 class="what-sell-title mb-4 text-center">What can you sell in East Bay Loop?</h2>
-                    <div class="what-sell-cards row mt-4 pt-4">
+                    <div class="what-sell-cards row m-0 mt-4 pt-4">
                         <div class="what-sell-card col-md-2 mb-3 offset-md-1">
                             <div class="what-sell-wrapper">
                                 <div class="image-header">
@@ -201,7 +201,7 @@
                     </div>  
                 </div>
                 <div class="col-md-12 text-center pb-3 pt-4 mb-10 mt-75">
-                    <a href="#" class="adv-sell-btn">Start Selling Today!</a>
+                    <a href="{{ route('advertise-sell-products-contact-page') }}" class="adv-sell-btn">Start Selling Today!</a>
                 </div>
             </section>
         </main>

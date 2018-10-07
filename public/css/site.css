@@ -17490,6 +17490,10 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
   padding: 33px 0px;
   background: #edf0f7;
@@ -17507,6 +17511,69 @@ img {
 
 .become-user-btn .join-btn:hover {
   color: #ffffff;
+}
+
+.become-user-btn .become-blocks {
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.become-user-btn .become-blocks .become-cards .become-card .become-wrapper .become-header {
+  background: #f7f7f7;
+  width: 100%;
+  margin: 0;
+  height: 95px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.become-user-btn .become-blocks .become-cards .become-card .become-wrapper .become-header .header-text {
+  font-family: BarlowCondensedSemiBold;
+  font-size: 35px;
+  color: #5c5c5c;
+}
+
+.become-user-btn .become-blocks .become-cards .become-card .become-wrapper .become-header .header-additional-text {
+  font-family: BarlowRegular;
+  font-size: 20px;
+  color: #5c5c5c;
+}
+
+.become-user-btn .become-blocks .become-cards .become-card .become-wrapper .become-footer {
+  -webkit-box-shadow: 0px 4px 5px rgba(1, 1, 1, 0.2);
+          box-shadow: 0px 4px 5px rgba(1, 1, 1, 0.2);
+  background: #ffffff;
+  width: 100%;
+  margin: 0;
+  height: 72px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.become-user-btn .become-blocks .become-cards .become-card .become-wrapper .become-footer .footer-text {
+  font-weight: bold;
+  font-family: serif;
+  font-size: 45px;
+  color: #bfd518;
 }
 
 .become-user-text {
@@ -17845,7 +17912,7 @@ img {
 }
 
 .sell-listing-s .listing-content .listing-header .listing-fee {
-  width: 300px;
+  width: 30%;
 }
 
 .sell-listing-s .listing-content .listing-header .listing-fee .listing-fee-text {
@@ -17889,16 +17956,38 @@ img {
           align-items: center;
 }
 
+.sell-listing-s .listing-content .listing-header .listing-fee .listing-fee-new-text {
+  -webkit-box-shadow: 0px 4px 5px rgba(1, 1, 1, 0.2);
+          box-shadow: 0px 4px 5px rgba(1, 1, 1, 0.2);
+  background: #ffffff;
+  font-weight: bold;
+  font-family: serif;
+  font-size: 45px;
+  color: #bfd518;
+  width: 100%;
+  margin: 0;
+  height: 72px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .sell-listing-s .listing-content .listing-header .listing-text {
   font-family: BarlowRegular;
   font-size: 20px;
   color: #5c5c5c;
-  width: 530px;
+  width: 40%;
   padding: 0px 42px;
 }
 
 .sell-listing-s .listing-content .listing-header .listing-boxes {
-  width: 298px;
+  width: 30%;
 }
 
 .sell-listing-s .listing-content .listing-header .listing-boxes .listing-box {
@@ -18104,12 +18193,158 @@ img {
   color: #5c5c5c;
 }
 
+.sell-main-content .spotlight-block .spotlight-title {
+  font-family: BarlowSemiBold;
+  font-size: 25px;
+  color: #262626;
+  text-align: center;
+}
+
+.sell-main-content .spotlight-block .spotlight-additional-title {
+  font-family: BarlowRegular;
+  font-size: 20px;
+  color: #666666;
+  text-align: center;
+}
+
+.sell-main-content .spotlight-block .spotlight-cards .spotlight-card .spotlight-wrapper {
+  -webkit-box-shadow: 0px 0px 10px rgba(1, 1, 1, 0.2);
+          box-shadow: 0px 0px 10px rgba(1, 1, 1, 0.2);
+  padding: 9px;
+}
+
+.sell-main-content .spotlight-block .spotlight-cards .spotlight-card .spotlight-wrapper .content .card-title {
+  font-family: BarlowRegular;
+  font-size: 22px;
+  color: #000000;
+}
+
+.sell-main-content .spotlight-block .spotlight-cards .spotlight-card .spotlight-wrapper .content .card-text {
+  font-family: BarlowRegular;
+  font-size: 15px;
+  color: #8b8b8b;
+}
+
+.sell-main-content .spotlight-block .testim-cards .testim-card .testim-wrapper {
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 10px rgba(1, 1, 1, 0.2);
+          box-shadow: 0px 0px 10px rgba(1, 1, 1, 0.2);
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 158px;
+}
+
+.sell-main-content .spotlight-block .testim-cards .testim-card .testim-wrapper .image-header img {
+  width: auto;
+  height: auto;
+}
+
+.sell-main-content .spotlight-block .testim-cards .testim-card .testim-wrapper .content {
+  padding: 32px 25px;
+}
+
+.sell-main-content .spotlight-block .testim-cards .testim-card .testim-wrapper .content .quote-symbols {
+  font-size: 85px;
+  color: #999999;
+  font-family: sans-serif;
+  position: absolute;
+  top: 0;
+}
+
+.sell-main-content .spotlight-block .testim-cards .testim-card .testim-wrapper .content .card-text {
+  font-family: BarlowRegular;
+  font-size: 17px;
+  color: #666666;
+}
+
+.form-check-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.form-check-field input[type="checkbox"] {
+  width: 4%;
+}
+
+.form-check-field label {
+  width: 90%;
+}
+
 .mb-10 {
   margin-bottom: 100px;
 }
 
 .mt-75 {
   margin-top: 75px;
+}
+
+@media only screen and (max-width: 767px) {
+  .sell-header .sell-desc .sell-card .sell-wrapper .content {
+    padding-left: 0px !important;
+  }
+
+  .sell-listing-s .listing-content .listing-header .listing-text {
+    font-size: 17px;
+    padding: 0px 8px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .sell-header .sell-desc .sell-card .sell-wrapper .sell-image {
+    width: 15%;
+  }
+
+  .sell-header .sell-desc .sell-card .sell-wrapper .content {
+    width: 85%;
+  }
+
+  .sell-listing-s .listing-content .listing-header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .sell-listing-s .listing-content .listing-header .listing-fee {
+    width: 90%;
+  }
+
+  .sell-listing-s .listing-content .listing-header .listing-text {
+    padding: 10px 0px;
+    width: 90%;
+  }
+
+  .sell-listing-s .listing-content .listing-header .listing-boxes {
+    width: 90%;
+  }
+
+  .sell-main-content .main-btns-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .adv-sell-btn {
+    font-size: 18px;
+  }
+
+  .adv-sell-btn.promote-btn {
+    font-size: 14px;
+  }
 }
 
 .custom-navbar {
@@ -18502,7 +18737,7 @@ img {
 
 @media only screen and (max-width: 1200px) and (min-width: 961px) {
   .main-slider .index-banner .wrapper .banner-text {
-    padding: 0px 150px;
+    padding: 0px 150px !important;
   }
 }
 
@@ -18522,7 +18757,7 @@ img {
   }
 
   .main-slider .index-banner .wrapper .banner-text {
-    padding: 0px 50px;
+    padding: 0px 50px !important;
   }
 }
 
@@ -18543,7 +18778,7 @@ img {
   }
 
   .main-slider .index-banner .wrapper .banner-text {
-    padding: 0px;
+    padding: 0px !important;
     font-size: 36px;
     line-height: 40px;
   }

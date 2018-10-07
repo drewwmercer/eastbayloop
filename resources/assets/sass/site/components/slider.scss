@@ -142,7 +142,7 @@
         .index-banner {
             .wrapper {
                 .banner-text {
-                    padding: 0px 150px;
+                    padding: 0px 150px !important;
                 }
             }
         }
@@ -166,7 +166,7 @@
 
             .wrapper {
                 .banner-text {
-                    padding: 0px 50px;
+                    padding: 0px 50px !important;
                 }
             }
         }
@@ -189,7 +189,7 @@
 
             .wrapper {
                 .banner-text {
-                    padding: 0px;
+                    padding: 0px !important;
                     font-size: 36px;
                     line-height: 40px;
                 }
