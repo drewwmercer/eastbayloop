@@ -184,6 +184,28 @@
                     <a href="{{ route('advertise-feature-talent-contact-page') }}" class="adv-sell-btn promote-btn">Promote Yourself Today!</a>
                 </div>
             </section>
+            <div class="modal fade" id="VipModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog advertise-modal" role="document">
+                    <div class="modal-content">
+                        <div class="close-btn" data-dismiss="modal"></div>
+
+                        <div class="row">
+                            <div class="col-md-12 modal-card">
+                                <a href="{{ route('advertise-b-user-page') }}">
+                                    <img src="{{ asset('assets/img/advertise/modal1.png') }}" />
+                                    <h2 class="modal-text">Become a VIP User!</h2>
+                                </a>
+                            </div>
+                            <div class="col-md-12 modal-card mt-4">
+                                <a href="{{ route('advertise-b-business-page') }}"> 
+                                    <img src="{{ asset('assets/img/advertise/modal2.png') }}" />
+                                    <h2 class="modal-text">Become a VIP Business!</h2>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
     </advertise-page>
 @endsection
