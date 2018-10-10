@@ -47,6 +47,7 @@ Route::get('/fashion/spotlight-on', 'FashionController@showSpotlightOn')->name('
 Route::get('/fashion/products', 'FashionController@showProducts')->name('fashion-product-page');
 Route::get('/fashion/product', 'FashionController@showProduct')->name('fashion-per-product-page');
 Route::get('/market-place', 'MarketPlaceController@index')->name('market-place-page');
+Route::get('/market-place/more', 'MarketPlaceController@showMore')->name('market-place-more-page');
 Route::get('/market-place/retails', 'MarketPlaceController@showRetails')->name('market-place-retails-page');
 Route::get('/market-place/products', 'MarketPlaceController@showProducts')->name('market-place-product-page');
 Route::get('/market-place/product', 'MarketPlaceController@showProduct')->name('market-place-per-product-page');

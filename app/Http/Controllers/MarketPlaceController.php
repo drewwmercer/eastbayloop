@@ -25,4 +25,9 @@ class MarketPlaceController extends Controller
     {
         return view('market-place.per-product');
     }
+
+    public function showMore()
+    {
+        return view('market-place.profile');
+    }
 }
