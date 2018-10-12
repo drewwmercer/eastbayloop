@@ -3,12 +3,12 @@
 @section('content')
     <market-place-page inline-template>
         <main>
-            <slider :data="[{img: 'http://testsite.eastbayloop.com/images/banner7.jpeg', text: 'MARKETPLACE', class: 'explore-slider'},
-                            {img: 'http://testsite.eastbayloop.com/images/banner7.jpeg', text: 'MARKETPLACE', class: 'explore-slider'},
-                            {img: 'http://testsite.eastbayloop.com/images/banner7.jpeg', text: 'MARKETPLACE', class: 'explore-slider'}]">
+            <slider :data="[{img: 'http://testsite.eastbayloop.com/images/banner5.jpeg', text: 'MARKETPLACE', class: 'explore-slider'},
+                            {img: 'http://testsite.eastbayloop.com/images/banner5.jpeg', text: 'MARKETPLACE', class: 'explore-slider'},
+                            {img: 'http://testsite.eastbayloop.com/images/banner5.jpeg', text: 'MARKETPLACE', class: 'explore-slider'}]">
             </slider>
 
-            <section class="explore-cards">
+            <section class="explore-cards custom-section">
                 <div class="row explore-header mb-3">
                     <h2 class="display-inline col-md-8">MARKETPLACE</h2>
                     <div class="filter-bar col-md-4">
@@ -22,39 +22,50 @@
                         <a class="filter-btn ml-3" href="#">Find Filter</a>
                     </div>
                 </div>
-                <div class="row">
-                    @for($i = 1; $i < 4; $i++)
-                        <div class="default-card col-md-4 mb-4">
-                            <div class="default-wrapper">
-                                <a href="{{ route('market-place-retails-page') }}">
-                                    <img src="http://testsite.eastbayloop.com/images/place-img1.jpeg" />
-                                    <div class="content">
-                                        <h2 class="mb-3">Acme Bread Company</h2>
+                <div class="section-content ">
+                    <div class="row">
+                        @for($i = 1; $i < 4; $i++)
+                            <div class="market-card text-left col-md-4 mt-3">
+                                <div class="market-wrapper p-0">
+                                    <div class="image-header">
+                                        <a href="{{ route('market-place-retails-page') }}">
+                                            <img src="http://testsite.eastbayloop.com/images/place-img1.jpeg" />
+                                            <span class="text text-uppercase">Acme Bread Company</span>
+                                        </a>
                                     </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="default-card col-md-4 mb-4">
-                            <div class="default-wrapper">
-                                <a href="{{ route('market-place-retails-page') }}">
-                                    <img src="http://testsite.eastbayloop.com/images/place-img2.jpeg" />
-                                    <div class="content">
-                                        <h2 class="mb-3">American Eatery at Prather Ranch</h2>
+                                    <div class="content pt-4">
+                                        <a class="read-more-link" href="{{ route('market-place-retails-page') }}">READ MORE</a>                            
                                     </div>
-                                </a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="default-card col-md-4 mb-4">
-                            <div class="default-wrapper">
-                                <a href="{{ route('market-place-retails-page') }}">
-                                    <img src="http://testsite.eastbayloop.com/images/place-img3.jpeg" />
-                                    <div class="content">
-                                        <h2 class="mb-3">Bay Crossings</h2>
+                            <div class="market-card text-left col-md-4 mt-3">
+                                <div class="market-wrapper p-0">
+                                    <div class="image-header">
+                                        <a href="{{ route('market-place-retails-page') }}">
+                                            <img src="http://testsite.eastbayloop.com/images/place-img2.jpeg" />
+                                            <span class="text text-uppercase">American Eatery at Prather Ranch</span>
+                                        </a>
                                     </div>
-                                </a>
+                                    <div class="content pt-4">
+                                        <a class="read-more-link" href="{{ route('market-place-retails-page') }}">READ MORE</a>                            
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    @endfor
+                            <div class="market-card text-left col-md-4 mt-3">
+                                <div class="market-wrapper p-0">
+                                    <div class="image-header">
+                                        <a href="{{ route('market-place-retails-page') }}">
+                                            <img src="http://testsite.eastbayloop.com/images/place-img3.jpeg" />
+                                            <span class="text text-uppercase">Bay Crossings</span>
+                                        </a>
+                                    </div>
+                                    <div class="content pt-4">
+                                        <a class="read-more-link " href="{{ route('market-place-retails-page') }}">READ MORE</a>                            
+                                    </div>
+                                </div>
+                            </div>
+                        @endfor
+                    </div>
                 </div>
             </section>
 

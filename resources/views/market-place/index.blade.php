@@ -67,7 +67,7 @@
                 </div>
                 <div class="load-more col-md-12 text-center mt-4">
                     <!-- <a href="{{ route('market-place-more-page') }}">LOAD MORE</a> -->
-                    <a href="{{ route('explore-subpage', ['category' => 'local Shops and Shopping']) }}">LOAD MORE</a>                    
+                    <a href="{{ route('market-place-more-page') }}">LOAD MORE</a>                    
                 </div>
             </section>
             <events-widget></events-widget>

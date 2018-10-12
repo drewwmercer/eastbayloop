@@ -8,7 +8,7 @@ class MarketPlaceController extends Controller
 {
     public function index()
     {
-        return view('market-place.profile');
+        return view('market-place.index');
     }
 
     public function showRetails()
@@ -28,6 +28,6 @@ class MarketPlaceController extends Controller
 
     public function showMore()
     {
-        return view('market-place.index');
+        return view('market-place.profile');
     }
 }
