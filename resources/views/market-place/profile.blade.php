@@ -3,14 +3,14 @@
 @section('content')
     <market-place-page inline-template>
         <main>
-            <slider :data="[{img: 'http://testsite.eastbayloop.com/images/banner5.jpeg', text: 'MARKETPLACE', class: 'explore-slider'},
-                            {img: 'http://testsite.eastbayloop.com/images/banner5.jpeg', text: 'MARKETPLACE', class: 'explore-slider'},
-                            {img: 'http://testsite.eastbayloop.com/images/banner5.jpeg', text: 'MARKETPLACE', class: 'explore-slider'}]">
+            <slider :data="[{img: 'http://testsite.eastbayloop.com/images/banner5.jpeg', text: 'LOCAL MARKETPLACE', class: 'explore-slider'},
+                            {img: 'http://testsite.eastbayloop.com/images/banner5.jpeg', text: 'LOCAL MARKETPLACE', class: 'explore-slider'},
+                            {img: 'http://testsite.eastbayloop.com/images/banner5.jpeg', text: 'LOCAL MARKETPLACE', class: 'explore-slider'}]">
             </slider>
 
             <section class="explore-cards custom-section">
                 <div class="row explore-header mb-3">
-                    <h2 class="display-inline col-md-8">MARKETPLACE</h2>
+                    <h2 class="display-inline col-md-8">LOCAL MARKETPLACE</h2>
                     <div class="filter-bar col-md-4">
                         <span>
                             <select>

@@ -3,9 +3,9 @@
 @section('content')
     <market-place-page inline-template>
         <main>
-            <slider :data="[{img: 'http://testsite.eastbayloop.com/images/banner5.jpeg', text: 'MARKETPLACE', class: 'explore-slider'},
-                            {img: 'http://testsite.eastbayloop.com/images/banner5.jpeg', text: 'MARKETPLACE', class: 'explore-slider'},
-                            {img: 'http://testsite.eastbayloop.com/images/banner5.jpeg', text: 'MARKETPLACE', class: 'explore-slider'}]">
+            <slider :data="[{img: 'http://testsite.eastbayloop.com/images/banner5.jpeg', text: 'LOCAL MARKETPLACE', class: 'explore-slider'},
+                            {img: 'http://testsite.eastbayloop.com/images/banner5.jpeg', text: 'LOCAL MARKETPLACE', class: 'explore-slider'},
+                            {img: 'http://testsite.eastbayloop.com/images/banner5.jpeg', text: 'LOCAL MARKETPLACE', class: 'explore-slider'}]">
             </slider>
             <section class="custom-section mb-0 pb-0">
                 <div class="section-header">
