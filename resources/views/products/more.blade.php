@@ -1,7 +1,7 @@
 @extends('layouts.main-page')
 
 @section('content')
-    <market-place-page inline-template>
+    <explore-page inline-template>
         <main>
             <slider :data="[{img: '{{ asset('assets/img/sliders/perfume.png') }}', text: 'Perfume', class: 'explore-slider'}]">
             </slider>
@@ -20,7 +20,7 @@
                     @for($i = 1; $i < 10; $i++)
                         <div class="product-card col-md-4 mb-4">
                             <div class="product-wrapper">
-                                <a href="{{ route('market-place-per-product-page') }}">
+                                <a href="{{ route('explore-store-product-page') }}">
                                     <div class="image-header">
                                         <img src="http://testsite.eastbayloop.com/images/product1.png" />
                                     </div>
@@ -53,10 +53,7 @@
                         </div>
                     @endfor
                 </div>
-                <div class="load-more col-md-12 text-center">
-                    <a href="{{ route('products-more') }}">LOAD MORE</a>  
-                </div>
             </section>
         </main>
-    </market-place-page>
+    </explore-page>
 @endsection

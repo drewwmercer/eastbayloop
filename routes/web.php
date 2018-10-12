@@ -97,5 +97,5 @@ Route::get('/advertise-with-us/become-vip-business', 'AdvertiseController@showBe
 Route::get('/advertise-with-us/business-contact-details', 'AdvertiseController@showBusinessContact')->name('advertise-business-contact-d-page');
 Route::get('/advertise-with-us/business-events-contact', 'AdvertiseController@showBusinessEventsContact')->name('advertise-business-events-contact-page');
 Route::get('/advertise-with-us/business-contact-details/submit', 'AdvertiseController@showBusinessContactSubmit')->name('advertise-business-contact-d-s-page');
-
+Route::get('/store/products/more', 'ProductsController@showMore')->name('products-more');
 //Route::get('/home', 'HomeController@index')->name('home');
