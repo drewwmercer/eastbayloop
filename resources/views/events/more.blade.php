@@ -35,9 +35,6 @@
                         @endphp
                     @endfor
                 </div>
-                <div class="load-more col-md-12 text-center mt-4 mb-4 pb-4">
-                    <a href="{{ route('events-more-page') }}">LOAD MORE</a>  
-                </div>
             </section>
         </main>
     </events-page>

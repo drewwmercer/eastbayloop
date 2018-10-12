@@ -3,7 +3,7 @@
 @section('content')
     <events-page inline-template>
         <main>
-            <slider :carousel="true" :data="[{img: '{{ asset('assets/img/sliders/designer.png') }}', text: 'Event Profile', class: 'explore-slider'}]">
+            <slider :carousel="true" :data="[{img: '{{ asset('assets/img/sliders/events-profile.png') }}', text: 'Event Profile', class: 'explore-slider'}]">
             </slider>
 
             <section class="profile-page">
@@ -13,7 +13,7 @@
                             <h2 class="title">Event Name</h2>
                         </div>
                         <div>
-                        <a href="{{ route('explore-store-products-page') }}" class="black-btn font-20px">Visit My Online Store!</a>
+                        <a href="{{ route('events-products-page') }}" class="black-btn font-20px">Book Table Service</a>
                         </div>
                     </div>
                     <div class="description col-md-8 col-sm-12 mb-4 p-0">
