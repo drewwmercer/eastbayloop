@@ -105,6 +105,62 @@
                     }
                 }
             }
+
+            .slider-carousel-menu {
+                position: absolute;
+                bottom: 7%;
+                left: 0;
+                right: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 2;
+
+                .carousel-card {
+                    .carousel-wrapper {
+                        border: 2px solid white;
+                        border-radius: 3px;
+                        opacity: .5;
+                        cursor: pointer;
+                        transition: all .5s;
+                        position: relative;
+                        
+                        &:hover {
+                            opacity: 1;
+                            
+                            .play-btn {
+                                background: #e3ff14;
+                            }
+                        }
+
+                        .play-btn {
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            left: 0;
+                            bottom: 0;
+                            margin: auto;
+                            width: 40px;
+                            height: 40px;
+                            display: flex;
+                            background: #ffffffde;
+                            justify-content: center;
+                            align-items: center;
+                            border-radius: 50%;
+                            padding-left: 5px;
+                            font-size: 24px;
+                            color: #000000;
+                            transition: all ease-in-out .5s;
+                            cursor: pointer;
+                            box-shadow: -1px 0px 12px rgba(255, 255, 255, 0.4);
+    
+                            &:hover {
+                                background: #a2b60b;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 

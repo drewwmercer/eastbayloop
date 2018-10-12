@@ -38,6 +38,7 @@ Route::get('/explore/store', 'ExploreController@showStore')->name('explore-store
 Route::get('/explore/store/products', 'ExploreController@showStoreProducts')->name('explore-store-products-page');
 Route::get('/explore/store/product', 'ExploreController@showStoreProduct')->name('explore-store-product-page');
 Route::get('/events', 'EventsController@index')->name('events-page');
+Route::get('/events/profile', 'EventsController@showProfile')->name('events-profile-page');
 Route::get('/fashion', 'FashionController@index')->name('fashion-page');
 Route::get('/fashion/local-designer-houses', 'FashionController@designerLocalHouseShow')->name('fashion-local-designer-page');
 Route::get('/fashion/designer-house', 'FashionController@designerHouseShow')->name('fashion-designer-page');

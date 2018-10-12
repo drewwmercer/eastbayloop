@@ -21,12 +21,14 @@
                 <div class="row">
                     @for($i = 1, $j = 1; $i < 16; $i++)
                         <div class="events-card col-md-4 mb-4">
-                            <div class="events-wrapper">
-                                <img src="http://testsite.eastbayloop.com/images/events-img{{ $j }}.jpeg" />
-                                <div class="content">
-                                    <h2 class="mb-3">{{ 'Event ' . $i }}</h2>
+                            <a href="{{ route('events-profile-page') }}">
+                                <div class="events-wrapper">
+                                    <img src="http://testsite.eastbayloop.com/images/events-img{{ $j }}.jpeg" />
+                                    <div class="content">
+                                        <h2 class="mb-3">{{ 'Event ' . $i }}</h2>
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                         @php
                             $j = ($j === 6) ? 1 : $j + 1;

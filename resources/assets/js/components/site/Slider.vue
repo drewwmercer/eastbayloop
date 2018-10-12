@@ -38,13 +38,49 @@
                     </div>
                     <radio></radio>
                 </template>
+                <template v-if="carousel">
+                    <div class="slider-carousel-menu">
+                        <div class="carousel-card mr-4">
+                            <div class="carousel-wrapper">
+                                <img src="/assets/img/events/car1.png" />
+                                <span class="play-btn"><i class="fa fa-play"></i></span>
+                            </div>
+                        </div>
+                        <div class="carousel-card mr-4">
+                            <div class="carousel-wrapper">
+                                <img src="/assets/img/events/car2.png" />
+                                <span class="play-btn"><i class="fa fa-play"></i></span>
+                            </div>
+                        </div>
+                        <div class="carousel-card mr-4">
+                            <div class="carousel-wrapper">
+                                <img src="/assets/img/events/car3.png" />
+                            </div>
+                        </div>
+                        <div class="carousel-card mr-4">
+                            <div class="carousel-wrapper">
+                                <img src="/assets/img/events/car4.png" />
+                            </div>
+                        </div>
+                        <div class="carousel-card mr-4">
+                            <div class="carousel-wrapper">
+                                <img src="/assets/img/events/car5.png" />
+                            </div>
+                        </div>
+                        <div class="carousel-card mr-4">
+                            <div class="carousel-wrapper">
+                                <img src="/assets/img/events/car6.png" />
+                            </div>
+                        </div>
+                    </div>
+                </template>
             </div>
         </section>
     </div>
 </template>
 <script>
     export default {
-        props: ['data', 'radio'],
+        props: ['data', 'radio', 'carousel'],
         
         mounted() {
             $('.flexslider').flexslider({

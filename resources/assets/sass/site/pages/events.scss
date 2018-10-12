@@ -72,6 +72,88 @@
     }
 }
 
+.tickets-block {
+    box-shadow: 0px 0px 10px rgba(1,1,1,.2);
+
+    .tickets-header {
+        background-image: url(/assets/img/events/tickets.png);
+        font-family: BarlowBold;
+        font-size: 30px;
+        color: #ffffff;
+        height: 105px;
+        padding-left: 30px;
+        display: flex;
+        align-items: center;
+    }
+
+    .ticket-card {
+        height: 90px;
+        background: #edf0f7;
+        margin-bottom: 2px;
+        
+        .ticket-wrapper {
+            padding: 0px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: inherit;
+
+            .content {
+                display: flex;
+                align-items: center;
+
+                .title {
+                    font-family: BarlowBold;
+                    font-size: 27px;
+                    color: #666666;
+                    margin-right: 12px;
+                    padding-bottom: 0px;
+                }
+
+                .date {
+                    font-family: BarlowRegular;
+                    font-size: 20px;
+                    color: #666666;
+                    margin-right: 12px;
+                }
+                
+                .price {
+                    font-family: BarlowBold;
+                    font-size: 27px;
+                    color: #bfd518;
+                }
+            }
+
+            .buy-btn-block {
+                
+                .buy-btn {
+                    font-family: BarlowRegular;
+                    font-size: 18px;
+                    color: #ecff2d;
+                    padding: 16px 35px;
+                    border-radius: 3px;
+                    background: #000000;
+
+                    &:hover {
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+
+    .tickets-footer {
+        background: #edf0f7;
+        font-family: BarlowRegular;
+        font-size: 15px;
+        color: #666666;
+        height: 55px;
+        padding: 0px 30px;
+        display: flex;
+        align-items: center;
+    }
+}
+
 @media only screen and (max-width: 1200px) and (min-width: 961px) {
     .events-header {
         .filter-btns {

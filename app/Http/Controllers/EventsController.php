@@ -10,4 +10,9 @@ class EventsController extends Controller
     {
         return view('events.index');
     }
+
+    public function showProfile()
+    {
+        return view('events.profile');
+    }
 }

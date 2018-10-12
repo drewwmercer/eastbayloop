@@ -1,24 +1,24 @@
 @extends('layouts.main-page')
 
 @section('content')
-    <market-place-page inline-template>
+    <events-page inline-template>
         <main>
-            <slider :data="[{img: '{{ asset('assets/img/sliders/designer.png') }}', text: '', class: 'explore-slider'}]">
+            <slider :carousel="true" :data="[{img: '{{ asset('assets/img/sliders/designer.png') }}', text: 'Event Profile', class: 'explore-slider'}]">
             </slider>
 
             <section class="profile-page">
                 <div class="row m-0">
                     <div class="header w-100">
                         <div>
-                            <h2 class="title">Store Name</h2>
+                            <h2 class="title">Event Name</h2>
                         </div>
                         <div>
-                        <a href="{{ route('market-place-product-page') }}" class="black-btn font-20px">Visit My Online Store!</a>
+                        <a href="{{ route('explore-store-products-page') }}" class="black-btn font-20px">Visit My Online Store!</a>
                         </div>
                     </div>
                     <div class="description col-md-8 col-sm-12 mb-4 p-0">
                         <div class="main-text">
-                            <h2>Business Description</h2>
+                            <h2>Event Description</h2>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consequat, mi a blandit sollicitudin,
                                 eros neque sodales felis, nec consequat ex urna eu ipsum. Fusce vel neque id tortor tempor pharetra
@@ -36,26 +36,73 @@
                                 consectetur adipiscing elit. 
                             </p>
                         </div>
+                        <div class="tickets-block mt-4">
+                            <div class="tickets-header">
+                                Tickets
+                            </div>
+                            <div class="ticket-card">
+                                <div class="ticket-wrapper">
+                                    <div class="content">
+                                        <h2 class="title">DAY PASS</h2>
+                                        <h3 class="date">FOR OCT 23, 2018</h3>
+                                        <h3 class="price">$49</h3>
+                                    </div>
+                                    <div class="buy-btn-block">
+                                        <a class="buy-btn" href="#">Buy a ticket</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ticket-card">
+                                <div class="ticket-wrapper">
+                                    <div class="content">
+                                        <h2 class="title">DAY PASS</h2>
+                                        <h3 class="date">FOR OCT 24, 2018</h3>
+                                        <h3 class="price">$49</h3>
+                                    </div>
+                                    <div class="buy-btn-block">
+                                        <a class="buy-btn" href="#">Buy a ticket</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ticket-card">
+                                <div class="ticket-wrapper">
+                                    <div class="content">
+                                        <h2 class="title">2 DAY PASS</h2>
+                                        <h3 class="price">$79</h3>
+                                    </div>
+                                    <div class="buy-btn-block">
+                                        <a class="buy-btn" href="#">Buy a ticket</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tickets-footer">
+                                Sales end on October 20, 2018
+                            </div>
+                        </div>
                     </div>
                     <div class="info col-md-4 col-sm-12">
                         <div class="info-block">
-                            <div class="info-title">Contact Details</div>
+                            <div class="info-title">Event Details</div>
                             <div class="col-md-12 col-sm-12 info-details">
                                 <div class="row pt-0 pb-0">
                                     <div class="col-md-1">
                                         <i class="fa fa-map-marker"></i>
                                     </div>
                                     <div class="col-md-11">
-                                        445 Mount Eden Road, Mount Eden Auckland
+                                        Fort Mason Center </br>
+                                        2 Marina Boulevard </br>
+                                        San Francisco, CA 94123 </br>
+                                        United States </br>
+                                        <a href="#">View map</a>
                                     </div>     
                                 </div>
                                 <div class="row pt-0 pb-0">
                                     <div class="col-md-1">
-                                        <i class="fa fa-clock-o"></i>
+                                        <i class="fa fa-calendar-o"></i>
                                     </div>
                                     <div class="col-md-11">
-                                        Monday - Friday   8AM - 9PM </br>
-                                        Saturday - Sunday  1PM - 10PM
+                                        Oct 23, 2018  12PM – 4:30PM </br>
+                                        Oct 23, 2018  12PM – 7PM
                                     </div>     
                                 </div>
                                 <div class="row pt-0 pb-0">
@@ -85,48 +132,20 @@
                     </div>
                 </div>
             </section>
-            
-            <section class="designer-product mt-4 w-100">
+            <section class="our-services mb-4">
+                <h2 class="text-center">Image Gallery</h2>
                 <div class="row m-0">
-                    @for($i = 1; $i < 5; $i++)
-                        <div class="col-md-3 designer-card mb-4 p-0 pr-3">
-                            <div class="designer-wrapper">
-                                <a href="{{ route('fashion-per-product-page') }}">
-                                    <div class="image-header">
-                                        <img src="http://testsite.eastbayloop.com/images/woman{{ $i == 4 ? 1 : $i}}.jpeg" />
-                                    </div>
-                                    <div class="content">
-                                        <h2 class="text-black">Product title_0{{ $i }}</h2>
-                                        <div class="category">CATEGORY</div>
-                                        <div class="footer">
-                                            <div class="star-ratings-css mb-2">
-                                                <div class="star-ratings-css-top" style="width: 61%">
-                                                    <span>★</span>
-                                                    <span>★</span>
-                                                    <span>★</span>
-                                                    <span>★</span>
-                                                    <span>★</span>
-                                                </div>
-                                                <div class="star-ratings-css-bottom">
-                                                    <span>★</span>
-                                                    <span>★</span>
-                                                    <span>★</span>
-                                                    <span>★</span>
-                                                    <span>★</span>
-                                                </div>
-                                            </div>
-                                            <span class="price">$19.00</span>    
-                                        </div>                                                                    
-                                    </div>
-                                </a>
+                    @for($i = 1; $i < 7; $i++)
+                        <div class="service-card col-md-4 col-sm-12 p-1 pb-0">
+                            <div class="service-wrapper">
+                                <img src="http://testsite.eastbayloop.com/images/adventure{{ $i }}.png" />
                             </div>
                         </div>
                     @endfor
                 </div>
             </section>
-
              <!-- EVENTS -->
-             <events-widget></events-widget>
+             <events-widget :data='{titleClass: "text-center"}'></events-widget>
         </main>
-    </market-place-page>
+    </events-page>
 @endsection

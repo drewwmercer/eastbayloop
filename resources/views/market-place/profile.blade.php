@@ -23,13 +23,33 @@
                     </div>
                 </div>
                 <div class="row">
-                    @for($i = 1; $i < 10; $i++)
+                    @for($i = 1; $i < 4; $i++)
                         <div class="default-card col-md-4 mb-4">
                             <div class="default-wrapper">
-                                <a href="{{ route('explore-profile-page') }}">
-                                    <img src="http://testsite.eastbayloop.com/images/adventure{{ $i }}.png" />
+                                <a href="{{ route('market-place-retails-page') }}">
+                                    <img src="http://testsite.eastbayloop.com/images/place-img1.jpeg" />
                                     <div class="content">
-                                        <h2 class="mb-3">Marketplace {{ $i }}</h2>
+                                        <h2 class="mb-3">Acme Bread Company</h2>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="default-card col-md-4 mb-4">
+                            <div class="default-wrapper">
+                                <a href="{{ route('market-place-retails-page') }}">
+                                    <img src="http://testsite.eastbayloop.com/images/place-img2.jpeg" />
+                                    <div class="content">
+                                        <h2 class="mb-3">American Eatery at Prather Ranch</h2>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="default-card col-md-4 mb-4">
+                            <div class="default-wrapper">
+                                <a href="{{ route('market-place-retails-page') }}">
+                                    <img src="http://testsite.eastbayloop.com/images/place-img3.jpeg" />
+                                    <div class="content">
+                                        <h2 class="mb-3">Bay Crossings</h2>
                                     </div>
                                 </a>
                             </div>

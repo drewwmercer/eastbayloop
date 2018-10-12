@@ -15479,6 +15479,104 @@ img {
   width: 80%;
 }
 
+.tickets-block {
+  -webkit-box-shadow: 0px 0px 10px rgba(1, 1, 1, 0.2);
+          box-shadow: 0px 0px 10px rgba(1, 1, 1, 0.2);
+}
+
+.tickets-block .tickets-header {
+  background-image: url(/assets/img/events/tickets.png);
+  font-family: BarlowBold;
+  font-size: 30px;
+  color: #ffffff;
+  height: 105px;
+  padding-left: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tickets-block .ticket-card {
+  height: 90px;
+  background: #edf0f7;
+  margin-bottom: 2px;
+}
+
+.tickets-block .ticket-card .ticket-wrapper {
+  padding: 0px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: inherit;
+}
+
+.tickets-block .ticket-card .ticket-wrapper .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tickets-block .ticket-card .ticket-wrapper .content .title {
+  font-family: BarlowBold;
+  font-size: 27px;
+  color: #666666;
+  margin-right: 12px;
+  padding-bottom: 0px;
+}
+
+.tickets-block .ticket-card .ticket-wrapper .content .date {
+  font-family: BarlowRegular;
+  font-size: 20px;
+  color: #666666;
+  margin-right: 12px;
+}
+
+.tickets-block .ticket-card .ticket-wrapper .content .price {
+  font-family: BarlowBold;
+  font-size: 27px;
+  color: #bfd518;
+}
+
+.tickets-block .ticket-card .ticket-wrapper .buy-btn-block .buy-btn {
+  font-family: BarlowRegular;
+  font-size: 18px;
+  color: #ecff2d;
+  padding: 16px 35px;
+  border-radius: 3px;
+  background: #000000;
+}
+
+.tickets-block .ticket-card .ticket-wrapper .buy-btn-block .buy-btn:hover {
+  color: #ffffff;
+}
+
+.tickets-block .tickets-footer {
+  background: #edf0f7;
+  font-family: BarlowRegular;
+  font-size: 15px;
+  color: #666666;
+  height: 55px;
+  padding: 0px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 @media only screen and (max-width: 1200px) and (min-width: 961px) {
   .events-header .filter-btns {
     width: 40%;
@@ -18760,6 +18858,75 @@ img {
   height: 5px;
   width: 5px;
   background: #ffffff;
+}
+
+.main-slider .slider .flexslider .slider-carousel-menu {
+  position: absolute;
+  bottom: 7%;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 2;
+}
+
+.main-slider .slider .flexslider .slider-carousel-menu .carousel-card .carousel-wrapper {
+  border: 2px solid white;
+  border-radius: 3px;
+  opacity: .5;
+  cursor: pointer;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  position: relative;
+}
+
+.main-slider .slider .flexslider .slider-carousel-menu .carousel-card .carousel-wrapper:hover {
+  opacity: 1;
+}
+
+.main-slider .slider .flexslider .slider-carousel-menu .carousel-card .carousel-wrapper:hover .play-btn {
+  background: #e3ff14;
+}
+
+.main-slider .slider .flexslider .slider-carousel-menu .carousel-card .carousel-wrapper .play-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #ffffffde;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  padding-left: 5px;
+  font-size: 24px;
+  color: #000000;
+  -webkit-transition: all ease-in-out .5s;
+  transition: all ease-in-out .5s;
+  cursor: pointer;
+  -webkit-box-shadow: -1px 0px 12px rgba(255, 255, 255, 0.4);
+          box-shadow: -1px 0px 12px rgba(255, 255, 255, 0.4);
+}
+
+.main-slider .slider .flexslider .slider-carousel-menu .carousel-card .carousel-wrapper .play-btn:hover {
+  background: #a2b60b;
 }
 
 .main-slider .flex-control-nav {
