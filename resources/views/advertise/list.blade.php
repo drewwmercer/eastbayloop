@@ -9,7 +9,7 @@
                         <h2 class="advertise-title">Our Packages</h2>
                     </div>
                     <div class="col-md-6 p-0 text-right">
-                        <a href="#" class="become-btn" data-toggle="modal" data-target="#VipModal">Become a VIP!</a>
+                        <a href="{{ route('advertise-b-business-page') }}" class="become-btn">Become a VIP!</a>
                     </div>
                 </div>
                 <div class="row m-0 mt-4 mb-4">
@@ -276,28 +276,6 @@
                     </div>
                 </div>
             </section>
-            <div class="modal fade" id="VipModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog advertise-modal" role="document">
-                    <div class="modal-content">
-                        <div class="close-btn" data-dismiss="modal"></div>
-
-                        <div class="row">
-                            <div class="col-md-12 modal-card">
-                                <a href="{{ route('advertise-b-user-page') }}">
-                                    <img src="{{ asset('assets/img/advertise/modal1.png') }}" />
-                                    <h2 class="modal-text">Become a VIP User!</h2>
-                                </a>
-                            </div>
-                            <div class="col-md-12 modal-card mt-4">
-                                <a href="{{ route('advertise-b-business-page') }}"> 
-                                    <img src="{{ asset('assets/img/advertise/modal2.png') }}" />
-                                    <h2 class="modal-text">Become a VIP Business!</h2>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </main>
     </advertise-page>
 @endsection
