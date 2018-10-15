@@ -127,7 +127,7 @@
                                 <img src="http://testsite.eastbayloop.com/images/explore-img9.png"/>
                             </div>
                             <div class="content">
-                                <h2>ART</h2>
+                                <h2>THE ARTS</h2>
                                 <p class="text">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit lorem.
                                 </p>
