@@ -76,7 +76,7 @@
                 </div>
                 <div class="section-content">
                     <div class="row">
-                        <div class="explore-card text-center col-md-3 mt-3">
+                        <div class="explore-card text-center col-md-4 mt-3">
                             <div class="explore-wrapper">
                                 <div class="image-header">
                                     <img src="http://testsite.eastbayloop.com/images/explore-img1.png" />
@@ -91,7 +91,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="explore-card text-center col-md-3 mt-3">
+                        <div class="explore-card text-center col-md-4 mt-3">
                             <div class="explore-wrapper">
                                 <div class="image-header">
                                     <img src="http://testsite.eastbayloop.com/images/explore-img2.png" />
@@ -106,28 +106,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="explore-card text-center col-md-3 mt-3">
+                        <div class="explore-card text-center col-md-4 mt-3">
                             <div class="explore-wrapper">
                                 <div class="image-header">
                                     <img src="http://testsite.eastbayloop.com/images/explore-img3.png" />
                                 </div>
                                 <div class="content">
                                     <h2>PET CLUB</h2>
-                                    <p class="text">
-                                        Vivamus suscipit tortor
-                                        felis porttitor volutpat.
-                                    </p>
-                                    <a class="read-more-btn float-none" href="#">READ MORE</a>                            
-                                </div>
-                            </div>
-                        </div>
-                        <div class="explore-card text-center col-md-3 mt-3">
-                            <div class="explore-wrapper">
-                                <div class="image-header">
-                                    <img src="http://testsite.eastbayloop.com/images/explore-img4.png" />
-                                </div>
-                                <div class="content">
-                                    <h2>HOTEL</h2>
                                     <p class="text">
                                         Vivamus suscipit tortor
                                         felis porttitor volutpat.
