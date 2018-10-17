@@ -5,7 +5,7 @@
         <main>
             <slider :data="[{img: 'http://testsite.eastbayloop.com/images/banner10.jpeg', text: 'Stay Sell', class: 'explore-slider'},
                             {img: 'http://testsite.eastbayloop.com/images/banner10.jpeg', text: 'Stay Sell', class: 'explore-slider'},
-                            {img: 'http://testsite.eastbayloop.com/images/banner7.jpeg', text: 'Stay Sell', class: 'explore-slider'}]">
+                            {img: '{{ asset('assets/img/sliders/banner7.jpeg') }}', text: 'Stay Sell', class: 'explore-slider'}]">
             </slider>
 
             <section class="explore-cards">

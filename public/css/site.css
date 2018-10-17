@@ -13810,6 +13810,18 @@ footer .wrapper .up-btn {
   margin: 0 auto;
 }
 
+.black-btn {
+  font-family: Barlow;
+  font-size: 21px;
+  padding: 10px 27px;
+  background: black;
+  color: #ecff2d;
+}
+
+.black-btn:hover {
+  color: #abb820;
+}
+
 .read-more-btn {
   width: 130px;
   display: inline-block;
@@ -14468,7 +14480,7 @@ img {
   color: #ffffff !important;
   font-size: 50px;
   font-family: 'OpenSans-Extrabold' !important;
-  padding: 0px 200px !important;
+  padding: 0px 196px !important;
   text-shadow: 0px 2px 10px #969696;
 }
 
@@ -16456,6 +16468,44 @@ img {
   font-size: 25px;
 }
 
+.profile-page .description .event-anonce .anonce-wrapper {
+  -webkit-box-shadow: 0px 0px 10px rgba(1, 1, 1, 0.3);
+          box-shadow: 0px 0px 10px rgba(1, 1, 1, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 21px 0px;
+  background: #fff79b;
+}
+
+.profile-page .description .event-anonce .anonce-wrapper .anonce-title {
+  font-family: BarlowBold;
+  font-size: 26px;
+  color: #666666;
+}
+
+.profile-page .description .event-anonce .anonce-wrapper .anonce-text {
+  font-family: BarlowRegular;
+  font-size: 22px;
+  color: #666666;
+}
+
+.profile-page .description .event-anonce .anonce-wrapper .anonce-price {
+  font-family: BarlowRegular;
+  font-size: 27px;
+  color: #bfd518;
+}
+
 .profile-page .title {
   font-family: BarlowBold;
   color: #4b3e3e;
@@ -16553,6 +16603,61 @@ img {
 
 .profile-page .info .info-block .info-social .youtube {
   background: #fd4426;
+}
+
+.text-side-box {
+  max-width: 1165px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.text-side-box .text-side-card .text-side-wrapper {
+  height: 275px;
+}
+
+.text-side-box .text-side-card .text-side-wrapper .image-header {
+  overflow: hidden;
+}
+
+.text-side-box .text-side-card .text-side-wrapper .image-header img {
+  width: 100%;
+}
+
+.text-side-box .text-side-card .text-side-wrapper .content {
+  background: #f5f5f5;
+}
+
+.text-side-box .text-side-card .text-side-wrapper .content .card-title {
+  font-family: BarlowSemiBold;
+  font-size: 27px;
+  color: #c3060d;
+}
+
+.text-side-box .text-side-card .text-side-wrapper .content .card-text {
+  font-family: BarlowRegular;
+  font-size: 18px;
+  color: #4d4c4c;
+}
+
+.text-side-box .text-side-card .text-side-wrapper .content .content-footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.text-side-box .text-side-card .text-side-wrapper .content .content-footer .card-btn {
+  font-family: BarlowRegular;
+  font-size: 17px;
+  color: #000000;
+}
+
+.text-side-box .text-side-card .text-side-wrapper .content .content-footer .card-btn:hover {
+  color: #4d4c4c;
 }
 
 .upcoming-event-card {
@@ -16800,6 +16905,40 @@ img {
   font-size: 30px;
   color: #ffffff;
   text-align: center;
+}
+
+.service-card .service-wrapper .play-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  width: 45px;
+  height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #a2b60b;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  padding-left: 5px;
+  font-size: 20px;
+  color: #000000;
+  -webkit-transition: all ease-in-out .5s;
+  transition: all ease-in-out .5s;
+  cursor: pointer;
+  -webkit-box-shadow: -1px 0px 12px rgba(255, 255, 255, 0.4);
+          box-shadow: -1px 0px 12px rgba(255, 255, 255, 0.4);
+}
+
+.service-card .service-wrapper .play-btn:hover {
+  background: #616d06;
 }
 
 @media only screen and (max-width: 1082px) and (min-width: 768px) {
@@ -17172,6 +17311,22 @@ img {
   margin-top: 10px;
 }
 
+.taste-contact-page .taste-contact-input::-webkit-input-placeholder {
+  color: #000000;
+}
+
+.taste-contact-page .taste-contact-input:-ms-input-placeholder {
+  color: #000000;
+}
+
+.taste-contact-page .taste-contact-input::-ms-input-placeholder {
+  color: #000000;
+}
+
+.taste-contact-page .taste-contact-input::placeholder {
+  color: #000000;
+}
+
 .taste-contact-page .taste-contact-textarea {
   width: 100%;
   background: #f6f6f6;
@@ -17179,6 +17334,22 @@ img {
   padding: 10px;
   margin-top: 10px;
   min-height: 150px;
+}
+
+.taste-contact-page .taste-contact-textarea::-webkit-input-placeholder {
+  color: #000000;
+}
+
+.taste-contact-page .taste-contact-textarea:-ms-input-placeholder {
+  color: #000000;
+}
+
+.taste-contact-page .taste-contact-textarea::-ms-input-placeholder {
+  color: #000000;
+}
+
+.taste-contact-page .taste-contact-textarea::placeholder {
+  color: #000000;
 }
 
 .taste-bars-btns {
@@ -17274,11 +17445,9 @@ img {
 }
 
 .taste-bars-cards .taste-bars-card .bars-wrapper a .bars-btn {
-  font-family: BarlowRegular;
-  font-size: 20px;
-  color: #000000;
-  background: rgba(255, 255, 255, 0.8);
-  padding: 17px 31px;
+  font-family: BarlowLight;
+  font-size: 35px;
+  color: #ffffff;
   z-index: 2;
   -webkit-transition: all .5s;
   transition: all .5s;
@@ -17286,7 +17455,7 @@ img {
 }
 
 .taste-bars-cards .taste-bars-card .bars-wrapper a .bars-btn:hover {
-  background: white;
+  color: #a7a7a7;
 }
 
 .taste-bars-cards .taste-bars-big-card .bars-wrapper {
@@ -17423,6 +17592,27 @@ img {
 .advertise-cards .advertise-title {
   font-family: BarlowBold;
   font-size: 42px;
+}
+
+.advertise-cards .advertise-card .advertise-wrapper.event-list-main-wrapper {
+  height: 100%;
+}
+
+.advertise-cards .advertise-card .advertise-wrapper.event-list-main-wrapper .sub-info-card {
+  height: 74.2%;
+}
+
+.advertise-cards .advertise-card .advertise-wrapper.event-list-main-wrapper .sub-info-card .sub-info-wrapper {
+  height: 100%;
+  border-bottom: 1px solid #ededed;
+}
+
+.advertise-cards .advertise-card .advertise-wrapper.event-list-main-wrapper .sub-info-card .info-box:last-child {
+  border-bottom: unset;
+}
+
+.advertise-cards .advertise-card .advertise-wrapper .sub-img-card .sub-img-wrapper.event-list-wrapper .image-header {
+  height: auto;
 }
 
 .advertise-cards .advertise-card .advertise-wrapper .sub-img-card .sub-img-wrapper .image-header {
@@ -17694,7 +17884,7 @@ img {
 }
 
 .become-user-btn .become-blocks .become-cards .become-card .become-wrapper .become-header .header-text {
-  font-family: BarlowCondensedSemiBold;
+  font-family: MyriadProRegular;
   font-size: 35px;
   color: #5c5c5c;
 }
@@ -17747,7 +17937,7 @@ img {
 }
 
 .become-user-text .b-title {
-  font-family: BarlowBold;
+  font-family: MyriadProRegular;
   font-size: 23px;
   color: #444444;
 }
@@ -17861,9 +18051,9 @@ img {
 }
 
 .list-cards .list-title {
-  font-family: BarlowSemiBold;
+  font-family: MyriadProRegular;
   color: #6b6b6b;
-  font-size: 25px;
+  font-size: 37.5px;
 }
 
 .list-cards .list-additional-title {
@@ -17973,7 +18163,7 @@ img {
   color: #666666;
   min-height: 53px;
   text-align: center;
-  padding: 2px 18px;
+  padding: 2px 12px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -18766,7 +18956,7 @@ img {
 }
 
 .main-slider .index-banner .wrapper {
-  max-width: 1165px;
+  max-width: 1200px;
   width: 90%;
   margin: 0 auto;
 }

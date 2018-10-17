@@ -20,6 +20,36 @@
                 font-size: 25px; 
             }
         }
+
+        .event-anonce {
+            .anonce-wrapper {
+                box-shadow: 0px 0px 10px rgba(1, 1, 1, .3);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 21px 0px;
+                background: #fff79b;
+
+                .anonce-title {
+                    font-family: BarlowBold;
+                    font-size: 26px;
+                    color: #666666;
+                }
+
+                .anonce-text {
+                    font-family: BarlowRegular;
+                    font-size: 22px;
+                    color: #666666;
+                }
+
+                .anonce-price {
+                    font-family: BarlowRegular;
+                    font-size: 27px;
+                    color: #bfd518;
+                }
+            }
+        }
     }
 
     .title {
@@ -117,6 +147,60 @@
                 .youtube {
                     background: #fd4426;
                 }
+            }
+        }
+    }
+}
+
+.text-side-box {
+    max-width: 1165px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 30px;
+    
+    .text-side-card {
+        .text-side-wrapper {
+            height: 275px;
+
+            .image-header {
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .content {
+                background: #f5f5f5;
+
+                .card-title {
+                    font-family: BarlowSemiBold;
+                    font-size: 27px;
+                    color: #c3060d;
+                }
+
+                .card-text {
+                    font-family: BarlowRegular;
+                    font-size: 18px;
+                    color: #4d4c4c;
+                }
+
+                .content-footer {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+
+                    .card-btn {
+                        font-family: BarlowRegular;
+                        font-size: 17px;
+                        color: #000000;
+    
+                        &:hover {
+                            color: #4d4c4c;
+                        }
+                    }
+                }
+                
             }
         }
     }
@@ -335,6 +419,32 @@
             font-size: 30px;
             color: #ffffff;
             text-align: center;
+        }
+
+        .play-btn {
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            margin: auto;
+            width: 45px;
+            height: 45px;
+            display: flex;
+            background: #a2b60b;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            padding-left: 5px;
+            font-size: 20px;
+            color: #000000;
+            transition: all ease-in-out .5s;
+            cursor: pointer;
+            box-shadow: -1px 0px 12px rgba(255, 255, 255, 0.4);
+
+            &:hover {
+                background: #616d06;
+            }
         }
     }
 }

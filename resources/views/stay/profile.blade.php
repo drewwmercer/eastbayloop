@@ -89,19 +89,19 @@
                 <div class="row m-0">
                     <div class="service-card col-md-4 col-sm-12 mb-4 pr-1 pl-1">
                         <div class="service-wrapper">
-                            <img src="http://testsite.eastbayloop.com/images/adventure1.png" />
+                            <img src='{{ asset("assets/img/adventure/adventure1.png") }}' />
                             <span class="text">Service 1</span>
                         </div>
                     </div>
                     <div class="service-card col-md-4 col-sm-12 mb-4 pl-1 pr-1">
                         <div class="service-wrapper">
-                            <img src="http://testsite.eastbayloop.com/images/adventure2.png" />
+                            <img src='{{ asset("assets/img/adventure/adventure2.png") }}' />
                             <span class="text">Service 2</span>
                         </div>
                     </div>
                     <div class="service-card col-md-4 col-sm-12 mb-4 pl-1 pr-1">
                         <div class="service-wrapper">
-                            <img src="http://testsite.eastbayloop.com/images/adventure3.png" />
+                            <img src='{{ asset("assets/img/adventure/adventure3.png") }}' />
                             <span class="text">Service 3</span>
                         </div>
                     </div>
@@ -113,7 +113,7 @@
                     @for($i = 1; $i < 6; $i++)
                         <div class="service-card adventure-service-card col mb-2 pl-1 pr-1">
                             <div class="service-wrapper">
-                                <img src="http://testsite.eastbayloop.com/images/adventure{{ $i }}.png" />
+                                <img src='{{ asset("assets/img/adventure/adventure$i.png") }}' />
                             </div>
                         </div>
                     @endfor

@@ -22,7 +22,7 @@
                             <div class="product-wrapper">
                                 <a href="{{ route('market-place-per-product-page') }}">
                                     <div class="image-header">
-                                        <img src="http://testsite.eastbayloop.com/images/product1.png" />
+                                        <img src="{{ asset('assets/img/product1.png') }}" />
                                     </div>
                                     <div class="product-content">
                                         <h2 class="title">Product title_0{{ $i }}</h2>

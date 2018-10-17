@@ -51667,7 +51667,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     data: function data() {
         return {
             pageName: 'Nightlife',
-            sliders: [{ img: 'http://testsite.eastbayloop.com/images/client-banner.jpeg', text: 'Nightlife', class: 'explore-slider' }, { img: 'http://testsite.eastbayloop.com/images/client-banner.jpeg', text: 'Nightlife', class: 'explore-slider' }, { img: 'http://testsite.eastbayloop.com/images/client-banner.jpeg', text: 'Nightlife', class: 'explore-slider' }],
+            sliders: [{ img: '/assets/img/sliders/client-banner.jpeg', text: 'Nightlife', class: 'explore-slider' }, { img: '/assets/img/sliders/client-banner.jpeg', text: 'Nightlife', class: 'explore-slider' }, { img: '/assets/img/sliders/client-banner.jpeg', text: 'Nightlife', class: 'explore-slider' }],
             pageSelector: 'Nightlife',
             nonProduct: false,
             cards: [{
@@ -51768,7 +51768,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 this.nonProduct = false;
             }
 
-            this.sliders = [{ img: 'http://testsite.eastbayloop.com/images/client-banner.jpeg', text: this.pageName, class: 'explore-slider' }, { img: 'http://testsite.eastbayloop.com/images/client-banner.jpeg', text: this.pageName, class: 'explore-slider' }, { img: 'http://testsite.eastbayloop.com/images/client-banner.jpeg', text: this.pageName, class: 'explore-slider' }];
+            this.sliders = [{ img: '/assets/img/sliders/client-banner.jpeg', text: this.pageName, class: 'explore-slider' }, { img: '/assets/img/sliders/client-banner.jpeg', text: this.pageName, class: 'explore-slider' }, { img: '/assets/img/sliders/client-banner.jpeg', text: this.pageName, class: 'explore-slider' }];
         }
     }
 });

@@ -39,7 +39,7 @@
                                 <div class="event-wrapper row">
                                     <div class="image-header col-md-3">
                                         <a href="#">
-                                            <img src="http://testsite.eastbayloop.com/images/events-img{{ $i }}.jpeg" />
+                                            <img src='{{ asset("assets/img/events/events-img$i.jpeg") }}' />
                                         </a>
                                     </div>
                                     <div class="content col-md-9">

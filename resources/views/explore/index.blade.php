@@ -12,7 +12,7 @@
                     <div class="explore-card mb-4 col-md-4">
                         <div class="explore-wrapper">
                             <div class="image-header">
-                                <img src="http://testsite.eastbayloop.com/images/explore-img1.png"/>
+                                <img src="{{ asset('assets/img/explore/explore-img1.png') }}"/>
                             </div>
                             <div class="content">
                                 <h2>ADVENTURE</h2>
@@ -26,7 +26,7 @@
                     <div class="explore-card mb-4 col-md-4">
                         <div class="explore-wrapper">
                             <div class="image-header">
-                                <img src="http://testsite.eastbayloop.com/images/explore-img2.png"/>
+                                <img src="{{ asset('assets/img/explore/explore-img2.png') }}"/>
                             </div>
                             <div class="content">
                                 <h2>NIGHTLIFE/DAYCLUB</h2>
@@ -40,7 +40,7 @@
                     <div class="explore-card mb-4 col-md-4">
                         <div class="explore-wrapper">
                             <div class="image-header">
-                                <img src="http://testsite.eastbayloop.com/images/explore-img3.png"/>
+                                <img src="{{ asset('assets/img/explore/explore-img3.png') }}"/>
                             </div>
                             <div class="content">
                                 <h2>PET CLUB</h2>
@@ -54,7 +54,7 @@
                     <div class="explore-card mb-4 col-md-4">
                         <div class="explore-wrapper">
                             <div class="image-header">
-                                <img src="http://testsite.eastbayloop.com/images/explore-img4.png"/>
+                                <img src="{{ asset('assets/img/explore/explore-img4.png') }}"/>
                             </div>
                             <div class="content">
                                 <h2>PAMPER</h2>
@@ -68,7 +68,7 @@
                     <div class="explore-card mb-4 col-md-4">
                         <div class="explore-wrapper">
                             <div class="image-header">
-                                <img src="http://testsite.eastbayloop.com/images/explore-img5.png"/>
+                                <img src="{{ asset('assets/img/explore/explore-img5.png') }}"/>
                             </div>
                             <div class="content">
                                 <h2>GOLF/ RECREATION</h2>
@@ -82,7 +82,7 @@
                     <div class="explore-card mb-4 col-md-4">
                         <div class="explore-wrapper">
                             <div class="image-header">
-                                <img src="http://testsite.eastbayloop.com/images/explore-img6.png"/>
+                                <img src="{{ asset('assets/img/explore/explore-img6.png') }}"/>
                             </div>
                             <div class="content">
                                 <h2>LOOP KIDS</h2>
@@ -96,7 +96,7 @@
                     <div class="explore-card mb-4 col-md-4">
                         <div class="explore-wrapper">
                             <div class="image-header">
-                                <img src="http://testsite.eastbayloop.com/images/explore-img7.png"/>
+                                <img src="{{ asset('assets/img/explore/explore-img7.png') }}"/>
                             </div>
                             <div class="content">
                                 <h2>LOCAL SHOPS AND SHOPPING</h2>
@@ -110,7 +110,7 @@
                     <div class="explore-card mb-4 col-md-4">
                         <div class="explore-wrapper">
                             <div class="image-header">
-                                <img src="http://testsite.eastbayloop.com/images/explore-img8.png"/>
+                                <img src="{{ asset('assets/img/explore/explore-img8.png') }}"/>
                             </div>
                             <div class="content">
                                 <h2>FITNESS</h2>
@@ -124,7 +124,7 @@
                     <div class="explore-card mb-4 col-md-4">
                         <div class="explore-wrapper">
                             <div class="image-header">
-                                <img src="http://testsite.eastbayloop.com/images/explore-img9.png"/>
+                                <img src="{{ asset('assets/img/explore/explore-img9.png') }}"/>
                             </div>
                             <div class="content">
                                 <h2>THE ARTS</h2>

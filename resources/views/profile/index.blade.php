@@ -39,7 +39,7 @@
                                 <div class="event-wrapper row">
                                     <div class="image-header col-md-3">
                                         <a href="#">
-                                            <img src="http://testsite.eastbayloop.com/images/events-img{{ $i }}.jpeg" />
+                                            <img src='{{ asset("assets/img/events/events-img$i.jpeg") }}' />
                                         </a>
                                     </div>
                                     <div class="content col-md-9">
@@ -76,19 +76,19 @@
                 <div class="row">
                     <div class="service-card col-md-4 col-sm-12 mb-4">
                         <div class="service-wrapper">
-                            <img src="http://testsite.eastbayloop.com/images/adventure1.png" />
+                            <img src='{{ asset("assets/img/adventure/adventure1.png") }}' />
                             <span class="text">Table Bottle Service</span>
                         </div>
                     </div>
                     <div class="service-card col-md-4 col-sm-12 mb-4">
                         <div class="service-wrapper">
-                            <img src="http://testsite.eastbayloop.com/images/adventure2.png" />
+                            <img src='{{ asset("assets/img/adventure/adventure2.png") }}' />
                             <span class="text">Group Admision</span>
                         </div>
                     </div>
                     <div class="service-card col-md-4 col-sm-12 mb-4">
                         <div class="service-wrapper">
-                            <img src="http://testsite.eastbayloop.com/images/adventure3.png" />
+                            <img src='{{ asset("assets/img/adventure/adventure3.png") }}' />
                             <span class="text">Private Party</span>
                         </div>
                     </div>
@@ -100,7 +100,7 @@
                     @for($i = 1; $i < 7; $i++)
                         <div class="service-card col-md-4 col-sm-12 mb-2 pr-2 pl-2">
                             <div class="service-wrapper">
-                                <img src="http://testsite.eastbayloop.com/images/adventure{{ $i }}.png" />
+                                <img src='{{ asset("assets/img/adventure/adventure$i.png") }}' />
                             </div>
                         </div>
                     @endfor

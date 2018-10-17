@@ -225,6 +225,10 @@
         border: none;
         padding: 10px;
         margin-top: 10px;
+
+        &::placeholder {
+            color: #000000;
+        }
     }
 
     .taste-contact-textarea {
@@ -234,6 +238,10 @@
         padding: 10px;
         margin-top: 10px;
         min-height: 150px;
+
+        &::placeholder {
+            color: #000000;
+        }
     }
 }
 
@@ -311,17 +319,15 @@
                 align-items: center;
 
                 .bars-btn {
-                    font-family: BarlowRegular;
-                    font-size: 20px;
-                    color: #000000;
-                    background:rgba(255, 255, 255, .8);
-                    padding: 17px 31px;
+                    font-family: BarlowLight;
+                    font-size: 35px;
+                    color: #ffffff;
                     z-index: 2;
                     transition: all .5s;
                     cursor: pointer;
 
                     &:hover {
-                        background:rgba(255, 255, 255, 1);
+                        color: #a7a7a7;
                     }
                 }
             }

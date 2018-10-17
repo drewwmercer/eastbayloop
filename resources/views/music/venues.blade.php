@@ -3,9 +3,9 @@
 @section('content')
     <music-page inline-template>
         <main class="music-venues">
-            <slider :data="[{img: 'http://testsite.eastbayloop.com/images/client-banner.jpeg', text: 'VENUES', class: 'explore-slider'},
-                            {img: 'http://testsite.eastbayloop.com/images/client-banner.jpeg', text: 'VENUES', class: 'explore-slider'},
-                            {img: 'http://testsite.eastbayloop.com/images/client-banner.jpeg', text: 'VENUES', class: 'explore-slider'}]">
+            <slider :data="[{img: '{{ asset('assets/img/sliders/client-banner.jpeg') }}', text: 'VENUES', class: 'explore-slider'},
+                            {img: '{{ asset('assets/img/sliders/client-banner.jpeg') }}', text: 'VENUES', class: 'explore-slider'},
+                            {img: '{{ asset('assets/img/sliders/client-banner.jpeg') }}', text: 'VENUES', class: 'explore-slider'}]">
             </slider>
 
             <section class="explore-cards events-cards">

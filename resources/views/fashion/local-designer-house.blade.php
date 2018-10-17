@@ -3,9 +3,9 @@
 @section('content')
     <explore-page inline-template>
         <main>
-            <slider :data="[{img: 'http://testsite.eastbayloop.com/images/banner7.jpeg', text: 'Local Designers/Fashion Houses', class: 'explore-slider'},
-                            {img: 'http://testsite.eastbayloop.com/images/banner7.jpeg', text: 'Local Designers/Fashion Houses', class: 'explore-slider'},
-                            {img: 'http://testsite.eastbayloop.com/images/banner7.jpeg', text: 'Local Designers/Fashion Houses', class: 'explore-slider'}]">
+            <slider :data="[{img: '{{ asset('assets/img/sliders/banner7.jpeg') }}', text: 'Local Designers/Fashion Houses', class: 'explore-slider'},
+                            {img: '{{ asset('assets/img/sliders/banner7.jpeg') }}', text: 'Local Designers/Fashion Houses', class: 'explore-slider'},
+                            {img: '{{ asset('assets/img/sliders/banner7.jpeg') }}', text: 'Local Designers/Fashion Houses', class: 'explore-slider'}]">
             </slider>
 
             <section class="explore-cards">
@@ -27,7 +27,7 @@
                         <div class="default-card col-md-4 mb-4">
                             <div class="default-wrapper">
                                 <a href="{{ route('fashion-designer-page') }}">
-                                    <img src="http://testsite.eastbayloop.com/images/adventure{{ $i }}.png" />
+                                    <img src='{{ asset("assets/img/adventure/adventure$i.png") }}' />
                                     <div class="content">
                                         <h2 class="mb-3">Client {{ $i }}</h2>
                                     </div>

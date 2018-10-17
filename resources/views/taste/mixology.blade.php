@@ -3,9 +3,9 @@
 @section('content')
     <taste-page inline-template>
         <main>
-            <slider :data="[{img: 'http://testsite.eastbayloop.com/images/client-banner.jpeg', text: 'Mixology', class: 'explore-slider'},
-                            {img: 'http://testsite.eastbayloop.com/images/client-banner.jpeg', text: 'Mixology', class: 'explore-slider'},
-                            {img: 'http://testsite.eastbayloop.com/images/client-banner.jpeg', text: 'Mixology', class: 'explore-slider'}]">
+            <slider :data="[{img: '{{ asset('assets/img/sliders/client-banner.jpeg') }}', text: 'Mixology', class: 'explore-slider'},
+                            {img: '{{ asset('assets/img/sliders/client-banner.jpeg') }}', text: 'Mixology', class: 'explore-slider'},
+                            {img: '{{ asset('assets/img/sliders/client-banner.jpeg') }}', text: 'Mixology', class: 'explore-slider'}]">
             </slider>
 
             <section class="mixology-page mb-4">
@@ -15,7 +15,7 @@
                             <div class="col-md-12 mixology-card">
                                 <div class="mixology-wrapper">
                                     <div class="image-header">
-                                        <img src="http://testsite.eastbayloop.com/images/client-banner.jpeg" />
+                                        <img src="{{ asset('assets/img/sliders/client-banner.jpeg') }}" />
                                     </div>
                                     <div class="content">
                                         <h3 class="pre-desc">Lorem ipsum / dolor sit amet / consectetur</h3>
@@ -43,7 +43,7 @@
                                 <div class="event-wrapper row">
                                     <div class="image-header col-md-3">
                                         <a href="#">
-                                            <img src="http://testsite.eastbayloop.com/images/events-img{{ $i }}.jpeg" />
+                                            <img src='{{ asset("assets/img/events/events-img$i.jpeg") }}' />
                                         </a>
                                     </div>
                                     <div class="content col-md-9">
@@ -79,7 +79,7 @@
                                 @for($i = 1; $i < 5; $i++)
                                     <div class="col-md-12 row">
                                         <div class="col-md-4 m-0 mb-3 pr-0">
-                                            <img src="http://testsite.eastbayloop.com/images/adventure{{ $i }}.png" />
+                                            <img src='{{ asset("assets/img/adventure/adventure$i.png") }}' />
                                         </div>
                                         <div class="col-md-8 popular-content pl-2">
                                             <h2 class="popular-title mb-0">Lorem ipsum dolor sit amet</h2>

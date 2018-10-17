@@ -6,7 +6,7 @@
             <section class="advertise-cards">
                 <div class="row m-0 mt-4 mb-4 align-items-center mr-3">
                     <div class="col-md-6 p-0">
-                        <h2 class="advertise-title">Our Packages</h2>
+                        <h2 class="advertise-title">Our Business Listing Packages</h2>
                     </div>
                     <div class="col-md-6 p-0 text-right">
                         <a href="{{ route('advertise-b-business-page') }}" class="become-btn">Become a VIP!</a>
@@ -146,7 +146,7 @@
                             <div class="sub-img-card w-100">
                                 <div class="sub-img-wrapper">
                                     <div class="image-header">
-                                        <img class="ml-3" src="{{ asset('assets/img/advertise/card3.png') }}" />
+                                        <img src="{{ asset('assets/img/advertise/card3.png') }}" />
                                         <h2 class="sub-img-title mt-2">GURU</h2>
                                         <h3 class="sub-img-period">6 Months for</h3>
                                     </div>
@@ -209,7 +209,7 @@
                             <div class="sub-img-card w-100">
                                 <div class="sub-img-wrapper">
                                     <div class="image-header">
-                                        <img class="ml-3" src="{{ asset('assets/img/advertise/card4.png') }}" />
+                                        <img src="{{ asset('assets/img/advertise/card4.png') }}" />
                                         <h2 class="sub-img-title mt-2">MASTER</h2>
                                         <h3 class="sub-img-period">12 Months for Annually</h3>
                                     </div>

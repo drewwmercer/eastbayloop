@@ -3,9 +3,9 @@
 @section('content')
     <fashion-page inline-template>
         <main>
-            <slider :data="[{img: 'http://testsite.eastbayloop.com/images/fashion-banner.jpeg', text: 'FASHION', class: 'explore-slider'},
-                            {img: 'http://testsite.eastbayloop.com/images/fashion-banner.jpeg', text: 'FASHION', class: 'explore-slider'},
-                            {img: 'http://testsite.eastbayloop.com/images/fashion-banner.jpeg', text: 'FASHION', class: 'explore-slider'}]">
+            <slider :data="[{img: '{{ asset('assets/img/sliders/fashion.jpeg') }}', text: 'FASHION', class: 'explore-slider'},
+                            {img: '{{ asset('assets/img/sliders/fashion.jpeg') }}', text: 'FASHION', class: 'explore-slider'},
+                            {img: '{{ asset('assets/img/sliders/fashion.jpeg') }}', text: 'FASHION', class: 'explore-slider'}]">
             </slider>
 
             <section class="fashion-cards mb-2">

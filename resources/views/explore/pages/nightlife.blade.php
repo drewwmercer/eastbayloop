@@ -23,7 +23,7 @@
                     <div class="default-card col-md-4 mb-4" v-for="(card, key) in cards" :key="key">
                         <div class="default-wrapper">
                             <a :href="card.link">
-                                <img :src="'http://testsite.eastbayloop.com/images/nightlife' + card.id + '.png'" />
+                                <img :src="'/assets/img/nightlife/nightlife' + card.id + '.png'" />
                                 <div class="content">
                                     <h2 class="mb-3">@{{ card.name }}</h2>
                                 </div>

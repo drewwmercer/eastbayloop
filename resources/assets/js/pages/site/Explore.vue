@@ -3,9 +3,9 @@
         data() {
             return {
                 pageName: 'Nightlife',
-                sliders: [{img: 'http://testsite.eastbayloop.com/images/client-banner.jpeg', text: 'Nightlife', class: 'explore-slider'},
-                          {img: 'http://testsite.eastbayloop.com/images/client-banner.jpeg', text: 'Nightlife', class: 'explore-slider'},
-                          {img: 'http://testsite.eastbayloop.com/images/client-banner.jpeg', text: 'Nightlife', class: 'explore-slider'}],
+                sliders: [{img: '/assets/img/sliders/client-banner.jpeg', text: 'Nightlife', class: 'explore-slider'},
+                          {img: '/assets/img/sliders/client-banner.jpeg', text: 'Nightlife', class: 'explore-slider'},
+                          {img: '/assets/img/sliders/client-banner.jpeg', text: 'Nightlife', class: 'explore-slider'}],
                 pageSelector: 'Nightlife',
                 nonProduct: false,
                 cards: [
@@ -128,9 +128,9 @@
                 }
 
                 this.sliders = [
-                    {img: 'http://testsite.eastbayloop.com/images/client-banner.jpeg', text: this.pageName, class: 'explore-slider'},
-                    {img: 'http://testsite.eastbayloop.com/images/client-banner.jpeg', text: this.pageName, class: 'explore-slider'},
-                    {img: 'http://testsite.eastbayloop.com/images/client-banner.jpeg', text: this.pageName, class: 'explore-slider'}
+                    {img: '/assets/img/sliders/client-banner.jpeg', text: this.pageName, class: 'explore-slider'},
+                    {img: '/assets/img/sliders/client-banner.jpeg', text: this.pageName, class: 'explore-slider'},
+                    {img: '/assets/img/sliders/client-banner.jpeg', text: this.pageName, class: 'explore-slider'}
                 ];
             }
         }

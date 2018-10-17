@@ -94,7 +94,7 @@
                             <div class="designer-wrapper">
                                 <a href="{{ route('fashion-per-product-page') }}">
                                     <div class="image-header">
-                                        <img src="http://testsite.eastbayloop.com/images/woman{{ $i == 4 ? 1 : $i}}.jpeg" />
+                                        <img src="{{ asset('assets/img/fashion/woman' . ($i == 4 ? 1 : $i) . '.jpeg') }}" />
                                     </div>
                                     <div class="content">
                                         <h2 class="text-black">Product title_0{{ $i }}</h2>

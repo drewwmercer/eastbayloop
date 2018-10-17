@@ -138,7 +138,7 @@
                     @for($i = 1; $i < 7; $i++)
                         <div class="service-card col-md-4 col-sm-12 p-1 pb-0">
                             <div class="service-wrapper">
-                                <img src="http://testsite.eastbayloop.com/images/adventure{{ $i }}.png" />
+                                <img src='{{ asset("assets/img/adventure/adventure$i.png") }}' />
                             </div>
                         </div>
                     @endfor

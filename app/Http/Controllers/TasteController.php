@@ -16,6 +16,31 @@ class TasteController extends Controller
         return view('taste.bar');
     }
 
+    public function showBarProfile()
+    {
+        return view('taste.bar-profile');
+    }
+
+    public function showBrewerie()
+    {
+        return view('taste.brewerie');
+    }
+
+    public function showBrewerieProfile()
+    {
+        return view('taste.brewerie-profile');
+    }
+
+    public function showDistilleries()
+    {
+        return view('taste.distilleries');
+    }
+
+    public function showDistilleriesProfile()
+    {
+        return view('taste.distilleries-profile');
+    }
+
     public function showBars()
     {
         return view('taste.bars-breweries-distilaries');

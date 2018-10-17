@@ -3,9 +3,9 @@
 @section('content')
     <taste-page inline-template>
         <main>
-            <slider :data="[{img: 'http://testsite.eastbayloop.com/images/client-banner.jpeg', text: 'Wine Loop Cont - Buy Wine', class: 'explore-slider'},
-                            {img: 'http://testsite.eastbayloop.com/images/client-banner.jpeg', text: 'Wine Loop Cont - Buy Wine', class: 'explore-slider'},
-                            {img: 'http://testsite.eastbayloop.com/images/client-banner.jpeg', text: 'Wine Loop Cont - Buy Wine', class: 'explore-slider'}]">
+            <slider :data="[{img: '{{ asset('assets/img/sliders/client-banner.jpeg') }}', text: 'Wine Loop Cont - Buy Wine', class: 'explore-slider'},
+                            {img: '{{ asset('assets/img/sliders/client-banner.jpeg') }}', text: 'Wine Loop Cont - Buy Wine', class: 'explore-slider'},
+                            {img: '{{ asset('assets/img/sliders/client-banner.jpeg') }}', text: 'Wine Loop Cont - Buy Wine', class: 'explore-slider'}]">
             </slider>
 
             <section class="explore-cards">

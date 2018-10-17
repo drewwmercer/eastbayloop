@@ -269,3 +269,15 @@ footer {
     max-width: 1165px;
     margin: 0 auto;
 }
+
+.black-btn {
+    font-family: Barlow;
+    font-size: 21px;
+    padding: 10px 27px;
+    background: black;
+    color: #ecff2d;
+
+    &:hover {
+        color: #abb820;
+    }
+}

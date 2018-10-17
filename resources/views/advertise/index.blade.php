@@ -7,11 +7,10 @@
             </slider>
 
             <section class="list-cards mt-4 mb-4">
-                <h2 class="list-title text-center">Please select your service(s)</h2>
-                <h3 class="list-additional-title text-center">You may choose more than one.</h3>                
+                <h2 class="list-title text-center">Please select your service:</h2>
                 <div class="row m-0 mt-4 pt-2">
                     <div class="list-card col-md-3 p-0 pr-3 mb-4">
-                        <a href="{{ route('advertise-list-page') }}">
+                        <a href="{{ route('advertise-b-list-page') }}">
                             <div class="list-wrapper">
                                 <div class="image-header">
                                     <img class="default" src="{{ asset('assets/img/advertise/list1.png') }}" />
@@ -70,7 +69,7 @@
                         </a>
                     </div>
                     <div class="list-card col-md-3 p-0 pr-3 mb-4">
-                        <a href="{{ route('advertise-list-page') }}">
+                        <a href="{{ route('advertise-e-list-page') }}">
                             <div class="list-wrapper">
                                 <div class="image-header">
                                     <img class="default" src="{{ asset('assets/img/advertise/list2.png') }}" />

@@ -3,9 +3,9 @@
 @section('content')
     <taste-page inline-template>
         <main>
-            <slider :data="[{img: 'http://testsite.eastbayloop.com/images/client-banner.jpeg', text: 'Wine Loop', class: 'explore-slider'},
-                            {img: 'http://testsite.eastbayloop.com/images/client-banner.jpeg', text: 'Wine Loop', class: 'explore-slider'},
-                            {img: 'http://testsite.eastbayloop.com/images/client-banner.jpeg', text: 'Wine Loop', class: 'explore-slider'}]">
+            <slider :data="[{img: '{{ asset('assets/img/sliders/bars.png') }}', text: 'Bars, Breweries and Distilleries', class: 'explore-slider'},
+                            {img: '{{ asset('assets/img/sliders/bars.png') }}', text: 'Bars, Breweries and Distilleries', class: 'explore-slider'},
+                            {img: '{{ asset('assets/img/sliders/bars.png') }}', text: 'Bars, Breweries and Distilleries', class: 'explore-slider'}]">
             </slider>
             <section class="taste-bars-btns">
                 <div class="row m-0 mt-4 mb-4 links">
@@ -22,7 +22,7 @@
 
             <section class="taste-bars-btns mb-4">
                 <div class="row m-0 mt-4 mb-4 links">
-                    <a href="{{ route('taste-winery-page') }}" class="taste-bars-a mr-5">Winery to Visit</a>   
+                    <a href="{{ route('taste-winery-page') }}" class="taste-bars-a mr-5">Reserve Your Visit</a>   
                     <a href="{{ route('taste-c-partner-page') }}" class="taste-bars-a mr-5">Community Partner</a>
                 </div>
             </section>
@@ -32,25 +32,25 @@
                 <div class="row cards m-0">
                     <div class="taste-bars-card col-md-4 p-0 pr-3 mb-3">
                         <div class="bars-wrapper">
-                            <img src='{{ asset("assets/img/taste/wine1.png") }}' />
-                            <a href="{{ route('taste-buy-wine-page') }}">
-                                <div class="bars-btn">Buy Wine</div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="taste-bars-card col-md-4 p-0 pr-3 mb-3">
-                        <div class="bars-wrapper">
-                            <img src='{{ asset("assets/img/taste/wine2.png") }}' />
+                            <img src='{{ asset("assets/img/taste/bars1.png") }}' />
                             <a href="{{ route('taste-bar-page') }}">
-                                <div class="bars-btn">Join Wine Club</div>
+                                <div class="bars-btn">Bars</div>
                             </a>
                         </div>
                     </div>
                     <div class="taste-bars-card col-md-4 p-0 pr-3 mb-3">
                         <div class="bars-wrapper">
-                            <img src='{{ asset("assets/img/taste/wine3.png") }}' />
-                            <a href="{{ route('taste-book-tasting-page') }}">
-                                <div class="bars-btn">Book Your Tasting</div>
+                            <img src='{{ asset("assets/img/taste/bars2.png") }}' />
+                            <a href="{{ route('taste-breweries-page') }}">
+                                <div class="bars-btn">Breweries</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="taste-bars-card col-md-4 p-0 pr-3 mb-3">
+                        <div class="bars-wrapper">
+                            <img src='{{ asset("assets/img/taste/bars3.png") }}' />
+                            <a href="{{ route('taste-distilleries-page') }}">
+                                <div class="bars-btn">Distilleries</div>
                             </a>
                         </div>
                     </div>
@@ -58,7 +58,7 @@
                         <div class="bars-wrapper">
                             <img src='{{ asset("assets/img/taste/wine4.png") }}' />
                             <a href="{{ route('taste-winery-events-page') }}">
-                                <div class="bars-btn">Winery Experiences & Events</div>
+                                <div class="bars-btn">Experiences & Events</div>
                             </a>
                         </div>
                     </div>

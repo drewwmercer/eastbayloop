@@ -41,6 +41,16 @@ class AdvertiseController extends Controller
         return view('advertise.list');
     }
 
+    public function showEventList()
+    {
+        return view('advertise.event-listing');
+    }
+
+    public function showEventContact()
+    {
+        return view('advertise.event-contact');
+    }
+
     public function showSellProducts()
     {
         return view('advertise.sell-products');

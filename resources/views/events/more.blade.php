@@ -3,9 +3,9 @@
 @section('content')
     <events-page inline-template>
         <main>
-            <slider :data="[{img: 'http://testsite.eastbayloop.com/images/client-banner.jpeg', text: 'EVENTS', class: 'explore-slider'},
-                            {img: 'http://testsite.eastbayloop.com/images/client-banner.jpeg', text: 'EVENTS', class: 'explore-slider'},
-                            {img: 'http://testsite.eastbayloop.com/images/client-banner.jpeg', text: 'EVENTS', class: 'explore-slider'}]">
+            <slider :data="[{img: '{{ asset('assets/img/sliders/client-banner.jpeg') }}', text: 'EVENTS', class: 'explore-slider'},
+                            {img: '{{ asset('assets/img/sliders/client-banner.jpeg') }}', text: 'EVENTS', class: 'explore-slider'},
+                            {img: '{{ asset('assets/img/sliders/client-banner.jpeg') }}', text: 'EVENTS', class: 'explore-slider'}]">
             </slider>
 
             <section class="events-cards">
@@ -23,7 +23,7 @@
                         <div class="events-card col-md-4 mb-4">
                             <a href="{{ route('events-profile-page') }}">
                                 <div class="events-wrapper">
-                                    <img src="http://testsite.eastbayloop.com/images/events-img{{ $j }}.jpeg" />
+                                    <img src='{{ asset("assets/img/events/events-img$j.jpeg") }}' />
                                     <div class="content">
                                         <h2 class="mb-3">{{ 'Event ' . $i }}</h2>
                                     </div>

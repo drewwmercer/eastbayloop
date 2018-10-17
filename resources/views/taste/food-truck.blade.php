@@ -3,14 +3,14 @@
 @section('content')
     <explore-page inline-template>
         <main>
-            <slider :data="[{img: 'http://testsite.eastbayloop.com/images/banner7.jpeg', text: 'FOOD TRUCKS UNITE', class: 'explore-slider'},
-                            {img: 'http://testsite.eastbayloop.com/images/banner7.jpeg', text: 'FOOD TRUCKS UNITE', class: 'explore-slider'},
-                            {img: 'http://testsite.eastbayloop.com/images/banner7.jpeg', text: 'FOOD TRUCKS UNITE', class: 'explore-slider'}]">
+            <slider :data="[{img: '{{ asset('assets/img/sliders/food-truck.png') }}', text: 'Food Trucks', class: 'explore-slider'},
+                            {img: '{{ asset('assets/img/sliders/food-truck.png') }}', text: 'Food Trucks', class: 'explore-slider'},
+                            {img: '{{ asset('assets/img/sliders/food-truck.png') }}', text: 'Food Trucks', class: 'explore-slider'}]">
             </slider>
 
             <section class="explore-cards">
                 <div class="row explore-header mb-3">
-                    <h2 class="display-inline col-md-8">FOOD TRUCKS UNITE</h2>
+                    <h2 class="display-inline col-md-8">Food Trucks</h2>
                     <div class="filter-bar col-md-4">
                         <span>
                             <select>
@@ -27,9 +27,9 @@
                         <div class="default-card col-md-4 mb-4">
                             <div class="default-wrapper">
                                 <a href="{{ route('explore-profile-page') }}">
-                                    <img src="http://testsite.eastbayloop.com/images/adventure{{ $i }}.png" />
+                                    <img src='{{ asset("assets/img/taste/food$i.png") }}' />
                                     <div class="content">
-                                        <h2 class="mb-3">UNITE {{ $i }}</h2>
+                                        <h2 class="mb-3">Food Truck {{ $i }}</h2>
                                     </div>
                                 </a>
                             </div>
@@ -39,7 +39,7 @@
             </section>
 
             <!-- EVENTS -->
-            <events-widget></events-widget>
+            <events-widget :data="{titleClass: 'text-center font-myriad-regular'}"></events-widget>
         </main>
     </explore-page>
 @endsection
