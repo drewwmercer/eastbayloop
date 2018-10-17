@@ -76,9 +76,19 @@ class TasteController extends Controller
         return view('taste.coffee-shops');
     }
 
+    public function showCoffeeShopsProfile()
+    {
+        return view('taste.coffe-profile');
+    }
+
     public function showFoodTruck()
     {
         return view('taste.food-truck');
+    }
+
+    public function showFoodTruckProfile()
+    {
+        return view('taste.food-truck-profile');
     }
 
     public function showRestaurants()

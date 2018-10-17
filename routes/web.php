@@ -84,7 +84,9 @@ Route::get('/taste/chefs-corner', 'TasteController@showChefsCorner')->name('tast
 Route::get('/taste/chefs-corner-profile', 'TasteController@showChefsCornerProfile')->name('taste-chefs-corner-profile-page');
 Route::get('/taste/mixology', 'TasteController@showMixology')->name('taste-mixology-page');
 Route::get('/taste/coffee-shops', 'TasteController@showCoffeeShops')->name('taste-coffee-shops-page');
+Route::get('/taste/coffee-shops/profile', 'TasteController@showCoffeeShopsProfile')->name('taste-coffee-shops-profile-page');
 Route::get('/taste/food-truck', 'TasteController@showFoodTruck')->name('taste-food-truck-page');
+Route::get('/taste/food-truck/profile', 'TasteController@showFoodTruckProfile')->name('taste-food-truck-profile-page');
 Route::get('/taste/private-event-book', 'TasteController@showBarWineLoopContact')->name('taste-private-event-book-page');
 Route::get('/taste/restaurants', 'TasteController@showRestaurants')->name('taste-restaurants-page');
 Route::get('/taste/restaurants/profile', 'TasteController@showGallery')->name('taste-gallery-page');

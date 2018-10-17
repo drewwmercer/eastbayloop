@@ -8,6 +8,9 @@
                     <div class="col-md-6 p-0">
                         <h2 class="advertise-title">Our Event Listing Packages</h2>
                     </div>
+                    <div class="col-md-6 p-0 text-right">
+                        <a href="{{ route('advertise-b-business-page') }}" class="become-btn">Become a VIP!</a>
+                    </div>
                 </div>
                 <div class="row m-0 mt-4 mb-4">
                     <div class="advertise-card col-md-3 p-0 pr-3 mb-4">
