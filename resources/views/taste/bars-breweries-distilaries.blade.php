@@ -58,7 +58,7 @@
                         <div class="bars-wrapper">
                             <img src='{{ asset("assets/img/taste/wine4.png") }}' />
                             <a href="{{ route('taste-winery-events-page') }}">
-                                <div class="bars-btn">Experiences & Events</div>
+                                <div class="bars-btn">Events & Experiences</div>
                             </a>
                         </div>
                     </div>
