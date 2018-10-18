@@ -90,7 +90,7 @@ Route::get('/taste/food-truck/profile', 'TasteController@showFoodTruckProfile')-
 Route::get('/taste/private-event-book', 'TasteController@showBarWineLoopContact')->name('taste-private-event-book-page');
 Route::get('/taste/restaurants', 'TasteController@showRestaurants')->name('taste-restaurants-page');
 Route::get('/taste/restaurants/profile', 'TasteController@showGallery')->name('taste-gallery-page');
-Route::get('/taste/wine-loop', 'TasteController@showBars')->name('taste-wine-loop-page');
+Route::get('/taste/wine-loop', 'TasteController@showWineLoop')->name('taste-wine-loop-page');
 Route::get('/taste/wine-loop-contact', 'TasteController@showWineLoopContact')->name('taste-wine-loop-contact-page');
 Route::get('/stay', 'StayController@index')->name('stay-page');
 Route::get('/stay/sell', 'StayController@showSell')->name('stay-sell-page');
