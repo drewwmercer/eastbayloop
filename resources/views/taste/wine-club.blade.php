@@ -3,9 +3,9 @@
 @section('content')
     <taste-page inline-template>
         <main>
-            <slider :data="[{img: '{{ asset('assets/img/sliders/client-banner.jpeg') }}', text: 'Bars', class: 'explore-slider'},
-                            {img: '{{ asset('assets/img/sliders/client-banner.jpeg') }}', text: 'Bars', class: 'explore-slider'},
-                            {img: '{{ asset('assets/img/sliders/client-banner.jpeg') }}', text: 'Bars', class: 'explore-slider'}]">
+            <slider :data="[{img: '{{ asset('assets/img/sliders/client-banner.jpeg') }}', text: 'Wine Club', class: 'explore-slider'},
+                            {img: '{{ asset('assets/img/sliders/client-banner.jpeg') }}', text: 'Wine Club', class: 'explore-slider'},
+                            {img: '{{ asset('assets/img/sliders/client-banner.jpeg') }}', text: 'Wine Club', class: 'explore-slider'}]">
             </slider>
 
             <section class="explore-cards">
@@ -28,8 +28,7 @@
                             <div class="default-wrapper">
                                 <img src='{{ asset("assets/img/nightlife/nightlife$i.png") }}' />
                                 <div class="content">
-                                    <h2 class="mb-3">{{ 'Bar ' . $i }}</h2>
-                                    <h2>(non-product)</h2>
+                                    <h2 class="mb-3">{{ 'Wine Club ' . $i }}</h2>
                                 </div>
                             </div>
                         </div>
