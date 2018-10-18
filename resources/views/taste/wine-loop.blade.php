@@ -3,15 +3,15 @@
 @section('content')
     <taste-page inline-template>
         <main>
-            <slider :data="[{img: 'http://testsite.eastbayloop.com/images/client-banner.jpeg', text: 'Wine Loop', class: 'explore-slider'},
-                            {img: 'http://testsite.eastbayloop.com/images/client-banner.jpeg', text: 'Wine Loop', class: 'explore-slider'},
-                            {img: 'http://testsite.eastbayloop.com/images/client-banner.jpeg', text: 'Wine Loop', class: 'explore-slider'}]">
+            <slider :data="[{img: '{{ asset('assets/img/sliders/client-banner.jpeg') }}', text: 'Wine Loop', class: 'explore-slider'},
+                            {img: '{{ asset('assets/img/sliders/client-banner.jpeg') }}', text: 'Wine Loop', class: 'explore-slider'},
+                            {img: '{{ asset('assets/img/sliders/client-banner.jpeg') }}', text: 'Wine Loop', class: 'explore-slider'}]">
             </slider>
             <section class="taste-bars-btns">
                 <div class="row m-0 mt-4 mb-4 links">
-                    <a href="{{ route('taste-bar-w-l-contact-page') }}" class="taste-bars-a mr-5">For Groups</a>
-                    <a href="{{ route('taste-bar-w-l-contact-page') }}" class="taste-bars-a mr-5">For Celebrations</a>
-                    <a href="{{ route('taste-bar-w-l-contact-page') }}" class="taste-bars-a mr-5">For Business Outing</a>
+                    <a href="{{ route('taste-wine-contact-page') }}" class="taste-bars-a mr-5">For Groups</a>
+                    <a href="{{ route('taste-wine-contact-page') }}" class="taste-bars-a mr-5">For Celebrations</a>
+                    <a href="{{ route('taste-wine-contact-page') }}" class="taste-bars-a mr-5">For Business Outing</a>
                 </div>
             </section>
 
@@ -22,8 +22,8 @@
 
             <section class="taste-bars-btns mb-4">
                 <div class="row m-0 mt-4 mb-4 links">
-                    <a href="{{ route('taste-winery-page') }}" class="taste-bars-a mr-5">Winery to Visit</a>   
-                    <a href="{{ route('taste-c-partner-page') }}" class="taste-bars-a mr-5">Community Partner</a>
+                    <a href="{{ route('taste-wine-visit-page') }}" class="taste-bars-a mr-5">Winery to Visit</a>   
+                    <a href="{{ route('taste-wine-partner-page') }}" class="taste-bars-a mr-5">Community Partner</a>
                 </div>
             </section>
 
@@ -41,7 +41,7 @@
                     <div class="taste-bars-card col-md-4 p-0 pr-3 mb-3">
                         <div class="bars-wrapper">
                             <img src='{{ asset("assets/img/taste/wine2.png") }}' />
-                            <a href="{{ route('taste-bar-page') }}">
+                            <a href="{{ route('taste-wine-club-page') }}">
                                 <div class="bars-btn">Join Wine Club</div>
                             </a>
                         </div>
@@ -57,7 +57,7 @@
                     <div class="taste-bars-big-card col-md-12 p-0 mt-3 pr-3">
                         <div class="bars-wrapper">
                             <img src='{{ asset("assets/img/taste/wine4.png") }}' />
-                            <a href="{{ route('taste-winery-events-page') }}">
+                            <a href="{{ route('taste-wine-events-page') }}">
                                 <div class="bars-btn">Winery Experiences & Events</div>
                             </a>
                         </div>

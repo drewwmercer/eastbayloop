@@ -61,6 +61,31 @@ class TasteController extends Controller
         return view('taste.buy-wine');
     }
 
+    public function showWineClub()
+    {
+        return view('taste.wine-club');
+    }
+
+    public function showExpEvents()
+    {
+        return view('taste.wine-loop-events');
+    }
+
+    public function showWineVisit()
+    {
+        return view('taste.wine-visit');
+    }
+
+    public function showWinePartner()
+    {
+        return view('taste.wine-partner');
+    }
+
+    public function showWineContact()
+    {
+        return view('taste.wine-contact');
+    }
+
     public function showPartner()
     {
         return view('taste.community-partners');
