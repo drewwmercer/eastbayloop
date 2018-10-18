@@ -92,6 +92,7 @@ Route::get('/taste/wine-loop', 'TasteController@showWineLoop')->name('taste-wine
 Route::get('/taste/wine-loop/buy-wine', 'TasteController@showBuyWine')->name('taste-buy-wine-page');
 Route::get('/taste/wine-loop/wine-club', 'TasteController@showWineClub')->name('taste-wine-club-page');
 Route::get('/taste/wine-loop/contact', 'TasteController@showWineContact')->name('taste-wine-contact-page');
+Route::get('/taste/wine-loop/profile', 'TasteController@showWineProfile')->name('taste-wine-profile-page');
 Route::get('/taste/wine-loop/winery-to-visit', 'TasteController@showWineVisit')->name('taste-wine-visit-page');
 Route::get('/taste/wine-loop/community-partner', 'TasteController@showWinePartner')->name('taste-wine-partner-page');
 Route::get('/taste/wine-loop/experience-events', 'TasteController@showExpEvents')->name('taste-wine-events-page');

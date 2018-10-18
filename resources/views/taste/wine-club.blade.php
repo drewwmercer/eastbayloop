@@ -10,7 +10,7 @@
 
             <section class="explore-cards">
                 <div class="row explore-header mb-3">
-                    <h2 class="display-inline col-md-8">Bars</h2>
+                    <h2 class="display-inline col-md-8">Wine Club</h2>
                     <div class="filter-bar col-md-4">
                         <span>
                             <select>
@@ -25,12 +25,14 @@
                 <div class="row">
                     @for($i = 1; $i < 10; $i++)
                         <div class="default-card col-md-4 mb-4">
-                            <div class="default-wrapper">
-                                <img src='{{ asset("assets/img/nightlife/nightlife$i.png") }}' />
-                                <div class="content">
-                                    <h2 class="mb-3">{{ 'Wine Club ' . $i }}</h2>
+                            <a href="{{ route('taste-wine-profile-page') }}">
+                                <div class="default-wrapper">
+                                    <img src='{{ asset("assets/img/nightlife/nightlife$i.png") }}' />
+                                    <div class="content">
+                                        <h2 class="mb-3">{{ 'Wine Club ' . $i }}</h2>
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     @endfor
                 </div>

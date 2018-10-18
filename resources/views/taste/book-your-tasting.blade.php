@@ -26,7 +26,7 @@
                     @for($i = 1; $i < 13; $i++)
                         <div class="default-card col-md-4 mb-4">
                             <div class="default-wrapper">
-                                <a href="#">
+                                <a href="{{ route('taste-wine-profile-page') }}">
                                     <img src='{{ asset("assets/img/taste/winery" . ($i > 6 ? $i - 6 : $i) .".png") }}' />
                                     <div class="content">
                                         <h2 class="mb-3">{{ 'Winery ' . $i }}</h2>
