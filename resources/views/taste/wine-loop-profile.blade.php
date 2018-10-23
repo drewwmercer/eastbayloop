@@ -10,8 +10,15 @@
 
             <section class="profile-page">
                 <div class="row">
+                    <div class="col-md-6">
+                        <h2 class="title">Store Name</h2>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="#" class="black-btn font-20px float-right">Book a Tasting</a>
+                    </div>
+                </div>
+                <div class="row">
                     <div class="description col-md-8 col-sm-12 mb-4">
-                        <h2 class="title">Client Name</h2>
                         <div class="main-text">
                             <h2>Business Description</h2>
                             <p>

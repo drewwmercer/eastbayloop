@@ -13,12 +13,15 @@
                     <h2 class="display-inline col-md-8 font-myriad-regular">Book your Visit</h2>
                     <div class="filter-bar col-md-4">
                         <span>
-                            <select>
+                            <select class="align-middle">
                                 <option value="Select">Filter</option>
                                 <option value="bar1">Bar 1</option>
                                 <option value="bar2">Bar 2</option>
                             </select>
                         </span>
+                        <div>
+                            <a href="#" class="black-btn font-20px ml-4">Book a Tasting</a>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
