@@ -13,6 +13,8 @@ Vue.component('footer-part', require('../pages/site/Footer.vue'));
 
 /* Components */
 Vue.component('navbar', require('../components/site/Navbar.vue'));
+Vue.component('modal', require('../components/site/Modal.vue'));
 Vue.component('slider', require('../components/site/Slider.vue'));
 Vue.component('radio', require('../components/site/Radio.vue'));
 Vue.component('events-widget', require('../components/site/Events.vue'));
+Vue.component('auth-menu', require('../components/site/AuthMenu.vue'));

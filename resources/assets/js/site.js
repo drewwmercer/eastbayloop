@@ -17,16 +17,43 @@ window.Vue = require('vue');
  */
 
 import Vue from 'vue'
-import * as VueGoogleMaps from 'vue2-google-maps'
- 
+
+import VueCookie from 'vue-cookie';
+Vue.use(VueCookie);
+
+import VueBus from 'vue-bus';
+Vue.use(VueBus);
+
+import * as VueGoogleMaps from 'vue2-google-maps';
 Vue.use(VueGoogleMaps, {
-  load: {
-    key: 'YOUR_API_TOKEN',
-    libraries: 'places',
-  },
-})
+    load: {
+        key: 'YOUR_API_TOKEN',
+        libraries: 'places',
+    },
+});
+
+import Vuex from 'vuex';
+Vue.use(Vuex);
+import VueAxios from 'vue-axios';
+import axios from 'axios';
+Vue.use(VueAxios, axios);
+import VueAuthenticate from 'vue-authenticate';
+Vue.use(VueAuthenticate, {
+    baseURL: window.location.origin,
+    providers: {
+        google: {
+            clientId: document.head.querySelector('meta[name="google_api_client_id"]').content,
+            redirectUri: `${window.location.origin}/callback/google`,
+        },
+        facebook: {
+            clientId: document.head.querySelector('meta[name="facebook_api_client_id"]').content,
+            redirectUri: `${window.location.origin}/callback/facebook`,
+        }
+    }
+});
 
 require('./helpers/siteComponentsLoader');
+
 
 const app = new Vue({
     el: '#app'

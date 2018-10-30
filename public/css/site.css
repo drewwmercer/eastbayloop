@@ -2265,11 +2265,6 @@ pre code {
   opacity: 1;
 }
 
-.form-control:-ms-input-placeholder {
-  color: #6c757d;
-  opacity: 1;
-}
-
 .form-control::-ms-input-placeholder {
   color: #6c757d;
   opacity: 1;
@@ -17315,10 +17310,6 @@ img {
   color: #000000;
 }
 
-.taste-contact-page .taste-contact-input:-ms-input-placeholder {
-  color: #000000;
-}
-
 .taste-contact-page .taste-contact-input::-ms-input-placeholder {
   color: #000000;
 }
@@ -17337,10 +17328,6 @@ img {
 }
 
 .taste-contact-page .taste-contact-textarea::-webkit-input-placeholder {
-  color: #000000;
-}
-
-.taste-contact-page .taste-contact-textarea:-ms-input-placeholder {
   color: #000000;
 }
 
@@ -18760,9 +18747,8 @@ img {
   background-color: #f8f9fa;
 }
 
-.custom-navbar .navbar-wrapper .navbar-content .auth-btn .dropdown-menu .dropdown-divider {
-  margin: 0;
-  border-color: #ffffff;
+.custom-navbar .navbar-wrapper .navbar-content .auth-btn .dropdown-menu .dropdown-item:not(:last-child) {
+  border-bottom: 1px solid #ffffff;
 }
 
 .custom-navbar .navbar-wrapper .navbar-content .auth-btn .auth-list {
@@ -19315,6 +19301,77 @@ img {
   .radio .radio-info .info-wrapper .info-text .song-time {
     font-size: 13px;
   }
+}
+
+.modal__mask {
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  -webkit-transition: opacity .3s ease;
+  transition: opacity .3s ease;
+  cursor: default;
+}
+
+.modal__container {
+  position: relative;
+  width: 600px;
+  margin: 60px auto;
+  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  padding: 40px 60px 30px 60px;
+  background: #ffffff;
+  border-radius: 5px;
+  cursor: default;
+  color: #000;
+}
+
+.modal__close-btn {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  top: -15px;
+  right: -15px;
+  background: #fff;
+  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
+  cursor: pointer;
+}
+
+.modal__close-btn::before,
+.modal__close-btn::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  top: calc(50% - 1px);
+  width: 60%;
+  right: 20%;
+  background-color: #636b6f;
+}
+
+.modal__close-btn::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.modal__close-btn::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.modal__header {
+  margin-top: 0;
+  color: #42b983;
+}
+
+.modal__content {
+  margin: 20px 0;
 }
 
 .text-grey {

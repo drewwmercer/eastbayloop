@@ -1,78 +1,42 @@
-@extends('layouts.app')
+<register inline-template>
+    <div>
+        <a class="popup_fb" href="#" @click.prevent="authenticate('facebook')">&nbsp; Log in Using Facebook</a>
+        <a class="g_plus_fb" href="#" @click.prevent="authenticate('google')">&nbsp; Log in Using Google</a>
 
-@section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
+        <span class="or_text">or</span>
 
-                <div class="card-body">
-                    @include('errors.list')
-                    <form method="POST" action="{{ route('register') }}" aria-label="{{ __('Register') }}">
-                        @csrf
-
-                        <div class="form-group row">
-                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name') }}" required autofocus>
-
-                                @if ($errors->has('name'))
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('name') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required>
-
-                                @if ($errors->has('email'))
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
-
-                                @if ($errors->has('password'))
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('password') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
-                            </div>
-                        </div>
-
-                        <div class="form-group row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Register') }}
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+        <div>
+            <ul class="login_ul_popup">
+                <li>
+                    <ul class="login_sub_ul">
+                        <li>
+                            <input v-bind:class="['form-input', {'form-input__error': hasErrorFor('first_name')}]" name="first_name" placeholder="First Name" type="text" v-model="formData.first_name">
+                        </li>
+                        <li>
+                            <input v-bind:class="['form-input', {'form-input__error': hasErrorFor('last_name')}]" name="last_name" placeholder="Last Name" type="text" v-model="formData.last_name">
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <input v-bind:class="['form-input', {'form-input__error': hasErrorFor('email')}]" name="email" placeholder="Email" type="email" v-model="formData.email">
+                </li>
+                <li>
+                    <input v-bind:class="['form-input', {'form-input__error': hasErrorFor('password')}]" name="password" placeholder="Password" type="password" v-model="formData.password">
+                </li>
+                <li>
+                    <input v-bind:class="['form-input', {'form-input__error': hasErrorFor('password_confirmation')}]" name="password_confirmation" placeholder="Confirm Password" type="password" v-model="formData.password_confirmation">
+                </li>
+                <li v-if="hasErrors" class="errors-list">
+                    <div v-for="error_list in formErrors">
+                        <span v-for="error in error_list" class="errors-list__message">@{{ error }}</span>
+                    </div>
+                </li>
+            </ul>
+            <div class="submit-block">
+                <button class="submit-block__btn_submit" @click="register">Sign up</button>
+                <span class="submit-block__text submit-block__text_terms">By logging in you agree to our <a href="#">Terms,</a> <a href="#">Privacy Policy </a></span>
             </div>
+            <span class="submit-block__text">Already have an account? <a href="#" @click="switchToLogin">Login</a></span>
         </div>
     </div>
-</div>
-@endsection
+</register>

@@ -12,22 +12,22 @@
 */
 
 Route::get('/', 'IndexController@index')->name('main-page');
+//Route::get('/', 'IndexController@index')->name('main-page')->middleware('auth');
 
 Route::get('/admin', 'Admin\DashboardController@index');
-Route::get('/home', 'Admin\DashboardController@index');
 
-Route::get('/login', array('as' => 'login','uses' => 'HomeController@login'));
-Route::post('/login', ['uses' => 'Auth\LoginController@login']);
-Route::get('/logout', ['uses' => 'Auth\LoginController@logout']);
-Route::get('/register', ['uses' => 'HomeController@register']);
-Route::post('/register', ['uses' => 'Auth\RegisterController@create']);
+Route::post('/auth/login', 'Auth\LoginController@login')->name('login');
+Route::get('/auth/logout', 'Auth\LoginController@logout')->name('logout');
+Route::post('/auth/register', 'Auth\RegisterController@register')->name('register');
+Route::post('/password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail')->name('password.email');
+Route::get('/password/reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('password.reset');
+Route::post('/password/reset', 'Auth\ResetPasswordController@reset')->name('password.request');
 
-Auth::routes();
-
-Route::get('/redirect/{service}', 'SocialAuthController@redirect');
+Route::get('/callback/{service}', 'SocialAuthController@callback');
+Route::post('/auth/{service}', 'SocialAuthController@authenticate');
 
 /* Pages */
-Route::get('/profile', 'ProfileController@index')->name('profile-page');
+Route::get('/profile', 'ProfileController@index')->name('profile-page')->middleware('auth');
 Route::get('/explore', 'ExploreController@index')->name('explore-page');
 Route::get('/explore/{category}', 'ExploreController@show')->name('explore-subpage');
 Route::get('/explore/profile', 'ExploreController@showProfile')->name('explore-profile-page');
@@ -116,4 +116,3 @@ Route::get('/advertise-with-us/business-contact-details', 'AdvertiseController@s
 Route::get('/advertise-with-us/business-events-contact', 'AdvertiseController@showBusinessEventsContact')->name('advertise-business-events-contact-page');
 Route::get('/advertise-with-us/business-contact-details/submit', 'AdvertiseController@showBusinessContactSubmit')->name('advertise-business-contact-d-s-page');
 Route::get('/store/products/more', 'ProductsController@showMore')->name('products-more');
-//Route::get('/home', 'HomeController@index')->name('home');

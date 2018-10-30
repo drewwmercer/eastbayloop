@@ -1,4 +1,7 @@
 <script>
+
+    import AuthMenu from './AuthMenu.vue';
+
     const selects = {
         NAVIGATION: '.navigation'
     }
@@ -16,6 +19,10 @@
             }
         },
 
+        components: {
+            AuthMenu,
+        },
+
         mounted() {
         },
         
@@ -25,6 +32,16 @@
 
                 $(selects.NAVIGATION).slideToggle(700);			
                 $(event.target).toggleClass(classes.TOGGLE);
+            },
+            logout() {
+                this.$auth.logout({
+                    makeRequest: true,
+                    success: () => {},
+                    error: () => {},
+                    redirect: {
+                        name: 'home'
+                    }
+                });
             }
         }
     }
