@@ -58,7 +58,7 @@ class RegisterController extends Controller
 
         event(new Registered($user));
 
-        Cookie::queue($this->cookieKey, $token, 60);
+        Cookie::queue($this->cookieKey, $token, 60, null, null, true, false);
 
         return redirect('/');
     }

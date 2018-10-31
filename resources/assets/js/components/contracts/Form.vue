@@ -13,9 +13,16 @@
             }
         },
         methods: {
+            submittedSuccess() {
+                //
+            },
             submittedWithError(error) {
                 if (error.response.status === 422) {
                     this.formErrors = error.response.data.errors;
+                } else if (error.response.status === 400 && error.response.data.msg) {
+                    this.formErrors = {
+                        msg: error.response.data.msg
+                    };
                 } else {
                     console.error(error);
                 }

@@ -1,15 +1,11 @@
-<auth-menu inline-template>
+<auth-menu inline-template v-bind:show-login="{{ request('login') ? 'true' : 'false' }}">
     <div class="auth-btn">
         <i class="fa fa-user" aria-hidden="true" id="dropdownAuthMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownAuthMenu">
-            @auth
-                <a class="dropdown-item" href="{{ route('profile-page') }}">Profile</a>
-                <a class="dropdown-item" href="{{ route('logout') }}">Logout</a>
-            @endauth
-            @guest
-                <span class="dropdown-item" @click="showLoginForm">Login</span>
-                <span class="dropdown-item" @click="showRegistrationForm">Sign up</span>
-            @endguest
+            <a v-if="$auth.isAuthenticated()" class="dropdown-item" href="{{ route('profile-page') }}">Profile</a>
+            <a v-if="$auth.isAuthenticated()" class="dropdown-item" href="{{ route('logout') }}">Logout</a>
+            <span v-if="!$auth.isAuthenticated()" class="dropdown-item" @click="showLoginForm">Login</span>
+            <span v-if="!$auth.isAuthenticated()" class="dropdown-item" @click="showRegistrationForm">Sign up</span>
         </div>
         <modal v-if="showModal" @close="closeModal">
             <template slot="content">

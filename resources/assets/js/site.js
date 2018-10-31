@@ -40,6 +40,9 @@ Vue.use(VueAxios, axios);
 import VueAuthenticate from 'vue-authenticate';
 Vue.use(VueAuthenticate, {
     baseURL: window.location.origin,
+    storageType: 'cookieStorage',
+    tokenName: 'token',
+    tokenPrefix: '',
     providers: {
         google: {
             clientId: document.head.querySelector('meta[name="google_api_client_id"]').content,

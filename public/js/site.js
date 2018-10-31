@@ -48478,6 +48478,9 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_5_vue_
 
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_7_vue_authenticate__["a" /* default */], {
     baseURL: window.location.origin,
+    storageType: 'cookieStorage',
+    tokenName: 'token',
+    tokenPrefix: '',
     providers: {
         google: {
             clientId: document.head.querySelector('meta[name="google_api_client_id"]').content,
@@ -57559,7 +57562,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             var _this = this;
 
             this.$auth.login(this.formData).then(function (response) {
-                _this.onSignInSuccess();
+                _this.submittedSuccess();
             }).catch(function (error) {
                 _this.submittedWithError(error);
             });
@@ -57568,7 +57571,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             var _this2 = this;
 
             this.$auth.register(this.formData).then(function (response) {
-                _this2.onSignInSuccess();
+                _this2.submittedSuccess();
             }).catch(function (error) {
                 _this2.submittedWithError(error);
             });
@@ -57577,16 +57580,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             var _this3 = this;
 
             this.$auth.authenticate(provider).then(function () {
-                _this3.onSignInSuccess();
+                _this3.submittedSuccess();
             }).catch(function (error) {
-                _this3.onSignInError(error);
+                _this3.submittedWithError(error);
             });
         },
-        onSignInSuccess: function onSignInSuccess() {
+        submittedSuccess: function submittedSuccess() {
             window.location.href = '/';
-        },
-        onSignInError: function onSignInError(error) {
-            console.error(error);
         }
     }
 });
@@ -57652,9 +57652,16 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         }
     },
     methods: {
+        submittedSuccess: function submittedSuccess() {
+            //
+        },
         submittedWithError: function submittedWithError(error) {
             if (error.response.status === 422) {
                 this.formErrors = error.response.data.errors;
+            } else if (error.response.status === 400 && error.response.data.msg) {
+                this.formErrors = {
+                    msg: error.response.data.msg
+                };
             } else {
                 console.error(error);
             }

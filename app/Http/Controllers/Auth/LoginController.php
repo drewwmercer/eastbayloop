@@ -46,7 +46,7 @@ class LoginController extends Controller
                 'msg' => 'Could not create token'
             ], 500);
         }
-        Cookie::queue($this->cookieKey, $token, 60);
+        Cookie::queue($this->cookieKey, $token, 60, null, null, true, false);
         return response()->json([
             'status' => 'success'
         ], 200);
