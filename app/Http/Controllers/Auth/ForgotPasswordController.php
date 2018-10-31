@@ -52,9 +52,14 @@ class ForgotPasswordController extends Controller
             return response()->json([
                 'status' => 'success',
             ], 200);
-        } else {
+        } else if ($response == Password::INVALID_USER) {
             return response()->json([
                 'status' => 'error',
+                'msg' => 'Invalid user'
+            ], 400);
+        } else {
+            return response()->json([
+                'status' => 'error'
             ], 500);
         }
     }
