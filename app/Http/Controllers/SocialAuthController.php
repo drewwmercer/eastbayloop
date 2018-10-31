@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Role;
 use App\User;
 use Illuminate\Http\Request;
 use Laravel\Socialite\Facades\Socialite;
@@ -67,7 +68,7 @@ class SocialAuthController extends Controller
                 'msg' => 'Could not create token'
             ], 500);
         }
-        Cookie::queue($this->cookieKey, $token, 60);
+        Cookie::queue($this->cookieKey, $token, 60, null, null, true, false);
         return response()->json([
             'status' => 'success'
         ], 200);
@@ -98,35 +99,40 @@ class SocialAuthController extends Controller
     {
         switch ($this->service) {
             case 'google':
-                return $this->createUserFromGoogle($userData);
+                $user = $this->createUserFromGoogle($userData);
+                break;
             case 'facebook':
-                return $this->createUserFromFb($userData);
+                $user = $this->createUserFromFb($userData);
+                break;
             default:
                 return null;
         }
+        $role_user = Role::where('name', 'user')->first();
+        $user->roles()->attach($role_user);
+        return $user;
     }
 
     protected function createUserFromGoogle($userData)
     {
-        $user = $this->createUserByService($userData);
+        $user = $this->create($userData);
         $user->google_id = $userData->getId();
         $user->first_name = $userData->user['name']['givenName'];
         $user->last_name = $userData->user['name']['familyName'];
         $user->save();
-        return $user;
+        return $user->fresh();
     }
 
     protected function createUserFromFb($userData)
     {
-        $user = $this->createUserByService($userData);
+        $user = $this->create($userData);
         $user->fb_id = $userData->getId();
         $user->first_name = $userData->name;
         $user->last_name = '';
         $user->save();
-        return $user;
+        return $user->fresh();
     }
 
-    private function createUserByService($userData)
+    private function create($userData)
     {
         $user = new User();
         $user->email = $userData->getEmail();
