@@ -61,10 +61,8 @@
                             background-color: #f8f9fa;
                         }
                     }
-
-                    .dropdown-divider {
-                        margin: 0;                  
-                        border-color: #ffffff;
+                    .dropdown-item:not(:last-child) {
+                        border-bottom: 1px solid #ffffff;
                     }
                 }
 

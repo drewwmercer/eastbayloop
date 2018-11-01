@@ -5,14 +5,7 @@
                 <img alt="logo" src="{{ asset('assets/img/logo.png') }}">
             </a>
             <div class="navbar-content">
-                <div class="auth-btn">
-                    <i class="fa fa-user" aria-hidden="true" id="dropdownAuthMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownAuthMenu">
-                        <a class="dropdown-item" href="{{ route('profile-page') }}">Login</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="{{ route('profile-page') }}">Sign up</a>
-                    </div>
-                </div>
+                @include('layouts.partials.auth-menu')
                 <span class="menu" @click="toogleMenu">
                     <template v-if="isToogleNavbar">
                         <i class="fa fa-close" aria-hidden="true"></i>

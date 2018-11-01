@@ -1,0 +1,144 @@
+.form {
+  display: flex;
+  flex-flow: column nowrap;
+  &__text {
+    padding: 5px 3px;
+    color: #000000;
+    & a {
+      color: #4ca9d5;
+    }
+    &_or {
+      width: 100%;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.2rem;
+      padding: 20px 0;
+    }
+    &_terms {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.9rem;
+      font-style: italic;
+    }
+  }
+
+  &__button {
+    &_submit {
+      min-width: 120px;
+      padding: 15px 20px;
+      background: #000000;
+      border: 1px solid #000000;
+      border-radius: 3px;
+      color: #e4ff15;
+      font-size: 20px;
+      font-family: 'OpenSans-Light';
+      border: 1px solid #000000;
+      cursor: pointer;
+    }
+    &_social {
+      width: 100%;
+      display: inline-block;
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+      color: #fff;
+      padding: 13px 0px;
+      :hover {
+        background: #fff;
+      }
+      &_fb {
+        background: #3b5998;
+        border: 1px solid #3b5998;
+        margin-bottom: 10px;
+        &:hover {
+          border: 1px solid #3b5998;
+          color: #3b5998;
+        }
+      }
+      &_google {
+        background: #d34836;
+        border: 1px solid #d34836;
+        &:hover {
+          border: 1px solid #d34836;
+          color: #d34836;
+        }
+      }
+    }
+  }
+
+  &__input {
+    &-list {
+      display: flex;
+      flex-flow: column nowrap;
+      margin-bottom: 20px;
+    }
+    &-group {
+      display: flex;
+      flex-flow: row wrap;
+      & .form__input {
+        flex-basis: 50%;
+      }
+    }
+    width: 100%;
+    color: #494949;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    border: 1px solid #c8c8c8;
+    padding: 15px 10px 15px 15px;
+    font-style: italic;
+    &_error {
+      border-color: rgba(211, 72, 54, 0.7);
+      box-shadow: inset 0 0 10px rgba(211, 72, 54, 0.7);
+    }
+  }
+
+  &__errors {
+    &-list {
+      margin-bottom: 10px;
+      padding: 5px 0;
+      display: flex;
+      flex-flow: column nowrap;
+    }
+    &-group {
+
+    }
+    &-message {
+      font-size: 0.8rem;
+      margin-bottom: 3px;
+      color: #d34836;
+    }
+  }
+
+  &__additional {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  &__footer {
+    display: flex;
+    flex-flow: column nowrap;
+    @media (min-width: 768px) {
+      flex-flow: row nowrap;
+    }
+  }
+  &__actions {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    &_main {
+      margin-bottom: 10px;
+      @media (min-width: 576px) {
+        flex-flow: row wrap;
+        justify-content: flex-start;
+      }
+    }
+    &_additional {
+      @media (min-width: 576px) {
+        align-items: flex-start;
+        padding-left: 10px;
+      }
+    }
+  }
+
+}

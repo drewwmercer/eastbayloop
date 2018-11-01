@@ -33,7 +33,7 @@ class RoleTableSeeder extends Seeder
         $role_employee->save();
         
         $role_employee = new Role();
-        $role_employee->name = 'vip_user';
+        $role_employee->name = 'vip_business';
         $role_employee->description = 'VIP business';
         $role_employee->save();
         

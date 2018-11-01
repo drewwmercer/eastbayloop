@@ -2,62 +2,33 @@
 
 namespace App\Http\Controllers\Auth;
 
+use App\Http\Requests\RegisterFormRequest;
 use App\User;
 use App\Role;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Facades\Validator;
-use Illuminate\Foundation\Auth\RegistersUsers;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Auth\Events\Registered;
+use Tymon\JWTAuth\Facades\JWTAuth;
+use Illuminate\Support\Facades\Cookie;
+use Tymon\JWTAuth\Http\Parser\Cookies as CookiesParser;
 
 class RegisterController extends Controller
 {
-    /*
-    |--------------------------------------------------------------------------
-    | Register Controller
-    |--------------------------------------------------------------------------
-    |
-    | This controller handles the registration of new users as well as their
-    | validation and creation. By default this controller uses a trait to
-    | provide this functionality without requiring any additional code.
-    |
-    */
-
-    use RegistersUsers;
-
     /**
-     * Where to redirect users after registration.
-     *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $cookieKey;
 
     /**
      * Create a new controller instance.
      *
+     * @param \Tymon\JWTAuth\Http\Parser\Cookies $cookies
      * @return void
      */
-    public function __construct()
+    public function __construct(CookiesParser $cookies)
     {
+        $this->cookieKey = $cookies->getKey();
         $this->middleware('guest');
-    }
-
-    /**
-     * Get a validator for an incoming registration request.
-     *
-     * @param  array  $data
-     * @return \Illuminate\Contracts\Validation\Validator
-     */
-    protected function validator(array $data)
-    {
-        return Validator::make($data, [
-            'name' => 'required|string|max:255',
-            'email' => 'required|string|email|max:255|unique:users',
-            'password' => 'required|string|min:6|confirmed',
-            'password_confirmation' => 'required|same:password',
-        ]);
     }
 
     /**
@@ -66,29 +37,29 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \App\User
      */
-    protected function create(array $data)
+    protected function create(RegisterFormRequest $data)
     {
-         
-        $admin = User::create([
-            'name' => $data['name'],
-            'email'     => $data['email'],
-        //    'phone'     => $request->input('phone'),
-            'password'     => Hash::make($data['password'])
+        $user = User::create([
+            'first_name' => $data->first_name,
+            'last_name' => $data->last_name,
+            'email'     => $data->email,
+            'password'  => bcrypt($data->password)
         ]);
-        
-        $role_admin = Role::where('name', 'admin')->first();
-        $admin->roles()->attach($role_admin);
-        Auth::login($admin);
-        
+
+        $role_user = Role::where('name', 'user')->first();
+        $user->roles()->attach($role_user);
+        return $user;
     }
-    
-    public function register(Request $request)
+
+    public function register(RegisterFormRequest $request)
     {
-        $this->validator($request->all())->validate();
+        $user = $this->create($request);
+        $token = JWTAuth::fromUser($user);
 
-        event(new Registered($user = $this->create($request->all())));
+        event(new Registered($user));
 
-        return $this->registered($request, $user)
-                        ?: redirect($this->redirectPath());
+        Cookie::queue($this->cookieKey, $token, 60, null, null, true, false);
+
+        return redirect('/');
     }
 }
