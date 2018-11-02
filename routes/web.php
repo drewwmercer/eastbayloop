@@ -27,6 +27,7 @@ Route::get('/callback/{service}', 'SocialAuthController@callback');
 Route::post('/auth/{service}', 'SocialAuthController@authenticate');
 
 /* Pages */
+Route::get('/page/{page}', 'StaticPagesController@index')->name('static-page');
 Route::get('/profile', 'ProfileController@index')->name('profile-page')->middleware('auth');
 Route::get('/explore', 'ExploreController@index')->name('explore-page');
 Route::get('/explore/{category}', 'ExploreController@show')->name('explore-subpage');
