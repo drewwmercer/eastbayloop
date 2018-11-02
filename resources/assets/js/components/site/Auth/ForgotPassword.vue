@@ -1,5 +1,9 @@
 <template>
-    <div class="form form_register">
+    <div class="form" :class="loading">
+
+        <div v-if="showInfo" class="form__info">
+            <span class="form__info-message form__info-message_success">{{ statusMessage }}</span>
+        </div>
 
         <div class="form__input-list">
                 <input :class="['form__input', {'form__input_error': hasErrorFor('email')}]" name="email" placeholder="Email" type="email" v-model="formData.email">
@@ -29,9 +33,6 @@
     export default {
         mixins: [Form],
 
-        props: [
-        ],
-
         data: function() {
             return {
                 formData: {
@@ -42,9 +43,10 @@
         },
         methods: {
             submitForgotPassword() {
+                this.submit();
                 axios.post('/password/email', this.formData)
                     .then(response => {
-//                        window.location.href = '/';
+                        this.submittedSuccess(response);
                     })
                     .catch(error => {
                         this.submittedWithError(error);

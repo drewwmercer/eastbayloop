@@ -19419,6 +19419,18 @@ img {
   font-style: italic;
 }
 
+.form__info {
+  width: 100%;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.form__info-message_success {
+  color: #005614;
+}
+
 .form__button_submit {
   min-width: 120px;
   padding: 15px 20px;

@@ -1,5 +1,5 @@
 <template>
-    <div class="form form_login">
+    <div class="form" :class="loading">
 
         <div class="form__social">
             <a class="form__button_social form__button_social_fb" href="#" @click.prevent="authenticate('facebook')">&nbsp; Log in Using Facebook</a>

@@ -20,6 +20,18 @@
       font-style: italic;
     }
   }
+  &__info {
+    width: 100%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    &-message {
+      &_success {
+        color: #005614;
+      }
+    }
+  }
 
   &__button {
     &_submit {

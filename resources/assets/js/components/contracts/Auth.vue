@@ -6,6 +6,7 @@
 
         methods: {
             login() {
+                this.submit();
                 this.$auth.login(this.formData)
                     .then(response => {
                         this.submittedSuccess();
@@ -15,6 +16,7 @@
                     })
             },
             register() {
+                this.submit();
                 this.$auth.register(this.formData)
                     .then(response => {
                         this.submittedSuccess();
@@ -24,6 +26,7 @@
                     });
             },
             authenticate(provider) {
+                this.submit();
                 this.$auth.authenticate(provider)
                     .then(() => {
                         this.submittedSuccess();
