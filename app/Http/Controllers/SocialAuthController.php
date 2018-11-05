@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Role;
 use App\User;
 use Illuminate\Http\Request;
 use Laravel\Socialite\Facades\Socialite;
@@ -107,8 +106,7 @@ class SocialAuthController extends Controller
             default:
                 return null;
         }
-        $role_user = Role::where('name', 'user')->first();
-        $user->roles()->attach($role_user);
+        $user->assignRole('user');
         return $user;
     }
 

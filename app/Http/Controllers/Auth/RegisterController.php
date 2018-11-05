@@ -4,9 +4,7 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Requests\RegisterFormRequest;
 use App\User;
-use App\Role;
 use App\Http\Controllers\Controller;
-use Illuminate\Support\Facades\Hash;
 use Illuminate\Auth\Events\Registered;
 use Tymon\JWTAuth\Facades\JWTAuth;
 use Illuminate\Support\Facades\Cookie;
@@ -45,9 +43,7 @@ class RegisterController extends Controller
             'email'     => $data->email,
             'password'  => bcrypt($data->password)
         ]);
-
-        $role_user = Role::where('name', 'user')->first();
-        $user->roles()->attach($role_user);
+        $user->assignRole('user');
         return $user;
     }
 
