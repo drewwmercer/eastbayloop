@@ -2,7 +2,7 @@
     <div class="auth-btn">
         <i class="fa fa-user" aria-hidden="true" id="dropdownAuthMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownAuthMenu">
-            <a v-if="$auth.isAuthenticated()" class="dropdown-item" href="{{ route('profile-page') }}">Profile</a>
+            <a v-if="$auth.isAuthenticated()" class="dropdown-item" href="{{ route('account') }}">Profile</a>
             <a v-if="$auth.isAuthenticated()" class="dropdown-item" href="{{ route('logout') }}">Logout</a>
             <span v-if="!$auth.isAuthenticated()" class="dropdown-item" @click="showLoginForm">Login</span>
             <span v-if="!$auth.isAuthenticated()" class="dropdown-item" @click="showRegistrationForm">Sign up</span>

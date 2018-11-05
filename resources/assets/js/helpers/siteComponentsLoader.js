@@ -10,6 +10,7 @@ Vue.component('taste-page', require('../pages/site/Taste.vue'));
 Vue.component('stay-page', require('../pages/site/Stay.vue'));
 Vue.component('advertise-page', require('../pages/site/Advertise.vue'));
 Vue.component('footer-part', require('../pages/site/Footer.vue'));
+Vue.component('account-page', require('../pages/site/Account.vue'));
 
 /* Components */
 Vue.component('navbar', require('../components/site/Navbar.vue'));
