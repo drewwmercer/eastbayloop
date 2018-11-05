@@ -28,7 +28,7 @@
                 <button class="form__button form__button_submit" @click.prevent="login">Sign in</button>
             </div>
             <div class="form__actions form__actions_additional">
-                <span class="form__text form__text_terms">By logging in you agree to our <a href="#">Terms,</a> <a href="#">Privacy Policy </a></span>
+                <span class="form__text form__text_terms">By logging in you agree to our <a href="#">Terms,</a> <a href="/page/privacy_policy">Privacy Policy </a></span>
                 <span class="form__text">Don't have an account? <a href="#" @click.prevent="switchToRegistration">Sign Up</a></span>
             </div>
         </div>

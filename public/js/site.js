@@ -57950,7 +57950,9 @@ var staticRenderFns = [
       _vm._v("By logging in you agree to our "),
       _c("a", { attrs: { href: "#" } }, [_vm._v("Terms,")]),
       _vm._v(" "),
-      _c("a", { attrs: { href: "#" } }, [_vm._v("Privacy Policy ")])
+      _c("a", { attrs: { href: "/page/privacy_policy" } }, [
+        _vm._v("Privacy Policy ")
+      ])
     ])
   }
 ]
@@ -58259,7 +58261,9 @@ var staticRenderFns = [
       _vm._v("By logging in you agree to our "),
       _c("a", { attrs: { href: "#" } }, [_vm._v("Terms,")]),
       _vm._v(" "),
-      _c("a", { attrs: { href: "#" } }, [_vm._v("Privacy Policy ")])
+      _c("a", { attrs: { href: "/page/privacy_policy" } }, [
+        _vm._v("Privacy Policy ")
+      ])
     ])
   }
 ]
