@@ -161,9 +161,19 @@ body {
 	font-family: 'OpenSans';
 }
 
+#app {
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+#app > .container {
+    flex-grow: 1;
+}
+
 footer {
     width: 100%;
-    float: left;
     background: #131316;
     text-align: center;
 

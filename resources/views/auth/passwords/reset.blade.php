@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container">
-        <form class="form form_register" method="POST" action="{{ route('password.request') }}" aria-label="{{ __('Reset Password') }}">
+        <form class="form form_reset-password" method="POST" action="{{ route('password.request') }}" aria-label="{{ __('Reset Password') }}">
             @csrf
 
             <input type="hidden" name="token" value="{{ $token }}">

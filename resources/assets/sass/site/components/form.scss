@@ -1,6 +1,15 @@
 .form {
   display: flex;
   flex-flow: column nowrap;
+  &_reset-password {
+    max-width: 600px;
+    margin: 10px auto;
+    padding: 10px 0;
+    @media (min-width: 576px) {
+      margin: 20px auto;
+      padding: 20px;
+    }
+  }
   &__text {
     padding: 5px 3px;
     color: #000000;
