@@ -3,9 +3,9 @@
 @section('content')
     <explore-page inline-template>
         <main>
-            <slider :data="[{img: 'http://testsite.eastbayloop.com/images/banner10.jpeg', text: 'Stay Sell', class: 'explore-slider'},
-                            {img: 'http://testsite.eastbayloop.com/images/banner10.jpeg', text: 'Stay Sell', class: 'explore-slider'},
-                            {img: '{{ asset('assets/img/sliders/banner7.jpeg') }}', text: 'Stay Sell', class: 'explore-slider'}]">
+            <slider :data="[{img: 'http://testsite.eastbayloop.com/images/banner10.jpeg', text: 'Stay Clients', class: 'explore-slider'},
+                            {img: 'http://testsite.eastbayloop.com/images/banner10.jpeg', text: 'Stay Clients', class: 'explore-slider'},
+                            {img: '{{ asset('assets/img/sliders/banner7.jpeg') }}', text: 'Stay Clients', class: 'explore-slider'}]">
             </slider>
 
             <section class="explore-cards">
@@ -25,7 +25,7 @@
                                 <a href="{{ route('stay-profile-page', ['category' => $category]) }}">
                                     <img src='{{ asset("assets/img/stay/vendor$i.png") }}' />
                                     <div class="content">
-                                        <h2 class="mb-3">Vendor {{ $i }}</h2>
+                                        <h2 class="mb-3">Client {{ $i }}</h2>
                                     </div>
                                 </a>
                             </div>

@@ -3,9 +3,9 @@
 @section('content')
     <explore-page inline-template>
         <main>
-            <slider :data="[{img: '{{ asset('assets/img/sliders/stay.png') }}', text: 'Stay Sell', class: 'explore-slider'},
-                            {img: '{{ asset('assets/img/sliders/stay.png') }}', text: 'Stay Sell', class: 'explore-slider'},
-                            {img: '{{ asset('assets/img/sliders/stay.png') }}', text: 'Stay Sell', class: 'explore-slider'}]">
+            <slider :data="[{img: '{{ asset('assets/img/sliders/stay.png') }}', text: 'Short and Longterm Stay Rentals', class: 'explore-slider'},
+                            {img: '{{ asset('assets/img/sliders/stay.png') }}', text: 'Short and Longterm Stay Rentals', class: 'explore-slider'},
+                            {img: '{{ asset('assets/img/sliders/stay.png') }}', text: 'Short and Longterm Stay Rentals', class: 'explore-slider'}]">
             </slider>
 
             <section class="explore-cards">
