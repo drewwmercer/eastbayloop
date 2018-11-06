@@ -3,15 +3,24 @@
 @section('content')
     <explore-page inline-template>
         <main>
-            <slider :data="[{img: '{{ asset('assets/img/sliders/banner7.jpeg') }}', text: '{{ $category }}', class: 'explore-slider'},
-                            {img: '{{ asset('assets/img/sliders/banner7.jpeg') }}', text: '{{ $category }}', class: 'explore-slider'},
+            <slider :data="[{img: '{{ asset('assets/img/sliders/banner7.jpeg') }}', text: '{{ $category === 'Art' ? 'The Arts' : $category }}', class: 'explore-slider'},
+                            {img: '{{ asset('assets/img/sliders/banner7.jpeg') }}', text: '{{ $category === 'Art' ? 'The Arst' : $category }}', class: 'explore-slider'},
                             {img: '{{ asset('assets/img/sliders/banner7.jpeg') }}', text: '{{ $category }}', class: 'explore-slider'}]">
             </slider>
 
             <section class="explore-cards">
                 <div class="row explore-header mb-3">
-                    <h2 class="display-inline col-md-8">{{ $category }}</h2>
+                    <h2 class="display-inline col-md-8">{{ $category == 'Art' ? 'The Arts' : $category }}</h2>
                     <div class="filter-bar col-md-4">
+                        @if ($category == 'Art')
+                        <span>
+                            <select>
+                                <option value="Select">Type Filter</option>
+                                <option value="bar1">Bar 1</option>
+                                <option value="bar2">Bar 2</option>
+                            </select>
+                        </span>
+                        @endif
                         <span>
                             <select>
                                 <option value="Select">Location Filter</option>

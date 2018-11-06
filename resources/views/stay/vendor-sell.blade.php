@@ -26,7 +26,7 @@
                             <div class="music-card text-left col-md-4 mt-3 mb-4">
                                 <div class="music-wrapper">
                                     <div class="image-header">
-                                        <a href="{{ route('stay-sell-vendor-profile-page') }}">
+                                        <a href="{{ route('stay-profile-page', ['category' => $category]) }}">
                                             <img src="http://testsite.eastbayloop.com/images/stay-img{{ $i > 3 ? ($i > 6 ? $i - 6 : $i - 3) : $i }}.jpeg" />
                                         </a>
                                     </div>
@@ -36,7 +36,7 @@
                                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
                                         </p>
 
-                                        <a class="read-more-link" href="{{ route('stay-sell-vendor-profile-page') }}">Read More...</a>                            
+                                        <a class="read-more-link" href="{{ route('stay-profile-page', ['category' => $category]) }}">Read More...</a>
                                     </div>
                                 </div>
                             </div>

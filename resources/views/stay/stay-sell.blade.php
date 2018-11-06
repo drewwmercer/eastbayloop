@@ -22,7 +22,7 @@
                     @for($i = 1; $i < 10; $i++)
                         <div class="default-card col-md-4 mb-4">
                             <div class="default-wrapper">
-                                <a href="{{ route('stay-sell-vendor-page') }}">
+                                <a href="{{ route('stay-profile-page', ['category' => $category]) }}">
                                     <img src='{{ asset("assets/img/stay/vendor$i.png") }}' />
                                     <div class="content">
                                         <h2 class="mb-3">Vendor {{ $i }}</h2>
