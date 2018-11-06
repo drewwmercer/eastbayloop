@@ -22,7 +22,7 @@
 
             <section class="taste-bars-btns mb-4">
                 <div class="row m-0 mt-4 mb-4 links">
-                    <a href="{{ route('taste-winery-page') }}" class="taste-bars-a mr-5">Reserve Your Visit</a>   
+                    <a href="{{ route('taste-winery-page') }}" class="taste-bars-a mr-5">Book Your Visit</a>
                     <a href="{{ route('taste-c-partner-page') }}" class="taste-bars-a mr-5">Community Partner</a>
                 </div>
             </section>

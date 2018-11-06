@@ -7,9 +7,8 @@
             </slider>
 
             <section class="profile-page music-show-page">
-                <h2 class="title text-center">
+                <h2 class="title">
                     <a class="black-btn pl-5 pr-5 mr-5" href="#">Contact Us</a>
-                    <a class="black-btn pl-5 pr-5 ml-5" href="#">Book Our Services</a>                    
                 </h2>
                 
                 <div class="row">

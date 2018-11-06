@@ -39,7 +39,7 @@
             </section>
 
             <!-- EVENTS -->
-            <events-widget></events-widget>
+            <events-widget :layout-list="true"></events-widget>
         </main>
     </explore-page>
 @endsection

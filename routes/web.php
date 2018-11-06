@@ -27,7 +27,7 @@ Route::get('/callback/{service}', 'SocialAuthController@callback');
 Route::post('/auth/{service}', 'SocialAuthController@authenticate');
 
 /* Pages */
-Route::get('/profile', 'ProfileController@index')->name('profile-page')->middleware('auth');
+Route::get('/profile', 'ProfileController@index')->name('profile-page');
 Route::get('/explore', 'ExploreController@index')->name('explore-page');
 Route::get('/explore/{category}', 'ExploreController@show')->name('explore-subpage');
 Route::get('/explore/profile', 'ExploreController@showProfile')->name('explore-profile-page');
@@ -99,7 +99,8 @@ Route::get('/taste/wine-loop/experience-events', 'TasteController@showExpEvents'
 Route::get('/taste/wine-loop/book-your-tasting', 'TasteController@showBookTasting')->name('taste-book-tasting-page');
 Route::get('/taste/wine-loop-contact', 'TasteController@showWineLoopContact')->name('taste-wine-loop-contact-page');
 Route::get('/stay', 'StayController@index')->name('stay-page');
-Route::get('/stay/sell', 'StayController@showSell')->name('stay-sell-page');
+Route::get('/stay/{category}', 'StayController@showClients')->name('stay-clients-page');
+Route::get('/stay/{category}/profile', 'StayController@showClientsProfile')->name('stay-profile-page');
 Route::get('/stay/sell/vendor', 'StayController@showVendor')->name('stay-sell-vendor-page');
 Route::get('/stay/sell/vendor/profile', 'StayController@showProfile')->name('stay-sell-vendor-profile-page');
 Route::get('/advertise-with-us', 'AdvertiseController@index')->name('advertise-page');

@@ -31,7 +31,7 @@
                     },
                     {
                         id: 5,
-                        name: 'Strip Clubs',
+                        name: 'Adult Entertainment Clubs',
                         link: '/explore/nightlife/strip%20Clubs'
                     },
                     {
@@ -46,7 +46,7 @@
                     },
                     {
                         id: 8,
-                        name: 'Gay Bars & Clubs',
+                        name: 'LGBT Bars & Clubs',
                         link: '/explore/nightlife/gay%20Bars%20&%20Clubs'
                     },
                     {
@@ -78,7 +78,7 @@
                     },
                     {
                         id: 5,
-                        name: 'Strip Clubs',
+                        name: 'Adult Entertainment Clubs',
                         link: '/explore/nightlife/strip%20Clubs'
                     },
                     {
@@ -93,7 +93,7 @@
                     },
                     {
                         id: 8,
-                        name: 'Gay Bars & Clubs',
+                        name: 'LGBT Bars & Clubs',
                         link: '/explore/nightlife/gay%Bars%20%20Clubs'
                     },
                     {
