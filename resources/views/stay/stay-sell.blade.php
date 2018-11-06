@@ -3,9 +3,9 @@
 @section('content')
     <explore-page inline-template>
         <main>
-            <slider :data="[{img: 'http://testsite.eastbayloop.com/images/banner10.jpeg', text: 'Stay Clients', class: 'explore-slider'},
-                            {img: 'http://testsite.eastbayloop.com/images/banner10.jpeg', text: 'Stay Clients', class: 'explore-slider'},
-                            {img: '{{ asset('assets/img/sliders/banner7.jpeg') }}', text: 'Stay Clients', class: 'explore-slider'}]">
+            <slider :data="[{img: 'http://testsite.eastbayloop.com/images/banner10.jpeg', text: '{{ $category_name }}', class: 'explore-slider'},
+                            {img: 'http://testsite.eastbayloop.com/images/banner10.jpeg', text: '{{ $category_name }}', class: 'explore-slider'},
+                            {img: '{{ asset('assets/img/sliders/banner7.jpeg') }}', text: '{{ $category_name }}', class: 'explore-slider'}]">
             </slider>
 
             <section class="explore-cards">

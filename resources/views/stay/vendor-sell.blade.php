@@ -3,9 +3,9 @@
 @section('content')
     <explore-page inline-template>
         <main>
-            <slider :data="[{img: '{{ asset('assets/img/sliders/stay.png') }}', text: 'Short and Longterm Stay Rentals', class: 'explore-slider'},
-                            {img: '{{ asset('assets/img/sliders/stay.png') }}', text: 'Short and Longterm Stay Rentals', class: 'explore-slider'},
-                            {img: '{{ asset('assets/img/sliders/stay.png') }}', text: 'Short and Longterm Stay Rentals', class: 'explore-slider'}]">
+            <slider :data="[{img: '{{ asset('assets/img/sliders/stay.png') }}', text: '{{ $category_name }}', class: 'explore-slider'},
+                            {img: '{{ asset('assets/img/sliders/stay.png') }}', text: '{{ $category_name }}', class: 'explore-slider'},
+                            {img: '{{ asset('assets/img/sliders/stay.png') }}', text: '{{ $category_name }}', class: 'explore-slider'}]">
             </slider>
 
             <section class="explore-cards">
@@ -31,7 +31,7 @@
                                         </a>
                                     </div>
                                     <div class="content">
-                                        <h2 class="font-barlow-regular">HOME FOR SALE {{ $i }}</h2>
+                                        <h2 class="font-barlow-regular">Property {{ $i }}</h2>
                                         <p class="text text-grey">
                                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
                                         </p>

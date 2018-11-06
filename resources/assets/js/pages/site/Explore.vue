@@ -32,7 +32,7 @@
                     {
                         id: 5,
                         name: 'Adult Entertainment Clubs',
-                        link: '/explore/nightlife/strip%20Clubs'
+                        link: '/explore/nightlife/Adult%20Entertainment%20Clubs'
                     },
                     {
                         id: 6,
@@ -47,7 +47,7 @@
                     {
                         id: 8,
                         name: 'LGBT Bars & Clubs',
-                        link: '/explore/nightlife/gay%20Bars%20&%20Clubs'
+                        link: '/explore/nightlife/LGBT%20Bars%20&%20Clubs'
                     },
                     {
                         id: 9,
@@ -79,7 +79,7 @@
                     {
                         id: 5,
                         name: 'Adult Entertainment Clubs',
-                        link: '/explore/nightlife/strip%20Clubs'
+                        link: '/explore/nightlife/Adult%20Entertainment%20Clubs'
                     },
                     {
                         id: 6,
@@ -94,7 +94,7 @@
                     {
                         id: 8,
                         name: 'LGBT Bars & Clubs',
-                        link: '/explore/nightlife/gay%Bars%20%20Clubs'
+                        link: '/explore/nightlife/LGBT%20Bars%20&%20Clubs'
                     },
                     {
                         id: 9,
