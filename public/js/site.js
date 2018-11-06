@@ -56685,7 +56685,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             }, {
                 id: 5,
                 name: 'Adult Entertainment Clubs',
-                link: '/explore/nightlife/strip%20Clubs'
+                link: '/explore/nightlife/Adult%20Entertainment%20Clubs'
             }, {
                 id: 6,
                 name: 'Comedy Clubs',
@@ -56697,7 +56697,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             }, {
                 id: 8,
                 name: 'LGBT Bars & Clubs',
-                link: '/explore/nightlife/gay%20Bars%20&%20Clubs'
+                link: '/explore/nightlife/LGBT%20Bars%20&%20Clubs'
             }, {
                 id: 9,
                 name: 'Jazz & Blues Clubs',
@@ -56722,7 +56722,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             }, {
                 id: 5,
                 name: 'Adult Entertainment Clubs',
-                link: '/explore/nightlife/strip%20Clubs'
+                link: '/explore/nightlife/Adult%20Entertainment%20Clubs'
             }, {
                 id: 6,
                 name: 'Comedy Clubs',
@@ -56734,7 +56734,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             }, {
                 id: 8,
                 name: 'LGBT Bars & Clubs',
-                link: '/explore/nightlife/gay%Bars%20%20Clubs'
+                link: '/explore/nightlife/LGBT%20Bars%20&%20Clubs'
             }, {
                 id: 9,
                 name: 'Jazz & Blues Clubs',

@@ -26,15 +26,17 @@ class StayController extends Controller
         ];
         $categories_vendors = [
             'shortandlongstayrentals' => 'SHORT & LONG STAY RENTALS',
-            'stayforsale' => 'STAY FOR SELL',
+            'stayforsale' => 'STAY FOR SALE',
         ];
         if (array_key_exists($category, $categories_clients)) {
             return view('stay.stay-sell')->with([
                 'category' => $category,
+                'category_name' => $categories_clients[$category]
             ]);
         } elseif (array_key_exists($category, $categories_vendors)) {
             return view('stay.vendor-sell')->with([
                 'category' => $category,
+                'category_name' => $categories_vendors[$category]
             ]);
         } else {
             return abort(404);

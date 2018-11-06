@@ -89,7 +89,7 @@
                                     </a>
                                 </div>
                                 <div class="content">
-                                    <h2 class="font-barlow-regular">STAY FOR SELL</h2>
+                                    <h2 class="font-barlow-regular">STAY FOR SALE</h2>
                                     <p class="text text-grey">
                                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
                                     </p>
