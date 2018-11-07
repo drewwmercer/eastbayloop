@@ -188,7 +188,12 @@
                     </div>
                 </div>
             </section>
-            <events-widget :data="{titleClass: 'text-center font-myriad-regular'}"></events-widget>
+            <events-widget :data="{
+                                      titleClass: 'text-center font-myriad-regular mb-0',
+                                      descriptionClass: 'text-center font-myriad-regular font-weight-bold'
+                                  }"
+                           :large-cards="true"
+            ></events-widget>
         </main>
     </taste-page>
 @endsection
