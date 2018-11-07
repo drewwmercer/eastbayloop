@@ -18053,7 +18053,6 @@ img {
   background: #f0f0f0;
   -webkit-transition: all .5s;
   transition: all .5s;
-  cursor: pointer;
   padding-bottom: 1px;
 }
 
@@ -18142,9 +18141,11 @@ img {
   margin-left: 11px;
   margin-right: 11px;
   margin-bottom: 11px;
+  overflow: hidden;
 }
 
 .list-cards .list-card .list-wrapper .content .list-box {
+  cursor: pointer;
   font-family: BarlowLight;
   font-size: 15px;
   color: #666666;
@@ -18160,6 +18161,10 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.list-cards .list-card .list-wrapper .content .list-box:hover {
+  background: #ffffff;
 }
 
 .list-cards .list-card .list-wrapper .content .list-box.border-bt {
