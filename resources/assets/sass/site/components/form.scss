@@ -63,15 +63,12 @@
       font-weight: bold;
       color: #fff;
       padding: 13px 0px;
-      :hover {
-        background: #fff;
-      }
       &_fb {
         background: #3b5998;
         border: 1px solid #3b5998;
         margin-bottom: 10px;
         &:hover {
-          border: 1px solid #3b5998;
+          background: #fff;
           color: #3b5998;
         }
       }
@@ -79,7 +76,7 @@
         background: #d34836;
         border: 1px solid #d34836;
         &:hover {
-          border: 1px solid #d34836;
+          background: #fff;
           color: #d34836;
         }
       }

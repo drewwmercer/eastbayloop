@@ -19486,10 +19486,6 @@ img {
   padding: 13px 0px;
 }
 
-.form__button_social :hover {
-  background: #fff;
-}
-
 .form__button_social_fb {
   background: #3b5998;
   border: 1px solid #3b5998;
@@ -19497,7 +19493,7 @@ img {
 }
 
 .form__button_social_fb:hover {
-  border: 1px solid #3b5998;
+  background: #fff;
   color: #3b5998;
 }
 
@@ -19507,7 +19503,7 @@ img {
 }
 
 .form__button_social_google:hover {
-  border: 1px solid #d34836;
+  background: #fff;
   color: #d34836;
 }
 
