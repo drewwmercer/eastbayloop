@@ -19,6 +19,10 @@ Route::get('/admin', 'Admin\DashboardController@index');
 Route::post('/auth/login', 'Auth\LoginController@login')->name('login');
 Route::get('/auth/logout', 'Auth\LoginController@logout')->name('logout');
 Route::post('/auth/register', 'Auth\RegisterController@register')->name('register');
+
+Route::post('/register/confirm/resend', 'Auth\RegisterController@resendConfirmation')->name('auth.resend_confirmation');
+Route::get('/register/confirm/{configuration_code}', 'Auth\RegisterController@confirm')->name('auth.confirm');
+
 Route::post('/password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail')->name('password.email');
 Route::get('/password/reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('password.reset');
 Route::post('/password/reset', 'Auth\ResetPasswordController@reset')->name('password.request');

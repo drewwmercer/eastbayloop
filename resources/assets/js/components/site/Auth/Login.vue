@@ -60,6 +60,10 @@
             switchToForgotPassword() {
                 this.$emit('modal-switch', 'forgot-password');
             },
+            submittedSuccess(response) {
+                Auth.methods.submittedSuccess.call(this, response);
+                window.location.href = '/';
+            },
         }
     }
 </script>

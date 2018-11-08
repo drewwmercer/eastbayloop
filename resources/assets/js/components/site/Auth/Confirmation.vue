@@ -1,14 +1,6 @@
 <template>
     <div class="form" :class="loading">
 
-        <div v-if="showInfo" class="form__info">
-            <span class="form__info-message form__info-message_success">{{ statusMessage }}</span>
-        </div>
-
-        <div class="form__input-list">
-                <input :class="['form__input', {'form__input_error': hasErrorFor('email')}]" name="email" placeholder="Email" type="email" v-model="formData.email">
-        </div>
-
         <div v-if="hasErrors" class="form__errors-list">
             <span v-for="error_list in formErrors" class="form__errors-group">
                 <span v-for="error in error_list" class="form__errors-message">{{ error }}</span>
@@ -17,10 +9,10 @@
 
         <div class="form__footer">
             <div class="form__actions form__actions_main">
-                <button class="form__button form__button_submit" @click="submitForgotPassword">Send mail</button>
+                <button class="form__button form__button_submit" @click="resendConfirmationEmail">Resend email</button>
             </div>
             <div class="form__actions form__actions_additional">
-                <span class="form__text">Back to <a href="#" @click="switchToLogin">Login</a></span>
+                <span class="form__text">Email with confirmation link has been sent to your email address</span>
             </div>
         </div>
 
@@ -33,18 +25,11 @@
     export default {
         mixins: [Form],
 
-        data: function() {
-            return {
-                formData: {
-                    email: '',
-                    password: '',
-                }
-            }
-        },
         methods: {
-            submitForgotPassword() {
+            resendConfirmationEmail() {
+                console.log('here');
                 this.submit();
-                axios.post('/password/email', this.formData)
+                axios.post('/register/confirm/resend')
                     .then(response => {
                         this.submittedSuccess(response);
                     })
@@ -52,13 +37,9 @@
                         this.submittedWithError(error);
                     })
             },
-            switchToLogin() {
-                this.$emit('modal-switch', 'login');
-            },
             submittedSuccess(response) {
                 Form.methods.submittedSuccess.call(this, response);
-                console.log('reset password email was send'); //todo change
-            },
+            }
         }
     }
 </script>

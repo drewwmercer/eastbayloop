@@ -2,6 +2,7 @@
     import Register from "./Auth/Register.vue";
     import Login from "./Auth/Login.vue";
     import ForgotPassword from "./Auth/ForgotPassword.vue";
+    import Confirmation from "./Auth/Confirmation.vue";
     import Modal from './Modal.vue';
     import Modable from '../contracts/Modable.vue';
 
@@ -14,7 +15,8 @@
             Modal,
             Register,
             Login,
-            ForgotPassword
+            ForgotPassword,
+            Confirmation
         },
         data: function () {
             return {
@@ -29,14 +31,22 @@
         methods: {
             showLoginForm() {
                 this.currentComponent = Login;
+                this.closeEnable();
                 this.showModal = true;
             },
             showRegistrationForm() {
                 this.currentComponent = Register;
+                this.closeEnable();
                 this.showModal = true;
             },
             showForgotPasswordForm() {
                 this.currentComponent = ForgotPassword;
+                this.closeEnable();
+                this.showModal = true;
+            },
+            showConfirmationForm() {
+                this.currentComponent = Confirmation;
+                this.closeDisable();
                 this.showModal = true;
             },
             modalSwitch(component_name) {
@@ -46,6 +56,9 @@
                         break;
                     case 'registration':
                         this.showRegistrationForm();
+                        break;
+                    case 'confirmation':
+                        this.showConfirmationForm();
                         break;
                     case 'forgot-password':
                         this.showForgotPasswordForm();

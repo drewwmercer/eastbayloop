@@ -57358,10 +57358,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Auth_Login_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__Auth_Login_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Auth_ForgotPassword_vue__ = __webpack_require__(137);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Auth_ForgotPassword_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__Auth_ForgotPassword_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Modal_vue__ = __webpack_require__(52);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Modal_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__Modal_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__contracts_Modable_vue__ = __webpack_require__(144);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__contracts_Modable_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__contracts_Modable_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Auth_Confirmation_vue__ = __webpack_require__(169);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Auth_Confirmation_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__Auth_Confirmation_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Modal_vue__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Modal_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__Modal_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__contracts_Modable_vue__ = __webpack_require__(144);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__contracts_Modable_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__contracts_Modable_vue__);
+
 
 
 
@@ -57370,15 +57373,16 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    mixins: [__WEBPACK_IMPORTED_MODULE_4__contracts_Modable_vue___default.a],
+    mixins: [__WEBPACK_IMPORTED_MODULE_5__contracts_Modable_vue___default.a],
     props: {
         showLogin: Boolean
     },
     components: {
-        Modal: __WEBPACK_IMPORTED_MODULE_3__Modal_vue___default.a,
+        Modal: __WEBPACK_IMPORTED_MODULE_4__Modal_vue___default.a,
         Register: __WEBPACK_IMPORTED_MODULE_0__Auth_Register_vue___default.a,
         Login: __WEBPACK_IMPORTED_MODULE_1__Auth_Login_vue___default.a,
-        ForgotPassword: __WEBPACK_IMPORTED_MODULE_2__Auth_ForgotPassword_vue___default.a
+        ForgotPassword: __WEBPACK_IMPORTED_MODULE_2__Auth_ForgotPassword_vue___default.a,
+        Confirmation: __WEBPACK_IMPORTED_MODULE_3__Auth_Confirmation_vue___default.a
     },
     data: function data() {
         return {
@@ -57394,14 +57398,22 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     methods: {
         showLoginForm: function showLoginForm() {
             this.currentComponent = __WEBPACK_IMPORTED_MODULE_1__Auth_Login_vue___default.a;
+            this.closeEnable();
             this.showModal = true;
         },
         showRegistrationForm: function showRegistrationForm() {
             this.currentComponent = __WEBPACK_IMPORTED_MODULE_0__Auth_Register_vue___default.a;
+            this.closeEnable();
             this.showModal = true;
         },
         showForgotPasswordForm: function showForgotPasswordForm() {
             this.currentComponent = __WEBPACK_IMPORTED_MODULE_2__Auth_ForgotPassword_vue___default.a;
+            this.closeEnable();
+            this.showModal = true;
+        },
+        showConfirmationForm: function showConfirmationForm() {
+            this.currentComponent = __WEBPACK_IMPORTED_MODULE_3__Auth_Confirmation_vue___default.a;
+            this.closeDisable();
             this.showModal = true;
         },
         modalSwitch: function modalSwitch(component_name) {
@@ -57411,6 +57423,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                     break;
                 case 'registration':
                     this.showRegistrationForm();
+                    break;
+                case 'confirmation':
+                    this.showConfirmationForm();
                     break;
                 case 'forgot-password':
                     this.showForgotPasswordForm();
@@ -57536,6 +57551,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     methods: {
         switchToLogin: function switchToLogin() {
             this.$emit('modal-switch', 'login');
+        },
+        submittedSuccess: function submittedSuccess(response) {
+            __WEBPACK_IMPORTED_MODULE_0__contracts_Auth_vue___default.a.methods.submittedSuccess.call(this, response);
+            this.$emit('modal-switch', 'confirmation');
         }
     }
 });
@@ -57560,7 +57579,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
             this.submit();
             this.$auth.login(this.formData).then(function (response) {
-                _this.submittedSuccess();
+                _this.submittedSuccess(response);
             }).catch(function (error) {
                 _this.submittedWithError(error);
             });
@@ -57570,8 +57589,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
             this.submit();
             this.$auth.register(this.formData).then(function (response) {
-                _this2.submittedSuccess();
+                _this2.submittedSuccess(response);
             }).catch(function (error) {
+                console.error(error);
                 _this2.submittedWithError(error);
             });
         },
@@ -57580,13 +57600,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
             this.submit();
             this.$auth.authenticate(provider).then(function () {
-                _this3.submittedSuccess();
+                _this3.submittedSuccess(response);
             }).catch(function (error) {
                 _this3.submittedWithError(error);
             });
         },
-        submittedSuccess: function submittedSuccess() {
-            window.location.href = '/';
+        submittedSuccess: function submittedSuccess(response) {
+            __WEBPACK_IMPORTED_MODULE_0__Form_vue___default.a.methods.submittedSuccess.call(this, response);
         }
     }
 });
@@ -57603,8 +57623,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-var status = {
-    SUCCESS: 200
+var statuses = {
+    SUCCESS: 200,
+    BAD_REQUEST: 400,
+    UNPROCESSABLE_ENTITY: 422
 };
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -57615,9 +57637,16 @@ var status = {
         return {
             formData: null,
             formErrors: null,
-            status: null
+            status: null,
+            availableStatuses: null
         };
     },
+
+    created: function created() {
+        this.availableStatuses = statuses;
+    },
+
+
     computed: {
         hasErrors: function hasErrors() {
             return this.formErrors !== null && _.size(this.formErrors) > 0;
@@ -57626,7 +57655,7 @@ var status = {
             return this.status;
         },
         statusMessage: function statusMessage() {
-            return this.status === status.SUCCESS ? "Success" : null;
+            return this.status === this.availableStatuses.SUCCESS ? "Success" : null;
         }
     },
     methods: {
@@ -57635,15 +57664,15 @@ var status = {
         },
         submittedSuccess: function submittedSuccess(response) {
             this.stopLoading();
-            if (response.status === status.SUCCESS) {
-                this.status = status.SUCCESS;
+            if (response.status === this.availableStatuses.SUCCESS) {
+                this.status = this.availableStatuses.SUCCESS;
             }
         },
         submittedWithError: function submittedWithError(error) {
             this.stopLoading();
-            if (error.response.status === 422) {
+            if (error.response.status === this.availableStatuses.UNPROCESSABLE_ENTITY) {
                 this.formErrors = error.response.data.errors;
-            } else if (error.response.status === 400 && error.response.data.msg) {
+            } else if (error.response.status === this.availableStatuses.BAD_REQUEST && error.response.data.msg) {
                 this.formErrors = {
                     msg: error.response.data.msg
                 };
@@ -58139,6 +58168,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         },
         switchToForgotPassword: function switchToForgotPassword() {
             this.$emit('modal-switch', 'forgot-password');
+        },
+        submittedSuccess: function submittedSuccess(response) {
+            __WEBPACK_IMPORTED_MODULE_0__contracts_Auth_vue___default.a.methods.submittedSuccess.call(this, response);
+            window.location.href = '/';
         }
     }
 });
@@ -58446,6 +58479,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         },
         switchToLogin: function switchToLogin() {
             this.$emit('modal-switch', 'login');
+        },
+        submittedSuccess: function submittedSuccess(response) {
+            __WEBPACK_IMPORTED_MODULE_0__contracts_Form_vue___default.a.methods.submittedSuccess.call(this, response);
+            console.log('reset password email was send'); //todo change
         }
     }
 });
@@ -58579,7 +58616,7 @@ exports = module.exports = __webpack_require__(17)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -58600,17 +58637,24 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    data: function data() {
-        return {};
+    props: {
+        isCloseDisabled: Boolean
     },
+
+    data: function data() {
+        return {
+            closeDisabled: this.isCloseDisabled
+        };
+    },
+
+    watch: {
+        isCloseDisabled: function isCloseDisabled(value) {
+            this.closeDisabled = value;
+        }
+    },
+
     methods: {
         close: function close() {
             this.$emit('close');
@@ -58628,13 +58672,14 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "modal__mask" }, [
     _c("div", { staticClass: "modal__container" }, [
-      _c("div", { staticClass: "modal__close-btn", on: { click: _vm.close } }),
+      !_vm.closeDisabled
+        ? _c("div", {
+            staticClass: "modal__close-btn",
+            on: { click: _vm.close }
+          })
+        : _vm._e(),
       _vm._v(" "),
-      _c("div", { staticClass: "modal__header" }, [_vm._t("header")], 2),
-      _vm._v(" "),
-      _c("div", { staticClass: "modal__content" }, [_vm._t("content")], 2),
-      _vm._v(" "),
-      _c("div", { staticClass: "modal__footer" }, [_vm._t("footer")], 2)
+      _c("div", { staticClass: "modal__content" }, [_vm._t("content")], 2)
     ])
   ])
 }
@@ -58705,12 +58750,19 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
         return {
-            showModal: false
+            showModal: false,
+            closeDisabled: false
         };
     },
     methods: {
         closeModal: function closeModal() {
             this.showModal = false;
+        },
+        closeDisable: function closeDisable() {
+            this.closeDisabled = true;
+        },
+        closeEnable: function closeEnable() {
+            this.closeDisabled = false;
         }
     }
 });
@@ -59384,6 +59436,188 @@ if (false) {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 157 */,
+/* 158 */,
+/* 159 */,
+/* 160 */,
+/* 161 */,
+/* 162 */,
+/* 163 */,
+/* 164 */,
+/* 165 */,
+/* 166 */,
+/* 167 */,
+/* 168 */,
+/* 169 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(0)
+/* script */
+var __vue_script__ = __webpack_require__(170)
+/* template */
+var __vue_template__ = __webpack_require__(171)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/site/Auth/Confirmation.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-23eba54b", Component.options)
+  } else {
+    hotAPI.reload("data-v-23eba54b", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 170 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__contracts_Form_vue__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__contracts_Form_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__contracts_Form_vue__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    mixins: [__WEBPACK_IMPORTED_MODULE_0__contracts_Form_vue___default.a],
+
+    methods: {
+        resendConfirmationEmail: function resendConfirmationEmail() {
+            var _this = this;
+
+            console.log('here');
+            this.submit();
+            axios.post('/register/confirm/resend').then(function (response) {
+                _this.submittedSuccess(response);
+            }).catch(function (error) {
+                _this.submittedWithError(error);
+            });
+        },
+        submittedSuccess: function submittedSuccess(response) {
+            __WEBPACK_IMPORTED_MODULE_0__contracts_Form_vue___default.a.methods.submittedSuccess.call(this, response);
+        }
+    }
+});
+
+/***/ }),
+/* 171 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "form", class: _vm.loading }, [
+    _vm.hasErrors
+      ? _c(
+          "div",
+          { staticClass: "form__errors-list" },
+          _vm._l(_vm.formErrors, function(error_list) {
+            return _c(
+              "span",
+              { staticClass: "form__errors-group" },
+              _vm._l(error_list, function(error) {
+                return _c("span", { staticClass: "form__errors-message" }, [
+                  _vm._v(_vm._s(error))
+                ])
+              })
+            )
+          })
+        )
+      : _vm._e(),
+    _vm._v(" "),
+    _c("div", { staticClass: "form__footer" }, [
+      _c("div", { staticClass: "form__actions form__actions_main" }, [
+        _c(
+          "button",
+          {
+            staticClass: "form__button form__button_submit",
+            on: { click: _vm.resendConfirmationEmail }
+          },
+          [_vm._v("Resend email")]
+        )
+      ]),
+      _vm._v(" "),
+      _vm._m(0)
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "form__actions form__actions_additional" },
+      [
+        _c("span", { staticClass: "form__text" }, [
+          _vm._v(
+            "Email with confirmation link has been sent to your email address"
+          )
+        ])
+      ]
+    )
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-23eba54b", module.exports)
+  }
+}
 
 /***/ })
 /******/ ]);

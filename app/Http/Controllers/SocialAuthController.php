@@ -17,6 +17,11 @@ class SocialAuthController extends Controller
     private $service;
 
     /**
+     * @var \App\User
+     */
+    private $user;
+
+    /**
      * @var string
      */
     protected $cookieKey;
@@ -43,7 +48,7 @@ class SocialAuthController extends Controller
         $provider = Socialite::driver($this->service);
         if ($request->has('code')) {
             $userData = $provider->stateless()->user();
-            $user = $this->findOrCreateUser($userData);
+            $user = $this->findAndUpdateUser($userData);
             if ($user) {
                 return $this->logIn($user);
             }
@@ -73,16 +78,18 @@ class SocialAuthController extends Controller
         ], 200);
     }
 
-    protected function findOrCreateUser($userData)
+    protected function findAndUpdateUser($userData)
     {
-        $user = $this->findUser($userData->getId());
+        $user = $this->findUserBySocialId($userData->getId());
         if (!$user) {
-            $user = $this->createUser($userData);
+            $user = $this->findUserByEmail($userData->getEmail());
+            return $this->createOrUpdateUser($userData, $user);
+        } else {
+            return $user;
         }
-        return $user;
     }
 
-    protected function findUser($clientId)
+    protected function findUserBySocialId($clientId)
     {
         switch ($this->service) {
             case 'google':
@@ -94,14 +101,19 @@ class SocialAuthController extends Controller
         }
     }
 
-    protected function createUser($userData)
+    protected function findUserByEmail($email)
+    {
+        return User::where('email', $email)->first();
+    }
+
+    protected function createOrUpdateUser($userData, User $user = null)
     {
         switch ($this->service) {
             case 'google':
-                $user = $this->createUserFromGoogle($userData);
+                $user = $this->createOrUpdateUserFromGoogle($userData, $user);
                 break;
             case 'facebook':
-                $user = $this->createUserFromFb($userData);
+                $user = $this->createOrUpdateUserFromFb($userData, $user);
                 break;
             default:
                 return null;
@@ -110,31 +122,33 @@ class SocialAuthController extends Controller
         return $user;
     }
 
-    protected function createUserFromGoogle($userData)
+    protected function createOrUpdateUserFromGoogle($userData, User $user = null)
     {
-        $user = $this->create($userData);
+        $user = $this->createOrUpdate($userData, $user);
         $user->google_id = $userData->getId();
-        $user->first_name = $userData->user['name']['givenName'];
-        $user->last_name = $userData->user['name']['familyName'];
+        $user->first_name = $user->first_name ?? $userData->user['name']['givenName'];
+        $user->last_name = $user->last_name ?? $userData->user['name']['familyName'];
         $user->save();
         return $user->fresh();
     }
 
-    protected function createUserFromFb($userData)
+    protected function createOrUpdateUserFromFb($userData, User $user = null)
     {
-        $user = $this->create($userData);
+        $user = $this->createOrUpdate($userData);
         $user->fb_id = $userData->getId();
-        $user->first_name = $userData->name;
-        $user->last_name = '';
+        $user->first_name = $user->first_name ?? $userData->name;
+        $user->last_name = $user->last_name ?? '';
         $user->save();
         return $user->fresh();
     }
 
-    private function create($userData)
+    private function createOrUpdate($userData, User $user = null)
     {
-        $user = new User();
-        $user->email = $userData->getEmail();
-        $user->avatar = $userData->getAvatar();
+        if (!$user) {
+            $user = new User();
+        }
+        $user->email = $user->email ?? $userData->getEmail();
+        $user->avatar = $user->avatar ?? $userData->getAvatar();
         return $user;
     }
 }

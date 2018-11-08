@@ -7,10 +7,12 @@
             <span v-if="!$auth.isAuthenticated()" class="dropdown-item" @click="showLoginForm">Login</span>
             <span v-if="!$auth.isAuthenticated()" class="dropdown-item" @click="showRegistrationForm">Sign up</span>
         </div>
-        <modal v-if="showModal" @close="closeModal">
+        <modal v-if="showModal" :is-close-disabled="closeDisabled" @close="closeModal">
             <template slot="content">
                 <keep-alive>
-                    <component :is="currentComponent" @modal-switch="modalSwitch"></component>
+                    <component :is="currentComponent"
+                               @modal-switch="modalSwitch"
+                    ></component>
                 </keep-alive>
             </template>
         </modal>

@@ -57,6 +57,10 @@
         methods: {
             switchToLogin() {
                 this.$emit('modal-switch', 'login');
+            },
+            submittedSuccess(response) {
+                Auth.methods.submittedSuccess.call(this, response);
+                this.$emit('modal-switch', 'confirmation');
             }
         }
     }

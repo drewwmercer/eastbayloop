@@ -2,8 +2,10 @@
 
     import Loadable from "./Loadable.vue";
 
-    const status = {
+    const statuses = {
         SUCCESS: 200,
+        BAD_REQUEST: 400,
+        UNPROCESSABLE_ENTITY: 422
     };
 
     export default {
@@ -15,8 +17,14 @@
                 formData: null,
                 formErrors: null,
                 status: null,
+                availableStatuses: null
             }
         },
+
+        created() {
+            this.availableStatuses = statuses;
+        },
+
         computed: {
             hasErrors: function () {
                 return this.formErrors !== null && _.size(this.formErrors) > 0;
@@ -25,7 +33,7 @@
                 return this.status
             },
             statusMessage: function() {
-                return (this.status === status.SUCCESS) ? "Success" : null;
+                return (this.status === this.availableStatuses.SUCCESS) ? "Success" : null;
             }
         },
         methods: {
@@ -34,15 +42,15 @@
             },
             submittedSuccess(response) {
                 this.stopLoading();
-                if (response.status === status.SUCCESS) {
-                    this.status = status.SUCCESS;
+                if (response.status === this.availableStatuses.SUCCESS) {
+                    this.status = this.availableStatuses.SUCCESS;
                 }
             },
             submittedWithError(error) {
                 this.stopLoading();
-                if (error.response.status === 422) {
+                if (error.response.status === this.availableStatuses.UNPROCESSABLE_ENTITY) {
                     this.formErrors = error.response.data.errors;
-                } else if (error.response.status === 400 && error.response.data.msg) {
+                } else if (error.response.status === this.availableStatuses.BAD_REQUEST && error.response.data.msg) {
                     this.formErrors = {
                         msg: error.response.data.msg
                     };
