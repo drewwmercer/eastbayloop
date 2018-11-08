@@ -5,7 +5,6 @@
                 <img alt="logo" src="{{ asset('assets/img/logo.png') }}">
             </a>
             <div class="navbar-content">
-                @include('layouts.partials.auth-menu')
                 <span class="menu" @click="toogleMenu">
                     <template v-if="isToogleNavbar">
                         <i class="fa fa-close" aria-hidden="true"></i>
@@ -27,6 +26,7 @@
                     <li><a href="{{ route('events-page') }}">EVENTS</a></li>
                     <li><a href="{{ route('advertise-page') }}">ADVERTISE WITH US!</a></li>
                 </ul>
+                @include('layouts.partials.auth-menu')
             </div>
         </div>
     </div>
