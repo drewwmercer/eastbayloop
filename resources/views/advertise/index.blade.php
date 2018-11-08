@@ -23,10 +23,10 @@
                                 <a href="{{ route('advertise-b-list-page') }}" class="list-box border-bt">
                                     Coffee Shops / Bakeries
                                 </a>
-                                <a href="{{ route('advertise-b-user-page') }}" class="list-box border-bt">
+                                <a href="{{ route('advertise-b-business-page') }}" class="list-box border-bt">
                                     Wine Loop - Winery
                                 </a>
-                                <a href="{{ route('advertise-b-user-page') }}" class="list-box border-bt">
+                                <a href="{{ route('advertise-b-business-page') }}" class="list-box border-bt">
                                     Bars / Breweries / Distilleries
                                 </a>
                                 <a href="{{ route('advertise-b-list-page') }}" class="list-box border-bt">

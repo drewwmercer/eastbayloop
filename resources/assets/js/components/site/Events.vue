@@ -2,9 +2,9 @@
     <section class="custom-section">
         <div class="section-header">
             <p :class="'title text-uppercase font-barlow-bold ' + titleClass || ''">EVENTS</p>
-            <p class="content text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius nulla ac ipsum pharetra, sodales euismod est rhoncus. Praesent nibh odio, rutrum quis tincidunt at, porta at magna.</p>
+            <p :class="'content text-left ' + descriptionClass || ''">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius nulla ac ipsum pharetra, sodales euismod est rhoncus. Praesent nibh odio, rutrum quis tincidunt at, porta at magna.</p>
             <div class="events" :class="layoutClass">
-                <div class="events__item" v-for="(n, key) in 4" :key="key">
+                <div class="events__item" v-for="(n, key) in itemsCount" :key="key">
                     <div class="image-header">
                         <img :src="'/assets/img/music/' + n + '.png'" />
                     </div>
@@ -45,11 +45,13 @@
         props: {
             data: Object,
             layoutList: Boolean,
+            largeCards: Boolean
         },
         
         data() {
             return {
                 titleClass: '',
+                descriptionClass: '',
                 layoutType: layoutTypes.CARDS
             }
         },
@@ -57,6 +59,7 @@
         mounted() {
            if (this.data !== undefined) {
                this.titleClass = this.data.titleClass || '';
+               this.descriptionClass = this.data.descriptionClass || '';
            }
            if (this.layoutList !== undefined && this.layoutList === true) {
                this.layoutType = layoutTypes.LIST;
@@ -67,7 +70,15 @@
             layoutClass: function () {
                 return {
                     'events_list': this.layoutType === layoutTypes.LIST,
-                    'events_card': this.layoutType === layoutTypes.CARDS
+                    'events_card': this.layoutType === layoutTypes.CARDS,
+                    'events_large': this.largeCards !== undefined && this.largeCards === true
+                }
+            },
+            itemsCount: function () {
+                if (this.largeCards !== undefined && this.largeCards === true) {
+                    return 3;
+                } else {
+                    return 4;
                 }
             }
         },
@@ -80,9 +91,15 @@
 
 <style lang="scss">
 
+.custom-section .section-header .content {
+    font-size: 1.1rem;
+}
+
 .events {
     display: flex;
     flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
     &_card {
         margin: 0;
         @media (min-width: 768px) {
@@ -150,19 +167,24 @@
             }
         }
     }
+    &_large {
+        .events__item {
+            flex: 0 1 33%;
+            padding: 20px;
+        }
+    }
 
     &__item {
         box-shadow: 0px 0px 10px rgba(1, 1, 1, .5);
         border-radius: 6px;
         margin: 0 0 1.5rem 0;
+        overflow: hidden;
         @media (min-width: 768px) {
 
         }
         .image-header {
             img {
                 width: 100%;
-                border-top-left-radius: 6px;
-                border-top-right-radius: 6px;
             }
         }
         .content {
