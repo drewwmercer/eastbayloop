@@ -51,7 +51,7 @@
                     <ul class="list-none b-list">
                         <li>
                             <span class="b-star"></span>
-                            WineLoop!
+                            Full Access to Wineloop & Bars, Breweries, Distilleries
                         </li>
                         <li>
                             <span class="b-star"></span>
