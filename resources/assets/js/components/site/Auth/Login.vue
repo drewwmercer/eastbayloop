@@ -1,5 +1,5 @@
 <template>
-    <div class="form form_login">
+    <div class="form" :class="loading">
 
         <div class="form__social">
             <a class="form__button_social form__button_social_fb" href="#" @click.prevent="authenticate('facebook')">&nbsp; Log in Using Facebook</a>
@@ -28,7 +28,7 @@
                 <button class="form__button form__button_submit" @click.prevent="login">Sign in</button>
             </div>
             <div class="form__actions form__actions_additional">
-                <span class="form__text form__text_terms">By logging in you agree to our <a href="#">Terms,</a> <a href="#">Privacy Policy </a></span>
+                <span class="form__text form__text_terms">By logging in you agree to our <a href="#">Terms,</a> <a href="/page/privacy_policy">Privacy Policy </a></span>
                 <span class="form__text">Don't have an account? <a href="#" @click.prevent="switchToRegistration">Sign Up</a></span>
             </div>
         </div>
@@ -59,6 +59,11 @@
             },
             switchToForgotPassword() {
                 this.$emit('modal-switch', 'forgot-password');
+            },
+            submittedSuccess(response) {
+                Auth.methods.submittedSuccess.call(this, response);
+                this.$emit('close-modal');
+                window.location.href = '/';
             },
         }
     }

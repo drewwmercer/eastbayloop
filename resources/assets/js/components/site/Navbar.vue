@@ -32,16 +32,6 @@
 
                 $(selects.NAVIGATION).slideToggle(700);			
                 $(event.target).toggleClass(classes.TOGGLE);
-            },
-            logout() {
-                this.$auth.logout({
-                    makeRequest: true,
-                    success: () => {},
-                    error: () => {},
-                    redirect: {
-                        name: 'home'
-                    }
-                });
             }
         }
     }

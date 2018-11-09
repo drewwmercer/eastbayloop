@@ -1,6 +1,15 @@
 .form {
   display: flex;
   flex-flow: column nowrap;
+  &_reset-password {
+    max-width: 600px;
+    margin: 10px auto;
+    padding: 10px 0;
+    @media (min-width: 576px) {
+      margin: 20px auto;
+      padding: 20px;
+    }
+  }
   &__text {
     padding: 5px 3px;
     color: #000000;
@@ -18,6 +27,18 @@
       font-family: Arial, Helvetica, sans-serif;
       font-size: 0.9rem;
       font-style: italic;
+    }
+  }
+  &__info {
+    width: 100%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    &-message {
+      &_success {
+        color: #005614;
+      }
     }
   }
 
@@ -42,15 +63,12 @@
       font-weight: bold;
       color: #fff;
       padding: 13px 0px;
-      :hover {
-        background: #fff;
-      }
       &_fb {
         background: #3b5998;
         border: 1px solid #3b5998;
         margin-bottom: 10px;
         &:hover {
-          border: 1px solid #3b5998;
+          background: #fff;
           color: #3b5998;
         }
       }
@@ -58,7 +76,7 @@
         background: #d34836;
         border: 1px solid #d34836;
         &:hover {
-          border: 1px solid #d34836;
+          background: #fff;
           color: #d34836;
         }
       }

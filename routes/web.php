@@ -19,14 +19,22 @@ Route::get('/admin', 'Admin\DashboardController@index');
 Route::post('/auth/login', 'Auth\LoginController@login')->name('login');
 Route::get('/auth/logout', 'Auth\LoginController@logout')->name('logout');
 Route::post('/auth/register', 'Auth\RegisterController@register')->name('register');
+
+Route::post('/register/confirm/resend', 'Auth\RegisterController@resendConfirmation')->name('auth.resend_confirmation');
+Route::get('/register/confirm/{configuration_code}', 'Auth\RegisterController@confirm')->name('auth.confirm');
+
 Route::post('/password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail')->name('password.email');
 Route::get('/password/reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('password.reset');
 Route::post('/password/reset', 'Auth\ResetPasswordController@reset')->name('password.request');
+Route::post('/password/update', 'Auth\AccountController@updatePassword')->name('password.update');
 
 Route::get('/callback/{service}', 'SocialAuthController@callback');
 Route::post('/auth/{service}', 'SocialAuthController@authenticate');
 
+Route::get('/account', 'Auth\AccountController@index')->name('account');
+
 /* Pages */
+Route::get('/page/{page}', 'StaticPagesController@index')->name('static-page');
 Route::get('/profile', 'ProfileController@index')->name('profile-page');
 Route::get('/explore', 'ExploreController@index')->name('explore-page');
 Route::get('/explore/{category}', 'ExploreController@show')->name('explore-subpage');

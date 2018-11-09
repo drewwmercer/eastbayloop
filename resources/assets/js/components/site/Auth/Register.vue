@@ -1,5 +1,5 @@
 <template>
-    <div class="form form_register">
+    <div class="form" :class="loading">
 
         <div class="form__social">
             <a class="form__button_social form__button_social_fb" href="#" @click.prevent="authenticate('facebook')">&nbsp; Log in Using Facebook</a>
@@ -29,7 +29,7 @@
                 <button class="form__button form__button_submit" @click="register">Sign up</button>
             </div>
             <div class="form__actions form__actions_additional">
-                <span class="form__text form__text_terms">By logging in you agree to our <a href="#">Terms,</a> <a href="#">Privacy Policy </a></span>
+                <span class="form__text form__text_terms">By logging in you agree to our <a href="#">Terms,</a> <a href="/page/privacy_policy">Privacy Policy </a></span>
                 <span class="form__text">Already have an account? <a href="#" @click="switchToLogin">Login</a></span>
             </div>
         </div>
@@ -57,6 +57,10 @@
         methods: {
             switchToLogin() {
                 this.$emit('modal-switch', 'login');
+            },
+            submittedSuccess(response) {
+                Auth.methods.submittedSuccess.call(this, response);
+                this.$emit('modal-switch', 'confirmation');
             }
         }
     }

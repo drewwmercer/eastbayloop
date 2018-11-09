@@ -13681,9 +13681,28 @@ body {
   font-family: 'OpenSans';
 }
 
+#app {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#app > .container {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
 footer {
   width: 100%;
-  float: left;
   background: #131316;
   text-align: center;
 }
@@ -19441,6 +19460,19 @@ img {
           flex-flow: column nowrap;
 }
 
+.form_reset-password {
+  max-width: 600px;
+  margin: 10px auto;
+  padding: 10px 0;
+}
+
+@media (min-width: 576px) {
+  .form_reset-password {
+    margin: 20px auto;
+    padding: 20px;
+  }
+}
+
 .form__text {
   padding: 5px 3px;
   color: #000000;
@@ -19462,6 +19494,18 @@ img {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.9rem;
   font-style: italic;
+}
+
+.form__info {
+  width: 100%;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.form__info-message_success {
+  color: #005614;
 }
 
 .form__button_submit {
@@ -19487,10 +19531,6 @@ img {
   padding: 13px 0px;
 }
 
-.form__button_social :hover {
-  background: #fff;
-}
-
 .form__button_social_fb {
   background: #3b5998;
   border: 1px solid #3b5998;
@@ -19498,7 +19538,7 @@ img {
 }
 
 .form__button_social_fb:hover {
-  border: 1px solid #3b5998;
+  background: #fff;
   color: #3b5998;
 }
 
@@ -19508,7 +19548,7 @@ img {
 }
 
 .form__button_social_google:hover {
-  border: 1px solid #d34836;
+  background: #fff;
   color: #d34836;
 }
 
