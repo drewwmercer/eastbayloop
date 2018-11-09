@@ -12,6 +12,7 @@
                 <keep-alive>
                     <component :is="currentComponent"
                                @modal-switch="modalSwitch"
+                               @close-modal="closeModal"
                     ></component>
                 </keep-alive>
             </template>

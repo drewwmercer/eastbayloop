@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\User;
+use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\Request;
 use Laravel\Socialite\Facades\Socialite;
 use Illuminate\Support\Facades\Cookie;
@@ -20,6 +21,8 @@ class SocialAuthController extends Controller
      * @var \App\User
      */
     private $user;
+
+    private $isNewUser = false;
 
     /**
      * @var string
@@ -50,6 +53,9 @@ class SocialAuthController extends Controller
             $userData = $provider->stateless()->user();
             $user = $this->findAndUpdateUser($userData);
             if ($user) {
+                if ($this->isNewUser) {
+                    event(new Registered($user));
+                }
                 return $this->logIn($user);
             }
         }
@@ -118,7 +124,6 @@ class SocialAuthController extends Controller
             default:
                 return null;
         }
-        $user->assignRole('user');
         return $user;
     }
 
@@ -146,6 +151,7 @@ class SocialAuthController extends Controller
     {
         if (!$user) {
             $user = new User();
+            $this->isNewUser = true;
         }
         $user->email = $user->email ?? $userData->getEmail();
         $user->avatar = $user->avatar ?? $userData->getAvatar();

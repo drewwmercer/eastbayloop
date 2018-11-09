@@ -12,6 +12,25 @@ class User extends Authenticatable implements JWTSubject
 {
     use Notifiable, HasRoles;
 
+    const ADMIN = 'admin';
+    const USER = 'user';
+    const VIP_USER = 'vip_user';
+    const BUSINESS = 'business';
+    const VIP_BUSINESS = 'vip_business';
+    const MEDIA = 'media';
+
+    public static function getRoleNames()
+    {
+        return [
+            self::ADMIN,
+            self::USER,
+            self::VIP_USER,
+            self::BUSINESS,
+            self::VIP_BUSINESS,
+            self::MEDIA
+        ];
+    }
+
     protected $guard_name = 'jwt';
 
     /**

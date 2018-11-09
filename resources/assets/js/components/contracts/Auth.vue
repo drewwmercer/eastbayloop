@@ -30,6 +30,7 @@
                 this.submit();
                 this.$auth.authenticate(provider)
                     .then(() => {
+                        this.$emit('close-modal');
                         this.submittedSuccess(response);
                     })
                     .catch(error => {

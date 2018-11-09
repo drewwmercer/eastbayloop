@@ -62,6 +62,7 @@
             },
             submittedSuccess(response) {
                 Auth.methods.submittedSuccess.call(this, response);
+                this.$emit('close-modal');
                 window.location.href = '/';
             },
         }
