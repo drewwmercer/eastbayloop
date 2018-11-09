@@ -16,7 +16,7 @@
                         <div class="music-card text-left col-md-4 mt-3 mb-4">
                             <div class="music-wrapper">
                                 <div class="image-header">
-                                    <a href="{{ route('stay-sell-page') }}">
+                                    <a href="{{ route('stay-clients-page', ['category' => 'HotelsandResorts']) }}">
                                         <img src="http://testsite.eastbayloop.com/images/stay-img1.jpeg" />
                                     </a>
                                 </div>
@@ -26,14 +26,14 @@
                                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
                                     </p>
 
-                                    <a class="read-more-link" href="{{ route('stay-sell-page') }}">Read More...</a>                            
+                                    <a class="read-more-link" href="{{ route('stay-clients-page', ['category' => 'HotelsandResorts']) }}">Read More...</a>
                                 </div>
                             </div>
                         </div>
                         <div class="music-card text-left col-md-4 mt-3 mb-4">
                             <div class="music-wrapper">
                                 <div class="image-header">
-                                    <a href="{{ route('stay-sell-page') }}">
+                                    <a href="{{ route('stay-clients-page', ['category' => 'BBandHostels']) }}">
                                         <img src="http://testsite.eastbayloop.com/images/stay-img2.jpeg" />
                                     </a>
                                 </div>
@@ -43,14 +43,14 @@
                                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
                                     </p>
 
-                                    <a class="read-more-link" href="{{ route('stay-sell-page') }}">Read More...</a>                            
+                                    <a class="read-more-link" href="{{ route('stay-clients-page', ['category' => 'BBandHostels']) }}">Read More...</a>
                                 </div>
                             </div>
                         </div>
                         <div class="music-card text-left col-md-4 mt-3 mb-4">
                             <div class="music-wrapper">
                                 <div class="image-header">
-                                    <a href="{{ route('stay-sell-page') }}">
+                                    <a href="{{ route('stay-clients-page', ['category' => 'LoopExclusiveVacationPackages']) }}">
                                         <img src="http://testsite.eastbayloop.com/images/stay-img3.jpeg" />
                                     </a>
                                 </div>
@@ -60,14 +60,14 @@
                                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
                                     </p>
 
-                                    <a class="read-more-link" href="{{ route('stay-sell-page') }}">Read More...</a>                            
+                                    <a class="read-more-link" href="{{ route('stay-clients-page', ['category' => 'LoopExclusiveVacationPackages']) }}">Read More...</a>
                                 </div>
                             </div>
                         </div>
                         <div class="music-card text-left col-md-4 mt-3 mb-4">
                             <div class="music-wrapper">
                                 <div class="image-header">
-                                    <a href="{{ route('stay-sell-page') }}">
+                                    <a href="{{ route('stay-clients-page', ['category' => 'shortandlongstayrentals']) }}">
                                         <img src="http://testsite.eastbayloop.com/images/staysell3img4.png" />
                                     </a>
                                 </div>
@@ -77,31 +77,31 @@
                                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
                                     </p>
 
-                                    <a class="read-more-link" href="{{ route('stay-sell-page') }}">Read More...</a>                            
+                                    <a class="read-more-link" href="{{ route('stay-clients-page', ['category' => 'shortandlongstayrentals']) }}">Read More...</a>
                                 </div>
                             </div>
                         </div>
                         <div class="music-card text-left col-md-4 mt-3 mb-4">
                             <div class="music-wrapper">
                                 <div class="image-header">
-                                    <a href="{{ route('stay-sell-page') }}">
+                                    <a href="{{ route('stay-clients-page', ['category' => 'stayforsale']) }}">
                                         <img src="http://testsite.eastbayloop.com/images/staysell3img5.png" />
                                     </a>
                                 </div>
                                 <div class="content">
-                                    <h2 class="font-barlow-regular">STAY FOR SELL</h2>
+                                    <h2 class="font-barlow-regular">STAY FOR SALE</h2>
                                     <p class="text text-grey">
                                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
                                     </p>
 
-                                    <a class="read-more-link" href="{{ route('stay-sell-page') }}">Read More...</a>                            
+                                    <a class="read-more-link" href="{{ route('stay-clients-page', ['category' => 'stayforsale']) }}">Read More...</a>
                                 </div>
                             </div>
                         </div>
                         <div class="music-card text-left col-md-4 mt-3 mb-4">
                             <div class="music-wrapper">
                                 <div class="image-header">
-                                    <a href="{{ route('stay-sell-page') }}">
+                                    <a href="{{ route('stay-clients-page', ['category' => 'GroupOffersandSpecials']) }}">
                                         <img src="http://testsite.eastbayloop.com/images/staysell3img6.png" />
                                     </a>
                                 </div>
@@ -111,7 +111,7 @@
                                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
                                     </p>
 
-                                    <a class="read-more-link" href="{{ route('stay-sell-page') }}">Read More...</a>                            
+                                    <a class="read-more-link" href="{{ route('stay-clients-page', ['category' => 'GroupOffersandSpecials']) }}">Read More...</a>
                                 </div>
                             </div>
                         </div>

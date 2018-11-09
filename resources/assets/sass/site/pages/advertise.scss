@@ -433,7 +433,7 @@
         .list-wrapper {
             background: #f0f0f0;
             transition: all .5s;
-            cursor: pointer;
+            //cursor: pointer;
             padding-bottom: 1px;
 
             &:hover {
@@ -459,7 +459,6 @@
 
                 .content {
                     background: #f0f0f0;
-
                     .list-box {
                         &.border-bt {
                             border-bottom: 1px solid #ffffff;
@@ -516,8 +515,9 @@
                 margin-left: 11px;
                 margin-right: 11px;
                 margin-bottom: 11px;
-
+                overflow: hidden;
                 .list-box {
+                    cursor: pointer;
                     font-family: BarlowLight;
                     font-size: 15px;
                     color: #666666;
@@ -527,6 +527,10 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
+
+                    &:hover {
+                        background: #ffffff;
+                    }
 
                     &.border-bt {
                         border-bottom: 1px solid #f0f0f0;
