@@ -14,4 +14,7 @@ let mix = require('laravel-mix');
 mix.js('resources/assets/js/site.js', 'public/js/site.js')
    .js('resources/assets/js/admin.js', 'public/js/admin.js')
    .sass('resources/assets/sass/site/bootstrap.scss', 'public/css/site.css')
-   .sass('resources/assets/sass/admin/bootstrap.scss', 'public/css/admin.css');   
+   .sass('resources/assets/sass/admin/bootstrap.scss', 'public/css/admin.css')
+   .styles([
+       'resources/assets/css/flexslider.css'
+   ], 'public/css/flexslider.css');
