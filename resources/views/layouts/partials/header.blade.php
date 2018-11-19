@@ -10,6 +10,8 @@
 
     <title>{{ config('app.name') }}</title>
 
+    <link rel="shortcut icon" href="{{ asset('assets/img/logo_with-background.jpg') }}" type="image/x-icon">
+
     <link href="{{ asset('css/site.css') }}" rel="stylesheet">
     <link href="{{ asset('css/flexslider.css') }}" rel="stylesheet">
 
