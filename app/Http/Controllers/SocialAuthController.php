@@ -141,8 +141,8 @@ class SocialAuthController extends Controller
     {
         $user = $this->createOrUpdate($userData);
         $user->fb_id = $userData->getId();
-        $user->first_name = $user->first_name ?? $userData->name;
-        $user->last_name = $user->last_name ?? '';
+        $user->first_name = $user->first_name ?? explode(' ', $userData->name)[0];
+        $user->last_name = $user->last_name ?? explode(' ', $userData->name)[1];
         $user->save();
         return $user->fresh();
     }
