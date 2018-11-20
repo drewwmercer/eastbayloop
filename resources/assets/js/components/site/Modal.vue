@@ -16,7 +16,7 @@
 
         data: function() {
             return {
-                closeDisabled: this.isCloseDisabled
+                closeDisabled: this.isCloseDisabled === undefined ? true : this.isCloseDisabled
             }
         },
 

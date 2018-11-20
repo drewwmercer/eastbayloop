@@ -31,22 +31,18 @@
         methods: {
             showLoginForm() {
                 this.currentComponent = Login;
-                this.closeEnable();
                 this.showModal = true;
             },
             showRegistrationForm() {
                 this.currentComponent = Register;
-                this.closeEnable();
                 this.showModal = true;
             },
             showForgotPasswordForm() {
                 this.currentComponent = ForgotPassword;
-                this.closeEnable();
                 this.showModal = true;
             },
             showConfirmationForm() {
                 this.currentComponent = Confirmation;
-                this.closeDisable();
                 this.showModal = true;
             },
             modalSwitch(component_name) {
