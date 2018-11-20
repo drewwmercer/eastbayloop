@@ -146,8 +146,8 @@
                 </div>
                 <div class="what-sell-block mt-4 pt-3">
                     <h2 class="what-sell-title mb-4 text-center">What can you sell in East Bay Loop?</h2>
-                    <div class="what-sell-cards row m-0 mt-4 pt-4">
-                        <div class="what-sell-card col-md-2 mb-3 offset-md-1">
+                    <div class="what-sell-cards m-0 mt-4 pt-4">
+                        <div class="what-sell-card mb-3">
                             <div class="what-sell-wrapper">
                                 <div class="image-header">
                                     <img src="{{ asset('assets/img/advertise/what-sell1.png') }}" />
@@ -157,7 +157,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="what-sell-card col-md-2 mb-3">
+                        <div class="what-sell-card mb-3">
                             <div class="what-sell-wrapper">
                                 <div class="image-header">
                                     <img src="{{ asset('assets/img/advertise/what-sell2.png') }}" />
@@ -167,7 +167,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="what-sell-card col-md-2 mb-3">
+                        <div class="what-sell-card mb-3">
                             <div class="what-sell-wrapper">
                                 <div class="image-header">
                                     <img src="{{ asset('assets/img/advertise/what-sell3.png') }}" />
@@ -177,17 +177,17 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="what-sell-card col-md-2 mb-3">
+                        <div class="what-sell-card mb-3">
                             <div class="what-sell-wrapper">
                                 <div class="image-header">
                                     <img src="{{ asset('assets/img/advertise/what-sell4.png') }}" />
                                 </div>
                                 <div class="content">
-                                    <h2 class="card-title">Hotel / RESORT</h2>
+                                    <h2 class="card-title">HOTEL / RESORT</h2>
                                 </div>
                             </div>
                         </div>
-                        <div class="what-sell-card col-md-2 mb-3">
+                        <div class="what-sell-card mb-3">
                             <div class="what-sell-wrapper">
                                 <div class="image-header">
                                     <img src="{{ asset('assets/img/advertise/what-sell5.png') }}" />
@@ -197,8 +197,28 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="what-sell-card mb-3">
+                            <div class="what-sell-wrapper">
+                                <div class="image-header">
+                                    <img src="{{ asset('assets/img/advertise/what-sell5.png') }}" />
+                                </div>
+                                <div class="content">
+                                    <h2 class="card-title">LOCAL SHOPS AND SHOPPING</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="what-sell-card mb-3">
+                            <div class="what-sell-wrapper">
+                                <div class="image-header">
+                                    <img src="{{ asset('assets/img/advertise/what-sell1.png') }}" />
+                                </div>
+                                <div class="content">
+                                    <h2 class="card-title">LOCAL DESIGNERS / FASHION HOUSES</h2>
+                                </div>
+                            </div>
+                        </div>
                         <div class="col-md-12 many-more">And many more!</div>
-                    </div>  
+                    </div>
                 </div>
                 <div class="col-md-12 text-center pb-3 pt-4 mb-10 mt-75">
                     <a href="{{ route('advertise-sell-products-contact-page') }}" class="adv-sell-btn">Start Selling Today!</a>
