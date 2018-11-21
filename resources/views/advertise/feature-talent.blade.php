@@ -58,7 +58,7 @@
             <section class="sell-main-content mt-4 pt-3">
                 <div class="main-btns-block mt-3 mb-4 pb-3">
                     <div class="become-block">
-                        <a href="#" class="become-btn" data-toggle="modal" data-target="#VipModal">Become a VIP!</a>
+                        <a href="{{ route('advertise-feature-talent-contact-page') }}" class="become-btn">Become a VIP!</a>
                     </div>
                     <div class="data-block">
                         <h2 class="data-title"><span class="price">$10 </span>a month</h2>
