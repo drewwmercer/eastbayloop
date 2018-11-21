@@ -6,7 +6,6 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\UpdatePasswordFormRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Facades\Redirect;
 
 class AccountController extends Controller
 {
@@ -23,21 +22,48 @@ class AccountController extends Controller
     public function updatePassword(UpdatePasswordFormRequest $request)
     {
         $user = $request->user();
-        if ($user->password && !$request->has('old_password')) {
-            return Redirect::back()->withErrors([
-                'old_password' => [
-                    'Old password is required'
-                ]
-            ]);
-        } else if (!Hash::check($request->input('old_password'), $user->password)){
-            return Redirect::back()->withErrors([
-                'old_password' => [
-                    'Old password is not correct'
-                ]
-            ]);
+        if ($user->password) {
+            if (!$request->has('old_password')) {
+                return response()->json([
+                    'status' => 'error',
+                    'error' => 'old_password_required',
+                    'msg' => 'Old password is required'
+                ], 400);
+            } elseif (!Hash::check($request->input('old_password'), $user->password)) {
+                return response()->json([
+                    'status' => 'error',
+                    'error' => 'old_password_incorrect',
+                    'msg' => 'Old password is not correct'
+                ], 400);
+            }
         }
         $user->password = bcrypt($request->input('password'));
         $user->save();
-        return Redirect::back();
+        $token = auth()->login($user); // update payload of JWT
+        return response()->json([
+            'status' => 'success'
+        ], 200)->withCookie(cookie('token', $token, 60, null, null, true, false));
+    }
+
+    public function updateAvatar(Request $request)
+    {
+        if ($request->hasFile('avatar')) {
+            $user = $request->user();
+            $user->avatar = $request->avatar->storeAs('public/avatars', uniqid() . '.jpg');
+            $user->save();
+            $token = auth()->login($user); // update payload of JWT
+            return response()->json([
+                'status' => 'success',
+                'data' => [
+                    'image_url' => $user->avatar_url
+                ]
+            ], 200)->withCookie(cookie('token', $token, 60, null, null, true, false));
+        } else {
+            return response()->json([
+                'status' => 'error',
+                'error' => 'invalid_request',
+                'msg' => 'Invalid Request'
+            ], 400);
+        }
     }
 }

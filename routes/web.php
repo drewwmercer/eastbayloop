@@ -28,10 +28,12 @@ Route::get('/password/reset/{token}', 'Auth\ResetPasswordController@showResetFor
 Route::post('/password/reset', 'Auth\ResetPasswordController@reset')->name('password.request');
 Route::post('/password/update', 'Auth\AccountController@updatePassword')->name('password.update');
 
+
 Route::get('/callback/{service}', 'SocialAuthController@callback');
 Route::post('/auth/{service}', 'SocialAuthController@authenticate');
 
 Route::get('/account', 'Auth\AccountController@index')->name('account');
+Route::post('/account/update-avatar', 'Auth\AccountController@updateAvatar')->name('update-avatar');
 
 /* Pages */
 Route::get('/page/{page}', 'StaticPagesController@index')->name('static-page');
