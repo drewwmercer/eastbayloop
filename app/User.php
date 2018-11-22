@@ -7,6 +7,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Spatie\Permission\Traits\HasRoles;
 use Tymon\JWTAuth\Contracts\JWTSubject;
 use App\Notifications\ResetPassword as ResetPasswordNotification;
+use Illuminate\Support\Facades\Storage;
 
 class User extends Authenticatable implements JWTSubject
 {
@@ -19,7 +20,7 @@ class User extends Authenticatable implements JWTSubject
     const VIP_BUSINESS = 'vip_business';
     const MEDIA = 'media';
 
-    public static function getRoleNames()
+    public static function getAllRoleNames()
     {
         return [
             self::ADMIN,
@@ -51,6 +52,10 @@ class User extends Authenticatable implements JWTSubject
         'password', 'remember_token', 'google_id', 'fb_id'
     ];
 
+    protected $appends = [
+        'avatar_url'
+    ];
+
     /**
      * Get the identifier that will be stored in the subject claim of the JWT.
      *
@@ -68,7 +73,14 @@ class User extends Authenticatable implements JWTSubject
      */
     public function getJWTCustomClaims()
     {
-        return [];
+        return [
+            'first_name' => $this->first_name,
+            'last_name' => $this->last_name,
+            'email' => $this->email,
+            'avatar' => $this->avatar_url,
+            'roles' => $this->getRoleNames(),
+            'has_password' => !empty($this->password)
+        ];
     }
 
     /**
@@ -82,4 +94,8 @@ class User extends Authenticatable implements JWTSubject
         $this->notify(new ResetPasswordNotification($token));
     }
 
+    public function getAvatarUrlAttribute()
+    {
+        return $this->avatar ? Storage::url($this->avatar) : asset('assets/img/faces/face-0.jpg');
+    }
 }

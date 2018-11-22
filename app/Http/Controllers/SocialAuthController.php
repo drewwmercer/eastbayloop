@@ -9,6 +9,7 @@ use Laravel\Socialite\Facades\Socialite;
 use Illuminate\Support\Facades\Cookie;
 use Tymon\JWTAuth\Exceptions\JWTException;
 use Tymon\JWTAuth\Http\Parser\Cookies as CookiesParser;
+use Illuminate\Support\Facades\Storage;
 
 class SocialAuthController extends Controller
 {
@@ -124,6 +125,9 @@ class SocialAuthController extends Controller
             default:
                 return null;
         }
+        if ($this->isNewUser) {
+            $user->assignRole($user::USER);
+        }
         return $user;
     }
 
@@ -139,6 +143,7 @@ class SocialAuthController extends Controller
 
     protected function createOrUpdateUserFromFb($userData, User $user = null)
     {
+
         $user = $this->createOrUpdate($userData);
         $user->fb_id = $userData->getId();
         $user->first_name = $user->first_name ?? explode(' ', $userData->name)[0];
@@ -154,7 +159,14 @@ class SocialAuthController extends Controller
             $this->isNewUser = true;
         }
         $user->email = $user->email ?? $userData->getEmail();
-        $user->avatar = $user->avatar ?? $userData->getAvatar();
+        $user->avatar = $user->avatar ?? $this->storeAvatar($userData->getAvatar());
         return $user;
+    }
+
+    protected function storeAvatar(string $avatar_url): string
+    {
+        $file_path = 'public/avatars/' . uniqid() . '.jpg';
+        Storage::put($file_path, file_get_contents($avatar_url));
+        return $file_path;
     }
 }
