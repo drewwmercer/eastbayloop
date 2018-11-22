@@ -33,6 +33,12 @@ Route::post('/auth/{service}', 'SocialAuthController@authenticate');
 
 Route::get('/account', 'Auth\AccountController@index')->name('account');
 
+Route::group(['prefix' => '/admin', 'name' => 'admin.', 'middleware' => ['role:admin']], function () {
+    Route::get('/', function () {
+        return 'Has permission';
+    });
+});
+
 /* Pages */
 Route::get('/page/{page}', 'StaticPagesController@index')->name('static-page');
 Route::get('/profile', 'ProfileController@index')->name('profile-page');
